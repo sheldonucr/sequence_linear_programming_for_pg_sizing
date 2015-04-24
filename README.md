@@ -1,4 +1,4 @@
-sequence of linear_programming program
+Sequence of linear_programming program
 
 This is the program for sizing the on-chip power grid networks for electromigration reliability effects using sequence of linear programming.
 It was the first program to apply the concept of sequenc of linear programming to solve a constrained nonlinear programming problem in EDA/CADs area.
