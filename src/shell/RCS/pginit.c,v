@@ -1,0 +1,73 @@
+head	1.1;
+access;
+symbols;
+locks
+	xtan:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	99.04.30.17.30.30;	author xtan;	state Exp;
+branches;
+next	;
+
+
+desc
+@simple shell for pgopt
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@/* 
+ * $RCSfile$
+ * $Revision$
+ * $Date$, (c) Copyright 1999 by X.-D. Sheldon Tan
+ */
+
+/* 
+**    global variables for pgopt system
+*/
+
+#include "pgOptmz.h"
+
+Branches *theDeviceList;
+Nodes *theNodeArray;
+
+double PenalWeight;
+double theEMConst;
+double theResistivity;
+
+ExtConst *theExtConstList;
+IntConst  *LPIntConstList;
+IntConst  *NLPIntConstList;
+
+
+/*
+**    assign the initial value to
+**    some global variables
+*/
+
+void
+pgInit()
+{
+    theDeviceList = NULL;
+    theNodeArray = NULL;
+
+    theExtConstList = NULL;
+    LPIntConstList = NULL;
+    NLPIntConstList = NULL;
+
+    PenalWeight = 0.001;
+    theEMConst = 0;
+    theResistivity = 0;
+
+    nNumNode = 0;
+    nMatrixSize = 0;
+    nNumBranch = 0;
+    nNumDevice = 0;
+}
+@

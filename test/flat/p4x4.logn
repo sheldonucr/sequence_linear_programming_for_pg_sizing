@@ -1,0 +1,68 @@
+
+PGOPT --- A Power/Ground Optimizer for Liability.
+Version 1.0, 1998
+Copyright (c) 1998 Avant!, Inc.
+Type 'h' for help.
+
+: source p4x4.sp
+
+--------------------
+#branches: 40.
+#resistors: 23.
+#nodes: 17.
+matrix size: 18.
+--------------------
+[0:00.0u 0:00.0s 24k]
+: const p4x4.cs
+[0:00.0u 0:00.0s 40k]
+: op
+dangling node: 0 eliminated
+External size of the matrix: 18
+Internal size of the matrix: 18
+
+COST(BEFORE): 8647.603200
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+
+COST(BEFORE): 8647.603200
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 572.175
+
+COST(BEFORE): 8647.603200
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 572.175
+After LOptmz: 572.175
+
+ Begin with iteration: 2
+
+COST(BEFORE): 8647.603200
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 572.175
+After LOptmz: 572.175
+
+ Begin with iteration: 2
+After NLOptmz: 572.175
+
+COST(BEFORE): 8647.603200
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 572.175
+After LOptmz: 572.175
+
+ Begin with iteration: 2
+After NLOptmz: 572.175
+After LOptmz: 572.175
+
+COST(AFTER): 572.175375
+Total CPU time in all the iterations: 0.240000
+[0:00.0u 0:00.1s 56k]
+: quit
+[0:00.0u 0:00.1s 56k] pgopt done. Have a nice day!

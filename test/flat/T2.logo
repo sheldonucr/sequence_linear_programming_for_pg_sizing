@@ -1,0 +1,94 @@
+
+PGOPT --- A Power/Ground Optimizer for Liability.
+Version 1.0, 1998
+Copyright (c) 1998 Avant!, Inc.
+Type 'h' for help.
+
+: source T2.sp
+
+--------------------
+#branches: 3427.
+#resistors: 3400.
+#nodes: 3042.
+matrix size: 3042.
+--------------------
+[0:00.6u 0:00.0s 504k]
+: const T2.cs
+[0:00.1u 0:00.0s 592k]
+: op
+External size of the matrix: 3041
+Internal size of the matrix: 2613
+
+COST(BEFORE): 215035.780591
+Initialization time: 0.190000
+
+ Begin with iteration: 1
+PANELTY COST(BEFORE): 211939
+WARNING: Maximum iterations: 3042 reached..
+PANELTY COST(AFTER): 145741
+After NLOptmz: 145159
+PANELTY COST(AFTER): 145741
+After NLOptmz: 145159
+After LOptmz: 40719.3
+
+ Begin with iteration: 2
+PANELTY COST(BEFORE): 1.85367e+12
+fmin: 1.04309e+12 diff: 0
+PANELTY COST(AFTER): 1.04309e+12
+After NLOptmz: 40719.3
+After LOptmz: 40719.3
+
+ Begin with iteration: 2
+PANELTY COST(BEFORE): 1.85367e+12
+fmin: 1.04309e+12 diff: 0
+PANELTY COST(AFTER): 1.04309e+12
+After NLOptmz: 40719.3
+After LOptmz: 40719.3
+
+ Begin with iteration: 3
+PANELTY COST(BEFORE): 1.52594e+12
+fmin: 5.62378e+10 diff: 0
+PANELTY COST(AFTER): 5.62378e+10
+After NLOptmz: 40719.3
+After LOptmz: 40719.3
+
+ Begin with iteration: 3
+PANELTY COST(BEFORE): 1.52594e+12
+fmin: 5.62378e+10 diff: 0
+PANELTY COST(AFTER): 5.62378e+10
+After NLOptmz: 40719.3
+After LOptmz: 40719.3
+
+ Begin with iteration: 4
+PANELTY COST(BEFORE): 1.59035e+12
+fmin: 1.77464e+11 diff: 0
+PANELTY COST(AFTER): 1.77464e+11
+After NLOptmz: 40719.3
+After LOptmz: 40719.3
+
+ Begin with iteration: 4
+PANELTY COST(BEFORE): 1.59035e+12
+fmin: 1.77464e+11 diff: 0
+PANELTY COST(AFTER): 1.77464e+11
+After NLOptmz: 40719.3
+After LOptmz: 40719.3
+
+ Begin with iteration: 5
+PANELTY COST(BEFORE): 2.67223e+12
+fmin: 9.35423e+11 diff: 0
+PANELTY COST(AFTER): 9.35423e+11
+After NLOptmz: 40719.3
+After LOptmz: 40719.3
+
+ Begin with iteration: 5
+PANELTY COST(BEFORE): 2.67223e+12
+fmin: 9.35423e+11 diff: 0
+PANELTY COST(AFTER): 9.35423e+11
+After NLOptmz: 40719.3
+After LOptmz: 40719.3
+
+COST(AFTER): 40719.302438
+Total CPU time in all the iterations: 255.480000
+[6:37.9u 0:00.4s 2288k]
+: quit
+[6:38.7u 0:00.5s 2288k] pgopt done. Have a nice day!

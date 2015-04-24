@@ -1,0 +1,5 @@
+../bin/pgopt <<!
+source pg4x4.sp
+opt conjugate
+output_netlist pg4x4.out
+!

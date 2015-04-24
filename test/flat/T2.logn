@@ -1,0 +1,3283 @@
+
+PGOPT --- A Power/Ground Optimizer for Liability.
+Version 1.0, 1998
+Copyright (c) 1998 Avant!, Inc.
+Type 'h' for help.
+
+: source T2.sp
+
+--------------------
+#branches: 3427.
+#resistors: 3400.
+#nodes: 3042.
+matrix size: 3042.
+--------------------
+[0:00.7u 0:00.0s 504k]
+: const T2.cs
+[0:00.1u 0:00.0s 592k]
+: op
+dangling node: 0 eliminated
+dangling node: 1 eliminated
+dangling node: 3 eliminated
+dangling branch: R1 eliminated
+dangling node: 5 eliminated
+dangling branch: R2 eliminated
+dangling node: 7 eliminated
+dangling branch: R3 eliminated
+dangling node: 9 eliminated
+dangling branch: R4 eliminated
+dangling node: 11 eliminated
+dangling branch: R5 eliminated
+dangling node: 13 eliminated
+dangling branch: R6 eliminated
+dangling node: 15 eliminated
+dangling branch: R7 eliminated
+dangling node: 17 eliminated
+dangling branch: R8 eliminated
+dangling node: 19 eliminated
+dangling branch: R9 eliminated
+dangling node: 21 eliminated
+dangling branch: R10 eliminated
+dangling node: 23 eliminated
+dangling branch: R11 eliminated
+dangling node: 25 eliminated
+dangling branch: R12 eliminated
+dangling node: 26 eliminated
+dangling branch: R16 eliminated
+dangling node: 31 eliminated
+dangling branch: R17 eliminated
+dangling node: 32 eliminated
+dangling branch: R21 eliminated
+dangling node: 37 eliminated
+dangling branch: R22 eliminated
+dangling node: 39 eliminated
+dangling branch: R23 eliminated
+dangling node: 41 eliminated
+dangling branch: R24 eliminated
+dangling node: 42 eliminated
+dangling branch: R28 eliminated
+dangling node: 47 eliminated
+dangling branch: R33 eliminated
+dangling node: 52 eliminated
+dangling branch: R38 eliminated
+dangling node: 57 eliminated
+dangling branch: R39 eliminated
+dangling node: 58 eliminated
+dangling branch: R43 eliminated
+dangling node: 66 eliminated
+dangling branch: R58 eliminated
+dangling node: 68 eliminated
+dangling branch: R59 eliminated
+dangling node: 70 eliminated
+dangling branch: R60 eliminated
+dangling node: 72 eliminated
+dangling branch: R61 eliminated
+dangling node: 74 eliminated
+dangling branch: R62 eliminated
+dangling node: 76 eliminated
+dangling branch: R63 eliminated
+dangling node: 78 eliminated
+dangling branch: R64 eliminated
+dangling node: 80 eliminated
+dangling branch: R65 eliminated
+dangling node: 82 eliminated
+dangling branch: R66 eliminated
+dangling node: 84 eliminated
+dangling branch: R67 eliminated
+dangling node: 86 eliminated
+dangling branch: R68 eliminated
+dangling node: 88 eliminated
+dangling branch: R69 eliminated
+dangling node: 90 eliminated
+dangling branch: R70 eliminated
+dangling node: 375 eliminated
+dangling branch: R365 eliminated
+dangling node: 379 eliminated
+dangling branch: R369 eliminated
+dangling node: 383 eliminated
+dangling branch: R373 eliminated
+dangling node: 387 eliminated
+dangling branch: R377 eliminated
+dangling node: 391 eliminated
+dangling branch: R381 eliminated
+dangling node: 395 eliminated
+dangling branch: R385 eliminated
+dangling node: 399 eliminated
+dangling branch: R389 eliminated
+dangling node: 403 eliminated
+dangling branch: R393 eliminated
+dangling node: 407 eliminated
+dangling branch: R397 eliminated
+dangling node: 411 eliminated
+dangling branch: R401 eliminated
+dangling node: 415 eliminated
+dangling branch: R405 eliminated
+dangling node: 419 eliminated
+dangling branch: R409 eliminated
+dangling node: 423 eliminated
+dangling branch: R413 eliminated
+dangling node: 427 eliminated
+dangling branch: R417 eliminated
+dangling node: 431 eliminated
+dangling branch: R421 eliminated
+dangling node: 438 eliminated
+dangling branch: R429 eliminated
+dangling node: 442 eliminated
+dangling branch: R433 eliminated
+dangling node: 446 eliminated
+dangling branch: R437 eliminated
+dangling node: 450 eliminated
+dangling branch: R441 eliminated
+dangling node: 454 eliminated
+dangling branch: R445 eliminated
+dangling node: 458 eliminated
+dangling branch: R449 eliminated
+dangling node: 462 eliminated
+dangling branch: R453 eliminated
+dangling node: 466 eliminated
+dangling branch: R457 eliminated
+dangling node: 470 eliminated
+dangling branch: R461 eliminated
+dangling node: 474 eliminated
+dangling branch: R465 eliminated
+dangling node: 478 eliminated
+dangling branch: R469 eliminated
+dangling node: 482 eliminated
+dangling branch: R473 eliminated
+dangling node: 486 eliminated
+dangling branch: R477 eliminated
+dangling node: 490 eliminated
+dangling branch: R481 eliminated
+dangling node: 494 eliminated
+dangling branch: R485 eliminated
+dangling node: 498 eliminated
+dangling branch: R489 eliminated
+dangling node: 502 eliminated
+dangling branch: R493 eliminated
+dangling node: 506 eliminated
+dangling branch: R497 eliminated
+dangling node: 510 eliminated
+dangling branch: R501 eliminated
+dangling node: 514 eliminated
+dangling branch: R505 eliminated
+dangling node: 518 eliminated
+dangling branch: R509 eliminated
+dangling node: 522 eliminated
+dangling branch: R513 eliminated
+dangling node: 526 eliminated
+dangling branch: R517 eliminated
+dangling node: 530 eliminated
+dangling branch: R521 eliminated
+dangling node: 534 eliminated
+dangling branch: R525 eliminated
+dangling node: 538 eliminated
+dangling branch: R529 eliminated
+dangling node: 542 eliminated
+dangling branch: R533 eliminated
+dangling node: 546 eliminated
+dangling branch: R537 eliminated
+dangling node: 550 eliminated
+dangling branch: R541 eliminated
+dangling node: 554 eliminated
+dangling branch: R545 eliminated
+dangling node: 558 eliminated
+dangling branch: R549 eliminated
+dangling node: 562 eliminated
+dangling branch: R553 eliminated
+dangling node: 566 eliminated
+dangling branch: R557 eliminated
+dangling node: 570 eliminated
+dangling branch: R561 eliminated
+dangling node: 574 eliminated
+dangling branch: R565 eliminated
+dangling node: 578 eliminated
+dangling branch: R569 eliminated
+dangling node: 582 eliminated
+dangling branch: R573 eliminated
+dangling node: 586 eliminated
+dangling branch: R577 eliminated
+dangling node: 590 eliminated
+dangling branch: R581 eliminated
+dangling node: 594 eliminated
+dangling branch: R585 eliminated
+dangling node: 598 eliminated
+dangling branch: R589 eliminated
+dangling node: 602 eliminated
+dangling branch: R593 eliminated
+dangling node: 606 eliminated
+dangling branch: R597 eliminated
+dangling node: 610 eliminated
+dangling branch: R601 eliminated
+dangling node: 614 eliminated
+dangling branch: R605 eliminated
+dangling node: 618 eliminated
+dangling branch: R609 eliminated
+dangling node: 622 eliminated
+dangling branch: R613 eliminated
+dangling node: 626 eliminated
+dangling branch: R617 eliminated
+dangling node: 630 eliminated
+dangling branch: R621 eliminated
+dangling node: 634 eliminated
+dangling branch: R625 eliminated
+dangling node: 638 eliminated
+dangling branch: R629 eliminated
+dangling node: 642 eliminated
+dangling branch: R633 eliminated
+dangling node: 646 eliminated
+dangling branch: R637 eliminated
+dangling node: 650 eliminated
+dangling branch: R641 eliminated
+dangling node: 654 eliminated
+dangling branch: R645 eliminated
+dangling node: 658 eliminated
+dangling branch: R649 eliminated
+dangling node: 662 eliminated
+dangling branch: R653 eliminated
+dangling node: 669 eliminated
+dangling branch: R661 eliminated
+dangling node: 673 eliminated
+dangling branch: R665 eliminated
+dangling node: 677 eliminated
+dangling branch: R669 eliminated
+dangling node: 681 eliminated
+dangling branch: R673 eliminated
+dangling node: 685 eliminated
+dangling branch: R677 eliminated
+dangling node: 689 eliminated
+dangling branch: R681 eliminated
+dangling node: 693 eliminated
+dangling branch: R685 eliminated
+dangling node: 697 eliminated
+dangling branch: R689 eliminated
+dangling node: 701 eliminated
+dangling branch: R693 eliminated
+dangling node: 705 eliminated
+dangling branch: R697 eliminated
+dangling node: 709 eliminated
+dangling branch: R701 eliminated
+dangling node: 713 eliminated
+dangling branch: R705 eliminated
+dangling node: 717 eliminated
+dangling branch: R709 eliminated
+dangling node: 721 eliminated
+dangling branch: R713 eliminated
+dangling node: 725 eliminated
+dangling branch: R717 eliminated
+dangling node: 729 eliminated
+dangling branch: R721 eliminated
+dangling node: 733 eliminated
+dangling branch: R725 eliminated
+dangling node: 737 eliminated
+dangling branch: R729 eliminated
+dangling node: 741 eliminated
+dangling branch: R733 eliminated
+dangling node: 745 eliminated
+dangling branch: R737 eliminated
+dangling node: 749 eliminated
+dangling branch: R741 eliminated
+dangling node: 753 eliminated
+dangling branch: R745 eliminated
+dangling node: 757 eliminated
+dangling branch: R749 eliminated
+dangling node: 761 eliminated
+dangling branch: R753 eliminated
+dangling node: 765 eliminated
+dangling branch: R757 eliminated
+dangling node: 769 eliminated
+dangling branch: R761 eliminated
+dangling node: 776 eliminated
+dangling branch: R769 eliminated
+dangling node: 780 eliminated
+dangling branch: R773 eliminated
+dangling node: 784 eliminated
+dangling branch: R777 eliminated
+dangling node: 788 eliminated
+dangling branch: R781 eliminated
+dangling node: 792 eliminated
+dangling branch: R785 eliminated
+dangling node: 796 eliminated
+dangling branch: R789 eliminated
+dangling node: 800 eliminated
+dangling branch: R793 eliminated
+dangling node: 804 eliminated
+dangling branch: R797 eliminated
+dangling node: 808 eliminated
+dangling branch: R801 eliminated
+dangling node: 812 eliminated
+dangling branch: R805 eliminated
+dangling node: 816 eliminated
+dangling branch: R809 eliminated
+dangling node: 823 eliminated
+dangling branch: R817 eliminated
+dangling node: 827 eliminated
+dangling branch: R821 eliminated
+dangling node: 831 eliminated
+dangling branch: R825 eliminated
+dangling node: 835 eliminated
+dangling branch: R829 eliminated
+dangling node: 839 eliminated
+dangling branch: R833 eliminated
+dangling node: 843 eliminated
+dangling branch: R837 eliminated
+dangling node: 847 eliminated
+dangling branch: R841 eliminated
+dangling node: 851 eliminated
+dangling branch: R845 eliminated
+dangling node: 855 eliminated
+dangling branch: R849 eliminated
+dangling node: 859 eliminated
+dangling branch: R853 eliminated
+dangling node: 863 eliminated
+dangling branch: R857 eliminated
+dangling node: 870 eliminated
+dangling branch: R865 eliminated
+dangling node: 874 eliminated
+dangling branch: R869 eliminated
+dangling node: 878 eliminated
+dangling branch: R873 eliminated
+dangling node: 882 eliminated
+dangling branch: R877 eliminated
+dangling node: 886 eliminated
+dangling branch: R881 eliminated
+dangling node: 890 eliminated
+dangling branch: R885 eliminated
+dangling node: 894 eliminated
+dangling branch: R889 eliminated
+dangling node: 898 eliminated
+dangling branch: R893 eliminated
+dangling node: 902 eliminated
+dangling branch: R897 eliminated
+dangling node: 906 eliminated
+dangling branch: R901 eliminated
+dangling node: 910 eliminated
+dangling branch: R905 eliminated
+dangling node: 914 eliminated
+dangling branch: R909 eliminated
+dangling node: 918 eliminated
+dangling branch: R913 eliminated
+dangling node: 922 eliminated
+dangling branch: R917 eliminated
+dangling node: 926 eliminated
+dangling branch: R921 eliminated
+dangling node: 930 eliminated
+dangling branch: R925 eliminated
+dangling node: 934 eliminated
+dangling branch: R929 eliminated
+dangling node: 938 eliminated
+dangling branch: R933 eliminated
+dangling node: 942 eliminated
+dangling branch: R937 eliminated
+dangling node: 946 eliminated
+dangling branch: R941 eliminated
+dangling node: 950 eliminated
+dangling branch: R945 eliminated
+dangling node: 954 eliminated
+dangling branch: R949 eliminated
+dangling node: 958 eliminated
+dangling branch: R953 eliminated
+dangling node: 962 eliminated
+dangling branch: R957 eliminated
+dangling node: 966 eliminated
+dangling branch: R961 eliminated
+dangling node: 970 eliminated
+dangling branch: R965 eliminated
+dangling node: 977 eliminated
+dangling branch: R973 eliminated
+dangling node: 981 eliminated
+dangling branch: R977 eliminated
+dangling node: 985 eliminated
+dangling branch: R981 eliminated
+dangling node: 989 eliminated
+dangling branch: R985 eliminated
+dangling node: 993 eliminated
+dangling branch: R989 eliminated
+dangling node: 997 eliminated
+dangling branch: R993 eliminated
+dangling node: 1001 eliminated
+dangling branch: R997 eliminated
+dangling node: 1005 eliminated
+dangling branch: R1001 eliminated
+dangling node: 1009 eliminated
+dangling branch: R1005 eliminated
+dangling node: 1013 eliminated
+dangling branch: R1009 eliminated
+dangling node: 1017 eliminated
+dangling branch: R1013 eliminated
+dangling node: 1021 eliminated
+dangling branch: R1017 eliminated
+dangling node: 1025 eliminated
+dangling branch: R1021 eliminated
+dangling node: 1029 eliminated
+dangling branch: R1025 eliminated
+dangling node: 1033 eliminated
+dangling branch: R1029 eliminated
+dangling node: 1037 eliminated
+dangling branch: R1033 eliminated
+dangling node: 1041 eliminated
+dangling branch: R1037 eliminated
+dangling node: 1045 eliminated
+dangling branch: R1041 eliminated
+dangling node: 1049 eliminated
+dangling branch: R1045 eliminated
+dangling node: 1053 eliminated
+dangling branch: R1049 eliminated
+dangling node: 1057 eliminated
+dangling branch: R1053 eliminated
+dangling node: 1061 eliminated
+dangling branch: R1057 eliminated
+dangling node: 1065 eliminated
+dangling branch: R1061 eliminated
+dangling node: 1069 eliminated
+dangling branch: R1065 eliminated
+dangling node: 1073 eliminated
+dangling branch: R1069 eliminated
+dangling node: 1077 eliminated
+dangling branch: R1073 eliminated
+dangling node: 1084 eliminated
+dangling branch: R1081 eliminated
+dangling node: 1088 eliminated
+dangling branch: R1085 eliminated
+dangling node: 1092 eliminated
+dangling branch: R1089 eliminated
+dangling node: 1096 eliminated
+dangling branch: R1093 eliminated
+dangling node: 1100 eliminated
+dangling branch: R1097 eliminated
+dangling node: 1104 eliminated
+dangling branch: R1101 eliminated
+dangling node: 1108 eliminated
+dangling branch: R1105 eliminated
+dangling node: 1112 eliminated
+dangling branch: R1109 eliminated
+dangling node: 1116 eliminated
+dangling branch: R1113 eliminated
+dangling node: 1120 eliminated
+dangling branch: R1117 eliminated
+dangling node: 1124 eliminated
+dangling branch: R1121 eliminated
+dangling node: 1128 eliminated
+dangling branch: R1125 eliminated
+dangling node: 1132 eliminated
+dangling branch: R1129 eliminated
+dangling node: 1136 eliminated
+dangling branch: R1133 eliminated
+dangling node: 1140 eliminated
+dangling branch: R1137 eliminated
+dangling node: 1144 eliminated
+dangling branch: R1141 eliminated
+dangling node: 1148 eliminated
+dangling branch: R1145 eliminated
+dangling node: 1152 eliminated
+dangling branch: R1149 eliminated
+dangling node: 1156 eliminated
+dangling branch: R1153 eliminated
+dangling node: 1160 eliminated
+dangling branch: R1157 eliminated
+dangling node: 1164 eliminated
+dangling branch: R1161 eliminated
+dangling node: 1168 eliminated
+dangling branch: R1165 eliminated
+dangling node: 1175 eliminated
+dangling branch: R1173 eliminated
+dangling node: 1179 eliminated
+dangling branch: R1177 eliminated
+dangling node: 1183 eliminated
+dangling branch: R1181 eliminated
+dangling node: 1187 eliminated
+dangling branch: R1185 eliminated
+dangling node: 1191 eliminated
+dangling branch: R1189 eliminated
+dangling node: 1195 eliminated
+dangling branch: R1193 eliminated
+dangling node: 1205 eliminated
+dangling branch: R1205 eliminated
+dangling node: 1209 eliminated
+dangling branch: R1209 eliminated
+dangling node: 1213 eliminated
+dangling branch: R1213 eliminated
+dangling node: 1217 eliminated
+dangling branch: R1217 eliminated
+dangling node: 1221 eliminated
+dangling branch: R1221 eliminated
+dangling node: 1228 eliminated
+dangling branch: R1229 eliminated
+dangling node: 1232 eliminated
+dangling branch: R1233 eliminated
+dangling node: 1236 eliminated
+dangling branch: R1237 eliminated
+dangling node: 1240 eliminated
+dangling branch: R1241 eliminated
+dangling node: 1244 eliminated
+dangling branch: R1245 eliminated
+dangling node: 1248 eliminated
+dangling branch: R1249 eliminated
+dangling node: 1252 eliminated
+dangling branch: R1253 eliminated
+dangling node: 1256 eliminated
+dangling branch: R1257 eliminated
+dangling node: 1260 eliminated
+dangling branch: R1261 eliminated
+dangling node: 1264 eliminated
+dangling branch: R1265 eliminated
+dangling node: 1268 eliminated
+dangling branch: R1269 eliminated
+dangling node: 1272 eliminated
+dangling branch: R1273 eliminated
+dangling node: 1276 eliminated
+dangling branch: R1277 eliminated
+dangling node: 1280 eliminated
+dangling branch: R1281 eliminated
+dangling node: 1287 eliminated
+dangling branch: R1289 eliminated
+dangling node: 1291 eliminated
+dangling branch: R1293 eliminated
+dangling node: 1295 eliminated
+dangling branch: R1297 eliminated
+dangling node: 1299 eliminated
+dangling branch: R1301 eliminated
+dangling node: 1303 eliminated
+dangling branch: R1305 eliminated
+dangling node: 1307 eliminated
+dangling branch: R1309 eliminated
+dangling node: 1311 eliminated
+dangling branch: R1313 eliminated
+dangling node: 1315 eliminated
+dangling branch: R1317 eliminated
+dangling node: 1319 eliminated
+dangling branch: R1321 eliminated
+dangling node: 1323 eliminated
+dangling branch: R1325 eliminated
+dangling node: 1327 eliminated
+dangling branch: R1329 eliminated
+dangling node: 1331 eliminated
+dangling branch: R1333 eliminated
+dangling node: 1335 eliminated
+dangling branch: R1337 eliminated
+dangling node: 1339 eliminated
+dangling branch: R1341 eliminated
+dangling node: 1343 eliminated
+dangling branch: R1345 eliminated
+dangling node: 1347 eliminated
+dangling branch: R1349 eliminated
+dangling node: 1351 eliminated
+dangling branch: R1353 eliminated
+dangling node: 1355 eliminated
+dangling branch: R1357 eliminated
+dangling node: 1359 eliminated
+dangling branch: R1361 eliminated
+dangling node: 1363 eliminated
+dangling branch: R1365 eliminated
+dangling node: 1367 eliminated
+dangling branch: R1369 eliminated
+dangling node: 1374 eliminated
+dangling branch: R1377 eliminated
+dangling node: 1378 eliminated
+dangling branch: R1381 eliminated
+dangling node: 1382 eliminated
+dangling branch: R1385 eliminated
+dangling node: 1386 eliminated
+dangling branch: R1389 eliminated
+dangling node: 1390 eliminated
+dangling branch: R1393 eliminated
+dangling node: 1394 eliminated
+dangling branch: R1397 eliminated
+dangling node: 1398 eliminated
+dangling branch: R1401 eliminated
+dangling node: 1402 eliminated
+dangling branch: R1405 eliminated
+dangling node: 1406 eliminated
+dangling branch: R1409 eliminated
+dangling node: 1410 eliminated
+dangling branch: R1413 eliminated
+dangling node: 1414 eliminated
+dangling branch: R1417 eliminated
+dangling node: 1418 eliminated
+dangling branch: R1421 eliminated
+dangling node: 1422 eliminated
+dangling branch: R1425 eliminated
+dangling node: 1426 eliminated
+dangling branch: R1429 eliminated
+dangling node: 1430 eliminated
+dangling branch: R1433 eliminated
+dangling node: 1434 eliminated
+dangling branch: R1437 eliminated
+dangling node: 1438 eliminated
+dangling branch: R1441 eliminated
+dangling node: 1442 eliminated
+dangling branch: R1445 eliminated
+dangling node: 1446 eliminated
+dangling branch: R1449 eliminated
+dangling node: 1450 eliminated
+dangling branch: R1453 eliminated
+dangling node: 1454 eliminated
+dangling branch: R1457 eliminated
+dangling node: 1458 eliminated
+dangling branch: R1461 eliminated
+dangling node: 1462 eliminated
+dangling branch: R1465 eliminated
+dangling node: 1466 eliminated
+dangling branch: R1469 eliminated
+dangling node: 1470 eliminated
+dangling branch: R1473 eliminated
+dangling node: 1474 eliminated
+dangling branch: R1477 eliminated
+dangling node: 1478 eliminated
+dangling branch: R1481 eliminated
+dangling node: 1482 eliminated
+dangling branch: R1485 eliminated
+dangling node: 1486 eliminated
+dangling branch: R1489 eliminated
+dangling node: 1490 eliminated
+dangling branch: R1493 eliminated
+dangling node: 1494 eliminated
+dangling branch: R1497 eliminated
+dangling node: 1501 eliminated
+dangling branch: R1505 eliminated
+dangling node: 1505 eliminated
+dangling branch: R1509 eliminated
+dangling node: 1509 eliminated
+dangling branch: R1513 eliminated
+dangling node: 1513 eliminated
+dangling branch: R1517 eliminated
+dangling node: 1517 eliminated
+dangling branch: R1521 eliminated
+dangling node: 1521 eliminated
+dangling branch: R1525 eliminated
+dangling node: 1525 eliminated
+dangling branch: R1529 eliminated
+dangling node: 1529 eliminated
+dangling branch: R1533 eliminated
+dangling node: 1533 eliminated
+dangling branch: R1537 eliminated
+dangling node: 1537 eliminated
+dangling branch: R1541 eliminated
+dangling node: 1541 eliminated
+dangling branch: R1545 eliminated
+dangling node: 1545 eliminated
+dangling branch: R1549 eliminated
+dangling node: 1549 eliminated
+dangling branch: R1553 eliminated
+dangling node: 1553 eliminated
+dangling branch: R1557 eliminated
+dangling node: 1557 eliminated
+dangling branch: R1561 eliminated
+dangling node: 1561 eliminated
+dangling branch: R1565 eliminated
+dangling node: 1565 eliminated
+dangling branch: R1569 eliminated
+dangling node: 1569 eliminated
+dangling branch: R1573 eliminated
+dangling node: 1573 eliminated
+dangling branch: R1577 eliminated
+dangling node: 1580 eliminated
+dangling branch: R1585 eliminated
+dangling node: 1584 eliminated
+dangling branch: R1589 eliminated
+dangling node: 1591 eliminated
+dangling branch: R1597 eliminated
+dangling node: 1595 eliminated
+dangling branch: R1601 eliminated
+dangling node: 1599 eliminated
+dangling branch: R1605 eliminated
+dangling node: 1603 eliminated
+dangling branch: R1609 eliminated
+dangling node: 1607 eliminated
+dangling branch: R1613 eliminated
+dangling node: 1611 eliminated
+dangling branch: R1617 eliminated
+dangling node: 1615 eliminated
+dangling branch: R1621 eliminated
+dangling node: 1619 eliminated
+dangling branch: R1625 eliminated
+dangling node: 1623 eliminated
+dangling branch: R1629 eliminated
+dangling node: 1627 eliminated
+dangling branch: R1633 eliminated
+dangling node: 1631 eliminated
+dangling branch: R1637 eliminated
+dangling node: 1635 eliminated
+dangling branch: R1641 eliminated
+dangling node: 1639 eliminated
+dangling branch: R1645 eliminated
+dangling node: 1643 eliminated
+dangling branch: R1649 eliminated
+dangling node: 1647 eliminated
+dangling branch: R1653 eliminated
+dangling node: 1651 eliminated
+dangling branch: R1657 eliminated
+dangling node: 1655 eliminated
+dangling branch: R1661 eliminated
+dangling node: 1659 eliminated
+dangling branch: R1665 eliminated
+dangling node: 1663 eliminated
+dangling branch: R1669 eliminated
+dangling node: 1667 eliminated
+dangling branch: R1673 eliminated
+dangling node: 1671 eliminated
+dangling branch: R1677 eliminated
+dangling node: 1675 eliminated
+dangling branch: R1681 eliminated
+dangling node: 1679 eliminated
+dangling branch: R1685 eliminated
+dangling node: 1683 eliminated
+dangling branch: R1689 eliminated
+dangling node: 1687 eliminated
+dangling branch: R1693 eliminated
+dangling node: 1691 eliminated
+dangling branch: R1697 eliminated
+dangling node: 1695 eliminated
+dangling branch: R1701 eliminated
+dangling node: 1699 eliminated
+dangling branch: R1705 eliminated
+dangling node: 1703 eliminated
+dangling branch: R1709 eliminated
+dangling node: 1707 eliminated
+dangling branch: R1713 eliminated
+dangling node: 1711 eliminated
+dangling branch: R1717 eliminated
+dangling node: 1715 eliminated
+dangling branch: R1721 eliminated
+dangling node: 1722 eliminated
+dangling branch: R1729 eliminated
+dangling node: 1726 eliminated
+dangling branch: R1733 eliminated
+dangling node: 1730 eliminated
+dangling branch: R1737 eliminated
+dangling node: 1734 eliminated
+dangling branch: R1741 eliminated
+dangling node: 1738 eliminated
+dangling branch: R1745 eliminated
+dangling node: 1742 eliminated
+dangling branch: R1749 eliminated
+dangling node: 1746 eliminated
+dangling branch: R1753 eliminated
+dangling node: 1750 eliminated
+dangling branch: R1757 eliminated
+dangling node: 1754 eliminated
+dangling branch: R1761 eliminated
+dangling node: 1758 eliminated
+dangling branch: R1765 eliminated
+dangling node: 1762 eliminated
+dangling branch: R1769 eliminated
+dangling node: 1766 eliminated
+dangling branch: R1773 eliminated
+dangling node: 1770 eliminated
+dangling branch: R1777 eliminated
+dangling node: 1774 eliminated
+dangling branch: R1781 eliminated
+dangling node: 1778 eliminated
+dangling branch: R1785 eliminated
+dangling node: 1782 eliminated
+dangling branch: R1789 eliminated
+dangling node: 1786 eliminated
+dangling branch: R1793 eliminated
+dangling node: 1790 eliminated
+dangling branch: R1797 eliminated
+dangling node: 1794 eliminated
+dangling branch: R1801 eliminated
+dangling node: 1798 eliminated
+dangling branch: R1805 eliminated
+dangling node: 1802 eliminated
+dangling branch: R1809 eliminated
+dangling node: 1806 eliminated
+dangling branch: R1813 eliminated
+dangling node: 1810 eliminated
+dangling branch: R1817 eliminated
+dangling node: 1814 eliminated
+dangling branch: R1821 eliminated
+dangling node: 1818 eliminated
+dangling branch: R1825 eliminated
+dangling node: 1822 eliminated
+dangling branch: R1829 eliminated
+dangling node: 1826 eliminated
+dangling branch: R1833 eliminated
+dangling node: 1830 eliminated
+dangling branch: R1837 eliminated
+dangling node: 1834 eliminated
+dangling branch: R1841 eliminated
+dangling node: 1838 eliminated
+dangling branch: R1845 eliminated
+dangling node: 1842 eliminated
+dangling branch: R1849 eliminated
+dangling node: 1846 eliminated
+dangling branch: R1853 eliminated
+dangling node: 1850 eliminated
+dangling branch: R1857 eliminated
+dangling node: 1854 eliminated
+dangling branch: R1861 eliminated
+dangling node: 1858 eliminated
+dangling branch: R1865 eliminated
+dangling node: 1862 eliminated
+dangling branch: R1869 eliminated
+dangling node: 1866 eliminated
+dangling branch: R1873 eliminated
+dangling node: 1870 eliminated
+dangling branch: R1877 eliminated
+dangling node: 1874 eliminated
+dangling branch: R1881 eliminated
+dangling node: 1878 eliminated
+dangling branch: R1885 eliminated
+dangling node: 1882 eliminated
+dangling branch: R1889 eliminated
+dangling node: 1886 eliminated
+dangling branch: R1893 eliminated
+dangling node: 1890 eliminated
+dangling branch: R1897 eliminated
+dangling node: 1894 eliminated
+dangling branch: R1901 eliminated
+dangling node: 1898 eliminated
+dangling branch: R1905 eliminated
+dangling node: 1902 eliminated
+dangling branch: R1909 eliminated
+dangling node: 1906 eliminated
+dangling branch: R1913 eliminated
+dangling node: 1910 eliminated
+dangling branch: R1917 eliminated
+dangling node: 1914 eliminated
+dangling branch: R1921 eliminated
+dangling node: 1921 eliminated
+dangling branch: R1929 eliminated
+dangling node: 1925 eliminated
+dangling branch: R1933 eliminated
+dangling node: 1929 eliminated
+dangling branch: R1937 eliminated
+dangling node: 1933 eliminated
+dangling branch: R1941 eliminated
+dangling node: 1937 eliminated
+dangling branch: R1945 eliminated
+dangling node: 1941 eliminated
+dangling branch: R1949 eliminated
+dangling node: 1945 eliminated
+dangling branch: R1953 eliminated
+dangling node: 1949 eliminated
+dangling branch: R1957 eliminated
+dangling node: 1953 eliminated
+dangling branch: R1961 eliminated
+dangling node: 1957 eliminated
+dangling branch: R1965 eliminated
+dangling node: 1961 eliminated
+dangling branch: R1969 eliminated
+dangling node: 1965 eliminated
+dangling branch: R1973 eliminated
+dangling node: 1969 eliminated
+dangling branch: R1977 eliminated
+dangling node: 1973 eliminated
+dangling branch: R1981 eliminated
+dangling node: 1977 eliminated
+dangling branch: R1985 eliminated
+dangling node: 1981 eliminated
+dangling branch: R1989 eliminated
+dangling node: 1985 eliminated
+dangling branch: R1993 eliminated
+dangling node: 1989 eliminated
+dangling branch: R1997 eliminated
+dangling node: 3042 eliminated
+dangling branch: R3400 eliminated
+External size of the matrix: 3041
+Internal size of the matrix: 2613
+
+COST(BEFORE): 215035.780591
+Initialization time: 0.190000
+
+ Begin with iteration: 1
+branch R13: close to 0, ignored.
+branch R14: close to 0, ignored.
+branch R15: close to 0, ignored.
+branch R18: close to 0, ignored.
+branch R19: close to 0, ignored.
+branch R20: close to 0, ignored.
+branch R25: close to 0, ignored.
+branch R26: close to 0, ignored.
+branch R27: close to 0, ignored.
+branch R29: close to 0, ignored.
+branch R30: close to 0, ignored.
+branch R31: close to 0, ignored.
+branch R32: close to 0, ignored.
+branch R34: close to 0, ignored.
+branch R35: close to 0, ignored.
+branch R36: close to 0, ignored.
+branch R37: close to 0, ignored.
+branch R40: close to 0, ignored.
+branch R41: close to 0, ignored.
+branch R42: close to 0, ignored.
+branch R45: close to 0, ignored.
+branch R46: close to 0, ignored.
+branch R71: close to 0, ignored.
+branch R72: close to 0, ignored.
+branch R73: close to 0, ignored.
+branch R74: close to 0, ignored.
+branch R75: close to 0, ignored.
+branch R76: close to 0, ignored.
+branch R77: close to 0, ignored.
+branch R78: close to 0, ignored.
+branch R1169: close to 0, ignored.
+branch R1197: close to 0, ignored.
+branch R1225: close to 0, ignored.
+branch R1766: close to 0, ignored.
+branch R1767: close to 0, ignored.
+branch R1768: close to 0, ignored.
+branch R1770: close to 0, ignored.
+branch R1771: close to 0, ignored.
+branch R1772: close to 0, ignored.
+branch R1774: close to 0, ignored.
+branch R1775: close to 0, ignored.
+branch R1776: close to 0, ignored.
+branch R1778: close to 0, ignored.
+branch R1779: close to 0, ignored.
+branch R1780: close to 0, ignored.
+branch R1782: close to 0, ignored.
+branch R1783: close to 0, ignored.
+branch R1784: close to 0, ignored.
+branch R1786: close to 0, ignored.
+branch R1787: close to 0, ignored.
+branch R1788: close to 0, ignored.
+branch R1790: close to 0, ignored.
+branch R1791: close to 0, ignored.
+branch R1792: close to 0, ignored.
+branch R1794: close to 0, ignored.
+branch R1795: close to 0, ignored.
+branch R1796: close to 0, ignored.
+branch R1798: close to 0, ignored.
+branch R1799: close to 0, ignored.
+branch R1800: close to 0, ignored.
+branch R1802: close to 0, ignored.
+branch R1803: close to 0, ignored.
+branch R1804: close to 0, ignored.
+branch R1806: close to 0, ignored.
+branch R1807: close to 0, ignored.
+branch R1808: close to 0, ignored.
+branch R1810: close to 0, ignored.
+branch R1811: close to 0, ignored.
+branch R1812: close to 0, ignored.
+branch R1814: close to 0, ignored.
+branch R1815: close to 0, ignored.
+branch R1816: close to 0, ignored.
+branch R1818: close to 0, ignored.
+branch R1819: close to 0, ignored.
+branch R1820: close to 0, ignored.
+branch R1822: close to 0, ignored.
+branch R1823: close to 0, ignored.
+branch R1824: close to 0, ignored.
+branch R1826: close to 0, ignored.
+branch R1827: close to 0, ignored.
+branch R1828: close to 0, ignored.
+branch R1830: close to 0, ignored.
+branch R1831: close to 0, ignored.
+branch R1832: close to 0, ignored.
+branch R1834: close to 0, ignored.
+branch R1835: close to 0, ignored.
+branch R1836: close to 0, ignored.
+branch R1838: close to 0, ignored.
+branch R1839: close to 0, ignored.
+branch R1840: close to 0, ignored.
+branch R1842: close to 0, ignored.
+branch R1843: close to 0, ignored.
+branch R1844: close to 0, ignored.
+branch R1846: close to 0, ignored.
+branch R1847: close to 0, ignored.
+branch R1848: close to 0, ignored.
+branch R1850: close to 0, ignored.
+branch R1851: close to 0, ignored.
+branch R1852: close to 0, ignored.
+branch R1854: close to 0, ignored.
+branch R1855: close to 0, ignored.
+branch R1856: close to 0, ignored.
+branch R1858: close to 0, ignored.
+branch R1859: close to 0, ignored.
+branch R1860: close to 0, ignored.
+branch R1862: close to 0, ignored.
+branch R1863: close to 0, ignored.
+branch R1864: close to 0, ignored.
+branch R1866: close to 0, ignored.
+branch R1867: close to 0, ignored.
+branch R1868: close to 0, ignored.
+branch R1870: close to 0, ignored.
+branch R1871: close to 0, ignored.
+branch R1872: close to 0, ignored.
+branch R1874: close to 0, ignored.
+branch R1875: close to 0, ignored.
+branch R1876: close to 0, ignored.
+branch R1878: close to 0, ignored.
+branch R1879: close to 0, ignored.
+branch R1880: close to 0, ignored.
+branch R1882: close to 0, ignored.
+branch R1883: close to 0, ignored.
+branch R1884: close to 0, ignored.
+branch R1886: close to 0, ignored.
+branch R1887: close to 0, ignored.
+branch R1888: close to 0, ignored.
+branch R1890: close to 0, ignored.
+branch R1891: close to 0, ignored.
+branch R1892: close to 0, ignored.
+branch R1894: close to 0, ignored.
+branch R1895: close to 0, ignored.
+branch R1896: close to 0, ignored.
+branch R1898: close to 0, ignored.
+branch R1899: close to 0, ignored.
+branch R1900: close to 0, ignored.
+branch R1902: close to 0, ignored.
+branch R1903: close to 0, ignored.
+branch R1904: close to 0, ignored.
+branch R1906: close to 0, ignored.
+branch R1907: close to 0, ignored.
+branch R1908: close to 0, ignored.
+branch R1910: close to 0, ignored.
+branch R1911: close to 0, ignored.
+branch R1912: close to 0, ignored.
+branch R1914: close to 0, ignored.
+branch R1915: close to 0, ignored.
+branch R1916: close to 0, ignored.
+branch R1918: close to 0, ignored.
+branch R1919: close to 0, ignored.
+branch R1920: close to 0, ignored.
+branch R1922: close to 0, ignored.
+branch R1923: close to 0, ignored.
+branch R1924: close to 0, ignored.
+branch R1930: close to 0, ignored.
+branch R1931: close to 0, ignored.
+branch R1932: close to 0, ignored.
+branch R1934: close to 0, ignored.
+branch R1935: close to 0, ignored.
+branch R1936: close to 0, ignored.
+branch R1938: close to 0, ignored.
+branch R1939: close to 0, ignored.
+branch R1940: close to 0, ignored.
+branch R1942: close to 0, ignored.
+branch R1943: close to 0, ignored.
+branch R1944: close to 0, ignored.
+branch R1946: close to 0, ignored.
+branch R1947: close to 0, ignored.
+branch R1948: close to 0, ignored.
+branch R1950: close to 0, ignored.
+branch R1951: close to 0, ignored.
+branch R1952: close to 0, ignored.
+branch R1954: close to 0, ignored.
+branch R1955: close to 0, ignored.
+branch R1956: close to 0, ignored.
+branch R1958: close to 0, ignored.
+branch R1959: close to 0, ignored.
+branch R1960: close to 0, ignored.
+branch R1962: close to 0, ignored.
+branch R1963: close to 0, ignored.
+branch R1964: close to 0, ignored.
+branch R1966: close to 0, ignored.
+branch R1967: close to 0, ignored.
+branch R1968: close to 0, ignored.
+branch R1970: close to 0, ignored.
+branch R1971: close to 0, ignored.
+branch R1972: close to 0, ignored.
+branch R1974: close to 0, ignored.
+branch R1975: close to 0, ignored.
+branch R1976: close to 0, ignored.
+branch R1978: close to 0, ignored.
+branch R1979: close to 0, ignored.
+branch R1980: close to 0, ignored.
+branch R1982: close to 0, ignored.
+branch R1983: close to 0, ignored.
+branch R1984: close to 0, ignored.
+branch R1986: close to 0, ignored.
+branch R1987: close to 0, ignored.
+branch R1988: close to 0, ignored.
+branch R1990: close to 0, ignored.
+branch R1991: close to 0, ignored.
+branch R1992: close to 0, ignored.
+branch R1994: close to 0, ignored.
+branch R1995: close to 0, ignored.
+branch R1996: close to 0, ignored.
+branch R1998: close to 0, ignored.
+branch R1999: close to 0, ignored.
+branch R2000: close to 0, ignored.
+After NLOptmz: 37487.4
+After NLOptmz: 37487.4
+PARSE ERROR: Cannot find branch: 1904.
+PARSE ERROR: Cannot find branch: 1908.
+PARSE ERROR: Cannot find branch: 1912.
+PARSE ERROR: Cannot find branch: 1916.
+PARSE ERROR: Cannot find branch: 1920.
+PARSE ERROR: Cannot find branch: 1924.
+PARSE ERROR: Cannot find branch: 1928.
+PARSE ERROR: Cannot find branch: 1932.
+PARSE ERROR: Cannot find branch: 1936.
+PARSE ERROR: Cannot find branch: 1940.
+PARSE ERROR: Cannot find branch: 1944.
+PARSE ERROR: Cannot find branch: 1948.
+PARSE ERROR: Cannot find branch: 1952.
+PARSE ERROR: Cannot find branch: 1956.
+PARSE ERROR: Cannot find branch: 1960.
+PARSE ERROR: Cannot find branch: 1964.
+PARSE ERROR: Cannot find branch: 1968.
+PARSE ERROR: Cannot find branch: 1972.
+PARSE ERROR: Cannot find branch: 1976.
+PARSE ERROR: Cannot find branch: 1980.
+PARSE ERROR: Cannot find branch: 1984.
+PARSE ERROR: Cannot find branch: 1988.
+PARSE ERROR: Cannot find branch: 1992.
+PARSE ERROR: Cannot find branch: 1996.
+PARSE ERROR: Cannot find branch: 1.
+PARSE ERROR: Cannot find branch: 2000.
+PARSE ERROR: Cannot find branch: 2004.
+PARSE ERROR: Cannot find branch: 2008.
+PARSE ERROR: Cannot find branch: 2012.
+PARSE ERROR: Cannot find branch: 2016.
+PARSE ERROR: Cannot find branch: 2020.
+PARSE ERROR: Cannot find branch: 2024.
+PARSE ERROR: Cannot find branch: 2032.
+PARSE ERROR: Cannot find branch: 2036.
+PARSE ERROR: Cannot find branch: 2040.
+PARSE ERROR: Cannot find branch: 2044.
+PARSE ERROR: Cannot find branch: 2048.
+PARSE ERROR: Cannot find branch: 2052.
+PARSE ERROR: Cannot find branch: 2056.
+PARSE ERROR: Cannot find branch: 2060.
+PARSE ERROR: Cannot find branch: 2064.
+PARSE ERROR: Cannot find branch: 2068.
+PARSE ERROR: Cannot find branch: 2072.
+PARSE ERROR: Cannot find branch: 2076.
+PARSE ERROR: Cannot find branch: 2080.
+PARSE ERROR: Cannot find branch: 2084.
+PARSE ERROR: Cannot find branch: 2088.
+PARSE ERROR: Cannot find branch: 2092.
+PARSE ERROR: Cannot find branch: 2096.
+PARSE ERROR: Cannot find branch: 2100.
+PARSE ERROR: Cannot find branch: 2104.
+PARSE ERROR: Cannot find branch: 2108.
+PARSE ERROR: Cannot find branch: 2112.
+PARSE ERROR: Cannot find branch: 2120.
+PARSE ERROR: Cannot find branch: 2124.
+PARSE ERROR: Cannot find branch: 2128.
+PARSE ERROR: Cannot find branch: 2132.
+PARSE ERROR: Cannot find branch: 2136.
+PARSE ERROR: Cannot find branch: 2140.
+PARSE ERROR: Cannot find branch: 2144.
+PARSE ERROR: Cannot find branch: 2148.
+PARSE ERROR: Cannot find branch: 2152.
+PARSE ERROR: Cannot find branch: 2156.
+PARSE ERROR: Cannot find branch: 2160.
+PARSE ERROR: Cannot find branch: 2164.
+PARSE ERROR: Cannot find branch: 2168.
+PARSE ERROR: Cannot find branch: 2172.
+PARSE ERROR: Cannot find branch: 2180.
+PARSE ERROR: Cannot find branch: 2184.
+PARSE ERROR: Cannot find branch: 2188.
+PARSE ERROR: Cannot find branch: 2192.
+PARSE ERROR: Cannot find branch: 2196.
+PARSE ERROR: Cannot find branch: 2208.
+PARSE ERROR: Cannot find branch: 2212.
+PARSE ERROR: Cannot find branch: 2216.
+PARSE ERROR: Cannot find branch: 2220.
+PARSE ERROR: Cannot find branch: 2224.
+PARSE ERROR: Cannot find branch: 2228.
+PARSE ERROR: Cannot find branch: 2236.
+PARSE ERROR: Cannot find branch: 2240.
+PARSE ERROR: Cannot find branch: 2244.
+PARSE ERROR: Cannot find branch: 2248.
+PARSE ERROR: Cannot find branch: 2252.
+PARSE ERROR: Cannot find branch: 2256.
+PARSE ERROR: Cannot find branch: 2260.
+PARSE ERROR: Cannot find branch: 2264.
+PARSE ERROR: Cannot find branch: 2268.
+PARSE ERROR: Cannot find branch: 2272.
+PARSE ERROR: Cannot find branch: 2276.
+PARSE ERROR: Cannot find branch: 2280.
+PARSE ERROR: Cannot find branch: 2284.
+PARSE ERROR: Cannot find branch: 2288.
+PARSE ERROR: Cannot find branch: 2292.
+PARSE ERROR: Cannot find branch: 2296.
+PARSE ERROR: Cannot find branch: 2300.
+PARSE ERROR: Cannot find branch: 2304.
+PARSE ERROR: Cannot find branch: 2308.
+PARSE ERROR: Cannot find branch: 2312.
+PARSE ERROR: Cannot find branch: 2316.
+PARSE ERROR: Cannot find branch: 2320.
+PARSE ERROR: Cannot find branch: 2328.
+PARSE ERROR: Cannot find branch: 2332.
+PARSE ERROR: Cannot find branch: 2336.
+PARSE ERROR: Cannot find branch: 2340.
+PARSE ERROR: Cannot find branch: 2344.
+PARSE ERROR: Cannot find branch: 2348.
+PARSE ERROR: Cannot find branch: 2352.
+PARSE ERROR: Cannot find branch: 2356.
+PARSE ERROR: Cannot find branch: 2360.
+PARSE ERROR: Cannot find branch: 2364.
+PARSE ERROR: Cannot find branch: 2368.
+PARSE ERROR: Cannot find branch: 2372.
+PARSE ERROR: Cannot find branch: 2376.
+PARSE ERROR: Cannot find branch: 2380.
+PARSE ERROR: Cannot find branch: 2384.
+PARSE ERROR: Cannot find branch: 2388.
+PARSE ERROR: Cannot find branch: 2392.
+PARSE ERROR: Cannot find branch: 2396.
+PARSE ERROR: Cannot find branch: 2400.
+PARSE ERROR: Cannot find branch: 2404.
+PARSE ERROR: Cannot find branch: 2408.
+PARSE ERROR: Cannot find branch: 2412.
+PARSE ERROR: Cannot find branch: 2416.
+PARSE ERROR: Cannot find branch: 2420.
+PARSE ERROR: Cannot find branch: 2424.
+PARSE ERROR: Cannot find branch: 2428.
+PARSE ERROR: Cannot find branch: 2436.
+PARSE ERROR: Cannot find branch: 2440.
+PARSE ERROR: Cannot find branch: 2444.
+PARSE ERROR: Cannot find branch: 2448.
+PARSE ERROR: Cannot find branch: 2452.
+PARSE ERROR: Cannot find branch: 2456.
+PARSE ERROR: Cannot find branch: 2460.
+PARSE ERROR: Cannot find branch: 2464.
+PARSE ERROR: Cannot find branch: 2468.
+PARSE ERROR: Cannot find branch: 2472.
+PARSE ERROR: Cannot find branch: 2476.
+PARSE ERROR: Cannot find branch: 2480.
+PARSE ERROR: Cannot find branch: 2484.
+PARSE ERROR: Cannot find branch: 2488.
+PARSE ERROR: Cannot find branch: 2492.
+PARSE ERROR: Cannot find branch: 2496.
+PARSE ERROR: Cannot find branch: 2500.
+PARSE ERROR: Cannot find branch: 2504.
+PARSE ERROR: Cannot find branch: 2508.
+PARSE ERROR: Cannot find branch: 2512.
+PARSE ERROR: Cannot find branch: 2516.
+PARSE ERROR: Cannot find branch: 2520.
+PARSE ERROR: Cannot find branch: 2524.
+PARSE ERROR: Cannot find branch: 2528.
+PARSE ERROR: Cannot find branch: 2532.
+PARSE ERROR: Cannot find branch: 2536.
+PARSE ERROR: Cannot find branch: 2544.
+PARSE ERROR: Cannot find branch: 2548.
+PARSE ERROR: Cannot find branch: 2552.
+PARSE ERROR: Cannot find branch: 2556.
+PARSE ERROR: Cannot find branch: 2560.
+PARSE ERROR: Cannot find branch: 2564.
+PARSE ERROR: Cannot find branch: 2568.
+PARSE ERROR: Cannot find branch: 2572.
+PARSE ERROR: Cannot find branch: 2576.
+PARSE ERROR: Cannot find branch: 2580.
+PARSE ERROR: Cannot find branch: 2584.
+PARSE ERROR: Cannot find branch: 2592.
+PARSE ERROR: Cannot find branch: 2596.
+PARSE ERROR: Cannot find branch: 2600.
+PARSE ERROR: Cannot find branch: 2604.
+PARSE ERROR: Cannot find branch: 2608.
+PARSE ERROR: Cannot find branch: 2612.
+PARSE ERROR: Cannot find branch: 2616.
+PARSE ERROR: Cannot find branch: 2620.
+PARSE ERROR: Cannot find branch: 2624.
+PARSE ERROR: Cannot find branch: 2628.
+PARSE ERROR: Cannot find branch: 2632.
+PARSE ERROR: Cannot find branch: 2640.
+PARSE ERROR: Cannot find branch: 2644.
+PARSE ERROR: Cannot find branch: 2648.
+PARSE ERROR: Cannot find branch: 2652.
+PARSE ERROR: Cannot find branch: 2656.
+PARSE ERROR: Cannot find branch: 2660.
+PARSE ERROR: Cannot find branch: 2664.
+PARSE ERROR: Cannot find branch: 2668.
+PARSE ERROR: Cannot find branch: 2672.
+PARSE ERROR: Cannot find branch: 2676.
+PARSE ERROR: Cannot find branch: 2680.
+PARSE ERROR: Cannot find branch: 2684.
+PARSE ERROR: Cannot find branch: 2688.
+PARSE ERROR: Cannot find branch: 2692.
+PARSE ERROR: Cannot find branch: 2696.
+PARSE ERROR: Cannot find branch: 2700.
+PARSE ERROR: Cannot find branch: 2704.
+PARSE ERROR: Cannot find branch: 2708.
+PARSE ERROR: Cannot find branch: 2712.
+PARSE ERROR: Cannot find branch: 2716.
+PARSE ERROR: Cannot find branch: 2720.
+PARSE ERROR: Cannot find branch: 2724.
+PARSE ERROR: Cannot find branch: 2728.
+PARSE ERROR: Cannot find branch: 2732.
+PARSE ERROR: Cannot find branch: 2736.
+PARSE ERROR: Cannot find branch: 2740.
+PARSE ERROR: Cannot find branch: 2748.
+PARSE ERROR: Cannot find branch: 2752.
+PARSE ERROR: Cannot find branch: 2756.
+PARSE ERROR: Cannot find branch: 2760.
+PARSE ERROR: Cannot find branch: 2764.
+PARSE ERROR: Cannot find branch: 2768.
+PARSE ERROR: Cannot find branch: 2772.
+PARSE ERROR: Cannot find branch: 2776.
+PARSE ERROR: Cannot find branch: 2780.
+PARSE ERROR: Cannot find branch: 2784.
+PARSE ERROR: Cannot find branch: 2788.
+PARSE ERROR: Cannot find branch: 2792.
+PARSE ERROR: Cannot find branch: 2796.
+PARSE ERROR: Cannot find branch: 2800.
+PARSE ERROR: Cannot find branch: 2804.
+PARSE ERROR: Cannot find branch: 2808.
+PARSE ERROR: Cannot find branch: 2812.
+PARSE ERROR: Cannot find branch: 2816.
+PARSE ERROR: Cannot find branch: 2820.
+PARSE ERROR: Cannot find branch: 2824.
+PARSE ERROR: Cannot find branch: 2828.
+PARSE ERROR: Cannot find branch: 2832.
+PARSE ERROR: Cannot find branch: 2836.
+PARSE ERROR: Cannot find branch: 2840.
+PARSE ERROR: Cannot find branch: 2844.
+PARSE ERROR: Cannot find branch: 2848.
+PARSE ERROR: Cannot find branch: 2852.
+PARSE ERROR: Cannot find branch: 2856.
+PARSE ERROR: Cannot find branch: 2860.
+PARSE ERROR: Cannot find branch: 2864.
+PARSE ERROR: Cannot find branch: 2868.
+PARSE ERROR: Cannot find branch: 2872.
+PARSE ERROR: Cannot find branch: 2876.
+PARSE ERROR: Cannot find branch: 2880.
+PARSE ERROR: Cannot find branch: 2884.
+PARSE ERROR: Cannot find branch: 2888.
+PARSE ERROR: Cannot find branch: 2892.
+PARSE ERROR: Cannot find branch: 2896.
+PARSE ERROR: Cannot find branch: 2900.
+PARSE ERROR: Cannot find branch: 2904.
+PARSE ERROR: Cannot find branch: 2908.
+PARSE ERROR: Cannot find branch: 2912.
+PARSE ERROR: Cannot find branch: 2916.
+PARSE ERROR: Cannot find branch: 2920.
+PARSE ERROR: Cannot find branch: 2924.
+PARSE ERROR: Cannot find branch: 2928.
+PARSE ERROR: Cannot find branch: 2932.
+PARSE ERROR: Cannot find branch: 2936.
+PARSE ERROR: Cannot find branch: 2940.
+PARSE ERROR: Cannot find branch: 2944.
+PARSE ERROR: Cannot find branch: 2948.
+PARSE ERROR: Cannot find branch: 2952.
+PARSE ERROR: Cannot find branch: 2956.
+PARSE ERROR: Cannot find branch: 2960.
+PARSE ERROR: Cannot find branch: 2964.
+PARSE ERROR: Cannot find branch: 2968.
+PARSE ERROR: Cannot find branch: 2972.
+PARSE ERROR: Cannot find branch: 2980.
+PARSE ERROR: Cannot find branch: 2984.
+PARSE ERROR: Cannot find branch: 2988.
+PARSE ERROR: Cannot find branch: 2992.
+PARSE ERROR: Cannot find branch: 2996.
+PARSE ERROR: Cannot find branch: 3000.
+PARSE ERROR: Cannot find branch: 3004.
+PARSE ERROR: Cannot find branch: 3008.
+PARSE ERROR: Cannot find branch: 3012.
+PARSE ERROR: Cannot find branch: 3016.
+PARSE ERROR: Cannot find branch: 3020.
+PARSE ERROR: Cannot find branch: 3024.
+PARSE ERROR: Cannot find branch: 3028.
+PARSE ERROR: Cannot find branch: 3032.
+PARSE ERROR: Cannot find branch: 3036.
+PARSE ERROR: Cannot find branch: 3331.
+PARSE ERROR: Cannot find branch: 3332.
+PARSE ERROR: Cannot find branch: 3333.
+PARSE ERROR: Cannot find branch: 3334.
+PARSE ERROR: Cannot find branch: 3335.
+PARSE ERROR: Cannot find branch: 3336.
+PARSE ERROR: Cannot find branch: 3337.
+PARSE ERROR: Cannot find branch: 3338.
+PARSE ERROR: Cannot find branch: 3339.
+PARSE ERROR: Cannot find branch: 3340.
+PARSE ERROR: Cannot find branch: 3341.
+PARSE ERROR: Cannot find branch: 3342.
+PARSE ERROR: Cannot find branch: 3343.
+PARSE ERROR: Cannot find branch: 3358.
+PARSE ERROR: Cannot find branch: 3362.
+PARSE ERROR: Cannot find branch: 3363.
+PARSE ERROR: Cannot find branch: 3368.
+PARSE ERROR: Cannot find branch: 3373.
+PARSE ERROR: Cannot find branch: 3377.
+PARSE ERROR: Cannot find branch: 3378.
+PARSE ERROR: Cannot find branch: 3379.
+PARSE ERROR: Cannot find branch: 3380.
+PARSE ERROR: Cannot find branch: 3384.
+PARSE ERROR: Cannot find branch: 3385.
+PARSE ERROR: Cannot find branch: 3389.
+PARSE ERROR: Cannot find branch: 3390.
+PARSE ERROR: Cannot find branch: 3391.
+PARSE ERROR: Cannot find branch: 3392.
+PARSE ERROR: Cannot find branch: 3393.
+PARSE ERROR: Cannot find branch: 3394.
+PARSE ERROR: Cannot find branch: 3395.
+PARSE ERROR: Cannot find branch: 3396.
+PARSE ERROR: Cannot find branch: 3397.
+PARSE ERROR: Cannot find branch: 3398.
+PARSE ERROR: Cannot find branch: 3399.
+PARSE ERROR: Cannot find branch: 3400.
+PARSE ERROR: Cannot find branch: 1404.
+PARSE ERROR: Cannot find branch: 1408.
+PARSE ERROR: Cannot find branch: 1412.
+PARSE ERROR: Cannot find branch: 1416.
+PARSE ERROR: Cannot find branch: 1420.
+PARSE ERROR: Cannot find branch: 1424.
+PARSE ERROR: Cannot find branch: 1428.
+PARSE ERROR: Cannot find branch: 1432.
+PARSE ERROR: Cannot find branch: 1436.
+PARSE ERROR: Cannot find branch: 1440.
+PARSE ERROR: Cannot find branch: 1444.
+PARSE ERROR: Cannot find branch: 1448.
+PARSE ERROR: Cannot find branch: 1452.
+PARSE ERROR: Cannot find branch: 1456.
+PARSE ERROR: Cannot find branch: 1460.
+PARSE ERROR: Cannot find branch: 1464.
+PARSE ERROR: Cannot find branch: 1468.
+PARSE ERROR: Cannot find branch: 1472.
+PARSE ERROR: Cannot find branch: 1480.
+PARSE ERROR: Cannot find branch: 1484.
+PARSE ERROR: Cannot find branch: 1488.
+PARSE ERROR: Cannot find branch: 1492.
+PARSE ERROR: Cannot find branch: 1496.
+PARSE ERROR: Cannot find branch: 1500.
+PARSE ERROR: Cannot find branch: 1504.
+PARSE ERROR: Cannot find branch: 1508.
+PARSE ERROR: Cannot find branch: 1512.
+PARSE ERROR: Cannot find branch: 1516.
+PARSE ERROR: Cannot find branch: 1520.
+PARSE ERROR: Cannot find branch: 1524.
+PARSE ERROR: Cannot find branch: 1528.
+PARSE ERROR: Cannot find branch: 1532.
+PARSE ERROR: Cannot find branch: 1536.
+PARSE ERROR: Cannot find branch: 1540.
+PARSE ERROR: Cannot find branch: 1544.
+PARSE ERROR: Cannot find branch: 1548.
+PARSE ERROR: Cannot find branch: 1552.
+PARSE ERROR: Cannot find branch: 1556.
+PARSE ERROR: Cannot find branch: 1560.
+PARSE ERROR: Cannot find branch: 1564.
+PARSE ERROR: Cannot find branch: 1568.
+PARSE ERROR: Cannot find branch: 1572.
+PARSE ERROR: Cannot find branch: 1576.
+PARSE ERROR: Cannot find branch: 1580.
+PARSE ERROR: Cannot find branch: 1584.
+PARSE ERROR: Cannot find branch: 1588.
+PARSE ERROR: Cannot find branch: 1592.
+PARSE ERROR: Cannot find branch: 1596.
+PARSE ERROR: Cannot find branch: 1600.
+PARSE ERROR: Cannot find branch: 1604.
+PARSE ERROR: Cannot find branch: 1608.
+PARSE ERROR: Cannot find branch: 1612.
+PARSE ERROR: Cannot find branch: 1616.
+PARSE ERROR: Cannot find branch: 1620.
+PARSE ERROR: Cannot find branch: 1624.
+PARSE ERROR: Cannot find branch: 1628.
+PARSE ERROR: Cannot find branch: 1632.
+PARSE ERROR: Cannot find branch: 1636.
+PARSE ERROR: Cannot find branch: 1640.
+PARSE ERROR: Cannot find branch: 1644.
+PARSE ERROR: Cannot find branch: 1648.
+PARSE ERROR: Cannot find branch: 1652.
+PARSE ERROR: Cannot find branch: 1656.
+PARSE ERROR: Cannot find branch: 1660.
+PARSE ERROR: Cannot find branch: 1664.
+PARSE ERROR: Cannot find branch: 1668.
+PARSE ERROR: Cannot find branch: 1672.
+PARSE ERROR: Cannot find branch: 1680.
+PARSE ERROR: Cannot find branch: 1684.
+PARSE ERROR: Cannot find branch: 1688.
+PARSE ERROR: Cannot find branch: 1692.
+PARSE ERROR: Cannot find branch: 1696.
+PARSE ERROR: Cannot find branch: 1700.
+PARSE ERROR: Cannot find branch: 1704.
+PARSE ERROR: Cannot find branch: 1708.
+PARSE ERROR: Cannot find branch: 1712.
+PARSE ERROR: Cannot find branch: 1716.
+PARSE ERROR: Cannot find branch: 1720.
+PARSE ERROR: Cannot find branch: 1724.
+PARSE ERROR: Cannot find branch: 1728.
+PARSE ERROR: Cannot find branch: 1732.
+PARSE ERROR: Cannot find branch: 1736.
+PARSE ERROR: Cannot find branch: 1740.
+PARSE ERROR: Cannot find branch: 1744.
+PARSE ERROR: Cannot find branch: 1748.
+PARSE ERROR: Cannot find branch: 1752.
+PARSE ERROR: Cannot find branch: 1756.
+PARSE ERROR: Cannot find branch: 1760.
+PARSE ERROR: Cannot find branch: 1764.
+PARSE ERROR: Cannot find branch: 1768.
+PARSE ERROR: Cannot find branch: 1772.
+PARSE ERROR: Cannot find branch: 1776.
+PARSE ERROR: Cannot find branch: 1780.
+PARSE ERROR: Cannot find branch: 1784.
+PARSE ERROR: Cannot find branch: 1788.
+PARSE ERROR: Cannot find branch: 1792.
+PARSE ERROR: Cannot find branch: 1796.
+PARSE ERROR: Cannot find branch: 1800.
+PARSE ERROR: Cannot find branch: 1804.
+PARSE ERROR: Cannot find branch: 1812.
+PARSE ERROR: Cannot find branch: 1816.
+PARSE ERROR: Cannot find branch: 1824.
+PARSE ERROR: Cannot find branch: 1828.
+PARSE ERROR: Cannot find branch: 1832.
+PARSE ERROR: Cannot find branch: 1836.
+PARSE ERROR: Cannot find branch: 1840.
+PARSE ERROR: Cannot find branch: 1844.
+PARSE ERROR: Cannot find branch: 1848.
+PARSE ERROR: Cannot find branch: 1852.
+PARSE ERROR: Cannot find branch: 1856.
+PARSE ERROR: Cannot find branch: 1860.
+PARSE ERROR: Cannot find branch: 1864.
+PARSE ERROR: Cannot find branch: 1868.
+PARSE ERROR: Cannot find branch: 1872.
+PARSE ERROR: Cannot find branch: 1876.
+PARSE ERROR: Cannot find branch: 1880.
+PARSE ERROR: Cannot find branch: 1884.
+PARSE ERROR: Cannot find branch: 1888.
+PARSE ERROR: Cannot find branch: 1892.
+PARSE ERROR: Cannot find branch: 1896.
+After LOptmz: 36244.7
+
+ Begin with iteration: 2
+After LOptmz: 36244.7
+
+ Begin with iteration: 2
+After NLOptmz: 32654.5
+After LOptmz: 36244.7
+
+ Begin with iteration: 2
+After NLOptmz: 32654.5
+PARSE ERROR: Cannot find branch: 1904.
+PARSE ERROR: Cannot find branch: 1908.
+PARSE ERROR: Cannot find branch: 1912.
+PARSE ERROR: Cannot find branch: 1916.
+PARSE ERROR: Cannot find branch: 1920.
+PARSE ERROR: Cannot find branch: 1924.
+PARSE ERROR: Cannot find branch: 1928.
+PARSE ERROR: Cannot find branch: 1932.
+PARSE ERROR: Cannot find branch: 1936.
+PARSE ERROR: Cannot find branch: 1940.
+PARSE ERROR: Cannot find branch: 1944.
+PARSE ERROR: Cannot find branch: 1948.
+PARSE ERROR: Cannot find branch: 1952.
+PARSE ERROR: Cannot find branch: 1956.
+PARSE ERROR: Cannot find branch: 1960.
+PARSE ERROR: Cannot find branch: 1964.
+PARSE ERROR: Cannot find branch: 1968.
+PARSE ERROR: Cannot find branch: 1972.
+PARSE ERROR: Cannot find branch: 1976.
+PARSE ERROR: Cannot find branch: 1980.
+PARSE ERROR: Cannot find branch: 1984.
+PARSE ERROR: Cannot find branch: 1988.
+PARSE ERROR: Cannot find branch: 1992.
+PARSE ERROR: Cannot find branch: 1996.
+PARSE ERROR: Cannot find branch: 1.
+PARSE ERROR: Cannot find branch: 2000.
+PARSE ERROR: Cannot find branch: 2004.
+PARSE ERROR: Cannot find branch: 2008.
+PARSE ERROR: Cannot find branch: 2012.
+PARSE ERROR: Cannot find branch: 2016.
+PARSE ERROR: Cannot find branch: 2020.
+PARSE ERROR: Cannot find branch: 2024.
+PARSE ERROR: Cannot find branch: 2032.
+PARSE ERROR: Cannot find branch: 2036.
+PARSE ERROR: Cannot find branch: 2040.
+PARSE ERROR: Cannot find branch: 2044.
+PARSE ERROR: Cannot find branch: 2048.
+PARSE ERROR: Cannot find branch: 2052.
+PARSE ERROR: Cannot find branch: 2056.
+PARSE ERROR: Cannot find branch: 2060.
+PARSE ERROR: Cannot find branch: 2064.
+PARSE ERROR: Cannot find branch: 2068.
+PARSE ERROR: Cannot find branch: 2072.
+PARSE ERROR: Cannot find branch: 2076.
+PARSE ERROR: Cannot find branch: 2080.
+PARSE ERROR: Cannot find branch: 2084.
+PARSE ERROR: Cannot find branch: 2088.
+PARSE ERROR: Cannot find branch: 2092.
+PARSE ERROR: Cannot find branch: 2096.
+PARSE ERROR: Cannot find branch: 2100.
+PARSE ERROR: Cannot find branch: 2104.
+PARSE ERROR: Cannot find branch: 2108.
+PARSE ERROR: Cannot find branch: 2112.
+PARSE ERROR: Cannot find branch: 2120.
+PARSE ERROR: Cannot find branch: 2124.
+PARSE ERROR: Cannot find branch: 2128.
+PARSE ERROR: Cannot find branch: 2132.
+PARSE ERROR: Cannot find branch: 2136.
+PARSE ERROR: Cannot find branch: 2140.
+PARSE ERROR: Cannot find branch: 2144.
+PARSE ERROR: Cannot find branch: 2148.
+PARSE ERROR: Cannot find branch: 2152.
+PARSE ERROR: Cannot find branch: 2156.
+PARSE ERROR: Cannot find branch: 2160.
+PARSE ERROR: Cannot find branch: 2164.
+PARSE ERROR: Cannot find branch: 2168.
+PARSE ERROR: Cannot find branch: 2172.
+PARSE ERROR: Cannot find branch: 2180.
+PARSE ERROR: Cannot find branch: 2184.
+PARSE ERROR: Cannot find branch: 2188.
+PARSE ERROR: Cannot find branch: 2192.
+PARSE ERROR: Cannot find branch: 2196.
+PARSE ERROR: Cannot find branch: 2208.
+PARSE ERROR: Cannot find branch: 2212.
+PARSE ERROR: Cannot find branch: 2216.
+PARSE ERROR: Cannot find branch: 2220.
+PARSE ERROR: Cannot find branch: 2224.
+PARSE ERROR: Cannot find branch: 2228.
+PARSE ERROR: Cannot find branch: 2236.
+PARSE ERROR: Cannot find branch: 2240.
+PARSE ERROR: Cannot find branch: 2244.
+PARSE ERROR: Cannot find branch: 2248.
+PARSE ERROR: Cannot find branch: 2252.
+PARSE ERROR: Cannot find branch: 2256.
+PARSE ERROR: Cannot find branch: 2260.
+PARSE ERROR: Cannot find branch: 2264.
+PARSE ERROR: Cannot find branch: 2268.
+PARSE ERROR: Cannot find branch: 2272.
+PARSE ERROR: Cannot find branch: 2276.
+PARSE ERROR: Cannot find branch: 2280.
+PARSE ERROR: Cannot find branch: 2284.
+PARSE ERROR: Cannot find branch: 2288.
+PARSE ERROR: Cannot find branch: 2292.
+PARSE ERROR: Cannot find branch: 2296.
+PARSE ERROR: Cannot find branch: 2300.
+PARSE ERROR: Cannot find branch: 2304.
+PARSE ERROR: Cannot find branch: 2308.
+PARSE ERROR: Cannot find branch: 2312.
+PARSE ERROR: Cannot find branch: 2316.
+PARSE ERROR: Cannot find branch: 2320.
+PARSE ERROR: Cannot find branch: 2328.
+PARSE ERROR: Cannot find branch: 2332.
+PARSE ERROR: Cannot find branch: 2336.
+PARSE ERROR: Cannot find branch: 2340.
+PARSE ERROR: Cannot find branch: 2344.
+PARSE ERROR: Cannot find branch: 2348.
+PARSE ERROR: Cannot find branch: 2352.
+PARSE ERROR: Cannot find branch: 2356.
+PARSE ERROR: Cannot find branch: 2360.
+PARSE ERROR: Cannot find branch: 2364.
+PARSE ERROR: Cannot find branch: 2368.
+PARSE ERROR: Cannot find branch: 2372.
+PARSE ERROR: Cannot find branch: 2376.
+PARSE ERROR: Cannot find branch: 2380.
+PARSE ERROR: Cannot find branch: 2384.
+PARSE ERROR: Cannot find branch: 2388.
+PARSE ERROR: Cannot find branch: 2392.
+PARSE ERROR: Cannot find branch: 2396.
+PARSE ERROR: Cannot find branch: 2400.
+PARSE ERROR: Cannot find branch: 2404.
+PARSE ERROR: Cannot find branch: 2408.
+PARSE ERROR: Cannot find branch: 2412.
+PARSE ERROR: Cannot find branch: 2416.
+PARSE ERROR: Cannot find branch: 2420.
+PARSE ERROR: Cannot find branch: 2424.
+PARSE ERROR: Cannot find branch: 2428.
+PARSE ERROR: Cannot find branch: 2436.
+PARSE ERROR: Cannot find branch: 2440.
+PARSE ERROR: Cannot find branch: 2444.
+PARSE ERROR: Cannot find branch: 2448.
+PARSE ERROR: Cannot find branch: 2452.
+PARSE ERROR: Cannot find branch: 2456.
+PARSE ERROR: Cannot find branch: 2460.
+PARSE ERROR: Cannot find branch: 2464.
+PARSE ERROR: Cannot find branch: 2468.
+PARSE ERROR: Cannot find branch: 2472.
+PARSE ERROR: Cannot find branch: 2476.
+PARSE ERROR: Cannot find branch: 2480.
+PARSE ERROR: Cannot find branch: 2484.
+PARSE ERROR: Cannot find branch: 2488.
+PARSE ERROR: Cannot find branch: 2492.
+PARSE ERROR: Cannot find branch: 2496.
+PARSE ERROR: Cannot find branch: 2500.
+PARSE ERROR: Cannot find branch: 2504.
+PARSE ERROR: Cannot find branch: 2508.
+PARSE ERROR: Cannot find branch: 2512.
+PARSE ERROR: Cannot find branch: 2516.
+PARSE ERROR: Cannot find branch: 2520.
+PARSE ERROR: Cannot find branch: 2524.
+PARSE ERROR: Cannot find branch: 2528.
+PARSE ERROR: Cannot find branch: 2532.
+PARSE ERROR: Cannot find branch: 2536.
+PARSE ERROR: Cannot find branch: 2544.
+PARSE ERROR: Cannot find branch: 2548.
+PARSE ERROR: Cannot find branch: 2552.
+PARSE ERROR: Cannot find branch: 2556.
+PARSE ERROR: Cannot find branch: 2560.
+PARSE ERROR: Cannot find branch: 2564.
+PARSE ERROR: Cannot find branch: 2568.
+PARSE ERROR: Cannot find branch: 2572.
+PARSE ERROR: Cannot find branch: 2576.
+PARSE ERROR: Cannot find branch: 2580.
+PARSE ERROR: Cannot find branch: 2584.
+PARSE ERROR: Cannot find branch: 2592.
+PARSE ERROR: Cannot find branch: 2596.
+PARSE ERROR: Cannot find branch: 2600.
+PARSE ERROR: Cannot find branch: 2604.
+PARSE ERROR: Cannot find branch: 2608.
+PARSE ERROR: Cannot find branch: 2612.
+PARSE ERROR: Cannot find branch: 2616.
+PARSE ERROR: Cannot find branch: 2620.
+PARSE ERROR: Cannot find branch: 2624.
+PARSE ERROR: Cannot find branch: 2628.
+PARSE ERROR: Cannot find branch: 2632.
+PARSE ERROR: Cannot find branch: 2640.
+PARSE ERROR: Cannot find branch: 2644.
+PARSE ERROR: Cannot find branch: 2648.
+PARSE ERROR: Cannot find branch: 2652.
+PARSE ERROR: Cannot find branch: 2656.
+PARSE ERROR: Cannot find branch: 2660.
+PARSE ERROR: Cannot find branch: 2664.
+PARSE ERROR: Cannot find branch: 2668.
+PARSE ERROR: Cannot find branch: 2672.
+PARSE ERROR: Cannot find branch: 2676.
+PARSE ERROR: Cannot find branch: 2680.
+PARSE ERROR: Cannot find branch: 2684.
+PARSE ERROR: Cannot find branch: 2688.
+PARSE ERROR: Cannot find branch: 2692.
+PARSE ERROR: Cannot find branch: 2696.
+PARSE ERROR: Cannot find branch: 2700.
+PARSE ERROR: Cannot find branch: 2704.
+PARSE ERROR: Cannot find branch: 2708.
+PARSE ERROR: Cannot find branch: 2712.
+PARSE ERROR: Cannot find branch: 2716.
+PARSE ERROR: Cannot find branch: 2720.
+PARSE ERROR: Cannot find branch: 2724.
+PARSE ERROR: Cannot find branch: 2728.
+PARSE ERROR: Cannot find branch: 2732.
+PARSE ERROR: Cannot find branch: 2736.
+PARSE ERROR: Cannot find branch: 2740.
+PARSE ERROR: Cannot find branch: 2748.
+PARSE ERROR: Cannot find branch: 2752.
+PARSE ERROR: Cannot find branch: 2756.
+PARSE ERROR: Cannot find branch: 2760.
+PARSE ERROR: Cannot find branch: 2764.
+PARSE ERROR: Cannot find branch: 2768.
+PARSE ERROR: Cannot find branch: 2772.
+PARSE ERROR: Cannot find branch: 2776.
+PARSE ERROR: Cannot find branch: 2780.
+PARSE ERROR: Cannot find branch: 2784.
+PARSE ERROR: Cannot find branch: 2788.
+PARSE ERROR: Cannot find branch: 2792.
+PARSE ERROR: Cannot find branch: 2796.
+PARSE ERROR: Cannot find branch: 2800.
+PARSE ERROR: Cannot find branch: 2804.
+PARSE ERROR: Cannot find branch: 2808.
+PARSE ERROR: Cannot find branch: 2812.
+PARSE ERROR: Cannot find branch: 2816.
+PARSE ERROR: Cannot find branch: 2820.
+PARSE ERROR: Cannot find branch: 2824.
+PARSE ERROR: Cannot find branch: 2828.
+PARSE ERROR: Cannot find branch: 2832.
+PARSE ERROR: Cannot find branch: 2836.
+PARSE ERROR: Cannot find branch: 2840.
+PARSE ERROR: Cannot find branch: 2844.
+PARSE ERROR: Cannot find branch: 2848.
+PARSE ERROR: Cannot find branch: 2852.
+PARSE ERROR: Cannot find branch: 2856.
+PARSE ERROR: Cannot find branch: 2860.
+PARSE ERROR: Cannot find branch: 2864.
+PARSE ERROR: Cannot find branch: 2868.
+PARSE ERROR: Cannot find branch: 2872.
+PARSE ERROR: Cannot find branch: 2876.
+PARSE ERROR: Cannot find branch: 2880.
+PARSE ERROR: Cannot find branch: 2884.
+PARSE ERROR: Cannot find branch: 2888.
+PARSE ERROR: Cannot find branch: 2892.
+PARSE ERROR: Cannot find branch: 2896.
+PARSE ERROR: Cannot find branch: 2900.
+PARSE ERROR: Cannot find branch: 2904.
+PARSE ERROR: Cannot find branch: 2908.
+PARSE ERROR: Cannot find branch: 2912.
+PARSE ERROR: Cannot find branch: 2916.
+PARSE ERROR: Cannot find branch: 2920.
+PARSE ERROR: Cannot find branch: 2924.
+PARSE ERROR: Cannot find branch: 2928.
+PARSE ERROR: Cannot find branch: 2932.
+PARSE ERROR: Cannot find branch: 2936.
+PARSE ERROR: Cannot find branch: 2940.
+PARSE ERROR: Cannot find branch: 2944.
+PARSE ERROR: Cannot find branch: 2948.
+PARSE ERROR: Cannot find branch: 2952.
+PARSE ERROR: Cannot find branch: 2956.
+PARSE ERROR: Cannot find branch: 2960.
+PARSE ERROR: Cannot find branch: 2964.
+PARSE ERROR: Cannot find branch: 2968.
+PARSE ERROR: Cannot find branch: 2972.
+PARSE ERROR: Cannot find branch: 2980.
+PARSE ERROR: Cannot find branch: 2984.
+PARSE ERROR: Cannot find branch: 2988.
+PARSE ERROR: Cannot find branch: 2992.
+PARSE ERROR: Cannot find branch: 2996.
+PARSE ERROR: Cannot find branch: 3000.
+PARSE ERROR: Cannot find branch: 3004.
+PARSE ERROR: Cannot find branch: 3008.
+PARSE ERROR: Cannot find branch: 3012.
+PARSE ERROR: Cannot find branch: 3016.
+PARSE ERROR: Cannot find branch: 3020.
+PARSE ERROR: Cannot find branch: 3024.
+PARSE ERROR: Cannot find branch: 3028.
+PARSE ERROR: Cannot find branch: 3032.
+PARSE ERROR: Cannot find branch: 3036.
+PARSE ERROR: Cannot find branch: 3331.
+PARSE ERROR: Cannot find branch: 3332.
+PARSE ERROR: Cannot find branch: 3333.
+PARSE ERROR: Cannot find branch: 3334.
+PARSE ERROR: Cannot find branch: 3335.
+PARSE ERROR: Cannot find branch: 3336.
+PARSE ERROR: Cannot find branch: 3337.
+PARSE ERROR: Cannot find branch: 3338.
+PARSE ERROR: Cannot find branch: 3339.
+PARSE ERROR: Cannot find branch: 3340.
+PARSE ERROR: Cannot find branch: 3341.
+PARSE ERROR: Cannot find branch: 3342.
+PARSE ERROR: Cannot find branch: 3343.
+PARSE ERROR: Cannot find branch: 3358.
+PARSE ERROR: Cannot find branch: 3362.
+PARSE ERROR: Cannot find branch: 3363.
+PARSE ERROR: Cannot find branch: 3368.
+PARSE ERROR: Cannot find branch: 3373.
+PARSE ERROR: Cannot find branch: 3377.
+PARSE ERROR: Cannot find branch: 3378.
+PARSE ERROR: Cannot find branch: 3379.
+PARSE ERROR: Cannot find branch: 3380.
+PARSE ERROR: Cannot find branch: 3384.
+PARSE ERROR: Cannot find branch: 3385.
+PARSE ERROR: Cannot find branch: 3389.
+PARSE ERROR: Cannot find branch: 3390.
+PARSE ERROR: Cannot find branch: 3391.
+PARSE ERROR: Cannot find branch: 3392.
+PARSE ERROR: Cannot find branch: 3393.
+PARSE ERROR: Cannot find branch: 3394.
+PARSE ERROR: Cannot find branch: 3395.
+PARSE ERROR: Cannot find branch: 3396.
+PARSE ERROR: Cannot find branch: 3397.
+PARSE ERROR: Cannot find branch: 3398.
+PARSE ERROR: Cannot find branch: 3399.
+PARSE ERROR: Cannot find branch: 3400.
+PARSE ERROR: Cannot find branch: 1404.
+PARSE ERROR: Cannot find branch: 1408.
+PARSE ERROR: Cannot find branch: 1412.
+PARSE ERROR: Cannot find branch: 1416.
+PARSE ERROR: Cannot find branch: 1420.
+PARSE ERROR: Cannot find branch: 1424.
+PARSE ERROR: Cannot find branch: 1428.
+PARSE ERROR: Cannot find branch: 1432.
+PARSE ERROR: Cannot find branch: 1436.
+PARSE ERROR: Cannot find branch: 1440.
+PARSE ERROR: Cannot find branch: 1444.
+PARSE ERROR: Cannot find branch: 1448.
+PARSE ERROR: Cannot find branch: 1452.
+PARSE ERROR: Cannot find branch: 1456.
+PARSE ERROR: Cannot find branch: 1460.
+PARSE ERROR: Cannot find branch: 1464.
+PARSE ERROR: Cannot find branch: 1468.
+PARSE ERROR: Cannot find branch: 1472.
+PARSE ERROR: Cannot find branch: 1480.
+PARSE ERROR: Cannot find branch: 1484.
+PARSE ERROR: Cannot find branch: 1488.
+PARSE ERROR: Cannot find branch: 1492.
+PARSE ERROR: Cannot find branch: 1496.
+PARSE ERROR: Cannot find branch: 1500.
+PARSE ERROR: Cannot find branch: 1504.
+PARSE ERROR: Cannot find branch: 1508.
+PARSE ERROR: Cannot find branch: 1512.
+PARSE ERROR: Cannot find branch: 1516.
+PARSE ERROR: Cannot find branch: 1520.
+PARSE ERROR: Cannot find branch: 1524.
+PARSE ERROR: Cannot find branch: 1528.
+PARSE ERROR: Cannot find branch: 1532.
+PARSE ERROR: Cannot find branch: 1536.
+PARSE ERROR: Cannot find branch: 1540.
+PARSE ERROR: Cannot find branch: 1544.
+PARSE ERROR: Cannot find branch: 1548.
+PARSE ERROR: Cannot find branch: 1552.
+PARSE ERROR: Cannot find branch: 1556.
+PARSE ERROR: Cannot find branch: 1560.
+PARSE ERROR: Cannot find branch: 1564.
+PARSE ERROR: Cannot find branch: 1568.
+PARSE ERROR: Cannot find branch: 1572.
+PARSE ERROR: Cannot find branch: 1576.
+PARSE ERROR: Cannot find branch: 1580.
+PARSE ERROR: Cannot find branch: 1584.
+PARSE ERROR: Cannot find branch: 1588.
+PARSE ERROR: Cannot find branch: 1592.
+PARSE ERROR: Cannot find branch: 1596.
+PARSE ERROR: Cannot find branch: 1600.
+PARSE ERROR: Cannot find branch: 1604.
+PARSE ERROR: Cannot find branch: 1608.
+PARSE ERROR: Cannot find branch: 1612.
+PARSE ERROR: Cannot find branch: 1616.
+PARSE ERROR: Cannot find branch: 1620.
+PARSE ERROR: Cannot find branch: 1624.
+PARSE ERROR: Cannot find branch: 1628.
+PARSE ERROR: Cannot find branch: 1632.
+PARSE ERROR: Cannot find branch: 1636.
+PARSE ERROR: Cannot find branch: 1640.
+PARSE ERROR: Cannot find branch: 1644.
+PARSE ERROR: Cannot find branch: 1648.
+PARSE ERROR: Cannot find branch: 1652.
+PARSE ERROR: Cannot find branch: 1656.
+PARSE ERROR: Cannot find branch: 1660.
+PARSE ERROR: Cannot find branch: 1664.
+PARSE ERROR: Cannot find branch: 1668.
+PARSE ERROR: Cannot find branch: 1672.
+PARSE ERROR: Cannot find branch: 1680.
+PARSE ERROR: Cannot find branch: 1684.
+PARSE ERROR: Cannot find branch: 1688.
+PARSE ERROR: Cannot find branch: 1692.
+PARSE ERROR: Cannot find branch: 1696.
+PARSE ERROR: Cannot find branch: 1700.
+PARSE ERROR: Cannot find branch: 1704.
+PARSE ERROR: Cannot find branch: 1708.
+PARSE ERROR: Cannot find branch: 1712.
+PARSE ERROR: Cannot find branch: 1716.
+PARSE ERROR: Cannot find branch: 1720.
+PARSE ERROR: Cannot find branch: 1724.
+PARSE ERROR: Cannot find branch: 1728.
+PARSE ERROR: Cannot find branch: 1732.
+PARSE ERROR: Cannot find branch: 1736.
+PARSE ERROR: Cannot find branch: 1740.
+PARSE ERROR: Cannot find branch: 1744.
+PARSE ERROR: Cannot find branch: 1748.
+PARSE ERROR: Cannot find branch: 1752.
+PARSE ERROR: Cannot find branch: 1756.
+PARSE ERROR: Cannot find branch: 1760.
+PARSE ERROR: Cannot find branch: 1764.
+PARSE ERROR: Cannot find branch: 1768.
+PARSE ERROR: Cannot find branch: 1772.
+PARSE ERROR: Cannot find branch: 1776.
+PARSE ERROR: Cannot find branch: 1780.
+PARSE ERROR: Cannot find branch: 1784.
+PARSE ERROR: Cannot find branch: 1788.
+PARSE ERROR: Cannot find branch: 1792.
+PARSE ERROR: Cannot find branch: 1796.
+PARSE ERROR: Cannot find branch: 1800.
+PARSE ERROR: Cannot find branch: 1804.
+PARSE ERROR: Cannot find branch: 1812.
+PARSE ERROR: Cannot find branch: 1816.
+PARSE ERROR: Cannot find branch: 1824.
+PARSE ERROR: Cannot find branch: 1828.
+PARSE ERROR: Cannot find branch: 1832.
+PARSE ERROR: Cannot find branch: 1836.
+PARSE ERROR: Cannot find branch: 1840.
+PARSE ERROR: Cannot find branch: 1844.
+PARSE ERROR: Cannot find branch: 1848.
+PARSE ERROR: Cannot find branch: 1852.
+PARSE ERROR: Cannot find branch: 1856.
+PARSE ERROR: Cannot find branch: 1860.
+PARSE ERROR: Cannot find branch: 1864.
+PARSE ERROR: Cannot find branch: 1868.
+PARSE ERROR: Cannot find branch: 1872.
+PARSE ERROR: Cannot find branch: 1876.
+PARSE ERROR: Cannot find branch: 1880.
+PARSE ERROR: Cannot find branch: 1884.
+PARSE ERROR: Cannot find branch: 1888.
+PARSE ERROR: Cannot find branch: 1892.
+PARSE ERROR: Cannot find branch: 1896.
+After LOptmz: 32248.1
+
+ Begin with iteration: 3
+After LOptmz: 32248.1
+
+ Begin with iteration: 3
+After NLOptmz: 29892.2
+After LOptmz: 32248.1
+
+ Begin with iteration: 3
+After NLOptmz: 29892.2
+PARSE ERROR: Cannot find branch: 1904.
+PARSE ERROR: Cannot find branch: 1908.
+PARSE ERROR: Cannot find branch: 1912.
+PARSE ERROR: Cannot find branch: 1916.
+PARSE ERROR: Cannot find branch: 1920.
+PARSE ERROR: Cannot find branch: 1924.
+PARSE ERROR: Cannot find branch: 1928.
+PARSE ERROR: Cannot find branch: 1932.
+PARSE ERROR: Cannot find branch: 1936.
+PARSE ERROR: Cannot find branch: 1940.
+PARSE ERROR: Cannot find branch: 1944.
+PARSE ERROR: Cannot find branch: 1948.
+PARSE ERROR: Cannot find branch: 1952.
+PARSE ERROR: Cannot find branch: 1956.
+PARSE ERROR: Cannot find branch: 1960.
+PARSE ERROR: Cannot find branch: 1964.
+PARSE ERROR: Cannot find branch: 1968.
+PARSE ERROR: Cannot find branch: 1972.
+PARSE ERROR: Cannot find branch: 1976.
+PARSE ERROR: Cannot find branch: 1980.
+PARSE ERROR: Cannot find branch: 1984.
+PARSE ERROR: Cannot find branch: 1988.
+PARSE ERROR: Cannot find branch: 1992.
+PARSE ERROR: Cannot find branch: 1996.
+PARSE ERROR: Cannot find branch: 1.
+PARSE ERROR: Cannot find branch: 2000.
+PARSE ERROR: Cannot find branch: 2004.
+PARSE ERROR: Cannot find branch: 2008.
+PARSE ERROR: Cannot find branch: 2012.
+PARSE ERROR: Cannot find branch: 2016.
+PARSE ERROR: Cannot find branch: 2020.
+PARSE ERROR: Cannot find branch: 2024.
+PARSE ERROR: Cannot find branch: 2032.
+PARSE ERROR: Cannot find branch: 2036.
+PARSE ERROR: Cannot find branch: 2040.
+PARSE ERROR: Cannot find branch: 2044.
+PARSE ERROR: Cannot find branch: 2048.
+PARSE ERROR: Cannot find branch: 2052.
+PARSE ERROR: Cannot find branch: 2056.
+PARSE ERROR: Cannot find branch: 2060.
+PARSE ERROR: Cannot find branch: 2064.
+PARSE ERROR: Cannot find branch: 2068.
+PARSE ERROR: Cannot find branch: 2072.
+PARSE ERROR: Cannot find branch: 2076.
+PARSE ERROR: Cannot find branch: 2080.
+PARSE ERROR: Cannot find branch: 2084.
+PARSE ERROR: Cannot find branch: 2088.
+PARSE ERROR: Cannot find branch: 2092.
+PARSE ERROR: Cannot find branch: 2096.
+PARSE ERROR: Cannot find branch: 2100.
+PARSE ERROR: Cannot find branch: 2104.
+PARSE ERROR: Cannot find branch: 2108.
+PARSE ERROR: Cannot find branch: 2112.
+PARSE ERROR: Cannot find branch: 2120.
+PARSE ERROR: Cannot find branch: 2124.
+PARSE ERROR: Cannot find branch: 2128.
+PARSE ERROR: Cannot find branch: 2132.
+PARSE ERROR: Cannot find branch: 2136.
+PARSE ERROR: Cannot find branch: 2140.
+PARSE ERROR: Cannot find branch: 2144.
+PARSE ERROR: Cannot find branch: 2148.
+PARSE ERROR: Cannot find branch: 2152.
+PARSE ERROR: Cannot find branch: 2156.
+PARSE ERROR: Cannot find branch: 2160.
+PARSE ERROR: Cannot find branch: 2164.
+PARSE ERROR: Cannot find branch: 2168.
+PARSE ERROR: Cannot find branch: 2172.
+PARSE ERROR: Cannot find branch: 2180.
+PARSE ERROR: Cannot find branch: 2184.
+PARSE ERROR: Cannot find branch: 2188.
+PARSE ERROR: Cannot find branch: 2192.
+PARSE ERROR: Cannot find branch: 2196.
+PARSE ERROR: Cannot find branch: 2208.
+PARSE ERROR: Cannot find branch: 2212.
+PARSE ERROR: Cannot find branch: 2216.
+PARSE ERROR: Cannot find branch: 2220.
+PARSE ERROR: Cannot find branch: 2224.
+PARSE ERROR: Cannot find branch: 2228.
+PARSE ERROR: Cannot find branch: 2236.
+PARSE ERROR: Cannot find branch: 2240.
+PARSE ERROR: Cannot find branch: 2244.
+PARSE ERROR: Cannot find branch: 2248.
+PARSE ERROR: Cannot find branch: 2252.
+PARSE ERROR: Cannot find branch: 2256.
+PARSE ERROR: Cannot find branch: 2260.
+PARSE ERROR: Cannot find branch: 2264.
+PARSE ERROR: Cannot find branch: 2268.
+PARSE ERROR: Cannot find branch: 2272.
+PARSE ERROR: Cannot find branch: 2276.
+PARSE ERROR: Cannot find branch: 2280.
+PARSE ERROR: Cannot find branch: 2284.
+PARSE ERROR: Cannot find branch: 2288.
+PARSE ERROR: Cannot find branch: 2292.
+PARSE ERROR: Cannot find branch: 2296.
+PARSE ERROR: Cannot find branch: 2300.
+PARSE ERROR: Cannot find branch: 2304.
+PARSE ERROR: Cannot find branch: 2308.
+PARSE ERROR: Cannot find branch: 2312.
+PARSE ERROR: Cannot find branch: 2316.
+PARSE ERROR: Cannot find branch: 2320.
+PARSE ERROR: Cannot find branch: 2328.
+PARSE ERROR: Cannot find branch: 2332.
+PARSE ERROR: Cannot find branch: 2336.
+PARSE ERROR: Cannot find branch: 2340.
+PARSE ERROR: Cannot find branch: 2344.
+PARSE ERROR: Cannot find branch: 2348.
+PARSE ERROR: Cannot find branch: 2352.
+PARSE ERROR: Cannot find branch: 2356.
+PARSE ERROR: Cannot find branch: 2360.
+PARSE ERROR: Cannot find branch: 2364.
+PARSE ERROR: Cannot find branch: 2368.
+PARSE ERROR: Cannot find branch: 2372.
+PARSE ERROR: Cannot find branch: 2376.
+PARSE ERROR: Cannot find branch: 2380.
+PARSE ERROR: Cannot find branch: 2384.
+PARSE ERROR: Cannot find branch: 2388.
+PARSE ERROR: Cannot find branch: 2392.
+PARSE ERROR: Cannot find branch: 2396.
+PARSE ERROR: Cannot find branch: 2400.
+PARSE ERROR: Cannot find branch: 2404.
+PARSE ERROR: Cannot find branch: 2408.
+PARSE ERROR: Cannot find branch: 2412.
+PARSE ERROR: Cannot find branch: 2416.
+PARSE ERROR: Cannot find branch: 2420.
+PARSE ERROR: Cannot find branch: 2424.
+PARSE ERROR: Cannot find branch: 2428.
+PARSE ERROR: Cannot find branch: 2436.
+PARSE ERROR: Cannot find branch: 2440.
+PARSE ERROR: Cannot find branch: 2444.
+PARSE ERROR: Cannot find branch: 2448.
+PARSE ERROR: Cannot find branch: 2452.
+PARSE ERROR: Cannot find branch: 2456.
+PARSE ERROR: Cannot find branch: 2460.
+PARSE ERROR: Cannot find branch: 2464.
+PARSE ERROR: Cannot find branch: 2468.
+PARSE ERROR: Cannot find branch: 2472.
+PARSE ERROR: Cannot find branch: 2476.
+PARSE ERROR: Cannot find branch: 2480.
+PARSE ERROR: Cannot find branch: 2484.
+PARSE ERROR: Cannot find branch: 2488.
+PARSE ERROR: Cannot find branch: 2492.
+PARSE ERROR: Cannot find branch: 2496.
+PARSE ERROR: Cannot find branch: 2500.
+PARSE ERROR: Cannot find branch: 2504.
+PARSE ERROR: Cannot find branch: 2508.
+PARSE ERROR: Cannot find branch: 2512.
+PARSE ERROR: Cannot find branch: 2516.
+PARSE ERROR: Cannot find branch: 2520.
+PARSE ERROR: Cannot find branch: 2524.
+PARSE ERROR: Cannot find branch: 2528.
+PARSE ERROR: Cannot find branch: 2532.
+PARSE ERROR: Cannot find branch: 2536.
+PARSE ERROR: Cannot find branch: 2544.
+PARSE ERROR: Cannot find branch: 2548.
+PARSE ERROR: Cannot find branch: 2552.
+PARSE ERROR: Cannot find branch: 2556.
+PARSE ERROR: Cannot find branch: 2560.
+PARSE ERROR: Cannot find branch: 2564.
+PARSE ERROR: Cannot find branch: 2568.
+PARSE ERROR: Cannot find branch: 2572.
+PARSE ERROR: Cannot find branch: 2576.
+PARSE ERROR: Cannot find branch: 2580.
+PARSE ERROR: Cannot find branch: 2584.
+PARSE ERROR: Cannot find branch: 2592.
+PARSE ERROR: Cannot find branch: 2596.
+PARSE ERROR: Cannot find branch: 2600.
+PARSE ERROR: Cannot find branch: 2604.
+PARSE ERROR: Cannot find branch: 2608.
+PARSE ERROR: Cannot find branch: 2612.
+PARSE ERROR: Cannot find branch: 2616.
+PARSE ERROR: Cannot find branch: 2620.
+PARSE ERROR: Cannot find branch: 2624.
+PARSE ERROR: Cannot find branch: 2628.
+PARSE ERROR: Cannot find branch: 2632.
+PARSE ERROR: Cannot find branch: 2640.
+PARSE ERROR: Cannot find branch: 2644.
+PARSE ERROR: Cannot find branch: 2648.
+PARSE ERROR: Cannot find branch: 2652.
+PARSE ERROR: Cannot find branch: 2656.
+PARSE ERROR: Cannot find branch: 2660.
+PARSE ERROR: Cannot find branch: 2664.
+PARSE ERROR: Cannot find branch: 2668.
+PARSE ERROR: Cannot find branch: 2672.
+PARSE ERROR: Cannot find branch: 2676.
+PARSE ERROR: Cannot find branch: 2680.
+PARSE ERROR: Cannot find branch: 2684.
+PARSE ERROR: Cannot find branch: 2688.
+PARSE ERROR: Cannot find branch: 2692.
+PARSE ERROR: Cannot find branch: 2696.
+PARSE ERROR: Cannot find branch: 2700.
+PARSE ERROR: Cannot find branch: 2704.
+PARSE ERROR: Cannot find branch: 2708.
+PARSE ERROR: Cannot find branch: 2712.
+PARSE ERROR: Cannot find branch: 2716.
+PARSE ERROR: Cannot find branch: 2720.
+PARSE ERROR: Cannot find branch: 2724.
+PARSE ERROR: Cannot find branch: 2728.
+PARSE ERROR: Cannot find branch: 2732.
+PARSE ERROR: Cannot find branch: 2736.
+PARSE ERROR: Cannot find branch: 2740.
+PARSE ERROR: Cannot find branch: 2748.
+PARSE ERROR: Cannot find branch: 2752.
+PARSE ERROR: Cannot find branch: 2756.
+PARSE ERROR: Cannot find branch: 2760.
+PARSE ERROR: Cannot find branch: 2764.
+PARSE ERROR: Cannot find branch: 2768.
+PARSE ERROR: Cannot find branch: 2772.
+PARSE ERROR: Cannot find branch: 2776.
+PARSE ERROR: Cannot find branch: 2780.
+PARSE ERROR: Cannot find branch: 2784.
+PARSE ERROR: Cannot find branch: 2788.
+PARSE ERROR: Cannot find branch: 2792.
+PARSE ERROR: Cannot find branch: 2796.
+PARSE ERROR: Cannot find branch: 2800.
+PARSE ERROR: Cannot find branch: 2804.
+PARSE ERROR: Cannot find branch: 2808.
+PARSE ERROR: Cannot find branch: 2812.
+PARSE ERROR: Cannot find branch: 2816.
+PARSE ERROR: Cannot find branch: 2820.
+PARSE ERROR: Cannot find branch: 2824.
+PARSE ERROR: Cannot find branch: 2828.
+PARSE ERROR: Cannot find branch: 2832.
+PARSE ERROR: Cannot find branch: 2836.
+PARSE ERROR: Cannot find branch: 2840.
+PARSE ERROR: Cannot find branch: 2844.
+PARSE ERROR: Cannot find branch: 2848.
+PARSE ERROR: Cannot find branch: 2852.
+PARSE ERROR: Cannot find branch: 2856.
+PARSE ERROR: Cannot find branch: 2860.
+PARSE ERROR: Cannot find branch: 2864.
+PARSE ERROR: Cannot find branch: 2868.
+PARSE ERROR: Cannot find branch: 2872.
+PARSE ERROR: Cannot find branch: 2876.
+PARSE ERROR: Cannot find branch: 2880.
+PARSE ERROR: Cannot find branch: 2884.
+PARSE ERROR: Cannot find branch: 2888.
+PARSE ERROR: Cannot find branch: 2892.
+PARSE ERROR: Cannot find branch: 2896.
+PARSE ERROR: Cannot find branch: 2900.
+PARSE ERROR: Cannot find branch: 2904.
+PARSE ERROR: Cannot find branch: 2908.
+PARSE ERROR: Cannot find branch: 2912.
+PARSE ERROR: Cannot find branch: 2916.
+PARSE ERROR: Cannot find branch: 2920.
+PARSE ERROR: Cannot find branch: 2924.
+PARSE ERROR: Cannot find branch: 2928.
+PARSE ERROR: Cannot find branch: 2932.
+PARSE ERROR: Cannot find branch: 2936.
+PARSE ERROR: Cannot find branch: 2940.
+PARSE ERROR: Cannot find branch: 2944.
+PARSE ERROR: Cannot find branch: 2948.
+PARSE ERROR: Cannot find branch: 2952.
+PARSE ERROR: Cannot find branch: 2956.
+PARSE ERROR: Cannot find branch: 2960.
+PARSE ERROR: Cannot find branch: 2964.
+PARSE ERROR: Cannot find branch: 2968.
+PARSE ERROR: Cannot find branch: 2972.
+PARSE ERROR: Cannot find branch: 2980.
+PARSE ERROR: Cannot find branch: 2984.
+PARSE ERROR: Cannot find branch: 2988.
+PARSE ERROR: Cannot find branch: 2992.
+PARSE ERROR: Cannot find branch: 2996.
+PARSE ERROR: Cannot find branch: 3000.
+PARSE ERROR: Cannot find branch: 3004.
+PARSE ERROR: Cannot find branch: 3008.
+PARSE ERROR: Cannot find branch: 3012.
+PARSE ERROR: Cannot find branch: 3016.
+PARSE ERROR: Cannot find branch: 3020.
+PARSE ERROR: Cannot find branch: 3024.
+PARSE ERROR: Cannot find branch: 3028.
+PARSE ERROR: Cannot find branch: 3032.
+PARSE ERROR: Cannot find branch: 3036.
+PARSE ERROR: Cannot find branch: 3331.
+PARSE ERROR: Cannot find branch: 3332.
+PARSE ERROR: Cannot find branch: 3333.
+PARSE ERROR: Cannot find branch: 3334.
+PARSE ERROR: Cannot find branch: 3335.
+PARSE ERROR: Cannot find branch: 3336.
+PARSE ERROR: Cannot find branch: 3337.
+PARSE ERROR: Cannot find branch: 3338.
+PARSE ERROR: Cannot find branch: 3339.
+PARSE ERROR: Cannot find branch: 3340.
+PARSE ERROR: Cannot find branch: 3341.
+PARSE ERROR: Cannot find branch: 3342.
+PARSE ERROR: Cannot find branch: 3343.
+PARSE ERROR: Cannot find branch: 3358.
+PARSE ERROR: Cannot find branch: 3362.
+PARSE ERROR: Cannot find branch: 3363.
+PARSE ERROR: Cannot find branch: 3368.
+PARSE ERROR: Cannot find branch: 3373.
+PARSE ERROR: Cannot find branch: 3377.
+PARSE ERROR: Cannot find branch: 3378.
+PARSE ERROR: Cannot find branch: 3379.
+PARSE ERROR: Cannot find branch: 3380.
+PARSE ERROR: Cannot find branch: 3384.
+PARSE ERROR: Cannot find branch: 3385.
+PARSE ERROR: Cannot find branch: 3389.
+PARSE ERROR: Cannot find branch: 3390.
+PARSE ERROR: Cannot find branch: 3391.
+PARSE ERROR: Cannot find branch: 3392.
+PARSE ERROR: Cannot find branch: 3393.
+PARSE ERROR: Cannot find branch: 3394.
+PARSE ERROR: Cannot find branch: 3395.
+PARSE ERROR: Cannot find branch: 3396.
+PARSE ERROR: Cannot find branch: 3397.
+PARSE ERROR: Cannot find branch: 3398.
+PARSE ERROR: Cannot find branch: 3399.
+PARSE ERROR: Cannot find branch: 3400.
+PARSE ERROR: Cannot find branch: 1404.
+PARSE ERROR: Cannot find branch: 1408.
+PARSE ERROR: Cannot find branch: 1412.
+PARSE ERROR: Cannot find branch: 1416.
+PARSE ERROR: Cannot find branch: 1420.
+PARSE ERROR: Cannot find branch: 1424.
+PARSE ERROR: Cannot find branch: 1428.
+PARSE ERROR: Cannot find branch: 1432.
+PARSE ERROR: Cannot find branch: 1436.
+PARSE ERROR: Cannot find branch: 1440.
+PARSE ERROR: Cannot find branch: 1444.
+PARSE ERROR: Cannot find branch: 1448.
+PARSE ERROR: Cannot find branch: 1452.
+PARSE ERROR: Cannot find branch: 1456.
+PARSE ERROR: Cannot find branch: 1460.
+PARSE ERROR: Cannot find branch: 1464.
+PARSE ERROR: Cannot find branch: 1468.
+PARSE ERROR: Cannot find branch: 1472.
+PARSE ERROR: Cannot find branch: 1480.
+PARSE ERROR: Cannot find branch: 1484.
+PARSE ERROR: Cannot find branch: 1488.
+PARSE ERROR: Cannot find branch: 1492.
+PARSE ERROR: Cannot find branch: 1496.
+PARSE ERROR: Cannot find branch: 1500.
+PARSE ERROR: Cannot find branch: 1504.
+PARSE ERROR: Cannot find branch: 1508.
+PARSE ERROR: Cannot find branch: 1512.
+PARSE ERROR: Cannot find branch: 1516.
+PARSE ERROR: Cannot find branch: 1520.
+PARSE ERROR: Cannot find branch: 1524.
+PARSE ERROR: Cannot find branch: 1528.
+PARSE ERROR: Cannot find branch: 1532.
+PARSE ERROR: Cannot find branch: 1536.
+PARSE ERROR: Cannot find branch: 1540.
+PARSE ERROR: Cannot find branch: 1544.
+PARSE ERROR: Cannot find branch: 1548.
+PARSE ERROR: Cannot find branch: 1552.
+PARSE ERROR: Cannot find branch: 1556.
+PARSE ERROR: Cannot find branch: 1560.
+PARSE ERROR: Cannot find branch: 1564.
+PARSE ERROR: Cannot find branch: 1568.
+PARSE ERROR: Cannot find branch: 1572.
+PARSE ERROR: Cannot find branch: 1576.
+PARSE ERROR: Cannot find branch: 1580.
+PARSE ERROR: Cannot find branch: 1584.
+PARSE ERROR: Cannot find branch: 1588.
+PARSE ERROR: Cannot find branch: 1592.
+PARSE ERROR: Cannot find branch: 1596.
+PARSE ERROR: Cannot find branch: 1600.
+PARSE ERROR: Cannot find branch: 1604.
+PARSE ERROR: Cannot find branch: 1608.
+PARSE ERROR: Cannot find branch: 1612.
+PARSE ERROR: Cannot find branch: 1616.
+PARSE ERROR: Cannot find branch: 1620.
+PARSE ERROR: Cannot find branch: 1624.
+PARSE ERROR: Cannot find branch: 1628.
+PARSE ERROR: Cannot find branch: 1632.
+PARSE ERROR: Cannot find branch: 1636.
+PARSE ERROR: Cannot find branch: 1640.
+PARSE ERROR: Cannot find branch: 1644.
+PARSE ERROR: Cannot find branch: 1648.
+PARSE ERROR: Cannot find branch: 1652.
+PARSE ERROR: Cannot find branch: 1656.
+PARSE ERROR: Cannot find branch: 1660.
+PARSE ERROR: Cannot find branch: 1664.
+PARSE ERROR: Cannot find branch: 1668.
+PARSE ERROR: Cannot find branch: 1672.
+PARSE ERROR: Cannot find branch: 1680.
+PARSE ERROR: Cannot find branch: 1684.
+PARSE ERROR: Cannot find branch: 1688.
+PARSE ERROR: Cannot find branch: 1692.
+PARSE ERROR: Cannot find branch: 1696.
+PARSE ERROR: Cannot find branch: 1700.
+PARSE ERROR: Cannot find branch: 1704.
+PARSE ERROR: Cannot find branch: 1708.
+PARSE ERROR: Cannot find branch: 1712.
+PARSE ERROR: Cannot find branch: 1716.
+PARSE ERROR: Cannot find branch: 1720.
+PARSE ERROR: Cannot find branch: 1724.
+PARSE ERROR: Cannot find branch: 1728.
+PARSE ERROR: Cannot find branch: 1732.
+PARSE ERROR: Cannot find branch: 1736.
+PARSE ERROR: Cannot find branch: 1740.
+PARSE ERROR: Cannot find branch: 1744.
+PARSE ERROR: Cannot find branch: 1748.
+PARSE ERROR: Cannot find branch: 1752.
+PARSE ERROR: Cannot find branch: 1756.
+PARSE ERROR: Cannot find branch: 1760.
+PARSE ERROR: Cannot find branch: 1764.
+PARSE ERROR: Cannot find branch: 1768.
+PARSE ERROR: Cannot find branch: 1772.
+PARSE ERROR: Cannot find branch: 1776.
+PARSE ERROR: Cannot find branch: 1780.
+PARSE ERROR: Cannot find branch: 1784.
+PARSE ERROR: Cannot find branch: 1788.
+PARSE ERROR: Cannot find branch: 1792.
+PARSE ERROR: Cannot find branch: 1796.
+PARSE ERROR: Cannot find branch: 1800.
+PARSE ERROR: Cannot find branch: 1804.
+PARSE ERROR: Cannot find branch: 1812.
+PARSE ERROR: Cannot find branch: 1816.
+PARSE ERROR: Cannot find branch: 1824.
+PARSE ERROR: Cannot find branch: 1828.
+PARSE ERROR: Cannot find branch: 1832.
+PARSE ERROR: Cannot find branch: 1836.
+PARSE ERROR: Cannot find branch: 1840.
+PARSE ERROR: Cannot find branch: 1844.
+PARSE ERROR: Cannot find branch: 1848.
+PARSE ERROR: Cannot find branch: 1852.
+PARSE ERROR: Cannot find branch: 1856.
+PARSE ERROR: Cannot find branch: 1860.
+PARSE ERROR: Cannot find branch: 1864.
+PARSE ERROR: Cannot find branch: 1868.
+PARSE ERROR: Cannot find branch: 1872.
+PARSE ERROR: Cannot find branch: 1876.
+PARSE ERROR: Cannot find branch: 1880.
+PARSE ERROR: Cannot find branch: 1884.
+PARSE ERROR: Cannot find branch: 1888.
+PARSE ERROR: Cannot find branch: 1892.
+PARSE ERROR: Cannot find branch: 1896.
+After LOptmz: 30054
+
+ Begin with iteration: 4
+After LOptmz: 30054
+
+ Begin with iteration: 4
+After NLOptmz: 29069.1
+After LOptmz: 30054
+
+ Begin with iteration: 4
+After NLOptmz: 29069.1
+PARSE ERROR: Cannot find branch: 1904.
+PARSE ERROR: Cannot find branch: 1908.
+PARSE ERROR: Cannot find branch: 1912.
+PARSE ERROR: Cannot find branch: 1916.
+PARSE ERROR: Cannot find branch: 1920.
+PARSE ERROR: Cannot find branch: 1924.
+PARSE ERROR: Cannot find branch: 1928.
+PARSE ERROR: Cannot find branch: 1932.
+PARSE ERROR: Cannot find branch: 1936.
+PARSE ERROR: Cannot find branch: 1940.
+PARSE ERROR: Cannot find branch: 1944.
+PARSE ERROR: Cannot find branch: 1948.
+PARSE ERROR: Cannot find branch: 1952.
+PARSE ERROR: Cannot find branch: 1956.
+PARSE ERROR: Cannot find branch: 1960.
+PARSE ERROR: Cannot find branch: 1964.
+PARSE ERROR: Cannot find branch: 1968.
+PARSE ERROR: Cannot find branch: 1972.
+PARSE ERROR: Cannot find branch: 1976.
+PARSE ERROR: Cannot find branch: 1980.
+PARSE ERROR: Cannot find branch: 1984.
+PARSE ERROR: Cannot find branch: 1988.
+PARSE ERROR: Cannot find branch: 1992.
+PARSE ERROR: Cannot find branch: 1996.
+PARSE ERROR: Cannot find branch: 1.
+PARSE ERROR: Cannot find branch: 2000.
+PARSE ERROR: Cannot find branch: 2004.
+PARSE ERROR: Cannot find branch: 2008.
+PARSE ERROR: Cannot find branch: 2012.
+PARSE ERROR: Cannot find branch: 2016.
+PARSE ERROR: Cannot find branch: 2020.
+PARSE ERROR: Cannot find branch: 2024.
+PARSE ERROR: Cannot find branch: 2032.
+PARSE ERROR: Cannot find branch: 2036.
+PARSE ERROR: Cannot find branch: 2040.
+PARSE ERROR: Cannot find branch: 2044.
+PARSE ERROR: Cannot find branch: 2048.
+PARSE ERROR: Cannot find branch: 2052.
+PARSE ERROR: Cannot find branch: 2056.
+PARSE ERROR: Cannot find branch: 2060.
+PARSE ERROR: Cannot find branch: 2064.
+PARSE ERROR: Cannot find branch: 2068.
+PARSE ERROR: Cannot find branch: 2072.
+PARSE ERROR: Cannot find branch: 2076.
+PARSE ERROR: Cannot find branch: 2080.
+PARSE ERROR: Cannot find branch: 2084.
+PARSE ERROR: Cannot find branch: 2088.
+PARSE ERROR: Cannot find branch: 2092.
+PARSE ERROR: Cannot find branch: 2096.
+PARSE ERROR: Cannot find branch: 2100.
+PARSE ERROR: Cannot find branch: 2104.
+PARSE ERROR: Cannot find branch: 2108.
+PARSE ERROR: Cannot find branch: 2112.
+PARSE ERROR: Cannot find branch: 2120.
+PARSE ERROR: Cannot find branch: 2124.
+PARSE ERROR: Cannot find branch: 2128.
+PARSE ERROR: Cannot find branch: 2132.
+PARSE ERROR: Cannot find branch: 2136.
+PARSE ERROR: Cannot find branch: 2140.
+PARSE ERROR: Cannot find branch: 2144.
+PARSE ERROR: Cannot find branch: 2148.
+PARSE ERROR: Cannot find branch: 2152.
+PARSE ERROR: Cannot find branch: 2156.
+PARSE ERROR: Cannot find branch: 2160.
+PARSE ERROR: Cannot find branch: 2164.
+PARSE ERROR: Cannot find branch: 2168.
+PARSE ERROR: Cannot find branch: 2172.
+PARSE ERROR: Cannot find branch: 2180.
+PARSE ERROR: Cannot find branch: 2184.
+PARSE ERROR: Cannot find branch: 2188.
+PARSE ERROR: Cannot find branch: 2192.
+PARSE ERROR: Cannot find branch: 2196.
+PARSE ERROR: Cannot find branch: 2208.
+PARSE ERROR: Cannot find branch: 2212.
+PARSE ERROR: Cannot find branch: 2216.
+PARSE ERROR: Cannot find branch: 2220.
+PARSE ERROR: Cannot find branch: 2224.
+PARSE ERROR: Cannot find branch: 2228.
+PARSE ERROR: Cannot find branch: 2236.
+PARSE ERROR: Cannot find branch: 2240.
+PARSE ERROR: Cannot find branch: 2244.
+PARSE ERROR: Cannot find branch: 2248.
+PARSE ERROR: Cannot find branch: 2252.
+PARSE ERROR: Cannot find branch: 2256.
+PARSE ERROR: Cannot find branch: 2260.
+PARSE ERROR: Cannot find branch: 2264.
+PARSE ERROR: Cannot find branch: 2268.
+PARSE ERROR: Cannot find branch: 2272.
+PARSE ERROR: Cannot find branch: 2276.
+PARSE ERROR: Cannot find branch: 2280.
+PARSE ERROR: Cannot find branch: 2284.
+PARSE ERROR: Cannot find branch: 2288.
+PARSE ERROR: Cannot find branch: 2292.
+PARSE ERROR: Cannot find branch: 2296.
+PARSE ERROR: Cannot find branch: 2300.
+PARSE ERROR: Cannot find branch: 2304.
+PARSE ERROR: Cannot find branch: 2308.
+PARSE ERROR: Cannot find branch: 2312.
+PARSE ERROR: Cannot find branch: 2316.
+PARSE ERROR: Cannot find branch: 2320.
+PARSE ERROR: Cannot find branch: 2328.
+PARSE ERROR: Cannot find branch: 2332.
+PARSE ERROR: Cannot find branch: 2336.
+PARSE ERROR: Cannot find branch: 2340.
+PARSE ERROR: Cannot find branch: 2344.
+PARSE ERROR: Cannot find branch: 2348.
+PARSE ERROR: Cannot find branch: 2352.
+PARSE ERROR: Cannot find branch: 2356.
+PARSE ERROR: Cannot find branch: 2360.
+PARSE ERROR: Cannot find branch: 2364.
+PARSE ERROR: Cannot find branch: 2368.
+PARSE ERROR: Cannot find branch: 2372.
+PARSE ERROR: Cannot find branch: 2376.
+PARSE ERROR: Cannot find branch: 2380.
+PARSE ERROR: Cannot find branch: 2384.
+PARSE ERROR: Cannot find branch: 2388.
+PARSE ERROR: Cannot find branch: 2392.
+PARSE ERROR: Cannot find branch: 2396.
+PARSE ERROR: Cannot find branch: 2400.
+PARSE ERROR: Cannot find branch: 2404.
+PARSE ERROR: Cannot find branch: 2408.
+PARSE ERROR: Cannot find branch: 2412.
+PARSE ERROR: Cannot find branch: 2416.
+PARSE ERROR: Cannot find branch: 2420.
+PARSE ERROR: Cannot find branch: 2424.
+PARSE ERROR: Cannot find branch: 2428.
+PARSE ERROR: Cannot find branch: 2436.
+PARSE ERROR: Cannot find branch: 2440.
+PARSE ERROR: Cannot find branch: 2444.
+PARSE ERROR: Cannot find branch: 2448.
+PARSE ERROR: Cannot find branch: 2452.
+PARSE ERROR: Cannot find branch: 2456.
+PARSE ERROR: Cannot find branch: 2460.
+PARSE ERROR: Cannot find branch: 2464.
+PARSE ERROR: Cannot find branch: 2468.
+PARSE ERROR: Cannot find branch: 2472.
+PARSE ERROR: Cannot find branch: 2476.
+PARSE ERROR: Cannot find branch: 2480.
+PARSE ERROR: Cannot find branch: 2484.
+PARSE ERROR: Cannot find branch: 2488.
+PARSE ERROR: Cannot find branch: 2492.
+PARSE ERROR: Cannot find branch: 2496.
+PARSE ERROR: Cannot find branch: 2500.
+PARSE ERROR: Cannot find branch: 2504.
+PARSE ERROR: Cannot find branch: 2508.
+PARSE ERROR: Cannot find branch: 2512.
+PARSE ERROR: Cannot find branch: 2516.
+PARSE ERROR: Cannot find branch: 2520.
+PARSE ERROR: Cannot find branch: 2524.
+PARSE ERROR: Cannot find branch: 2528.
+PARSE ERROR: Cannot find branch: 2532.
+PARSE ERROR: Cannot find branch: 2536.
+PARSE ERROR: Cannot find branch: 2544.
+PARSE ERROR: Cannot find branch: 2548.
+PARSE ERROR: Cannot find branch: 2552.
+PARSE ERROR: Cannot find branch: 2556.
+PARSE ERROR: Cannot find branch: 2560.
+PARSE ERROR: Cannot find branch: 2564.
+PARSE ERROR: Cannot find branch: 2568.
+PARSE ERROR: Cannot find branch: 2572.
+PARSE ERROR: Cannot find branch: 2576.
+PARSE ERROR: Cannot find branch: 2580.
+PARSE ERROR: Cannot find branch: 2584.
+PARSE ERROR: Cannot find branch: 2592.
+PARSE ERROR: Cannot find branch: 2596.
+PARSE ERROR: Cannot find branch: 2600.
+PARSE ERROR: Cannot find branch: 2604.
+PARSE ERROR: Cannot find branch: 2608.
+PARSE ERROR: Cannot find branch: 2612.
+PARSE ERROR: Cannot find branch: 2616.
+PARSE ERROR: Cannot find branch: 2620.
+PARSE ERROR: Cannot find branch: 2624.
+PARSE ERROR: Cannot find branch: 2628.
+PARSE ERROR: Cannot find branch: 2632.
+PARSE ERROR: Cannot find branch: 2640.
+PARSE ERROR: Cannot find branch: 2644.
+PARSE ERROR: Cannot find branch: 2648.
+PARSE ERROR: Cannot find branch: 2652.
+PARSE ERROR: Cannot find branch: 2656.
+PARSE ERROR: Cannot find branch: 2660.
+PARSE ERROR: Cannot find branch: 2664.
+PARSE ERROR: Cannot find branch: 2668.
+PARSE ERROR: Cannot find branch: 2672.
+PARSE ERROR: Cannot find branch: 2676.
+PARSE ERROR: Cannot find branch: 2680.
+PARSE ERROR: Cannot find branch: 2684.
+PARSE ERROR: Cannot find branch: 2688.
+PARSE ERROR: Cannot find branch: 2692.
+PARSE ERROR: Cannot find branch: 2696.
+PARSE ERROR: Cannot find branch: 2700.
+PARSE ERROR: Cannot find branch: 2704.
+PARSE ERROR: Cannot find branch: 2708.
+PARSE ERROR: Cannot find branch: 2712.
+PARSE ERROR: Cannot find branch: 2716.
+PARSE ERROR: Cannot find branch: 2720.
+PARSE ERROR: Cannot find branch: 2724.
+PARSE ERROR: Cannot find branch: 2728.
+PARSE ERROR: Cannot find branch: 2732.
+PARSE ERROR: Cannot find branch: 2736.
+PARSE ERROR: Cannot find branch: 2740.
+PARSE ERROR: Cannot find branch: 2748.
+PARSE ERROR: Cannot find branch: 2752.
+PARSE ERROR: Cannot find branch: 2756.
+PARSE ERROR: Cannot find branch: 2760.
+PARSE ERROR: Cannot find branch: 2764.
+PARSE ERROR: Cannot find branch: 2768.
+PARSE ERROR: Cannot find branch: 2772.
+PARSE ERROR: Cannot find branch: 2776.
+PARSE ERROR: Cannot find branch: 2780.
+PARSE ERROR: Cannot find branch: 2784.
+PARSE ERROR: Cannot find branch: 2788.
+PARSE ERROR: Cannot find branch: 2792.
+PARSE ERROR: Cannot find branch: 2796.
+PARSE ERROR: Cannot find branch: 2800.
+PARSE ERROR: Cannot find branch: 2804.
+PARSE ERROR: Cannot find branch: 2808.
+PARSE ERROR: Cannot find branch: 2812.
+PARSE ERROR: Cannot find branch: 2816.
+PARSE ERROR: Cannot find branch: 2820.
+PARSE ERROR: Cannot find branch: 2824.
+PARSE ERROR: Cannot find branch: 2828.
+PARSE ERROR: Cannot find branch: 2832.
+PARSE ERROR: Cannot find branch: 2836.
+PARSE ERROR: Cannot find branch: 2840.
+PARSE ERROR: Cannot find branch: 2844.
+PARSE ERROR: Cannot find branch: 2848.
+PARSE ERROR: Cannot find branch: 2852.
+PARSE ERROR: Cannot find branch: 2856.
+PARSE ERROR: Cannot find branch: 2860.
+PARSE ERROR: Cannot find branch: 2864.
+PARSE ERROR: Cannot find branch: 2868.
+PARSE ERROR: Cannot find branch: 2872.
+PARSE ERROR: Cannot find branch: 2876.
+PARSE ERROR: Cannot find branch: 2880.
+PARSE ERROR: Cannot find branch: 2884.
+PARSE ERROR: Cannot find branch: 2888.
+PARSE ERROR: Cannot find branch: 2892.
+PARSE ERROR: Cannot find branch: 2896.
+PARSE ERROR: Cannot find branch: 2900.
+PARSE ERROR: Cannot find branch: 2904.
+PARSE ERROR: Cannot find branch: 2908.
+PARSE ERROR: Cannot find branch: 2912.
+PARSE ERROR: Cannot find branch: 2916.
+PARSE ERROR: Cannot find branch: 2920.
+PARSE ERROR: Cannot find branch: 2924.
+PARSE ERROR: Cannot find branch: 2928.
+PARSE ERROR: Cannot find branch: 2932.
+PARSE ERROR: Cannot find branch: 2936.
+PARSE ERROR: Cannot find branch: 2940.
+PARSE ERROR: Cannot find branch: 2944.
+PARSE ERROR: Cannot find branch: 2948.
+PARSE ERROR: Cannot find branch: 2952.
+PARSE ERROR: Cannot find branch: 2956.
+PARSE ERROR: Cannot find branch: 2960.
+PARSE ERROR: Cannot find branch: 2964.
+PARSE ERROR: Cannot find branch: 2968.
+PARSE ERROR: Cannot find branch: 2972.
+PARSE ERROR: Cannot find branch: 2980.
+PARSE ERROR: Cannot find branch: 2984.
+PARSE ERROR: Cannot find branch: 2988.
+PARSE ERROR: Cannot find branch: 2992.
+PARSE ERROR: Cannot find branch: 2996.
+PARSE ERROR: Cannot find branch: 3000.
+PARSE ERROR: Cannot find branch: 3004.
+PARSE ERROR: Cannot find branch: 3008.
+PARSE ERROR: Cannot find branch: 3012.
+PARSE ERROR: Cannot find branch: 3016.
+PARSE ERROR: Cannot find branch: 3020.
+PARSE ERROR: Cannot find branch: 3024.
+PARSE ERROR: Cannot find branch: 3028.
+PARSE ERROR: Cannot find branch: 3032.
+PARSE ERROR: Cannot find branch: 3036.
+PARSE ERROR: Cannot find branch: 3331.
+PARSE ERROR: Cannot find branch: 3332.
+PARSE ERROR: Cannot find branch: 3333.
+PARSE ERROR: Cannot find branch: 3334.
+PARSE ERROR: Cannot find branch: 3335.
+PARSE ERROR: Cannot find branch: 3336.
+PARSE ERROR: Cannot find branch: 3337.
+PARSE ERROR: Cannot find branch: 3338.
+PARSE ERROR: Cannot find branch: 3339.
+PARSE ERROR: Cannot find branch: 3340.
+PARSE ERROR: Cannot find branch: 3341.
+PARSE ERROR: Cannot find branch: 3342.
+PARSE ERROR: Cannot find branch: 3343.
+PARSE ERROR: Cannot find branch: 3358.
+PARSE ERROR: Cannot find branch: 3362.
+PARSE ERROR: Cannot find branch: 3363.
+PARSE ERROR: Cannot find branch: 3368.
+PARSE ERROR: Cannot find branch: 3373.
+PARSE ERROR: Cannot find branch: 3377.
+PARSE ERROR: Cannot find branch: 3378.
+PARSE ERROR: Cannot find branch: 3379.
+PARSE ERROR: Cannot find branch: 3380.
+PARSE ERROR: Cannot find branch: 3384.
+PARSE ERROR: Cannot find branch: 3385.
+PARSE ERROR: Cannot find branch: 3389.
+PARSE ERROR: Cannot find branch: 3390.
+PARSE ERROR: Cannot find branch: 3391.
+PARSE ERROR: Cannot find branch: 3392.
+PARSE ERROR: Cannot find branch: 3393.
+PARSE ERROR: Cannot find branch: 3394.
+PARSE ERROR: Cannot find branch: 3395.
+PARSE ERROR: Cannot find branch: 3396.
+PARSE ERROR: Cannot find branch: 3397.
+PARSE ERROR: Cannot find branch: 3398.
+PARSE ERROR: Cannot find branch: 3399.
+PARSE ERROR: Cannot find branch: 3400.
+PARSE ERROR: Cannot find branch: 1404.
+PARSE ERROR: Cannot find branch: 1408.
+PARSE ERROR: Cannot find branch: 1412.
+PARSE ERROR: Cannot find branch: 1416.
+PARSE ERROR: Cannot find branch: 1420.
+PARSE ERROR: Cannot find branch: 1424.
+PARSE ERROR: Cannot find branch: 1428.
+PARSE ERROR: Cannot find branch: 1432.
+PARSE ERROR: Cannot find branch: 1436.
+PARSE ERROR: Cannot find branch: 1440.
+PARSE ERROR: Cannot find branch: 1444.
+PARSE ERROR: Cannot find branch: 1448.
+PARSE ERROR: Cannot find branch: 1452.
+PARSE ERROR: Cannot find branch: 1456.
+PARSE ERROR: Cannot find branch: 1460.
+PARSE ERROR: Cannot find branch: 1464.
+PARSE ERROR: Cannot find branch: 1468.
+PARSE ERROR: Cannot find branch: 1472.
+PARSE ERROR: Cannot find branch: 1480.
+PARSE ERROR: Cannot find branch: 1484.
+PARSE ERROR: Cannot find branch: 1488.
+PARSE ERROR: Cannot find branch: 1492.
+PARSE ERROR: Cannot find branch: 1496.
+PARSE ERROR: Cannot find branch: 1500.
+PARSE ERROR: Cannot find branch: 1504.
+PARSE ERROR: Cannot find branch: 1508.
+PARSE ERROR: Cannot find branch: 1512.
+PARSE ERROR: Cannot find branch: 1516.
+PARSE ERROR: Cannot find branch: 1520.
+PARSE ERROR: Cannot find branch: 1524.
+PARSE ERROR: Cannot find branch: 1528.
+PARSE ERROR: Cannot find branch: 1532.
+PARSE ERROR: Cannot find branch: 1536.
+PARSE ERROR: Cannot find branch: 1540.
+PARSE ERROR: Cannot find branch: 1544.
+PARSE ERROR: Cannot find branch: 1548.
+PARSE ERROR: Cannot find branch: 1552.
+PARSE ERROR: Cannot find branch: 1556.
+PARSE ERROR: Cannot find branch: 1560.
+PARSE ERROR: Cannot find branch: 1564.
+PARSE ERROR: Cannot find branch: 1568.
+PARSE ERROR: Cannot find branch: 1572.
+PARSE ERROR: Cannot find branch: 1576.
+PARSE ERROR: Cannot find branch: 1580.
+PARSE ERROR: Cannot find branch: 1584.
+PARSE ERROR: Cannot find branch: 1588.
+PARSE ERROR: Cannot find branch: 1592.
+PARSE ERROR: Cannot find branch: 1596.
+PARSE ERROR: Cannot find branch: 1600.
+PARSE ERROR: Cannot find branch: 1604.
+PARSE ERROR: Cannot find branch: 1608.
+PARSE ERROR: Cannot find branch: 1612.
+PARSE ERROR: Cannot find branch: 1616.
+PARSE ERROR: Cannot find branch: 1620.
+PARSE ERROR: Cannot find branch: 1624.
+PARSE ERROR: Cannot find branch: 1628.
+PARSE ERROR: Cannot find branch: 1632.
+PARSE ERROR: Cannot find branch: 1636.
+PARSE ERROR: Cannot find branch: 1640.
+PARSE ERROR: Cannot find branch: 1644.
+PARSE ERROR: Cannot find branch: 1648.
+PARSE ERROR: Cannot find branch: 1652.
+PARSE ERROR: Cannot find branch: 1656.
+PARSE ERROR: Cannot find branch: 1660.
+PARSE ERROR: Cannot find branch: 1664.
+PARSE ERROR: Cannot find branch: 1668.
+PARSE ERROR: Cannot find branch: 1672.
+PARSE ERROR: Cannot find branch: 1680.
+PARSE ERROR: Cannot find branch: 1684.
+PARSE ERROR: Cannot find branch: 1688.
+PARSE ERROR: Cannot find branch: 1692.
+PARSE ERROR: Cannot find branch: 1696.
+PARSE ERROR: Cannot find branch: 1700.
+PARSE ERROR: Cannot find branch: 1704.
+PARSE ERROR: Cannot find branch: 1708.
+PARSE ERROR: Cannot find branch: 1712.
+PARSE ERROR: Cannot find branch: 1716.
+PARSE ERROR: Cannot find branch: 1720.
+PARSE ERROR: Cannot find branch: 1724.
+PARSE ERROR: Cannot find branch: 1728.
+PARSE ERROR: Cannot find branch: 1732.
+PARSE ERROR: Cannot find branch: 1736.
+PARSE ERROR: Cannot find branch: 1740.
+PARSE ERROR: Cannot find branch: 1744.
+PARSE ERROR: Cannot find branch: 1748.
+PARSE ERROR: Cannot find branch: 1752.
+PARSE ERROR: Cannot find branch: 1756.
+PARSE ERROR: Cannot find branch: 1760.
+PARSE ERROR: Cannot find branch: 1764.
+PARSE ERROR: Cannot find branch: 1768.
+PARSE ERROR: Cannot find branch: 1772.
+PARSE ERROR: Cannot find branch: 1776.
+PARSE ERROR: Cannot find branch: 1780.
+PARSE ERROR: Cannot find branch: 1784.
+PARSE ERROR: Cannot find branch: 1788.
+PARSE ERROR: Cannot find branch: 1792.
+PARSE ERROR: Cannot find branch: 1796.
+PARSE ERROR: Cannot find branch: 1800.
+PARSE ERROR: Cannot find branch: 1804.
+PARSE ERROR: Cannot find branch: 1812.
+PARSE ERROR: Cannot find branch: 1816.
+PARSE ERROR: Cannot find branch: 1824.
+PARSE ERROR: Cannot find branch: 1828.
+PARSE ERROR: Cannot find branch: 1832.
+PARSE ERROR: Cannot find branch: 1836.
+PARSE ERROR: Cannot find branch: 1840.
+PARSE ERROR: Cannot find branch: 1844.
+PARSE ERROR: Cannot find branch: 1848.
+PARSE ERROR: Cannot find branch: 1852.
+PARSE ERROR: Cannot find branch: 1856.
+PARSE ERROR: Cannot find branch: 1860.
+PARSE ERROR: Cannot find branch: 1864.
+PARSE ERROR: Cannot find branch: 1868.
+PARSE ERROR: Cannot find branch: 1872.
+PARSE ERROR: Cannot find branch: 1876.
+PARSE ERROR: Cannot find branch: 1880.
+PARSE ERROR: Cannot find branch: 1884.
+PARSE ERROR: Cannot find branch: 1888.
+PARSE ERROR: Cannot find branch: 1892.
+PARSE ERROR: Cannot find branch: 1896.
+After LOptmz: 28987.7
+
+ Begin with iteration: 5
+After LOptmz: 28987.7
+
+ Begin with iteration: 5
+After NLOptmz: 28504.1
+After LOptmz: 28987.7
+
+ Begin with iteration: 5
+After NLOptmz: 28504.1
+PARSE ERROR: Cannot find branch: 1904.
+PARSE ERROR: Cannot find branch: 1908.
+PARSE ERROR: Cannot find branch: 1912.
+PARSE ERROR: Cannot find branch: 1916.
+PARSE ERROR: Cannot find branch: 1920.
+PARSE ERROR: Cannot find branch: 1924.
+PARSE ERROR: Cannot find branch: 1928.
+PARSE ERROR: Cannot find branch: 1932.
+PARSE ERROR: Cannot find branch: 1936.
+PARSE ERROR: Cannot find branch: 1940.
+PARSE ERROR: Cannot find branch: 1944.
+PARSE ERROR: Cannot find branch: 1948.
+PARSE ERROR: Cannot find branch: 1952.
+PARSE ERROR: Cannot find branch: 1956.
+PARSE ERROR: Cannot find branch: 1960.
+PARSE ERROR: Cannot find branch: 1964.
+PARSE ERROR: Cannot find branch: 1968.
+PARSE ERROR: Cannot find branch: 1972.
+PARSE ERROR: Cannot find branch: 1976.
+PARSE ERROR: Cannot find branch: 1980.
+PARSE ERROR: Cannot find branch: 1984.
+PARSE ERROR: Cannot find branch: 1988.
+PARSE ERROR: Cannot find branch: 1992.
+PARSE ERROR: Cannot find branch: 1996.
+PARSE ERROR: Cannot find branch: 1.
+PARSE ERROR: Cannot find branch: 2000.
+PARSE ERROR: Cannot find branch: 2004.
+PARSE ERROR: Cannot find branch: 2008.
+PARSE ERROR: Cannot find branch: 2012.
+PARSE ERROR: Cannot find branch: 2016.
+PARSE ERROR: Cannot find branch: 2020.
+PARSE ERROR: Cannot find branch: 2024.
+PARSE ERROR: Cannot find branch: 2032.
+PARSE ERROR: Cannot find branch: 2036.
+PARSE ERROR: Cannot find branch: 2040.
+PARSE ERROR: Cannot find branch: 2044.
+PARSE ERROR: Cannot find branch: 2048.
+PARSE ERROR: Cannot find branch: 2052.
+PARSE ERROR: Cannot find branch: 2056.
+PARSE ERROR: Cannot find branch: 2060.
+PARSE ERROR: Cannot find branch: 2064.
+PARSE ERROR: Cannot find branch: 2068.
+PARSE ERROR: Cannot find branch: 2072.
+PARSE ERROR: Cannot find branch: 2076.
+PARSE ERROR: Cannot find branch: 2080.
+PARSE ERROR: Cannot find branch: 2084.
+PARSE ERROR: Cannot find branch: 2088.
+PARSE ERROR: Cannot find branch: 2092.
+PARSE ERROR: Cannot find branch: 2096.
+PARSE ERROR: Cannot find branch: 2100.
+PARSE ERROR: Cannot find branch: 2104.
+PARSE ERROR: Cannot find branch: 2108.
+PARSE ERROR: Cannot find branch: 2112.
+PARSE ERROR: Cannot find branch: 2120.
+PARSE ERROR: Cannot find branch: 2124.
+PARSE ERROR: Cannot find branch: 2128.
+PARSE ERROR: Cannot find branch: 2132.
+PARSE ERROR: Cannot find branch: 2136.
+PARSE ERROR: Cannot find branch: 2140.
+PARSE ERROR: Cannot find branch: 2144.
+PARSE ERROR: Cannot find branch: 2148.
+PARSE ERROR: Cannot find branch: 2152.
+PARSE ERROR: Cannot find branch: 2156.
+PARSE ERROR: Cannot find branch: 2160.
+PARSE ERROR: Cannot find branch: 2164.
+PARSE ERROR: Cannot find branch: 2168.
+PARSE ERROR: Cannot find branch: 2172.
+PARSE ERROR: Cannot find branch: 2180.
+PARSE ERROR: Cannot find branch: 2184.
+PARSE ERROR: Cannot find branch: 2188.
+PARSE ERROR: Cannot find branch: 2192.
+PARSE ERROR: Cannot find branch: 2196.
+PARSE ERROR: Cannot find branch: 2208.
+PARSE ERROR: Cannot find branch: 2212.
+PARSE ERROR: Cannot find branch: 2216.
+PARSE ERROR: Cannot find branch: 2220.
+PARSE ERROR: Cannot find branch: 2224.
+PARSE ERROR: Cannot find branch: 2228.
+PARSE ERROR: Cannot find branch: 2236.
+PARSE ERROR: Cannot find branch: 2240.
+PARSE ERROR: Cannot find branch: 2244.
+PARSE ERROR: Cannot find branch: 2248.
+PARSE ERROR: Cannot find branch: 2252.
+PARSE ERROR: Cannot find branch: 2256.
+PARSE ERROR: Cannot find branch: 2260.
+PARSE ERROR: Cannot find branch: 2264.
+PARSE ERROR: Cannot find branch: 2268.
+PARSE ERROR: Cannot find branch: 2272.
+PARSE ERROR: Cannot find branch: 2276.
+PARSE ERROR: Cannot find branch: 2280.
+PARSE ERROR: Cannot find branch: 2284.
+PARSE ERROR: Cannot find branch: 2288.
+PARSE ERROR: Cannot find branch: 2292.
+PARSE ERROR: Cannot find branch: 2296.
+PARSE ERROR: Cannot find branch: 2300.
+PARSE ERROR: Cannot find branch: 2304.
+PARSE ERROR: Cannot find branch: 2308.
+PARSE ERROR: Cannot find branch: 2312.
+PARSE ERROR: Cannot find branch: 2316.
+PARSE ERROR: Cannot find branch: 2320.
+PARSE ERROR: Cannot find branch: 2328.
+PARSE ERROR: Cannot find branch: 2332.
+PARSE ERROR: Cannot find branch: 2336.
+PARSE ERROR: Cannot find branch: 2340.
+PARSE ERROR: Cannot find branch: 2344.
+PARSE ERROR: Cannot find branch: 2348.
+PARSE ERROR: Cannot find branch: 2352.
+PARSE ERROR: Cannot find branch: 2356.
+PARSE ERROR: Cannot find branch: 2360.
+PARSE ERROR: Cannot find branch: 2364.
+PARSE ERROR: Cannot find branch: 2368.
+PARSE ERROR: Cannot find branch: 2372.
+PARSE ERROR: Cannot find branch: 2376.
+PARSE ERROR: Cannot find branch: 2380.
+PARSE ERROR: Cannot find branch: 2384.
+PARSE ERROR: Cannot find branch: 2388.
+PARSE ERROR: Cannot find branch: 2392.
+PARSE ERROR: Cannot find branch: 2396.
+PARSE ERROR: Cannot find branch: 2400.
+PARSE ERROR: Cannot find branch: 2404.
+PARSE ERROR: Cannot find branch: 2408.
+PARSE ERROR: Cannot find branch: 2412.
+PARSE ERROR: Cannot find branch: 2416.
+PARSE ERROR: Cannot find branch: 2420.
+PARSE ERROR: Cannot find branch: 2424.
+PARSE ERROR: Cannot find branch: 2428.
+PARSE ERROR: Cannot find branch: 2436.
+PARSE ERROR: Cannot find branch: 2440.
+PARSE ERROR: Cannot find branch: 2444.
+PARSE ERROR: Cannot find branch: 2448.
+PARSE ERROR: Cannot find branch: 2452.
+PARSE ERROR: Cannot find branch: 2456.
+PARSE ERROR: Cannot find branch: 2460.
+PARSE ERROR: Cannot find branch: 2464.
+PARSE ERROR: Cannot find branch: 2468.
+PARSE ERROR: Cannot find branch: 2472.
+PARSE ERROR: Cannot find branch: 2476.
+PARSE ERROR: Cannot find branch: 2480.
+PARSE ERROR: Cannot find branch: 2484.
+PARSE ERROR: Cannot find branch: 2488.
+PARSE ERROR: Cannot find branch: 2492.
+PARSE ERROR: Cannot find branch: 2496.
+PARSE ERROR: Cannot find branch: 2500.
+PARSE ERROR: Cannot find branch: 2504.
+PARSE ERROR: Cannot find branch: 2508.
+PARSE ERROR: Cannot find branch: 2512.
+PARSE ERROR: Cannot find branch: 2516.
+PARSE ERROR: Cannot find branch: 2520.
+PARSE ERROR: Cannot find branch: 2524.
+PARSE ERROR: Cannot find branch: 2528.
+PARSE ERROR: Cannot find branch: 2532.
+PARSE ERROR: Cannot find branch: 2536.
+PARSE ERROR: Cannot find branch: 2544.
+PARSE ERROR: Cannot find branch: 2548.
+PARSE ERROR: Cannot find branch: 2552.
+PARSE ERROR: Cannot find branch: 2556.
+PARSE ERROR: Cannot find branch: 2560.
+PARSE ERROR: Cannot find branch: 2564.
+PARSE ERROR: Cannot find branch: 2568.
+PARSE ERROR: Cannot find branch: 2572.
+PARSE ERROR: Cannot find branch: 2576.
+PARSE ERROR: Cannot find branch: 2580.
+PARSE ERROR: Cannot find branch: 2584.
+PARSE ERROR: Cannot find branch: 2592.
+PARSE ERROR: Cannot find branch: 2596.
+PARSE ERROR: Cannot find branch: 2600.
+PARSE ERROR: Cannot find branch: 2604.
+PARSE ERROR: Cannot find branch: 2608.
+PARSE ERROR: Cannot find branch: 2612.
+PARSE ERROR: Cannot find branch: 2616.
+PARSE ERROR: Cannot find branch: 2620.
+PARSE ERROR: Cannot find branch: 2624.
+PARSE ERROR: Cannot find branch: 2628.
+PARSE ERROR: Cannot find branch: 2632.
+PARSE ERROR: Cannot find branch: 2640.
+PARSE ERROR: Cannot find branch: 2644.
+PARSE ERROR: Cannot find branch: 2648.
+PARSE ERROR: Cannot find branch: 2652.
+PARSE ERROR: Cannot find branch: 2656.
+PARSE ERROR: Cannot find branch: 2660.
+PARSE ERROR: Cannot find branch: 2664.
+PARSE ERROR: Cannot find branch: 2668.
+PARSE ERROR: Cannot find branch: 2672.
+PARSE ERROR: Cannot find branch: 2676.
+PARSE ERROR: Cannot find branch: 2680.
+PARSE ERROR: Cannot find branch: 2684.
+PARSE ERROR: Cannot find branch: 2688.
+PARSE ERROR: Cannot find branch: 2692.
+PARSE ERROR: Cannot find branch: 2696.
+PARSE ERROR: Cannot find branch: 2700.
+PARSE ERROR: Cannot find branch: 2704.
+PARSE ERROR: Cannot find branch: 2708.
+PARSE ERROR: Cannot find branch: 2712.
+PARSE ERROR: Cannot find branch: 2716.
+PARSE ERROR: Cannot find branch: 2720.
+PARSE ERROR: Cannot find branch: 2724.
+PARSE ERROR: Cannot find branch: 2728.
+PARSE ERROR: Cannot find branch: 2732.
+PARSE ERROR: Cannot find branch: 2736.
+PARSE ERROR: Cannot find branch: 2740.
+PARSE ERROR: Cannot find branch: 2748.
+PARSE ERROR: Cannot find branch: 2752.
+PARSE ERROR: Cannot find branch: 2756.
+PARSE ERROR: Cannot find branch: 2760.
+PARSE ERROR: Cannot find branch: 2764.
+PARSE ERROR: Cannot find branch: 2768.
+PARSE ERROR: Cannot find branch: 2772.
+PARSE ERROR: Cannot find branch: 2776.
+PARSE ERROR: Cannot find branch: 2780.
+PARSE ERROR: Cannot find branch: 2784.
+PARSE ERROR: Cannot find branch: 2788.
+PARSE ERROR: Cannot find branch: 2792.
+PARSE ERROR: Cannot find branch: 2796.
+PARSE ERROR: Cannot find branch: 2800.
+PARSE ERROR: Cannot find branch: 2804.
+PARSE ERROR: Cannot find branch: 2808.
+PARSE ERROR: Cannot find branch: 2812.
+PARSE ERROR: Cannot find branch: 2816.
+PARSE ERROR: Cannot find branch: 2820.
+PARSE ERROR: Cannot find branch: 2824.
+PARSE ERROR: Cannot find branch: 2828.
+PARSE ERROR: Cannot find branch: 2832.
+PARSE ERROR: Cannot find branch: 2836.
+PARSE ERROR: Cannot find branch: 2840.
+PARSE ERROR: Cannot find branch: 2844.
+PARSE ERROR: Cannot find branch: 2848.
+PARSE ERROR: Cannot find branch: 2852.
+PARSE ERROR: Cannot find branch: 2856.
+PARSE ERROR: Cannot find branch: 2860.
+PARSE ERROR: Cannot find branch: 2864.
+PARSE ERROR: Cannot find branch: 2868.
+PARSE ERROR: Cannot find branch: 2872.
+PARSE ERROR: Cannot find branch: 2876.
+PARSE ERROR: Cannot find branch: 2880.
+PARSE ERROR: Cannot find branch: 2884.
+PARSE ERROR: Cannot find branch: 2888.
+PARSE ERROR: Cannot find branch: 2892.
+PARSE ERROR: Cannot find branch: 2896.
+PARSE ERROR: Cannot find branch: 2900.
+PARSE ERROR: Cannot find branch: 2904.
+PARSE ERROR: Cannot find branch: 2908.
+PARSE ERROR: Cannot find branch: 2912.
+PARSE ERROR: Cannot find branch: 2916.
+PARSE ERROR: Cannot find branch: 2920.
+PARSE ERROR: Cannot find branch: 2924.
+PARSE ERROR: Cannot find branch: 2928.
+PARSE ERROR: Cannot find branch: 2932.
+PARSE ERROR: Cannot find branch: 2936.
+PARSE ERROR: Cannot find branch: 2940.
+PARSE ERROR: Cannot find branch: 2944.
+PARSE ERROR: Cannot find branch: 2948.
+PARSE ERROR: Cannot find branch: 2952.
+PARSE ERROR: Cannot find branch: 2956.
+PARSE ERROR: Cannot find branch: 2960.
+PARSE ERROR: Cannot find branch: 2964.
+PARSE ERROR: Cannot find branch: 2968.
+PARSE ERROR: Cannot find branch: 2972.
+PARSE ERROR: Cannot find branch: 2980.
+PARSE ERROR: Cannot find branch: 2984.
+PARSE ERROR: Cannot find branch: 2988.
+PARSE ERROR: Cannot find branch: 2992.
+PARSE ERROR: Cannot find branch: 2996.
+PARSE ERROR: Cannot find branch: 3000.
+PARSE ERROR: Cannot find branch: 3004.
+PARSE ERROR: Cannot find branch: 3008.
+PARSE ERROR: Cannot find branch: 3012.
+PARSE ERROR: Cannot find branch: 3016.
+PARSE ERROR: Cannot find branch: 3020.
+PARSE ERROR: Cannot find branch: 3024.
+PARSE ERROR: Cannot find branch: 3028.
+PARSE ERROR: Cannot find branch: 3032.
+PARSE ERROR: Cannot find branch: 3036.
+PARSE ERROR: Cannot find branch: 3331.
+PARSE ERROR: Cannot find branch: 3332.
+PARSE ERROR: Cannot find branch: 3333.
+PARSE ERROR: Cannot find branch: 3334.
+PARSE ERROR: Cannot find branch: 3335.
+PARSE ERROR: Cannot find branch: 3336.
+PARSE ERROR: Cannot find branch: 3337.
+PARSE ERROR: Cannot find branch: 3338.
+PARSE ERROR: Cannot find branch: 3339.
+PARSE ERROR: Cannot find branch: 3340.
+PARSE ERROR: Cannot find branch: 3341.
+PARSE ERROR: Cannot find branch: 3342.
+PARSE ERROR: Cannot find branch: 3343.
+PARSE ERROR: Cannot find branch: 3358.
+PARSE ERROR: Cannot find branch: 3362.
+PARSE ERROR: Cannot find branch: 3363.
+PARSE ERROR: Cannot find branch: 3368.
+PARSE ERROR: Cannot find branch: 3373.
+PARSE ERROR: Cannot find branch: 3377.
+PARSE ERROR: Cannot find branch: 3378.
+PARSE ERROR: Cannot find branch: 3379.
+PARSE ERROR: Cannot find branch: 3380.
+PARSE ERROR: Cannot find branch: 3384.
+PARSE ERROR: Cannot find branch: 3385.
+PARSE ERROR: Cannot find branch: 3389.
+PARSE ERROR: Cannot find branch: 3390.
+PARSE ERROR: Cannot find branch: 3391.
+PARSE ERROR: Cannot find branch: 3392.
+PARSE ERROR: Cannot find branch: 3393.
+PARSE ERROR: Cannot find branch: 3394.
+PARSE ERROR: Cannot find branch: 3395.
+PARSE ERROR: Cannot find branch: 3396.
+PARSE ERROR: Cannot find branch: 3397.
+PARSE ERROR: Cannot find branch: 3398.
+PARSE ERROR: Cannot find branch: 3399.
+PARSE ERROR: Cannot find branch: 3400.
+PARSE ERROR: Cannot find branch: 1404.
+PARSE ERROR: Cannot find branch: 1408.
+PARSE ERROR: Cannot find branch: 1412.
+PARSE ERROR: Cannot find branch: 1416.
+PARSE ERROR: Cannot find branch: 1420.
+PARSE ERROR: Cannot find branch: 1424.
+PARSE ERROR: Cannot find branch: 1428.
+PARSE ERROR: Cannot find branch: 1432.
+PARSE ERROR: Cannot find branch: 1436.
+PARSE ERROR: Cannot find branch: 1440.
+PARSE ERROR: Cannot find branch: 1444.
+PARSE ERROR: Cannot find branch: 1448.
+PARSE ERROR: Cannot find branch: 1452.
+PARSE ERROR: Cannot find branch: 1456.
+PARSE ERROR: Cannot find branch: 1460.
+PARSE ERROR: Cannot find branch: 1464.
+PARSE ERROR: Cannot find branch: 1468.
+PARSE ERROR: Cannot find branch: 1472.
+PARSE ERROR: Cannot find branch: 1480.
+PARSE ERROR: Cannot find branch: 1484.
+PARSE ERROR: Cannot find branch: 1488.
+PARSE ERROR: Cannot find branch: 1492.
+PARSE ERROR: Cannot find branch: 1496.
+PARSE ERROR: Cannot find branch: 1500.
+PARSE ERROR: Cannot find branch: 1504.
+PARSE ERROR: Cannot find branch: 1508.
+PARSE ERROR: Cannot find branch: 1512.
+PARSE ERROR: Cannot find branch: 1516.
+PARSE ERROR: Cannot find branch: 1520.
+PARSE ERROR: Cannot find branch: 1524.
+PARSE ERROR: Cannot find branch: 1528.
+PARSE ERROR: Cannot find branch: 1532.
+PARSE ERROR: Cannot find branch: 1536.
+PARSE ERROR: Cannot find branch: 1540.
+PARSE ERROR: Cannot find branch: 1544.
+PARSE ERROR: Cannot find branch: 1548.
+PARSE ERROR: Cannot find branch: 1552.
+PARSE ERROR: Cannot find branch: 1556.
+PARSE ERROR: Cannot find branch: 1560.
+PARSE ERROR: Cannot find branch: 1564.
+PARSE ERROR: Cannot find branch: 1568.
+PARSE ERROR: Cannot find branch: 1572.
+PARSE ERROR: Cannot find branch: 1576.
+PARSE ERROR: Cannot find branch: 1580.
+PARSE ERROR: Cannot find branch: 1584.
+PARSE ERROR: Cannot find branch: 1588.
+PARSE ERROR: Cannot find branch: 1592.
+PARSE ERROR: Cannot find branch: 1596.
+PARSE ERROR: Cannot find branch: 1600.
+PARSE ERROR: Cannot find branch: 1604.
+PARSE ERROR: Cannot find branch: 1608.
+PARSE ERROR: Cannot find branch: 1612.
+PARSE ERROR: Cannot find branch: 1616.
+PARSE ERROR: Cannot find branch: 1620.
+PARSE ERROR: Cannot find branch: 1624.
+PARSE ERROR: Cannot find branch: 1628.
+PARSE ERROR: Cannot find branch: 1632.
+PARSE ERROR: Cannot find branch: 1636.
+PARSE ERROR: Cannot find branch: 1640.
+PARSE ERROR: Cannot find branch: 1644.
+PARSE ERROR: Cannot find branch: 1648.
+PARSE ERROR: Cannot find branch: 1652.
+PARSE ERROR: Cannot find branch: 1656.
+PARSE ERROR: Cannot find branch: 1660.
+PARSE ERROR: Cannot find branch: 1664.
+PARSE ERROR: Cannot find branch: 1668.
+PARSE ERROR: Cannot find branch: 1672.
+PARSE ERROR: Cannot find branch: 1680.
+PARSE ERROR: Cannot find branch: 1684.
+PARSE ERROR: Cannot find branch: 1688.
+PARSE ERROR: Cannot find branch: 1692.
+PARSE ERROR: Cannot find branch: 1696.
+PARSE ERROR: Cannot find branch: 1700.
+PARSE ERROR: Cannot find branch: 1704.
+PARSE ERROR: Cannot find branch: 1708.
+PARSE ERROR: Cannot find branch: 1712.
+PARSE ERROR: Cannot find branch: 1716.
+PARSE ERROR: Cannot find branch: 1720.
+PARSE ERROR: Cannot find branch: 1724.
+PARSE ERROR: Cannot find branch: 1728.
+PARSE ERROR: Cannot find branch: 1732.
+PARSE ERROR: Cannot find branch: 1736.
+PARSE ERROR: Cannot find branch: 1740.
+PARSE ERROR: Cannot find branch: 1744.
+PARSE ERROR: Cannot find branch: 1748.
+PARSE ERROR: Cannot find branch: 1752.
+PARSE ERROR: Cannot find branch: 1756.
+PARSE ERROR: Cannot find branch: 1760.
+PARSE ERROR: Cannot find branch: 1764.
+PARSE ERROR: Cannot find branch: 1768.
+PARSE ERROR: Cannot find branch: 1772.
+PARSE ERROR: Cannot find branch: 1776.
+PARSE ERROR: Cannot find branch: 1780.
+PARSE ERROR: Cannot find branch: 1784.
+PARSE ERROR: Cannot find branch: 1788.
+PARSE ERROR: Cannot find branch: 1792.
+PARSE ERROR: Cannot find branch: 1796.
+PARSE ERROR: Cannot find branch: 1800.
+PARSE ERROR: Cannot find branch: 1804.
+PARSE ERROR: Cannot find branch: 1812.
+PARSE ERROR: Cannot find branch: 1816.
+PARSE ERROR: Cannot find branch: 1824.
+PARSE ERROR: Cannot find branch: 1828.
+PARSE ERROR: Cannot find branch: 1832.
+PARSE ERROR: Cannot find branch: 1836.
+PARSE ERROR: Cannot find branch: 1840.
+PARSE ERROR: Cannot find branch: 1844.
+PARSE ERROR: Cannot find branch: 1848.
+PARSE ERROR: Cannot find branch: 1852.
+PARSE ERROR: Cannot find branch: 1856.
+PARSE ERROR: Cannot find branch: 1860.
+PARSE ERROR: Cannot find branch: 1864.
+PARSE ERROR: Cannot find branch: 1868.
+PARSE ERROR: Cannot find branch: 1872.
+PARSE ERROR: Cannot find branch: 1876.
+PARSE ERROR: Cannot find branch: 1880.
+PARSE ERROR: Cannot find branch: 1884.
+PARSE ERROR: Cannot find branch: 1888.
+PARSE ERROR: Cannot find branch: 1892.
+PARSE ERROR: Cannot find branch: 1896.
+After LOptmz: 40309.7
+
+COST(AFTER): 40309.692656
+Total CPU time in all the iterations: 467.270000
+[0:12.4u 0:00.5s 2120k]
+: quit
+[0:13.3u 0:00.5s 2120k] pgopt done. Have a nice day!

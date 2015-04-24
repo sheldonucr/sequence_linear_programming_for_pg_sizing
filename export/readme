@@ -1,0 +1,26 @@
+PGOPT V1.5, 
+(c) 1999-2003, Sheldon X.-D. Tan
+
+The directory contains all the files of the released PGOPT V1.4,
+a power/ground network optimization program.
+
+This directory consists of three sub-directories:
+
+bin: all the executable binary files.
+
+	 pgopt is the main PGOPT program.
+	 lp_solve is the linear programming solver.
+
+demo: sample power/ground netlist and constraint files.
+
+	  There are two demo batch files, demo1 and demo2.
+	  You can just type demo1 or demo2 in the unix shell
+	  to launch a small demo on optimization of pg4x4.sp
+	  network circuit. demo1 uses sequence of linear programming
+      method, demo2 uses conjugate gradient method.
+
+
+doc: one manual file, manual.txt.
+
+Please refer to the manual.txt for the detailed usage of this program.
+

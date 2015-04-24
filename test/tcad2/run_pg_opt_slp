@@ -1,0 +1,4 @@
+pgopt <<! > $1.opt_out
+source $1
+opt slp
+!

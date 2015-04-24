@@ -1,0 +1,191 @@
+
+PGOPT --- Liability-Constrainted P/G Area Optimization
+$Revision: 1.4 $, $Date: 2002/01/15 06:26:03 $
+Copyright (c) 1999 - 2002 by X.-D. Sheldon Tan
+Type 'h' for help.
+
+No .sp file specified.
+: source p10x1000_20.sp
+
+--------------------
+#branches: 20191.
+#resistors: 10190.
+#nodes: 10001.
+matrix size: 10002.
+--------------------
+[0:0.970u 0:0.070s 3470k]
+: equ slp
+** # dangling nodes deleted: 1
+** # dangling branches deletes: 0
+External size of the matrix: 10002
+Internal size of the matrix: 10002
+# of nodes suppressed: 9799
+# of nodes remains: 202
+** time for constructing equckt time: 1.12
+
+--------------------
+#branches: 993.
+#resistors: 391.
+#nodes: 10001.
+matrix size: 10002.
+--------------------
+** # dangling nodes deleted: 9800
+** # dangling branches deletes: 0
+External size of the matrix: 10002
+Internal size of the matrix: 203
+External size of the matrix: 10002
+Internal size of the matrix: 203
+
+COST(BEFORE): 120306.077506
+** Initialization time: 0.02
+Using sequence of linear programming.
+stopThrld: 0.01
+
+Beginning V-I optimization iteration: 1
+Voltage optimization ... (1.1) 
+
+COST(BEFORE): 120306.077506
+** Initialization time: 0.02
+Using sequence of linear programming.
+stopThrld: 0.01
+
+Beginning V-I optimization iteration: 1
+Voltage optimization ... (1.1) 
+cost after lp: 63445.4
+** cost after voltage optimization: 63445.4
+** cost 63445.4, ppcost 120306
+Voltage optimization ... (1.2) 
+
+COST(BEFORE): 120306.077506
+** Initialization time: 0.02
+Using sequence of linear programming.
+stopThrld: 0.01
+
+Beginning V-I optimization iteration: 1
+Voltage optimization ... (1.1) 
+cost after lp: 63445.4
+** cost after voltage optimization: 63445.4
+** cost 63445.4, ppcost 120306
+Voltage optimization ... (1.2) 
+cost after lp: 61701.6
+** cost after voltage optimization: 61701.6
+** cost 61701.6, ppcost 63445.4
+Voltage optimization ... (1.3) 
+
+COST(BEFORE): 120306.077506
+** Initialization time: 0.02
+Using sequence of linear programming.
+stopThrld: 0.01
+
+Beginning V-I optimization iteration: 1
+Voltage optimization ... (1.1) 
+cost after lp: 63445.4
+** cost after voltage optimization: 63445.4
+** cost 63445.4, ppcost 120306
+Voltage optimization ... (1.2) 
+cost after lp: 61701.6
+** cost after voltage optimization: 61701.6
+** cost 61701.6, ppcost 63445.4
+Voltage optimization ... (1.3) 
+cost after lp: 61139.3
+** cost after voltage optimization: 61139.3
+** cost 61139.3, ppcost 61701.6
+Current optimization ... 
+
+COST(BEFORE): 120306.077506
+** Initialization time: 0.02
+Using sequence of linear programming.
+stopThrld: 0.01
+
+Beginning V-I optimization iteration: 1
+Voltage optimization ... (1.1) 
+cost after lp: 63445.4
+** cost after voltage optimization: 63445.4
+** cost 63445.4, ppcost 120306
+Voltage optimization ... (1.2) 
+cost after lp: 61701.6
+** cost after voltage optimization: 61701.6
+** cost 61701.6, ppcost 63445.4
+Voltage optimization ... (1.3) 
+cost after lp: 61139.3
+** cost after voltage optimization: 61139.3
+** cost 61139.3, ppcost 61701.6
+Current optimization ... 
+cost after current optimization: 61139.3
+EPSILON: 1.188
+PanelWeight: 1
+** CPU time in this iteration: 0.2
+
+Beginning V-I optimization iteration: 2
+Voltage optimization ... (2.1) 
+
+COST(BEFORE): 120306.077506
+** Initialization time: 0.02
+Using sequence of linear programming.
+stopThrld: 0.01
+
+Beginning V-I optimization iteration: 1
+Voltage optimization ... (1.1) 
+cost after lp: 63445.4
+** cost after voltage optimization: 63445.4
+** cost 63445.4, ppcost 120306
+Voltage optimization ... (1.2) 
+cost after lp: 61701.6
+** cost after voltage optimization: 61701.6
+** cost 61701.6, ppcost 63445.4
+Voltage optimization ... (1.3) 
+cost after lp: 61139.3
+** cost after voltage optimization: 61139.3
+** cost 61139.3, ppcost 61701.6
+Current optimization ... 
+cost after current optimization: 61139.3
+EPSILON: 1.188
+PanelWeight: 1
+** CPU time in this iteration: 0.2
+
+Beginning V-I optimization iteration: 2
+Voltage optimization ... (2.1) 
+cost after lp: 61531.6
+xmin: 0.310533
+** cost after voltage optimization: 61014.8
+** cost 61014.8, ppcost 61139.3
+Current optimization ... 
+
+COST(BEFORE): 120306.077506
+** Initialization time: 0.02
+Using sequence of linear programming.
+stopThrld: 0.01
+
+Beginning V-I optimization iteration: 1
+Voltage optimization ... (1.1) 
+cost after lp: 63445.4
+** cost after voltage optimization: 63445.4
+** cost 63445.4, ppcost 120306
+Voltage optimization ... (1.2) 
+cost after lp: 61701.6
+** cost after voltage optimization: 61701.6
+** cost 61701.6, ppcost 63445.4
+Voltage optimization ... (1.3) 
+cost after lp: 61139.3
+** cost after voltage optimization: 61139.3
+** cost 61139.3, ppcost 61701.6
+Current optimization ... 
+cost after current optimization: 61139.3
+EPSILON: 1.188
+PanelWeight: 1
+** CPU time in this iteration: 0.2
+
+Beginning V-I optimization iteration: 2
+Voltage optimization ... (2.1) 
+cost after lp: 61531.6
+xmin: 0.310533
+** cost after voltage optimization: 61014.8
+** cost 61014.8, ppcost 61139.3
+Current optimization ... 
+cost after current optimization: 61014.8
+EPSILON: 1.17612
+
+COST(AFTER): 61014.844947
+** Total CPU time in all the mainloop iterations: 0.440000
+[0:2.920u 0:0.150s 5442k]
+[0:3.890u 0:0.220s 5442k] PGOPT done.

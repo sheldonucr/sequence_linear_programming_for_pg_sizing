@@ -1,0 +1,10 @@
+*Layer INDEX UNIT_RES MIN_WIDTH MAX_CURRENT_DEN
+LAYER 1 1 1 0.001
+
+*voltage constraints
+
+CONST v(1) < 4.99 
+CONST v(2) < 4.99
+CONST v(3) < 4.99
+CONST v(4) < 4.98
+CONST v(5) < 4.99

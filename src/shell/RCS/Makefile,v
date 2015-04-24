@@ -1,0 +1,278 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2000.10.10.01.02.00;	author xtan;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2000.06.14.17.13.29;	author xtan;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	99.04.30.17.30.46;	author xtan;	state Exp;
+branches;
+next	;
+
+
+desc
+@makefile for shell
+@
+
+
+1.3
+log
+@Makefile.bak
+@
+text
+@#/* 
+# * $RCSfile: Makefile,v $
+# * $Revision: 1.2 $
+# * $Date: 2000/06/14 17:13:29 $, (c) Copyright 1999 by X.-D. Sheldon Tan
+# */
+
+CFLAGS	      = -g -I../inc  -I../spinc
+
+DEST	      = .
+
+CC	      = cc
+
+HDRS	      =
+
+INSTALL	      = install
+
+LD	      = ld
+
+LDFLAGS	      = -r
+
+LIBS	      =
+
+MAKEFILE      = Makefile
+
+OBJS	      = lookup.o \
+		nextfield.o \
+		commands.o \
+		main.o \
+		runstats.o 
+
+PRINT	      = pr
+
+PROGRAM       = pgshell.o
+
+SHELL	      = /bin/sh
+
+SRCS	      = lookup.c \
+		nextfield.c \
+		commands.c \
+		main.c \
+		runstats.c 
+
+all:		$(PROGRAM)
+
+$(PROGRAM):     $(OBJS) 
+		@@echo "Linking $(PROGRAM) ..."
+		@@$(LD) $(LDFLAGS) $(OBJS) -o $(PROGRAM)
+		@@echo "done"
+
+clean:;		@@rm -f $(OBJS) core
+
+clobber:;	@@rm -f $(OBJS) $(PROGRAM) core tags
+
+depend:;	@@makedepend $(CFLAGS) -- $(SRCS)
+
+echo:;		@@echo $(HDRS) $(SRCS)
+
+index:;		@@ctags -wx $(HDRS) $(SRCS)
+
+install:	$(PROGRAM)
+		@@echo Installing $(PROGRAM) in $(DEST)
+		@@-strip $(PROGRAM)
+		@@if [ $(DEST) != . ]; then \
+		(rm -f $(DEST)/$(PROGRAM); $(INSTALL) -f $(DEST) $(PROGRAM)); fi
+
+print:;		@@$(PRINT) $(HDRS) $(SRCS)
+
+tags:           $(HDRS) $(SRCS); @@ctags $(HDRS) $(SRCS)
+
+update:		$(DEST)/$(PROGRAM)
+
+###
+# DO NOT DELETE THIS LINE -- make depend depends on it.
+
+lookup.o: /usr/include/stdio.h /usr/include/sys/feature_tests.h
+lookup.o: /usr/include/sys/va_list.h /usr/include/ctype.h
+nextfield.o: /usr/include/stdio.h /usr/include/sys/feature_tests.h
+nextfield.o: /usr/include/sys/va_list.h /usr/include/ctype.h
+commands.o: /usr/include/stdio.h /usr/include/sys/feature_tests.h
+commands.o: /usr/include/sys/va_list.h /usr/include/ctype.h ../inc/pgShell.h
+commands.o: ../inc/pgCircuit.h ../inc/pgCommon.h ../inc/pgStddefs.h
+commands.o: /usr/include/time.h ../inc/pgUnixstd.h /usr/include/string.h
+commands.o: /usr/include/stdlib.h /usr/include/unistd.h
+commands.o: /usr/include/sys/types.h /usr/include/sys/isa_defs.h
+commands.o: /usr/include/sys/machtypes.h /usr/include/sys/int_types.h
+commands.o: /usr/include/sys/select.h /usr/include/sys/time.h
+commands.o: /usr/include/sys/unistd.h /usr/include/errno.h
+commands.o: /usr/include/sys/errno.h /usr/include/assert.h ../inc/pgUtility.h
+commands.o: ../inc/pgMessage.h ../spinc/spmatrix.h ../spinc/spconfig.h
+commands.o: /usr/include/values.h ../spinc/sperror.h ../spinc/iferrmsg.h
+commands.o: ../spinc/strext.h ../inc/pgOptmz.h
+main.o: ../inc/pgShell.h ../inc/pgCircuit.h ../inc/pgCommon.h
+main.o: ../inc/pgStddefs.h /usr/include/time.h
+main.o: /usr/include/sys/feature_tests.h ../inc/pgUnixstd.h
+main.o: /usr/include/stdio.h /usr/include/sys/va_list.h /usr/include/string.h
+main.o: /usr/include/ctype.h /usr/include/stdlib.h /usr/include/unistd.h
+main.o: /usr/include/sys/types.h /usr/include/sys/isa_defs.h
+main.o: /usr/include/sys/machtypes.h /usr/include/sys/int_types.h
+main.o: /usr/include/sys/select.h /usr/include/sys/time.h
+main.o: /usr/include/sys/unistd.h /usr/include/errno.h
+main.o: /usr/include/sys/errno.h /usr/include/assert.h ../inc/pgUtility.h
+main.o: ../inc/pgMessage.h ../spinc/spmatrix.h ../spinc/spconfig.h
+main.o: /usr/include/values.h ../spinc/sperror.h ../spinc/iferrmsg.h
+main.o: ../spinc/strext.h
+runstats.o: /usr/include/sys/types.h /usr/include/sys/feature_tests.h
+runstats.o: /usr/include/sys/isa_defs.h /usr/include/sys/machtypes.h
+runstats.o: /usr/include/sys/int_types.h /usr/include/sys/select.h
+runstats.o: /usr/include/sys/time.h /usr/include/time.h
+runstats.o: /usr/include/sys/times.h /usr/include/limits.h
+@
+
+
+1.2
+log
+@IEEE journal version
+@
+text
+@d3 2
+a4 2
+# * $Revision: 1.1 $
+# * $Date: 1999/04/30 17:30:46 $, (c) Copyright 1999 by X.-D. Sheldon Tan
+d11 1
+a11 1
+CC	      = gcc
+d75 6
+a80 22
+lookup.o: /usr/include/stdio.h /usr/include/libio.h /usr/include/features.h
+lookup.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+lookup.o: /usr/include/_G_config.h /usr/include/gnu/types.h
+lookup.o: /usr/lib/gcc-lib/i386-redhat-linux/2.7.2.3/include/stddef.h
+lookup.o: /usr/lib/gcc-lib/i386-redhat-linux/2.7.2.3/include/stdarg.h
+lookup.o: /usr/include/stdio_lim.h /usr/include/ctype.h /usr/include/endian.h
+lookup.o: /usr/include/bytesex.h
+nextfield.o: /usr/include/stdio.h /usr/include/libio.h
+nextfield.o: /usr/include/features.h /usr/include/sys/cdefs.h
+nextfield.o: /usr/include/gnu/stubs.h /usr/include/_G_config.h
+nextfield.o: /usr/include/gnu/types.h
+nextfield.o: /usr/lib/gcc-lib/i386-redhat-linux/2.7.2.3/include/stddef.h
+nextfield.o: /usr/lib/gcc-lib/i386-redhat-linux/2.7.2.3/include/stdarg.h
+nextfield.o: /usr/include/stdio_lim.h /usr/include/ctype.h
+nextfield.o: /usr/include/endian.h /usr/include/bytesex.h
+commands.o: /usr/include/stdio.h /usr/include/libio.h /usr/include/features.h
+commands.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+commands.o: /usr/include/_G_config.h /usr/include/gnu/types.h
+commands.o: /usr/lib/gcc-lib/i386-redhat-linux/2.7.2.3/include/stddef.h
+commands.o: /usr/lib/gcc-lib/i386-redhat-linux/2.7.2.3/include/stdarg.h
+commands.o: /usr/include/stdio_lim.h /usr/include/ctype.h
+commands.o: /usr/include/endian.h /usr/include/bytesex.h ../inc/pgShell.h
+d82 7
+a88 8
+commands.o: /usr/include/time.h /usr/include/timebits.h ../inc/pgUnixstd.h
+commands.o: /usr/include/string.h /usr/include/stdlib.h
+commands.o: /usr/include/sys/types.h /usr/include/sys/select.h
+commands.o: /usr/include/selectbits.h /usr/include/alloca.h
+commands.o: /usr/include/unistd.h /usr/include/posix_opt.h
+commands.o: /usr/include/confname.h /usr/include/errno.h
+commands.o: /usr/include/errnos.h /usr/include/linux/errno.h
+commands.o: /usr/include/asm/errno.h /usr/include/assert.h ../inc/pgUtility.h
+d90 2
+a91 6
+commands.o: /usr/include/values.h /usr/include/limits.h
+commands.o: /usr/include/posix1_lim.h /usr/include/local_lim.h
+commands.o: /usr/include/linux/limits.h /usr/include/posix2_lim.h
+commands.o: /usr/lib/gcc-lib/i386-redhat-linux/2.7.2.3/include/float.h
+commands.o: ../spinc/sperror.h ../spinc/iferrmsg.h ../spinc/strext.h
+commands.o: ../inc/pgOptmz.h
+d93 9
+a101 13
+main.o: ../inc/pgStddefs.h /usr/include/time.h /usr/include/features.h
+main.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/2.7.2.3/include/stddef.h
+main.o: /usr/include/timebits.h /usr/include/gnu/types.h ../inc/pgUnixstd.h
+main.o: /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/2.7.2.3/include/stdarg.h
+main.o: /usr/include/stdio_lim.h /usr/include/string.h /usr/include/ctype.h
+main.o: /usr/include/endian.h /usr/include/bytesex.h /usr/include/stdlib.h
+main.o: /usr/include/sys/types.h /usr/include/sys/select.h
+main.o: /usr/include/selectbits.h /usr/include/alloca.h /usr/include/unistd.h
+main.o: /usr/include/posix_opt.h /usr/include/confname.h /usr/include/errno.h
+main.o: /usr/include/errnos.h /usr/include/linux/errno.h
+main.o: /usr/include/asm/errno.h /usr/include/assert.h ../inc/pgUtility.h
+d103 7
+a109 15
+main.o: /usr/include/values.h /usr/include/limits.h /usr/include/posix1_lim.h
+main.o: /usr/include/local_lim.h /usr/include/linux/limits.h
+main.o: /usr/include/posix2_lim.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/2.7.2.3/include/float.h
+main.o: ../spinc/sperror.h ../spinc/iferrmsg.h ../spinc/strext.h
+runstats.o: /usr/include/sys/types.h /usr/include/features.h
+runstats.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+runstats.o: /usr/include/gnu/types.h /usr/include/time.h
+runstats.o: /usr/lib/gcc-lib/i386-redhat-linux/2.7.2.3/include/stddef.h
+runstats.o: /usr/include/timebits.h /usr/include/endian.h
+runstats.o: /usr/include/bytesex.h /usr/include/sys/select.h
+runstats.o: /usr/include/selectbits.h /usr/include/sys/times.h
+runstats.o: /usr/include/limits.h /usr/include/posix1_lim.h
+runstats.o: /usr/include/local_lim.h /usr/include/linux/limits.h
+runstats.o: /usr/include/posix2_lim.h
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d2 3
+a4 3
+# * $RCSfile$
+# * $Revision$
+# * $Date$, (c) Copyright 1999 by X.-D. Sheldon Tan
+d75 22
+a96 6
+lookup.o: /usr/include/stdio.h /usr/include/sys/feature_tests.h
+lookup.o: /usr/include/sys/va_list.h /usr/include/ctype.h
+nextfield.o: /usr/include/stdio.h /usr/include/sys/feature_tests.h
+nextfield.o: /usr/include/sys/va_list.h /usr/include/ctype.h
+commands.o: /usr/include/stdio.h /usr/include/sys/feature_tests.h
+commands.o: /usr/include/sys/va_list.h /usr/include/ctype.h ../inc/pgShell.h
+d98 13
+a110 7
+commands.o: /usr/include/time.h ../inc/pgUnixstd.h /usr/include/string.h
+commands.o: /usr/include/stdlib.h /usr/include/unistd.h
+commands.o: /usr/include/sys/types.h /usr/include/sys/isa_defs.h
+commands.o: /usr/include/sys/machtypes.h /usr/include/sys/unistd.h
+commands.o: /usr/include/errno.h /usr/include/sys/errno.h
+commands.o: /usr/include/assert.h ../inc/pgUtility.h ../inc/pgMessage.h
+commands.o: ../spinc/spmatrix.h ../spinc/spconfig.h /usr/include/values.h
+d112 1
+d114 29
+a142 13
+main.o: ../inc/pgStddefs.h /usr/include/time.h
+main.o: /usr/include/sys/feature_tests.h ../inc/pgUnixstd.h
+main.o: /usr/include/stdio.h /usr/include/sys/va_list.h /usr/include/string.h
+main.o: /usr/include/ctype.h /usr/include/stdlib.h /usr/include/unistd.h
+main.o: /usr/include/sys/types.h /usr/include/sys/isa_defs.h
+main.o: /usr/include/sys/machtypes.h /usr/include/sys/unistd.h
+main.o: /usr/include/errno.h /usr/include/sys/errno.h /usr/include/assert.h
+main.o: ../inc/pgUtility.h ../inc/pgMessage.h ../spinc/spmatrix.h
+main.o: ../spinc/spconfig.h /usr/include/values.h ../spinc/sperror.h
+main.o: ../spinc/iferrmsg.h ../spinc/strext.h
+runstats.o: /usr/include/sys/types.h /usr/include/sys/feature_tests.h
+runstats.o: /usr/include/sys/isa_defs.h /usr/include/sys/machtypes.h
+runstats.o: /usr/include/sys/times.h
+@

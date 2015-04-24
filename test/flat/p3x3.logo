@@ -1,0 +1,327 @@
+
+PGOPT --- A Power/Ground Optimizer for Liability.
+Version 1.0, 1998
+Copyright (c) 1998 Avant!, Inc.
+Type 'h' for help.
+
+: source p3x3.sp
+
+--------------------
+#branches: 24.
+#resistors: 14.
+#nodes: 10.
+matrix size: 11.
+--------------------
+[0:00.0u 0:00.0s 24k]
+: const p3x3.cs
+[0:00.0u 0:00.0s 32k]
+: op
+dangling node: 0 eliminated
+External size of the matrix: 11
+Internal size of the matrix: 11
+
+COST(BEFORE): 6444.588800
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+PANELTY COST(BEFORE): 6490.85
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 3322.52
+After NLOptmz: 3276.17
+PANELTY COST(AFTER): 3322.52
+After NLOptmz: 3276.17
+After LOptmz: 3276.17
+
+ Begin with iteration: 2
+PANELTY COST(BEFORE): 3322.52
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 2682.54
+After NLOptmz: 2636.44
+PANELTY COST(AFTER): 2682.54
+After NLOptmz: 2636.44
+After LOptmz: 2636.44
+
+ Begin with iteration: 3
+PANELTY COST(BEFORE): 2682.54
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 2365.07
+After NLOptmz: 2319.43
+PANELTY COST(AFTER): 2365.07
+After NLOptmz: 2319.43
+After LOptmz: 2319.43
+
+ Begin with iteration: 4
+PANELTY COST(BEFORE): 2365.07
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 2159.59
+After NLOptmz: 2113.53
+PANELTY COST(AFTER): 2159.59
+After NLOptmz: 2113.53
+After LOptmz: 2113.53
+
+ Begin with iteration: 5
+PANELTY COST(BEFORE): 2159.59
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 2003.57
+After NLOptmz: 1957.47
+PANELTY COST(AFTER): 2003.57
+After NLOptmz: 1957.47
+After LOptmz: 1957.47
+
+ Begin with iteration: 6
+PANELTY COST(BEFORE): 2003.57
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 1875.45
+After NLOptmz: 1829.46
+PANELTY COST(AFTER): 1875.45
+After NLOptmz: 1829.46
+After LOptmz: 1829.46
+
+ Begin with iteration: 7
+PANELTY COST(BEFORE): 1875.45
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 1757.54
+After NLOptmz: 1711.94
+PANELTY COST(AFTER): 1757.54
+After NLOptmz: 1711.94
+After LOptmz: 1711.94
+
+ Begin with iteration: 8
+PANELTY COST(BEFORE): 1757.54
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 1612.32
+After NLOptmz: 1566.38
+PANELTY COST(AFTER): 1612.32
+After NLOptmz: 1566.38
+After LOptmz: 1566.38
+
+ Begin with iteration: 9
+PANELTY COST(BEFORE): 1612.32
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 1418.18
+After NLOptmz: 1372.52
+PANELTY COST(AFTER): 1418.18
+After NLOptmz: 1372.52
+After LOptmz: 1372.52
+
+ Begin with iteration: 10
+PANELTY COST(BEFORE): 1418.18
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 1334.68
+After NLOptmz: 1289.29
+PANELTY COST(AFTER): 1334.68
+After NLOptmz: 1289.29
+After LOptmz: 1289.29
+
+ Begin with iteration: 11
+PANELTY COST(BEFORE): 1334.68
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 1235.92
+After NLOptmz: 1190.41
+PANELTY COST(AFTER): 1235.92
+After NLOptmz: 1190.41
+After LOptmz: 1190.41
+
+ Begin with iteration: 12
+PANELTY COST(BEFORE): 1235.92
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 1153.03
+After NLOptmz: 1107.26
+PANELTY COST(AFTER): 1153.03
+After NLOptmz: 1107.26
+After LOptmz: 1107.26
+
+ Begin with iteration: 13
+PANELTY COST(BEFORE): 1153.03
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 1093.94
+After NLOptmz: 1048.56
+PANELTY COST(AFTER): 1093.94
+After NLOptmz: 1048.56
+After LOptmz: 1048.56
+
+ Begin with iteration: 14
+PANELTY COST(BEFORE): 1093.94
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 1052.27
+After NLOptmz: 1006.39
+PANELTY COST(AFTER): 1052.27
+After NLOptmz: 1006.39
+After LOptmz: 1006.39
+
+ Begin with iteration: 15
+PANELTY COST(BEFORE): 1052.27
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 1018.31
+After NLOptmz: 972.424
+PANELTY COST(AFTER): 1018.31
+After NLOptmz: 972.424
+After LOptmz: 972.424
+
+ Begin with iteration: 16
+PANELTY COST(BEFORE): 1018.31
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 983.142
+After NLOptmz: 937.915
+PANELTY COST(AFTER): 983.142
+After NLOptmz: 937.915
+After LOptmz: 937.915
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 983.142
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 956.257
+After NLOptmz: 910.375
+PANELTY COST(AFTER): 956.257
+After NLOptmz: 910.375
+After LOptmz: 910.375
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 956.257
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 898.707
+After NLOptmz: 852.992
+PANELTY COST(AFTER): 898.707
+After NLOptmz: 852.992
+After LOptmz: 852.992
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 898.707
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 882.96
+After NLOptmz: 836.834
+PANELTY COST(AFTER): 882.96
+After NLOptmz: 836.834
+After LOptmz: 836.834
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 882.96
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 868.304
+After NLOptmz: 822.398
+PANELTY COST(AFTER): 868.304
+After NLOptmz: 822.398
+After LOptmz: 822.398
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 868.304
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 843.778
+After NLOptmz: 798.612
+PANELTY COST(AFTER): 843.778
+After NLOptmz: 798.612
+After LOptmz: 798.612
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 843.778
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 825.747
+After NLOptmz: 780.573
+PANELTY COST(AFTER): 825.747
+After NLOptmz: 780.573
+After LOptmz: 780.573
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 825.747
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 801.402
+After NLOptmz: 755.709
+PANELTY COST(AFTER): 801.402
+After NLOptmz: 755.709
+After LOptmz: 755.709
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 801.402
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 793.018
+After NLOptmz: 747.729
+PANELTY COST(AFTER): 793.018
+After NLOptmz: 747.729
+After LOptmz: 747.729
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 793.018
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 769.963
+After NLOptmz: 724.627
+PANELTY COST(AFTER): 769.963
+After NLOptmz: 724.627
+After LOptmz: 724.627
+
+ Begin with iteration: 26
+PANELTY COST(BEFORE): 769.963
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 766.781
+After NLOptmz: 721.552
+PANELTY COST(AFTER): 766.781
+After NLOptmz: 721.552
+After LOptmz: 721.552
+
+ Begin with iteration: 27
+PANELTY COST(BEFORE): 766.781
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 746.814
+After NLOptmz: 701.47
+PANELTY COST(AFTER): 746.814
+After NLOptmz: 701.47
+After LOptmz: 701.47
+
+ Begin with iteration: 28
+PANELTY COST(BEFORE): 746.814
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 735.39
+After NLOptmz: 689.445
+PANELTY COST(AFTER): 735.39
+After NLOptmz: 689.445
+After LOptmz: 689.445
+
+ Begin with iteration: 29
+PANELTY COST(BEFORE): 735.39
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 728.359
+After NLOptmz: 682.555
+PANELTY COST(AFTER): 728.359
+After NLOptmz: 682.555
+After LOptmz: 682.555
+
+ Begin with iteration: 30
+PANELTY COST(BEFORE): 728.359
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 721.272
+After NLOptmz: 675.446
+PANELTY COST(AFTER): 721.272
+After NLOptmz: 675.446
+After LOptmz: 675.446
+
+ Begin with iteration: 31
+PANELTY COST(BEFORE): 721.272
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 713.862
+After NLOptmz: 668.267
+PANELTY COST(AFTER): 713.862
+After NLOptmz: 668.267
+After LOptmz: 668.267
+
+ Begin with iteration: 32
+PANELTY COST(BEFORE): 713.862
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 704.182
+After NLOptmz: 658.318
+PANELTY COST(AFTER): 704.182
+After NLOptmz: 658.318
+After LOptmz: 658.318
+
+ Begin with iteration: 33
+PANELTY COST(BEFORE): 704.182
+WARNING: Maximum iterations: 200 reached..
+PANELTY COST(AFTER): 720.257
+After NLOptmz: 674.429
+PANELTY COST(AFTER): 720.257
+After NLOptmz: 674.429
+After LOptmz: 674.429
+
+COST(AFTER): 674.428783
+Total CPU time in all the iterations: 3.730000
+[0:03.2u 0:00.4s 56k]
+: quit
+[0:03.2u 0:00.4s 56k] pgopt done. Have a nice day!

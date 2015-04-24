@@ -1,0 +1,240 @@
+
+PGOPT --- A Power/Ground Optimizer for Liability.
+Version 1.0, 1998
+Copyright (c) 1998 Avant!, Inc.
+Type 'h' for help.
+
+: source p3x3.sp
+
+--------------------
+#branches: 24.
+#resistors: 14.
+#nodes: 10.
+matrix size: 11.
+--------------------
+[0:00.0u 0:00.0s 24k]
+: const p3x3.cs
+[0:00.0u 0:00.0s 32k]
+: op
+dangling node: 0 eliminated
+External size of the matrix: 11
+Internal size of the matrix: 11
+
+COST(BEFORE): 6444.588800
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+
+COST(BEFORE): 6444.588800
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 304.383
+
+COST(BEFORE): 6444.588800
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 304.383
+After LOptmz: 304.383
+
+ Begin with iteration: 2
+
+COST(BEFORE): 6444.588800
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 304.383
+After LOptmz: 304.383
+
+ Begin with iteration: 2
+After NLOptmz: 301.743
+
+COST(BEFORE): 6444.588800
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 304.383
+After LOptmz: 304.383
+
+ Begin with iteration: 2
+After NLOptmz: 301.743
+After LOptmz: 301.743
+
+ Begin with iteration: 3
+
+COST(BEFORE): 6444.588800
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 304.383
+After LOptmz: 304.383
+
+ Begin with iteration: 2
+After NLOptmz: 301.743
+After LOptmz: 301.743
+
+ Begin with iteration: 3
+After NLOptmz: 299.544
+
+COST(BEFORE): 6444.588800
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 304.383
+After LOptmz: 304.383
+
+ Begin with iteration: 2
+After NLOptmz: 301.743
+After LOptmz: 301.743
+
+ Begin with iteration: 3
+After NLOptmz: 299.544
+After LOptmz: 299.544
+
+ Begin with iteration: 4
+
+COST(BEFORE): 6444.588800
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 304.383
+After LOptmz: 304.383
+
+ Begin with iteration: 2
+After NLOptmz: 301.743
+After LOptmz: 301.743
+
+ Begin with iteration: 3
+After NLOptmz: 299.544
+After LOptmz: 299.544
+
+ Begin with iteration: 4
+After NLOptmz: 298.881
+
+COST(BEFORE): 6444.588800
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 304.383
+After LOptmz: 304.383
+
+ Begin with iteration: 2
+After NLOptmz: 301.743
+After LOptmz: 301.743
+
+ Begin with iteration: 3
+After NLOptmz: 299.544
+After LOptmz: 299.544
+
+ Begin with iteration: 4
+After NLOptmz: 298.881
+After LOptmz: 298.881
+
+ Begin with iteration: 5
+
+COST(BEFORE): 6444.588800
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 304.383
+After LOptmz: 304.383
+
+ Begin with iteration: 2
+After NLOptmz: 301.743
+After LOptmz: 301.743
+
+ Begin with iteration: 3
+After NLOptmz: 299.544
+After LOptmz: 299.544
+
+ Begin with iteration: 4
+After NLOptmz: 298.881
+After LOptmz: 298.881
+
+ Begin with iteration: 5
+After NLOptmz: 298.876
+
+COST(BEFORE): 6444.588800
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 304.383
+After LOptmz: 304.383
+
+ Begin with iteration: 2
+After NLOptmz: 301.743
+After LOptmz: 301.743
+
+ Begin with iteration: 3
+After NLOptmz: 299.544
+After LOptmz: 299.544
+
+ Begin with iteration: 4
+After NLOptmz: 298.881
+After LOptmz: 298.881
+
+ Begin with iteration: 5
+After NLOptmz: 298.876
+After LOptmz: 298.876
+
+ Begin with iteration: 6
+
+COST(BEFORE): 6444.588800
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 304.383
+After LOptmz: 304.383
+
+ Begin with iteration: 2
+After NLOptmz: 301.743
+After LOptmz: 301.743
+
+ Begin with iteration: 3
+After NLOptmz: 299.544
+After LOptmz: 299.544
+
+ Begin with iteration: 4
+After NLOptmz: 298.881
+After LOptmz: 298.881
+
+ Begin with iteration: 5
+After NLOptmz: 298.876
+After LOptmz: 298.876
+
+ Begin with iteration: 6
+After NLOptmz: 298.876
+
+COST(BEFORE): 6444.588800
+Initialization time: 0.000000
+
+ Begin with iteration: 1
+After NLOptmz: 304.383
+After LOptmz: 304.383
+
+ Begin with iteration: 2
+After NLOptmz: 301.743
+After LOptmz: 301.743
+
+ Begin with iteration: 3
+After NLOptmz: 299.544
+After LOptmz: 299.544
+
+ Begin with iteration: 4
+After NLOptmz: 298.881
+After LOptmz: 298.881
+
+ Begin with iteration: 5
+After NLOptmz: 298.876
+After LOptmz: 298.876
+
+ Begin with iteration: 6
+After NLOptmz: 298.876
+After LOptmz: 298.876
+
+COST(AFTER): 298.875725
+Total CPU time in all the iterations: 0.690000
+[0:00.1u 0:00.1s 48k]
+: quit
+[0:00.1u 0:00.1s 48k] pgopt done. Have a nice day!

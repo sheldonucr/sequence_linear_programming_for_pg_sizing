@@ -1,0 +1,3758 @@
+
+PGOPT --- A Power/Ground Optimizer for Liability.
+Version 1.0, 1998
+Copyright (c) 1998 Avant!, Inc.
+Type 'h' for help.
+
+: source p3x500.sp
+
+--------------------
+#branches: 3006.
+#resistors: 1505.
+#nodes: 1501.
+matrix size: 1502.
+--------------------
+[0:00.5u 0:00.1s 448k]
+: const p3x500.cs
+[0:00.1u 0:00.0s 536k]
+: op
+dangling node: 0 eliminated
+External size of the matrix: 1502
+Internal size of the matrix: 1502
+
+COST(BEFORE): 22388.678400
+Initialization time: 0.170000
+
+ Begin with iteration: 1
+PANELTY COST(BEFORE): 23670
+WARNING: Maximum iterations: 1502 reached..
+PANELTY COST(AFTER): 19155.1
+After NLOptmz: 17869.5
+PANELTY COST(AFTER): 19155.1
+After NLOptmz: 17869.5
+After LOptmz: 17869.5
+
+ Begin with iteration: 2
+PANELTY COST(BEFORE): 19155.1
+WARNING: Maximum iterations: 1502 reached..
+PANELTY COST(AFTER): 18828.4
+After NLOptmz: 17542
+PANELTY COST(AFTER): 18828.4
+After NLOptmz: 17542
+After LOptmz: 17542
+
+ Begin with iteration: 3
+PANELTY COST(BEFORE): 18828.4
+WARNING: Maximum iterations: 1502 reached..
+PANELTY COST(AFTER): 18635.3
+After NLOptmz: 17348.6
+PANELTY COST(AFTER): 18635.3
+After NLOptmz: 17348.6
+After LOptmz: 17348.6
+
+ Begin with iteration: 4
+PANELTY COST(BEFORE): 18635.3
+WARNING: Maximum iterations: 1502 reached..
+PANELTY COST(AFTER): 18418.6
+After NLOptmz: 17130.9
+PANELTY COST(AFTER): 18418.6
+After NLOptmz: 17130.9
+After LOptmz: 17130.9
+
+ Begin with iteration: 5
+PANELTY COST(BEFORE): 18418.6
+fmin: 18387.8 diff: 0.000501461
+PANELTY COST(AFTER): 18387.8
+After NLOptmz: 17099.4
+PANELTY COST(AFTER): 18418.6
+After NLOptmz: 17130.9
+After LOptmz: 17130.9
+
+ Begin with iteration: 5
+PANELTY COST(BEFORE): 18418.6
+fmin: 18387.8 diff: 0.000501461
+PANELTY COST(AFTER): 18387.8
+After NLOptmz: 17099.4
+After LOptmz: 17099.4
+
+ Begin with iteration: 6
+PANELTY COST(BEFORE): 18387.8
+fmin: 18321.5 diff: -6.31431e-05
+PANELTY COST(AFTER): 18321.5
+After NLOptmz: 17033.6
+PANELTY COST(AFTER): 18418.6
+After NLOptmz: 17130.9
+After LOptmz: 17130.9
+
+ Begin with iteration: 5
+PANELTY COST(BEFORE): 18418.6
+fmin: 18387.8 diff: 0.000501461
+PANELTY COST(AFTER): 18387.8
+After NLOptmz: 17099.4
+After LOptmz: 17099.4
+
+ Begin with iteration: 6
+PANELTY COST(BEFORE): 18387.8
+fmin: 18321.5 diff: -6.31431e-05
+PANELTY COST(AFTER): 18321.5
+After NLOptmz: 17033.6
+After LOptmz: 17033.6
+
+ Begin with iteration: 7
+PANELTY COST(BEFORE): 18321.5
+WARNING: Maximum iterations: 1502 reached..
+PANELTY COST(AFTER): 18234.6
+After NLOptmz: 16946.4
+PANELTY COST(AFTER): 18234.6
+After NLOptmz: 16946.4
+After LOptmz: 16946.4
+
+ Begin with iteration: 8
+PANELTY COST(BEFORE): 18234.6
+fmin: 18196.6 diff: 7.76824e-05
+PANELTY COST(AFTER): 18196.6
+After NLOptmz: 16907.7
+PANELTY COST(AFTER): 18234.6
+After NLOptmz: 16946.4
+After LOptmz: 16946.4
+
+ Begin with iteration: 8
+PANELTY COST(BEFORE): 18234.6
+fmin: 18196.6 diff: 7.76824e-05
+PANELTY COST(AFTER): 18196.6
+After NLOptmz: 16907.7
+After LOptmz: 16907.7
+
+ Begin with iteration: 9
+PANELTY COST(BEFORE): 18196.6
+fmin: 18196.3 diff: -0.000203499
+PANELTY COST(AFTER): 18196.3
+After NLOptmz: 16907.4
+PANELTY COST(AFTER): 18234.6
+After NLOptmz: 16946.4
+After LOptmz: 16946.4
+
+ Begin with iteration: 8
+PANELTY COST(BEFORE): 18234.6
+fmin: 18196.6 diff: 7.76824e-05
+PANELTY COST(AFTER): 18196.6
+After NLOptmz: 16907.7
+After LOptmz: 16907.7
+
+ Begin with iteration: 9
+PANELTY COST(BEFORE): 18196.6
+fmin: 18196.3 diff: -0.000203499
+PANELTY COST(AFTER): 18196.3
+After NLOptmz: 16907.4
+After LOptmz: 16907.4
+
+ Begin with iteration: 10
+PANELTY COST(BEFORE): 18196.3
+fmin: 18189.1 diff: 0.000432479
+PANELTY COST(AFTER): 18189.1
+After NLOptmz: 16900.1
+PANELTY COST(AFTER): 18234.6
+After NLOptmz: 16946.4
+After LOptmz: 16946.4
+
+ Begin with iteration: 8
+PANELTY COST(BEFORE): 18234.6
+fmin: 18196.6 diff: 7.76824e-05
+PANELTY COST(AFTER): 18196.6
+After NLOptmz: 16907.7
+After LOptmz: 16907.7
+
+ Begin with iteration: 9
+PANELTY COST(BEFORE): 18196.6
+fmin: 18196.3 diff: -0.000203499
+PANELTY COST(AFTER): 18196.3
+After NLOptmz: 16907.4
+After LOptmz: 16907.4
+
+ Begin with iteration: 10
+PANELTY COST(BEFORE): 18196.3
+fmin: 18189.1 diff: 0.000432479
+PANELTY COST(AFTER): 18189.1
+After NLOptmz: 16900.1
+After LOptmz: 16900.1
+
+ Begin with iteration: 11
+PANELTY COST(BEFORE): 18189.1
+fmin: 18177.8 diff: -0.000430077
+PANELTY COST(AFTER): 18177.8
+After NLOptmz: 16888.8
+PANELTY COST(AFTER): 18234.6
+After NLOptmz: 16946.4
+After LOptmz: 16946.4
+
+ Begin with iteration: 8
+PANELTY COST(BEFORE): 18234.6
+fmin: 18196.6 diff: 7.76824e-05
+PANELTY COST(AFTER): 18196.6
+After NLOptmz: 16907.7
+After LOptmz: 16907.7
+
+ Begin with iteration: 9
+PANELTY COST(BEFORE): 18196.6
+fmin: 18196.3 diff: -0.000203499
+PANELTY COST(AFTER): 18196.3
+After NLOptmz: 16907.4
+After LOptmz: 16907.4
+
+ Begin with iteration: 10
+PANELTY COST(BEFORE): 18196.3
+fmin: 18189.1 diff: 0.000432479
+PANELTY COST(AFTER): 18189.1
+After NLOptmz: 16900.1
+After LOptmz: 16900.1
+
+ Begin with iteration: 11
+PANELTY COST(BEFORE): 18189.1
+fmin: 18177.8 diff: -0.000430077
+PANELTY COST(AFTER): 18177.8
+After NLOptmz: 16888.8
+After LOptmz: 16888.8
+
+ Begin with iteration: 12
+PANELTY COST(BEFORE): 18177.8
+fmin: 18177.5 diff: -0.000403316
+PANELTY COST(AFTER): 18177.5
+After NLOptmz: 16888.4
+PANELTY COST(AFTER): 18234.6
+After NLOptmz: 16946.4
+After LOptmz: 16946.4
+
+ Begin with iteration: 8
+PANELTY COST(BEFORE): 18234.6
+fmin: 18196.6 diff: 7.76824e-05
+PANELTY COST(AFTER): 18196.6
+After NLOptmz: 16907.7
+After LOptmz: 16907.7
+
+ Begin with iteration: 9
+PANELTY COST(BEFORE): 18196.6
+fmin: 18196.3 diff: -0.000203499
+PANELTY COST(AFTER): 18196.3
+After NLOptmz: 16907.4
+After LOptmz: 16907.4
+
+ Begin with iteration: 10
+PANELTY COST(BEFORE): 18196.3
+fmin: 18189.1 diff: 0.000432479
+PANELTY COST(AFTER): 18189.1
+After NLOptmz: 16900.1
+After LOptmz: 16900.1
+
+ Begin with iteration: 11
+PANELTY COST(BEFORE): 18189.1
+fmin: 18177.8 diff: -0.000430077
+PANELTY COST(AFTER): 18177.8
+After NLOptmz: 16888.8
+After LOptmz: 16888.8
+
+ Begin with iteration: 12
+PANELTY COST(BEFORE): 18177.8
+fmin: 18177.5 diff: -0.000403316
+PANELTY COST(AFTER): 18177.5
+After NLOptmz: 16888.4
+After LOptmz: 16888.4
+
+ Begin with iteration: 13
+PANELTY COST(BEFORE): 18177.5
+fmin: 18175.3 diff: -8.89392e-05
+PANELTY COST(AFTER): 18175.3
+After NLOptmz: 16886.3
+PANELTY COST(AFTER): 18234.6
+After NLOptmz: 16946.4
+After LOptmz: 16946.4
+
+ Begin with iteration: 8
+PANELTY COST(BEFORE): 18234.6
+fmin: 18196.6 diff: 7.76824e-05
+PANELTY COST(AFTER): 18196.6
+After NLOptmz: 16907.7
+After LOptmz: 16907.7
+
+ Begin with iteration: 9
+PANELTY COST(BEFORE): 18196.6
+fmin: 18196.3 diff: -0.000203499
+PANELTY COST(AFTER): 18196.3
+After NLOptmz: 16907.4
+After LOptmz: 16907.4
+
+ Begin with iteration: 10
+PANELTY COST(BEFORE): 18196.3
+fmin: 18189.1 diff: 0.000432479
+PANELTY COST(AFTER): 18189.1
+After NLOptmz: 16900.1
+After LOptmz: 16900.1
+
+ Begin with iteration: 11
+PANELTY COST(BEFORE): 18189.1
+fmin: 18177.8 diff: -0.000430077
+PANELTY COST(AFTER): 18177.8
+After NLOptmz: 16888.8
+After LOptmz: 16888.8
+
+ Begin with iteration: 12
+PANELTY COST(BEFORE): 18177.8
+fmin: 18177.5 diff: -0.000403316
+PANELTY COST(AFTER): 18177.5
+After NLOptmz: 16888.4
+After LOptmz: 16888.4
+
+ Begin with iteration: 13
+PANELTY COST(BEFORE): 18177.5
+fmin: 18175.3 diff: -8.89392e-05
+PANELTY COST(AFTER): 18175.3
+After NLOptmz: 16886.3
+After LOptmz: 16886.3
+
+ Begin with iteration: 14
+PANELTY COST(BEFORE): 18175.3
+fmin: 18166 diff: 0.000239711
+PANELTY COST(AFTER): 18166
+After NLOptmz: 16876.9
+PANELTY COST(AFTER): 18234.6
+After NLOptmz: 16946.4
+After LOptmz: 16946.4
+
+ Begin with iteration: 8
+PANELTY COST(BEFORE): 18234.6
+fmin: 18196.6 diff: 7.76824e-05
+PANELTY COST(AFTER): 18196.6
+After NLOptmz: 16907.7
+After LOptmz: 16907.7
+
+ Begin with iteration: 9
+PANELTY COST(BEFORE): 18196.6
+fmin: 18196.3 diff: -0.000203499
+PANELTY COST(AFTER): 18196.3
+After NLOptmz: 16907.4
+After LOptmz: 16907.4
+
+ Begin with iteration: 10
+PANELTY COST(BEFORE): 18196.3
+fmin: 18189.1 diff: 0.000432479
+PANELTY COST(AFTER): 18189.1
+After NLOptmz: 16900.1
+After LOptmz: 16900.1
+
+ Begin with iteration: 11
+PANELTY COST(BEFORE): 18189.1
+fmin: 18177.8 diff: -0.000430077
+PANELTY COST(AFTER): 18177.8
+After NLOptmz: 16888.8
+After LOptmz: 16888.8
+
+ Begin with iteration: 12
+PANELTY COST(BEFORE): 18177.8
+fmin: 18177.5 diff: -0.000403316
+PANELTY COST(AFTER): 18177.5
+After NLOptmz: 16888.4
+After LOptmz: 16888.4
+
+ Begin with iteration: 13
+PANELTY COST(BEFORE): 18177.5
+fmin: 18175.3 diff: -8.89392e-05
+PANELTY COST(AFTER): 18175.3
+After NLOptmz: 16886.3
+After LOptmz: 16886.3
+
+ Begin with iteration: 14
+PANELTY COST(BEFORE): 18175.3
+fmin: 18166 diff: 0.000239711
+PANELTY COST(AFTER): 18166
+After NLOptmz: 16876.9
+After LOptmz: 16876.9
+
+ Begin with iteration: 15
+PANELTY COST(BEFORE): 18166
+fmin: 18164.8 diff: 3.77817e-05
+PANELTY COST(AFTER): 18164.8
+After NLOptmz: 16875.8
+PANELTY COST(AFTER): 18234.6
+After NLOptmz: 16946.4
+After LOptmz: 16946.4
+
+ Begin with iteration: 8
+PANELTY COST(BEFORE): 18234.6
+fmin: 18196.6 diff: 7.76824e-05
+PANELTY COST(AFTER): 18196.6
+After NLOptmz: 16907.7
+After LOptmz: 16907.7
+
+ Begin with iteration: 9
+PANELTY COST(BEFORE): 18196.6
+fmin: 18196.3 diff: -0.000203499
+PANELTY COST(AFTER): 18196.3
+After NLOptmz: 16907.4
+After LOptmz: 16907.4
+
+ Begin with iteration: 10
+PANELTY COST(BEFORE): 18196.3
+fmin: 18189.1 diff: 0.000432479
+PANELTY COST(AFTER): 18189.1
+After NLOptmz: 16900.1
+After LOptmz: 16900.1
+
+ Begin with iteration: 11
+PANELTY COST(BEFORE): 18189.1
+fmin: 18177.8 diff: -0.000430077
+PANELTY COST(AFTER): 18177.8
+After NLOptmz: 16888.8
+After LOptmz: 16888.8
+
+ Begin with iteration: 12
+PANELTY COST(BEFORE): 18177.8
+fmin: 18177.5 diff: -0.000403316
+PANELTY COST(AFTER): 18177.5
+After NLOptmz: 16888.4
+After LOptmz: 16888.4
+
+ Begin with iteration: 13
+PANELTY COST(BEFORE): 18177.5
+fmin: 18175.3 diff: -8.89392e-05
+PANELTY COST(AFTER): 18175.3
+After NLOptmz: 16886.3
+After LOptmz: 16886.3
+
+ Begin with iteration: 14
+PANELTY COST(BEFORE): 18175.3
+fmin: 18166 diff: 0.000239711
+PANELTY COST(AFTER): 18166
+After NLOptmz: 16876.9
+After LOptmz: 16876.9
+
+ Begin with iteration: 15
+PANELTY COST(BEFORE): 18166
+fmin: 18164.8 diff: 3.77817e-05
+PANELTY COST(AFTER): 18164.8
+After NLOptmz: 16875.8
+After LOptmz: 16875.8
+
+ Begin with iteration: 16
+PANELTY COST(BEFORE): 18164.8
+WARNING: Maximum iterations: 1502 reached..
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+After LOptmz: 16741.8
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 18031.8
+fmin: 18022.1 diff: 0.000398554
+PANELTY COST(AFTER): 18022.1
+After NLOptmz: 16732.1
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+After LOptmz: 16741.8
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 18031.8
+fmin: 18022.1 diff: 0.000398554
+PANELTY COST(AFTER): 18022.1
+After NLOptmz: 16732.1
+After LOptmz: 16732.1
+
+ Begin with iteration: 26
+PANELTY COST(BEFORE): 18022.1
+fmin: 18007.5 diff: 0.000294274
+PANELTY COST(AFTER): 18007.5
+After NLOptmz: 16717.5
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+After LOptmz: 16741.8
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 18031.8
+fmin: 18022.1 diff: 0.000398554
+PANELTY COST(AFTER): 18022.1
+After NLOptmz: 16732.1
+After LOptmz: 16732.1
+
+ Begin with iteration: 26
+PANELTY COST(BEFORE): 18022.1
+fmin: 18007.5 diff: 0.000294274
+PANELTY COST(AFTER): 18007.5
+After NLOptmz: 16717.5
+After LOptmz: 16717.5
+
+ Begin with iteration: 27
+PANELTY COST(BEFORE): 18007.5
+fmin: 17981.4 diff: -0.000452424
+PANELTY COST(AFTER): 17981.4
+After NLOptmz: 16691.5
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+After LOptmz: 16741.8
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 18031.8
+fmin: 18022.1 diff: 0.000398554
+PANELTY COST(AFTER): 18022.1
+After NLOptmz: 16732.1
+After LOptmz: 16732.1
+
+ Begin with iteration: 26
+PANELTY COST(BEFORE): 18022.1
+fmin: 18007.5 diff: 0.000294274
+PANELTY COST(AFTER): 18007.5
+After NLOptmz: 16717.5
+After LOptmz: 16717.5
+
+ Begin with iteration: 27
+PANELTY COST(BEFORE): 18007.5
+fmin: 17981.4 diff: -0.000452424
+PANELTY COST(AFTER): 17981.4
+After NLOptmz: 16691.5
+After LOptmz: 16691.5
+
+ Begin with iteration: 28
+PANELTY COST(BEFORE): 17981.4
+fmin: 17947.7 diff: 0.000488987
+PANELTY COST(AFTER): 17947.7
+After NLOptmz: 16657.2
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+After LOptmz: 16741.8
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 18031.8
+fmin: 18022.1 diff: 0.000398554
+PANELTY COST(AFTER): 18022.1
+After NLOptmz: 16732.1
+After LOptmz: 16732.1
+
+ Begin with iteration: 26
+PANELTY COST(BEFORE): 18022.1
+fmin: 18007.5 diff: 0.000294274
+PANELTY COST(AFTER): 18007.5
+After NLOptmz: 16717.5
+After LOptmz: 16717.5
+
+ Begin with iteration: 27
+PANELTY COST(BEFORE): 18007.5
+fmin: 17981.4 diff: -0.000452424
+PANELTY COST(AFTER): 17981.4
+After NLOptmz: 16691.5
+After LOptmz: 16691.5
+
+ Begin with iteration: 28
+PANELTY COST(BEFORE): 17981.4
+fmin: 17947.7 diff: 0.000488987
+PANELTY COST(AFTER): 17947.7
+After NLOptmz: 16657.2
+After LOptmz: 16657.2
+
+ Begin with iteration: 29
+PANELTY COST(BEFORE): 17947.7
+fmin: 17930 diff: -0.000268474
+PANELTY COST(AFTER): 17930
+After NLOptmz: 16639.4
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+After LOptmz: 16741.8
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 18031.8
+fmin: 18022.1 diff: 0.000398554
+PANELTY COST(AFTER): 18022.1
+After NLOptmz: 16732.1
+After LOptmz: 16732.1
+
+ Begin with iteration: 26
+PANELTY COST(BEFORE): 18022.1
+fmin: 18007.5 diff: 0.000294274
+PANELTY COST(AFTER): 18007.5
+After NLOptmz: 16717.5
+After LOptmz: 16717.5
+
+ Begin with iteration: 27
+PANELTY COST(BEFORE): 18007.5
+fmin: 17981.4 diff: -0.000452424
+PANELTY COST(AFTER): 17981.4
+After NLOptmz: 16691.5
+After LOptmz: 16691.5
+
+ Begin with iteration: 28
+PANELTY COST(BEFORE): 17981.4
+fmin: 17947.7 diff: 0.000488987
+PANELTY COST(AFTER): 17947.7
+After NLOptmz: 16657.2
+After LOptmz: 16657.2
+
+ Begin with iteration: 29
+PANELTY COST(BEFORE): 17947.7
+fmin: 17930 diff: -0.000268474
+PANELTY COST(AFTER): 17930
+After NLOptmz: 16639.4
+After LOptmz: 16639.4
+
+ Begin with iteration: 30
+PANELTY COST(BEFORE): 17930
+fmin: 17922.9 diff: 0.000170738
+PANELTY COST(AFTER): 17922.9
+After NLOptmz: 16632.1
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+After LOptmz: 16741.8
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 18031.8
+fmin: 18022.1 diff: 0.000398554
+PANELTY COST(AFTER): 18022.1
+After NLOptmz: 16732.1
+After LOptmz: 16732.1
+
+ Begin with iteration: 26
+PANELTY COST(BEFORE): 18022.1
+fmin: 18007.5 diff: 0.000294274
+PANELTY COST(AFTER): 18007.5
+After NLOptmz: 16717.5
+After LOptmz: 16717.5
+
+ Begin with iteration: 27
+PANELTY COST(BEFORE): 18007.5
+fmin: 17981.4 diff: -0.000452424
+PANELTY COST(AFTER): 17981.4
+After NLOptmz: 16691.5
+After LOptmz: 16691.5
+
+ Begin with iteration: 28
+PANELTY COST(BEFORE): 17981.4
+fmin: 17947.7 diff: 0.000488987
+PANELTY COST(AFTER): 17947.7
+After NLOptmz: 16657.2
+After LOptmz: 16657.2
+
+ Begin with iteration: 29
+PANELTY COST(BEFORE): 17947.7
+fmin: 17930 diff: -0.000268474
+PANELTY COST(AFTER): 17930
+After NLOptmz: 16639.4
+After LOptmz: 16639.4
+
+ Begin with iteration: 30
+PANELTY COST(BEFORE): 17930
+fmin: 17922.9 diff: 0.000170738
+PANELTY COST(AFTER): 17922.9
+After NLOptmz: 16632.1
+After LOptmz: 16632.1
+
+ Begin with iteration: 31
+PANELTY COST(BEFORE): 17922.9
+fmin: 17922.3 diff: 0.000101603
+PANELTY COST(AFTER): 17922.3
+After NLOptmz: 16631.7
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+After LOptmz: 16741.8
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 18031.8
+fmin: 18022.1 diff: 0.000398554
+PANELTY COST(AFTER): 18022.1
+After NLOptmz: 16732.1
+After LOptmz: 16732.1
+
+ Begin with iteration: 26
+PANELTY COST(BEFORE): 18022.1
+fmin: 18007.5 diff: 0.000294274
+PANELTY COST(AFTER): 18007.5
+After NLOptmz: 16717.5
+After LOptmz: 16717.5
+
+ Begin with iteration: 27
+PANELTY COST(BEFORE): 18007.5
+fmin: 17981.4 diff: -0.000452424
+PANELTY COST(AFTER): 17981.4
+After NLOptmz: 16691.5
+After LOptmz: 16691.5
+
+ Begin with iteration: 28
+PANELTY COST(BEFORE): 17981.4
+fmin: 17947.7 diff: 0.000488987
+PANELTY COST(AFTER): 17947.7
+After NLOptmz: 16657.2
+After LOptmz: 16657.2
+
+ Begin with iteration: 29
+PANELTY COST(BEFORE): 17947.7
+fmin: 17930 diff: -0.000268474
+PANELTY COST(AFTER): 17930
+After NLOptmz: 16639.4
+After LOptmz: 16639.4
+
+ Begin with iteration: 30
+PANELTY COST(BEFORE): 17930
+fmin: 17922.9 diff: 0.000170738
+PANELTY COST(AFTER): 17922.9
+After NLOptmz: 16632.1
+After LOptmz: 16632.1
+
+ Begin with iteration: 31
+PANELTY COST(BEFORE): 17922.9
+fmin: 17922.3 diff: 0.000101603
+PANELTY COST(AFTER): 17922.3
+After NLOptmz: 16631.7
+After LOptmz: 16631.7
+
+ Begin with iteration: 32
+PANELTY COST(BEFORE): 17922.3
+fmin: 17911.5 diff: -0.00043029
+PANELTY COST(AFTER): 17911.5
+After NLOptmz: 16620.3
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+After LOptmz: 16741.8
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 18031.8
+fmin: 18022.1 diff: 0.000398554
+PANELTY COST(AFTER): 18022.1
+After NLOptmz: 16732.1
+After LOptmz: 16732.1
+
+ Begin with iteration: 26
+PANELTY COST(BEFORE): 18022.1
+fmin: 18007.5 diff: 0.000294274
+PANELTY COST(AFTER): 18007.5
+After NLOptmz: 16717.5
+After LOptmz: 16717.5
+
+ Begin with iteration: 27
+PANELTY COST(BEFORE): 18007.5
+fmin: 17981.4 diff: -0.000452424
+PANELTY COST(AFTER): 17981.4
+After NLOptmz: 16691.5
+After LOptmz: 16691.5
+
+ Begin with iteration: 28
+PANELTY COST(BEFORE): 17981.4
+fmin: 17947.7 diff: 0.000488987
+PANELTY COST(AFTER): 17947.7
+After NLOptmz: 16657.2
+After LOptmz: 16657.2
+
+ Begin with iteration: 29
+PANELTY COST(BEFORE): 17947.7
+fmin: 17930 diff: -0.000268474
+PANELTY COST(AFTER): 17930
+After NLOptmz: 16639.4
+After LOptmz: 16639.4
+
+ Begin with iteration: 30
+PANELTY COST(BEFORE): 17930
+fmin: 17922.9 diff: 0.000170738
+PANELTY COST(AFTER): 17922.9
+After NLOptmz: 16632.1
+After LOptmz: 16632.1
+
+ Begin with iteration: 31
+PANELTY COST(BEFORE): 17922.9
+fmin: 17922.3 diff: 0.000101603
+PANELTY COST(AFTER): 17922.3
+After NLOptmz: 16631.7
+After LOptmz: 16631.7
+
+ Begin with iteration: 32
+PANELTY COST(BEFORE): 17922.3
+fmin: 17911.5 diff: -0.00043029
+PANELTY COST(AFTER): 17911.5
+After NLOptmz: 16620.3
+After LOptmz: 16620.3
+
+ Begin with iteration: 33
+PANELTY COST(BEFORE): 17911.5
+fmin: 17908.4 diff: -0.000471954
+PANELTY COST(AFTER): 17908.4
+After NLOptmz: 16617.5
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+After LOptmz: 16741.8
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 18031.8
+fmin: 18022.1 diff: 0.000398554
+PANELTY COST(AFTER): 18022.1
+After NLOptmz: 16732.1
+After LOptmz: 16732.1
+
+ Begin with iteration: 26
+PANELTY COST(BEFORE): 18022.1
+fmin: 18007.5 diff: 0.000294274
+PANELTY COST(AFTER): 18007.5
+After NLOptmz: 16717.5
+After LOptmz: 16717.5
+
+ Begin with iteration: 27
+PANELTY COST(BEFORE): 18007.5
+fmin: 17981.4 diff: -0.000452424
+PANELTY COST(AFTER): 17981.4
+After NLOptmz: 16691.5
+After LOptmz: 16691.5
+
+ Begin with iteration: 28
+PANELTY COST(BEFORE): 17981.4
+fmin: 17947.7 diff: 0.000488987
+PANELTY COST(AFTER): 17947.7
+After NLOptmz: 16657.2
+After LOptmz: 16657.2
+
+ Begin with iteration: 29
+PANELTY COST(BEFORE): 17947.7
+fmin: 17930 diff: -0.000268474
+PANELTY COST(AFTER): 17930
+After NLOptmz: 16639.4
+After LOptmz: 16639.4
+
+ Begin with iteration: 30
+PANELTY COST(BEFORE): 17930
+fmin: 17922.9 diff: 0.000170738
+PANELTY COST(AFTER): 17922.9
+After NLOptmz: 16632.1
+After LOptmz: 16632.1
+
+ Begin with iteration: 31
+PANELTY COST(BEFORE): 17922.9
+fmin: 17922.3 diff: 0.000101603
+PANELTY COST(AFTER): 17922.3
+After NLOptmz: 16631.7
+After LOptmz: 16631.7
+
+ Begin with iteration: 32
+PANELTY COST(BEFORE): 17922.3
+fmin: 17911.5 diff: -0.00043029
+PANELTY COST(AFTER): 17911.5
+After NLOptmz: 16620.3
+After LOptmz: 16620.3
+
+ Begin with iteration: 33
+PANELTY COST(BEFORE): 17911.5
+fmin: 17908.4 diff: -0.000471954
+PANELTY COST(AFTER): 17908.4
+After NLOptmz: 16617.5
+After LOptmz: 16617.5
+
+ Begin with iteration: 34
+PANELTY COST(BEFORE): 17908.4
+fmin: 17899.8 diff: 0.000442987
+PANELTY COST(AFTER): 17899.8
+After NLOptmz: 16609.3
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+After LOptmz: 16741.8
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 18031.8
+fmin: 18022.1 diff: 0.000398554
+PANELTY COST(AFTER): 18022.1
+After NLOptmz: 16732.1
+After LOptmz: 16732.1
+
+ Begin with iteration: 26
+PANELTY COST(BEFORE): 18022.1
+fmin: 18007.5 diff: 0.000294274
+PANELTY COST(AFTER): 18007.5
+After NLOptmz: 16717.5
+After LOptmz: 16717.5
+
+ Begin with iteration: 27
+PANELTY COST(BEFORE): 18007.5
+fmin: 17981.4 diff: -0.000452424
+PANELTY COST(AFTER): 17981.4
+After NLOptmz: 16691.5
+After LOptmz: 16691.5
+
+ Begin with iteration: 28
+PANELTY COST(BEFORE): 17981.4
+fmin: 17947.7 diff: 0.000488987
+PANELTY COST(AFTER): 17947.7
+After NLOptmz: 16657.2
+After LOptmz: 16657.2
+
+ Begin with iteration: 29
+PANELTY COST(BEFORE): 17947.7
+fmin: 17930 diff: -0.000268474
+PANELTY COST(AFTER): 17930
+After NLOptmz: 16639.4
+After LOptmz: 16639.4
+
+ Begin with iteration: 30
+PANELTY COST(BEFORE): 17930
+fmin: 17922.9 diff: 0.000170738
+PANELTY COST(AFTER): 17922.9
+After NLOptmz: 16632.1
+After LOptmz: 16632.1
+
+ Begin with iteration: 31
+PANELTY COST(BEFORE): 17922.9
+fmin: 17922.3 diff: 0.000101603
+PANELTY COST(AFTER): 17922.3
+After NLOptmz: 16631.7
+After LOptmz: 16631.7
+
+ Begin with iteration: 32
+PANELTY COST(BEFORE): 17922.3
+fmin: 17911.5 diff: -0.00043029
+PANELTY COST(AFTER): 17911.5
+After NLOptmz: 16620.3
+After LOptmz: 16620.3
+
+ Begin with iteration: 33
+PANELTY COST(BEFORE): 17911.5
+fmin: 17908.4 diff: -0.000471954
+PANELTY COST(AFTER): 17908.4
+After NLOptmz: 16617.5
+After LOptmz: 16617.5
+
+ Begin with iteration: 34
+PANELTY COST(BEFORE): 17908.4
+fmin: 17899.8 diff: 0.000442987
+PANELTY COST(AFTER): 17899.8
+After NLOptmz: 16609.3
+After LOptmz: 16609.3
+
+ Begin with iteration: 35
+PANELTY COST(BEFORE): 17899.8
+fmin: 17899.4 diff: -0.000232707
+PANELTY COST(AFTER): 17899.4
+After NLOptmz: 16608.4
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+After LOptmz: 16741.8
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 18031.8
+fmin: 18022.1 diff: 0.000398554
+PANELTY COST(AFTER): 18022.1
+After NLOptmz: 16732.1
+After LOptmz: 16732.1
+
+ Begin with iteration: 26
+PANELTY COST(BEFORE): 18022.1
+fmin: 18007.5 diff: 0.000294274
+PANELTY COST(AFTER): 18007.5
+After NLOptmz: 16717.5
+After LOptmz: 16717.5
+
+ Begin with iteration: 27
+PANELTY COST(BEFORE): 18007.5
+fmin: 17981.4 diff: -0.000452424
+PANELTY COST(AFTER): 17981.4
+After NLOptmz: 16691.5
+After LOptmz: 16691.5
+
+ Begin with iteration: 28
+PANELTY COST(BEFORE): 17981.4
+fmin: 17947.7 diff: 0.000488987
+PANELTY COST(AFTER): 17947.7
+After NLOptmz: 16657.2
+After LOptmz: 16657.2
+
+ Begin with iteration: 29
+PANELTY COST(BEFORE): 17947.7
+fmin: 17930 diff: -0.000268474
+PANELTY COST(AFTER): 17930
+After NLOptmz: 16639.4
+After LOptmz: 16639.4
+
+ Begin with iteration: 30
+PANELTY COST(BEFORE): 17930
+fmin: 17922.9 diff: 0.000170738
+PANELTY COST(AFTER): 17922.9
+After NLOptmz: 16632.1
+After LOptmz: 16632.1
+
+ Begin with iteration: 31
+PANELTY COST(BEFORE): 17922.9
+fmin: 17922.3 diff: 0.000101603
+PANELTY COST(AFTER): 17922.3
+After NLOptmz: 16631.7
+After LOptmz: 16631.7
+
+ Begin with iteration: 32
+PANELTY COST(BEFORE): 17922.3
+fmin: 17911.5 diff: -0.00043029
+PANELTY COST(AFTER): 17911.5
+After NLOptmz: 16620.3
+After LOptmz: 16620.3
+
+ Begin with iteration: 33
+PANELTY COST(BEFORE): 17911.5
+fmin: 17908.4 diff: -0.000471954
+PANELTY COST(AFTER): 17908.4
+After NLOptmz: 16617.5
+After LOptmz: 16617.5
+
+ Begin with iteration: 34
+PANELTY COST(BEFORE): 17908.4
+fmin: 17899.8 diff: 0.000442987
+PANELTY COST(AFTER): 17899.8
+After NLOptmz: 16609.3
+After LOptmz: 16609.3
+
+ Begin with iteration: 35
+PANELTY COST(BEFORE): 17899.8
+fmin: 17899.4 diff: -0.000232707
+PANELTY COST(AFTER): 17899.4
+After NLOptmz: 16608.4
+After LOptmz: 16608.4
+
+ Begin with iteration: 36
+PANELTY COST(BEFORE): 17899.4
+fmin: 17881.5 diff: -0.0004551
+PANELTY COST(AFTER): 17881.5
+After NLOptmz: 16591.3
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+After LOptmz: 16741.8
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 18031.8
+fmin: 18022.1 diff: 0.000398554
+PANELTY COST(AFTER): 18022.1
+After NLOptmz: 16732.1
+After LOptmz: 16732.1
+
+ Begin with iteration: 26
+PANELTY COST(BEFORE): 18022.1
+fmin: 18007.5 diff: 0.000294274
+PANELTY COST(AFTER): 18007.5
+After NLOptmz: 16717.5
+After LOptmz: 16717.5
+
+ Begin with iteration: 27
+PANELTY COST(BEFORE): 18007.5
+fmin: 17981.4 diff: -0.000452424
+PANELTY COST(AFTER): 17981.4
+After NLOptmz: 16691.5
+After LOptmz: 16691.5
+
+ Begin with iteration: 28
+PANELTY COST(BEFORE): 17981.4
+fmin: 17947.7 diff: 0.000488987
+PANELTY COST(AFTER): 17947.7
+After NLOptmz: 16657.2
+After LOptmz: 16657.2
+
+ Begin with iteration: 29
+PANELTY COST(BEFORE): 17947.7
+fmin: 17930 diff: -0.000268474
+PANELTY COST(AFTER): 17930
+After NLOptmz: 16639.4
+After LOptmz: 16639.4
+
+ Begin with iteration: 30
+PANELTY COST(BEFORE): 17930
+fmin: 17922.9 diff: 0.000170738
+PANELTY COST(AFTER): 17922.9
+After NLOptmz: 16632.1
+After LOptmz: 16632.1
+
+ Begin with iteration: 31
+PANELTY COST(BEFORE): 17922.9
+fmin: 17922.3 diff: 0.000101603
+PANELTY COST(AFTER): 17922.3
+After NLOptmz: 16631.7
+After LOptmz: 16631.7
+
+ Begin with iteration: 32
+PANELTY COST(BEFORE): 17922.3
+fmin: 17911.5 diff: -0.00043029
+PANELTY COST(AFTER): 17911.5
+After NLOptmz: 16620.3
+After LOptmz: 16620.3
+
+ Begin with iteration: 33
+PANELTY COST(BEFORE): 17911.5
+fmin: 17908.4 diff: -0.000471954
+PANELTY COST(AFTER): 17908.4
+After NLOptmz: 16617.5
+After LOptmz: 16617.5
+
+ Begin with iteration: 34
+PANELTY COST(BEFORE): 17908.4
+fmin: 17899.8 diff: 0.000442987
+PANELTY COST(AFTER): 17899.8
+After NLOptmz: 16609.3
+After LOptmz: 16609.3
+
+ Begin with iteration: 35
+PANELTY COST(BEFORE): 17899.8
+fmin: 17899.4 diff: -0.000232707
+PANELTY COST(AFTER): 17899.4
+After NLOptmz: 16608.4
+After LOptmz: 16608.4
+
+ Begin with iteration: 36
+PANELTY COST(BEFORE): 17899.4
+fmin: 17881.5 diff: -0.0004551
+PANELTY COST(AFTER): 17881.5
+After NLOptmz: 16591.3
+After LOptmz: 16591.3
+
+ Begin with iteration: 37
+PANELTY COST(BEFORE): 17881.5
+fmin: 17872.3 diff: -0.00046644
+PANELTY COST(AFTER): 17872.3
+After NLOptmz: 16581.4
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+After LOptmz: 16741.8
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 18031.8
+fmin: 18022.1 diff: 0.000398554
+PANELTY COST(AFTER): 18022.1
+After NLOptmz: 16732.1
+After LOptmz: 16732.1
+
+ Begin with iteration: 26
+PANELTY COST(BEFORE): 18022.1
+fmin: 18007.5 diff: 0.000294274
+PANELTY COST(AFTER): 18007.5
+After NLOptmz: 16717.5
+After LOptmz: 16717.5
+
+ Begin with iteration: 27
+PANELTY COST(BEFORE): 18007.5
+fmin: 17981.4 diff: -0.000452424
+PANELTY COST(AFTER): 17981.4
+After NLOptmz: 16691.5
+After LOptmz: 16691.5
+
+ Begin with iteration: 28
+PANELTY COST(BEFORE): 17981.4
+fmin: 17947.7 diff: 0.000488987
+PANELTY COST(AFTER): 17947.7
+After NLOptmz: 16657.2
+After LOptmz: 16657.2
+
+ Begin with iteration: 29
+PANELTY COST(BEFORE): 17947.7
+fmin: 17930 diff: -0.000268474
+PANELTY COST(AFTER): 17930
+After NLOptmz: 16639.4
+After LOptmz: 16639.4
+
+ Begin with iteration: 30
+PANELTY COST(BEFORE): 17930
+fmin: 17922.9 diff: 0.000170738
+PANELTY COST(AFTER): 17922.9
+After NLOptmz: 16632.1
+After LOptmz: 16632.1
+
+ Begin with iteration: 31
+PANELTY COST(BEFORE): 17922.9
+fmin: 17922.3 diff: 0.000101603
+PANELTY COST(AFTER): 17922.3
+After NLOptmz: 16631.7
+After LOptmz: 16631.7
+
+ Begin with iteration: 32
+PANELTY COST(BEFORE): 17922.3
+fmin: 17911.5 diff: -0.00043029
+PANELTY COST(AFTER): 17911.5
+After NLOptmz: 16620.3
+After LOptmz: 16620.3
+
+ Begin with iteration: 33
+PANELTY COST(BEFORE): 17911.5
+fmin: 17908.4 diff: -0.000471954
+PANELTY COST(AFTER): 17908.4
+After NLOptmz: 16617.5
+After LOptmz: 16617.5
+
+ Begin with iteration: 34
+PANELTY COST(BEFORE): 17908.4
+fmin: 17899.8 diff: 0.000442987
+PANELTY COST(AFTER): 17899.8
+After NLOptmz: 16609.3
+After LOptmz: 16609.3
+
+ Begin with iteration: 35
+PANELTY COST(BEFORE): 17899.8
+fmin: 17899.4 diff: -0.000232707
+PANELTY COST(AFTER): 17899.4
+After NLOptmz: 16608.4
+After LOptmz: 16608.4
+
+ Begin with iteration: 36
+PANELTY COST(BEFORE): 17899.4
+fmin: 17881.5 diff: -0.0004551
+PANELTY COST(AFTER): 17881.5
+After NLOptmz: 16591.3
+After LOptmz: 16591.3
+
+ Begin with iteration: 37
+PANELTY COST(BEFORE): 17881.5
+fmin: 17872.3 diff: -0.00046644
+PANELTY COST(AFTER): 17872.3
+After NLOptmz: 16581.4
+After LOptmz: 16581.4
+
+ Begin with iteration: 38
+PANELTY COST(BEFORE): 17872.3
+fmin: 17868.5 diff: -0.000114135
+PANELTY COST(AFTER): 17868.5
+After NLOptmz: 16577.3
+PANELTY COST(AFTER): 18101.7
+After NLOptmz: 16812
+After LOptmz: 16812
+
+ Begin with iteration: 17
+PANELTY COST(BEFORE): 18101.7
+fmin: 18090.5 diff: -0.000274561
+PANELTY COST(AFTER): 18090.5
+After NLOptmz: 16801.2
+After LOptmz: 16801.2
+
+ Begin with iteration: 18
+PANELTY COST(BEFORE): 18090.5
+fmin: 18084.8 diff: 0.000142353
+PANELTY COST(AFTER): 18084.8
+After NLOptmz: 16795.2
+After LOptmz: 16795.2
+
+ Begin with iteration: 19
+PANELTY COST(BEFORE): 18084.8
+fmin: 18078.6 diff: 0.000502023
+PANELTY COST(AFTER): 18078.6
+After NLOptmz: 16789.4
+After LOptmz: 16789.4
+
+ Begin with iteration: 20
+PANELTY COST(BEFORE): 18078.6
+fmin: 18068.2 diff: 0.000380319
+PANELTY COST(AFTER): 18068.2
+After NLOptmz: 16779.2
+After LOptmz: 16779.2
+
+ Begin with iteration: 21
+PANELTY COST(BEFORE): 18068.2
+fmin: 18057.7 diff: -6.11626e-05
+PANELTY COST(AFTER): 18057.7
+After NLOptmz: 16768.5
+After LOptmz: 16768.5
+
+ Begin with iteration: 22
+PANELTY COST(BEFORE): 18057.7
+fmin: 18042.4 diff: 0.00050547
+PANELTY COST(AFTER): 18042.4
+After NLOptmz: 16753.1
+After LOptmz: 16753.1
+
+ Begin with iteration: 23
+PANELTY COST(BEFORE): 18042.4
+fmin: 18035.2 diff: -7.90189e-05
+PANELTY COST(AFTER): 18035.2
+After NLOptmz: 16745.2
+After LOptmz: 16745.2
+
+ Begin with iteration: 24
+PANELTY COST(BEFORE): 18035.2
+fmin: 18031.8 diff: -0.000163595
+PANELTY COST(AFTER): 18031.8
+After NLOptmz: 16741.8
+After LOptmz: 16741.8
+
+ Begin with iteration: 25
+PANELTY COST(BEFORE): 18031.8
+fmin: 18022.1 diff: 0.000398554
+PANELTY COST(AFTER): 18022.1
+After NLOptmz: 16732.1
+After LOptmz: 16732.1
+
+ Begin with iteration: 26
+PANELTY COST(BEFORE): 18022.1
+fmin: 18007.5 diff: 0.000294274
+PANELTY COST(AFTER): 18007.5
+After NLOptmz: 16717.5
+After LOptmz: 16717.5
+
+ Begin with iteration: 27
+PANELTY COST(BEFORE): 18007.5
+fmin: 17981.4 diff: -0.000452424
+PANELTY COST(AFTER): 17981.4
+After NLOptmz: 16691.5
+After LOptmz: 16691.5
+
+ Begin with iteration: 28
+PANELTY COST(BEFORE): 17981.4
+fmin: 17947.7 diff: 0.000488987
+PANELTY COST(AFTER): 17947.7
+After NLOptmz: 16657.2
+After LOptmz: 16657.2
+
+ Begin with iteration: 29
+PANELTY COST(BEFORE): 17947.7
+fmin: 17930 diff: -0.000268474
+PANELTY COST(AFTER): 17930
+After NLOptmz: 16639.4
+After LOptmz: 16639.4
+
+ Begin with iteration: 30
+PANELTY COST(BEFORE): 17930
+fmin: 17922.9 diff: 0.000170738
+PANELTY COST(AFTER): 17922.9
+After NLOptmz: 16632.1
+After LOptmz: 16632.1
+
+ Begin with iteration: 31
+PANELTY COST(BEFORE): 17922.9
+fmin: 17922.3 diff: 0.000101603
+PANELTY COST(AFTER): 17922.3
+After NLOptmz: 16631.7
+After LOptmz: 16631.7
+
+ Begin with iteration: 32
+PANELTY COST(BEFORE): 17922.3
+fmin: 17911.5 diff: -0.00043029
+PANELTY COST(AFTER): 17911.5
+After NLOptmz: 16620.3
+After LOptmz: 16620.3
+
+ Begin with iteration: 33
+PANELTY COST(BEFORE): 17911.5
+fmin: 17908.4 diff: -0.000471954
+PANELTY COST(AFTER): 17908.4
+After NLOptmz: 16617.5
+After LOptmz: 16617.5
+
+ Begin with iteration: 34
+PANELTY COST(BEFORE): 17908.4
+fmin: 17899.8 diff: 0.000442987
+PANELTY COST(AFTER): 17899.8
+After NLOptmz: 16609.3
+After LOptmz: 16609.3
+
+ Begin with iteration: 35
+PANELTY COST(BEFORE): 17899.8
+fmin: 17899.4 diff: -0.000232707
+PANELTY COST(AFTER): 17899.4
+After NLOptmz: 16608.4
+After LOptmz: 16608.4
+
+ Begin with iteration: 36
+PANELTY COST(BEFORE): 17899.4
+fmin: 17881.5 diff: -0.0004551
+PANELTY COST(AFTER): 17881.5
+After NLOptmz: 16591.3
+After LOptmz: 16591.3
+
+ Begin with iteration: 37
+PANELTY COST(BEFORE): 17881.5
+fmin: 17872.3 diff: -0.00046644
+PANELTY COST(AFTER): 17872.3
+After NLOptmz: 16581.4
+After LOptmz: 16581.4
+
+ Begin with iteration: 38
+PANELTY COST(BEFORE): 17872.3
+fmin: 17868.5 diff: -0.000114135
+PANELTY COST(AFTER): 17868.5
+After NLOptmz: 16577.3
+After LOptmz: 16577.3
+
+ Begin with iteration: 39
+PANELTY COST(BEFORE): 17868.5
+WARNING: Maximum iterations: 1502 reached..
+PANELTY COST(AFTER): 17847.6
+After NLOptmz: 16557
+PANELTY COST(AFTER): 17847.6
+After NLOptmz: 16557
+After LOptmz: 16557
+
+ Begin with iteration: 40
+PANELTY COST(BEFORE): 17847.6
+fmin: 17834 diff: -0.000257882
+PANELTY COST(AFTER): 17834
+After NLOptmz: 16543.1
+PANELTY COST(AFTER): 17847.6
+After NLOptmz: 16557
+After LOptmz: 16557
+
+ Begin with iteration: 40
+PANELTY COST(BEFORE): 17847.6
+fmin: 17834 diff: -0.000257882
+PANELTY COST(AFTER): 17834
+After NLOptmz: 16543.1
+After LOptmz: 16543.1
+
+ Begin with iteration: 41
+PANELTY COST(BEFORE): 17834
+fmin: 17833.7 diff: -4.72579e-05
+PANELTY COST(AFTER): 17833.7
+After NLOptmz: 16542.2
+PANELTY COST(AFTER): 17847.6
+After NLOptmz: 16557
+After LOptmz: 16557
+
+ Begin with iteration: 40
+PANELTY COST(BEFORE): 17847.6
+fmin: 17834 diff: -0.000257882
+PANELTY COST(AFTER): 17834
+After NLOptmz: 16543.1
+After LOptmz: 16543.1
+
+ Begin with iteration: 41
+PANELTY COST(BEFORE): 17834
+fmin: 17833.7 diff: -4.72579e-05
+PANELTY COST(AFTER): 17833.7
+After NLOptmz: 16542.2
+After LOptmz: 16542.2
+
+ Begin with iteration: 42
+PANELTY COST(BEFORE): 17833.7
+fmin: 17831.3 diff: 0.000256616
+PANELTY COST(AFTER): 17831.3
+After NLOptmz: 16540.3
+PANELTY COST(AFTER): 17847.6
+After NLOptmz: 16557
+After LOptmz: 16557
+
+ Begin with iteration: 40
+PANELTY COST(BEFORE): 17847.6
+fmin: 17834 diff: -0.000257882
+PANELTY COST(AFTER): 17834
+After NLOptmz: 16543.1
+After LOptmz: 16543.1
+
+ Begin with iteration: 41
+PANELTY COST(BEFORE): 17834
+fmin: 17833.7 diff: -4.72579e-05
+PANELTY COST(AFTER): 17833.7
+After NLOptmz: 16542.2
+After LOptmz: 16542.2
+
+ Begin with iteration: 42
+PANELTY COST(BEFORE): 17833.7
+fmin: 17831.3 diff: 0.000256616
+PANELTY COST(AFTER): 17831.3
+After NLOptmz: 16540.3
+After LOptmz: 16540.3
+
+ Begin with iteration: 43
+PANELTY COST(BEFORE): 17831.3
+fmin: 17829.3 diff: 0.000385548
+PANELTY COST(AFTER): 17829.3
+After NLOptmz: 16538.4
+PANELTY COST(AFTER): 17847.6
+After NLOptmz: 16557
+After LOptmz: 16557
+
+ Begin with iteration: 40
+PANELTY COST(BEFORE): 17847.6
+fmin: 17834 diff: -0.000257882
+PANELTY COST(AFTER): 17834
+After NLOptmz: 16543.1
+After LOptmz: 16543.1
+
+ Begin with iteration: 41
+PANELTY COST(BEFORE): 17834
+fmin: 17833.7 diff: -4.72579e-05
+PANELTY COST(AFTER): 17833.7
+After NLOptmz: 16542.2
+After LOptmz: 16542.2
+
+ Begin with iteration: 42
+PANELTY COST(BEFORE): 17833.7
+fmin: 17831.3 diff: 0.000256616
+PANELTY COST(AFTER): 17831.3
+After NLOptmz: 16540.3
+After LOptmz: 16540.3
+
+ Begin with iteration: 43
+PANELTY COST(BEFORE): 17831.3
+fmin: 17829.3 diff: 0.000385548
+PANELTY COST(AFTER): 17829.3
+After NLOptmz: 16538.4
+After LOptmz: 16538.4
+
+ Begin with iteration: 44
+PANELTY COST(BEFORE): 17829.3
+fmin: 17821 diff: 7.37279e-05
+PANELTY COST(AFTER): 17821
+After NLOptmz: 16529.7
+PANELTY COST(AFTER): 17847.6
+After NLOptmz: 16557
+After LOptmz: 16557
+
+ Begin with iteration: 40
+PANELTY COST(BEFORE): 17847.6
+fmin: 17834 diff: -0.000257882
+PANELTY COST(AFTER): 17834
+After NLOptmz: 16543.1
+After LOptmz: 16543.1
+
+ Begin with iteration: 41
+PANELTY COST(BEFORE): 17834
+fmin: 17833.7 diff: -4.72579e-05
+PANELTY COST(AFTER): 17833.7
+After NLOptmz: 16542.2
+After LOptmz: 16542.2
+
+ Begin with iteration: 42
+PANELTY COST(BEFORE): 17833.7
+fmin: 17831.3 diff: 0.000256616
+PANELTY COST(AFTER): 17831.3
+After NLOptmz: 16540.3
+After LOptmz: 16540.3
+
+ Begin with iteration: 43
+PANELTY COST(BEFORE): 17831.3
+fmin: 17829.3 diff: 0.000385548
+PANELTY COST(AFTER): 17829.3
+After NLOptmz: 16538.4
+After LOptmz: 16538.4
+
+ Begin with iteration: 44
+PANELTY COST(BEFORE): 17829.3
+fmin: 17821 diff: 7.37279e-05
+PANELTY COST(AFTER): 17821
+After NLOptmz: 16529.7
+After LOptmz: 16529.7
+
+ Begin with iteration: 45
+PANELTY COST(BEFORE): 17821
+WARNING: Maximum iterations: 1502 reached..
+PANELTY COST(AFTER): 17802
+After NLOptmz: 16511.1
+PANELTY COST(AFTER): 17802
+After NLOptmz: 16511.1
+After LOptmz: 16511.1
+
+ Begin with iteration: 46
+PANELTY COST(BEFORE): 17802
+fmin: 17797.2 diff: -9.90328e-06
+PANELTY COST(AFTER): 17797.2
+After NLOptmz: 16506
+PANELTY COST(AFTER): 17802
+After NLOptmz: 16511.1
+After LOptmz: 16511.1
+
+ Begin with iteration: 46
+PANELTY COST(BEFORE): 17802
+fmin: 17797.2 diff: -9.90328e-06
+PANELTY COST(AFTER): 17797.2
+After NLOptmz: 16506
+After LOptmz: 16506
+
+ Begin with iteration: 47
+PANELTY COST(BEFORE): 17797.2
+fmin: 17796.1 diff: -0.000290676
+PANELTY COST(AFTER): 17796.1
+After NLOptmz: 16504.4
+PANELTY COST(AFTER): 17802
+After NLOptmz: 16511.1
+After LOptmz: 16511.1
+
+ Begin with iteration: 46
+PANELTY COST(BEFORE): 17802
+fmin: 17797.2 diff: -9.90328e-06
+PANELTY COST(AFTER): 17797.2
+After NLOptmz: 16506
+After LOptmz: 16506
+
+ Begin with iteration: 47
+PANELTY COST(BEFORE): 17797.2
+fmin: 17796.1 diff: -0.000290676
+PANELTY COST(AFTER): 17796.1
+After NLOptmz: 16504.4
+After LOptmz: 16504.4
+
+ Begin with iteration: 48
+PANELTY COST(BEFORE): 17796.1
+fmin: 17785 diff: -0.00015802
+PANELTY COST(AFTER): 17785
+After NLOptmz: 16493
+PANELTY COST(AFTER): 17802
+After NLOptmz: 16511.1
+After LOptmz: 16511.1
+
+ Begin with iteration: 46
+PANELTY COST(BEFORE): 17802
+fmin: 17797.2 diff: -9.90328e-06
+PANELTY COST(AFTER): 17797.2
+After NLOptmz: 16506
+After LOptmz: 16506
+
+ Begin with iteration: 47
+PANELTY COST(BEFORE): 17797.2
+fmin: 17796.1 diff: -0.000290676
+PANELTY COST(AFTER): 17796.1
+After NLOptmz: 16504.4
+After LOptmz: 16504.4
+
+ Begin with iteration: 48
+PANELTY COST(BEFORE): 17796.1
+fmin: 17785 diff: -0.00015802
+PANELTY COST(AFTER): 17785
+After NLOptmz: 16493
+After LOptmz: 16493
+
+ Begin with iteration: 49
+PANELTY COST(BEFORE): 17785
+fmin: 17782.6 diff: -5.55727e-05
+PANELTY COST(AFTER): 17782.6
+After NLOptmz: 16490.7
+PANELTY COST(AFTER): 17802
+After NLOptmz: 16511.1
+After LOptmz: 16511.1
+
+ Begin with iteration: 46
+PANELTY COST(BEFORE): 17802
+fmin: 17797.2 diff: -9.90328e-06
+PANELTY COST(AFTER): 17797.2
+After NLOptmz: 16506
+After LOptmz: 16506
+
+ Begin with iteration: 47
+PANELTY COST(BEFORE): 17797.2
+fmin: 17796.1 diff: -0.000290676
+PANELTY COST(AFTER): 17796.1
+After NLOptmz: 16504.4
+After LOptmz: 16504.4
+
+ Begin with iteration: 48
+PANELTY COST(BEFORE): 17796.1
+fmin: 17785 diff: -0.00015802
+PANELTY COST(AFTER): 17785
+After NLOptmz: 16493
+After LOptmz: 16493
+
+ Begin with iteration: 49
+PANELTY COST(BEFORE): 17785
+fmin: 17782.6 diff: -5.55727e-05
+PANELTY COST(AFTER): 17782.6
+After NLOptmz: 16490.7
+After LOptmz: 16490.7
+
+ Begin with iteration: 50
+PANELTY COST(BEFORE): 17782.6
+fmin: 17776.9 diff: -0.000157913
+PANELTY COST(AFTER): 17776.9
+After NLOptmz: 16485
+PANELTY COST(AFTER): 17802
+After NLOptmz: 16511.1
+After LOptmz: 16511.1
+
+ Begin with iteration: 46
+PANELTY COST(BEFORE): 17802
+fmin: 17797.2 diff: -9.90328e-06
+PANELTY COST(AFTER): 17797.2
+After NLOptmz: 16506
+After LOptmz: 16506
+
+ Begin with iteration: 47
+PANELTY COST(BEFORE): 17797.2
+fmin: 17796.1 diff: -0.000290676
+PANELTY COST(AFTER): 17796.1
+After NLOptmz: 16504.4
+After LOptmz: 16504.4
+
+ Begin with iteration: 48
+PANELTY COST(BEFORE): 17796.1
+fmin: 17785 diff: -0.00015802
+PANELTY COST(AFTER): 17785
+After NLOptmz: 16493
+After LOptmz: 16493
+
+ Begin with iteration: 49
+PANELTY COST(BEFORE): 17785
+fmin: 17782.6 diff: -5.55727e-05
+PANELTY COST(AFTER): 17782.6
+After NLOptmz: 16490.7
+After LOptmz: 16490.7
+
+ Begin with iteration: 50
+PANELTY COST(BEFORE): 17782.6
+fmin: 17776.9 diff: -0.000157913
+PANELTY COST(AFTER): 17776.9
+After NLOptmz: 16485
+After LOptmz: 16485
+
+ Begin with iteration: 51
+PANELTY COST(BEFORE): 17776.9
+fmin: 17769.4 diff: 0.000230839
+PANELTY COST(AFTER): 17769.4
+After NLOptmz: 16477.4
+PANELTY COST(AFTER): 17802
+After NLOptmz: 16511.1
+After LOptmz: 16511.1
+
+ Begin with iteration: 46
+PANELTY COST(BEFORE): 17802
+fmin: 17797.2 diff: -9.90328e-06
+PANELTY COST(AFTER): 17797.2
+After NLOptmz: 16506
+After LOptmz: 16506
+
+ Begin with iteration: 47
+PANELTY COST(BEFORE): 17797.2
+fmin: 17796.1 diff: -0.000290676
+PANELTY COST(AFTER): 17796.1
+After NLOptmz: 16504.4
+After LOptmz: 16504.4
+
+ Begin with iteration: 48
+PANELTY COST(BEFORE): 17796.1
+fmin: 17785 diff: -0.00015802
+PANELTY COST(AFTER): 17785
+After NLOptmz: 16493
+After LOptmz: 16493
+
+ Begin with iteration: 49
+PANELTY COST(BEFORE): 17785
+fmin: 17782.6 diff: -5.55727e-05
+PANELTY COST(AFTER): 17782.6
+After NLOptmz: 16490.7
+After LOptmz: 16490.7
+
+ Begin with iteration: 50
+PANELTY COST(BEFORE): 17782.6
+fmin: 17776.9 diff: -0.000157913
+PANELTY COST(AFTER): 17776.9
+After NLOptmz: 16485
+After LOptmz: 16485
+
+ Begin with iteration: 51
+PANELTY COST(BEFORE): 17776.9
+fmin: 17769.4 diff: 0.000230839
+PANELTY COST(AFTER): 17769.4
+After NLOptmz: 16477.4
+After LOptmz: 16477.4
+
+ Begin with iteration: 52
+PANELTY COST(BEFORE): 17769.4
+fmin: 17768.8 diff: 0.000454487
+PANELTY COST(AFTER): 17768.8
+After NLOptmz: 16476.9
+PANELTY COST(AFTER): 17802
+After NLOptmz: 16511.1
+After LOptmz: 16511.1
+
+ Begin with iteration: 46
+PANELTY COST(BEFORE): 17802
+fmin: 17797.2 diff: -9.90328e-06
+PANELTY COST(AFTER): 17797.2
+After NLOptmz: 16506
+After LOptmz: 16506
+
+ Begin with iteration: 47
+PANELTY COST(BEFORE): 17797.2
+fmin: 17796.1 diff: -0.000290676
+PANELTY COST(AFTER): 17796.1
+After NLOptmz: 16504.4
+After LOptmz: 16504.4
+
+ Begin with iteration: 48
+PANELTY COST(BEFORE): 17796.1
+fmin: 17785 diff: -0.00015802
+PANELTY COST(AFTER): 17785
+After NLOptmz: 16493
+After LOptmz: 16493
+
+ Begin with iteration: 49
+PANELTY COST(BEFORE): 17785
+fmin: 17782.6 diff: -5.55727e-05
+PANELTY COST(AFTER): 17782.6
+After NLOptmz: 16490.7
+After LOptmz: 16490.7
+
+ Begin with iteration: 50
+PANELTY COST(BEFORE): 17782.6
+fmin: 17776.9 diff: -0.000157913
+PANELTY COST(AFTER): 17776.9
+After NLOptmz: 16485
+After LOptmz: 16485
+
+ Begin with iteration: 51
+PANELTY COST(BEFORE): 17776.9
+fmin: 17769.4 diff: 0.000230839
+PANELTY COST(AFTER): 17769.4
+After NLOptmz: 16477.4
+After LOptmz: 16477.4
+
+ Begin with iteration: 52
+PANELTY COST(BEFORE): 17769.4
+fmin: 17768.8 diff: 0.000454487
+PANELTY COST(AFTER): 17768.8
+After NLOptmz: 16476.9
+After LOptmz: 16476.9
+
+ Begin with iteration: 53
+PANELTY COST(BEFORE): 17768.8
+fmin: 17765.3 diff: -0.000444368
+PANELTY COST(AFTER): 17765.3
+After NLOptmz: 16473
+PANELTY COST(AFTER): 17802
+After NLOptmz: 16511.1
+After LOptmz: 16511.1
+
+ Begin with iteration: 46
+PANELTY COST(BEFORE): 17802
+fmin: 17797.2 diff: -9.90328e-06
+PANELTY COST(AFTER): 17797.2
+After NLOptmz: 16506
+After LOptmz: 16506
+
+ Begin with iteration: 47
+PANELTY COST(BEFORE): 17797.2
+fmin: 17796.1 diff: -0.000290676
+PANELTY COST(AFTER): 17796.1
+After NLOptmz: 16504.4
+After LOptmz: 16504.4
+
+ Begin with iteration: 48
+PANELTY COST(BEFORE): 17796.1
+fmin: 17785 diff: -0.00015802
+PANELTY COST(AFTER): 17785
+After NLOptmz: 16493
+After LOptmz: 16493
+
+ Begin with iteration: 49
+PANELTY COST(BEFORE): 17785
+fmin: 17782.6 diff: -5.55727e-05
+PANELTY COST(AFTER): 17782.6
+After NLOptmz: 16490.7
+After LOptmz: 16490.7
+
+ Begin with iteration: 50
+PANELTY COST(BEFORE): 17782.6
+fmin: 17776.9 diff: -0.000157913
+PANELTY COST(AFTER): 17776.9
+After NLOptmz: 16485
+After LOptmz: 16485
+
+ Begin with iteration: 51
+PANELTY COST(BEFORE): 17776.9
+fmin: 17769.4 diff: 0.000230839
+PANELTY COST(AFTER): 17769.4
+After NLOptmz: 16477.4
+After LOptmz: 16477.4
+
+ Begin with iteration: 52
+PANELTY COST(BEFORE): 17769.4
+fmin: 17768.8 diff: 0.000454487
+PANELTY COST(AFTER): 17768.8
+After NLOptmz: 16476.9
+After LOptmz: 16476.9
+
+ Begin with iteration: 53
+PANELTY COST(BEFORE): 17768.8
+fmin: 17765.3 diff: -0.000444368
+PANELTY COST(AFTER): 17765.3
+After NLOptmz: 16473
+After LOptmz: 16473
+
+ Begin with iteration: 54
+PANELTY COST(BEFORE): 17765.3
+WARNING: Maximum iterations: 1502 reached..
+PANELTY COST(AFTER): 17751
+After NLOptmz: 16459.3
+PANELTY COST(AFTER): 17751
+After NLOptmz: 16459.3
+After LOptmz: 16459.3
+
+ Begin with iteration: 55
+PANELTY COST(BEFORE): 17751
+fmin: 17749.5 diff: -0.000146661
+PANELTY COST(AFTER): 17749.5
+After NLOptmz: 16457.3
+PANELTY COST(AFTER): 17751
+After NLOptmz: 16459.3
+After LOptmz: 16459.3
+
+ Begin with iteration: 55
+PANELTY COST(BEFORE): 17751
+fmin: 17749.5 diff: -0.000146661
+PANELTY COST(AFTER): 17749.5
+After NLOptmz: 16457.3
+After LOptmz: 16457.3
+
+ Begin with iteration: 56
+PANELTY COST(BEFORE): 17749.5
+fmin: 17747.7 diff: -7.92067e-05
+PANELTY COST(AFTER): 17747.7
+After NLOptmz: 16455
+PANELTY COST(AFTER): 17751
+After NLOptmz: 16459.3
+After LOptmz: 16459.3
+
+ Begin with iteration: 55
+PANELTY COST(BEFORE): 17751
+fmin: 17749.5 diff: -0.000146661
+PANELTY COST(AFTER): 17749.5
+After NLOptmz: 16457.3
+After LOptmz: 16457.3
+
+ Begin with iteration: 56
+PANELTY COST(BEFORE): 17749.5
+fmin: 17747.7 diff: -7.92067e-05
+PANELTY COST(AFTER): 17747.7
+After NLOptmz: 16455
+After LOptmz: 16455
+
+ Begin with iteration: 57
+PANELTY COST(BEFORE): 17747.7
+fmin: 17737.7 diff: 0.000427274
+PANELTY COST(AFTER): 17737.7
+After NLOptmz: 16445.8
+PANELTY COST(AFTER): 17751
+After NLOptmz: 16459.3
+After LOptmz: 16459.3
+
+ Begin with iteration: 55
+PANELTY COST(BEFORE): 17751
+fmin: 17749.5 diff: -0.000146661
+PANELTY COST(AFTER): 17749.5
+After NLOptmz: 16457.3
+After LOptmz: 16457.3
+
+ Begin with iteration: 56
+PANELTY COST(BEFORE): 17749.5
+fmin: 17747.7 diff: -7.92067e-05
+PANELTY COST(AFTER): 17747.7
+After NLOptmz: 16455
+After LOptmz: 16455
+
+ Begin with iteration: 57
+PANELTY COST(BEFORE): 17747.7
+fmin: 17737.7 diff: 0.000427274
+PANELTY COST(AFTER): 17737.7
+After NLOptmz: 16445.8
+After LOptmz: 16445.8
+
+ Begin with iteration: 58
+PANELTY COST(BEFORE): 17737.7
+fmin: 17723.6 diff: 5.49366e-05
+PANELTY COST(AFTER): 17723.6
+After NLOptmz: 16431.5
+PANELTY COST(AFTER): 17751
+After NLOptmz: 16459.3
+After LOptmz: 16459.3
+
+ Begin with iteration: 55
+PANELTY COST(BEFORE): 17751
+fmin: 17749.5 diff: -0.000146661
+PANELTY COST(AFTER): 17749.5
+After NLOptmz: 16457.3
+After LOptmz: 16457.3
+
+ Begin with iteration: 56
+PANELTY COST(BEFORE): 17749.5
+fmin: 17747.7 diff: -7.92067e-05
+PANELTY COST(AFTER): 17747.7
+After NLOptmz: 16455
+After LOptmz: 16455
+
+ Begin with iteration: 57
+PANELTY COST(BEFORE): 17747.7
+fmin: 17737.7 diff: 0.000427274
+PANELTY COST(AFTER): 17737.7
+After NLOptmz: 16445.8
+After LOptmz: 16445.8
+
+ Begin with iteration: 58
+PANELTY COST(BEFORE): 17737.7
+fmin: 17723.6 diff: 5.49366e-05
+PANELTY COST(AFTER): 17723.6
+After NLOptmz: 16431.5
+After LOptmz: 16431.5
+
+ Begin with iteration: 59
+PANELTY COST(BEFORE): 17723.6
+fmin: 17716.7 diff: -0.000282233
+PANELTY COST(AFTER): 17716.7
+After NLOptmz: 16423.5
+PANELTY COST(AFTER): 17751
+After NLOptmz: 16459.3
+After LOptmz: 16459.3
+
+ Begin with iteration: 55
+PANELTY COST(BEFORE): 17751
+fmin: 17749.5 diff: -0.000146661
+PANELTY COST(AFTER): 17749.5
+After NLOptmz: 16457.3
+After LOptmz: 16457.3
+
+ Begin with iteration: 56
+PANELTY COST(BEFORE): 17749.5
+fmin: 17747.7 diff: -7.92067e-05
+PANELTY COST(AFTER): 17747.7
+After NLOptmz: 16455
+After LOptmz: 16455
+
+ Begin with iteration: 57
+PANELTY COST(BEFORE): 17747.7
+fmin: 17737.7 diff: 0.000427274
+PANELTY COST(AFTER): 17737.7
+After NLOptmz: 16445.8
+After LOptmz: 16445.8
+
+ Begin with iteration: 58
+PANELTY COST(BEFORE): 17737.7
+fmin: 17723.6 diff: 5.49366e-05
+PANELTY COST(AFTER): 17723.6
+After NLOptmz: 16431.5
+After LOptmz: 16431.5
+
+ Begin with iteration: 59
+PANELTY COST(BEFORE): 17723.6
+fmin: 17716.7 diff: -0.000282233
+PANELTY COST(AFTER): 17716.7
+After NLOptmz: 16423.5
+After LOptmz: 16423.5
+
+ Begin with iteration: 60
+PANELTY COST(BEFORE): 17716.7
+WARNING: Maximum iterations: 1502 reached..
+PANELTY COST(AFTER): 17704.8
+After NLOptmz: 16412.1
+PANELTY COST(AFTER): 17704.8
+After NLOptmz: 16412.1
+After LOptmz: 16412.1
+
+ Begin with iteration: 61
+PANELTY COST(BEFORE): 17704.8
+fmin: 17704.7 diff: 0.000223516
+PANELTY COST(AFTER): 17704.7
+After NLOptmz: 16411.9
+PANELTY COST(AFTER): 17704.8
+After NLOptmz: 16412.1
+After LOptmz: 16412.1
+
+ Begin with iteration: 61
+PANELTY COST(BEFORE): 17704.8
+fmin: 17704.7 diff: 0.000223516
+PANELTY COST(AFTER): 17704.7
+After NLOptmz: 16411.9
+After LOptmz: 16411.9
+
+ Begin with iteration: 62
+PANELTY COST(BEFORE): 17704.7
+fmin: 17700.8 diff: -0.000177328
+PANELTY COST(AFTER): 17700.8
+After NLOptmz: 16408.4
+PANELTY COST(AFTER): 17704.8
+After NLOptmz: 16412.1
+After LOptmz: 16412.1
+
+ Begin with iteration: 61
+PANELTY COST(BEFORE): 17704.8
+fmin: 17704.7 diff: 0.000223516
+PANELTY COST(AFTER): 17704.7
+After NLOptmz: 16411.9
+After LOptmz: 16411.9
+
+ Begin with iteration: 62
+PANELTY COST(BEFORE): 17704.7
+fmin: 17700.8 diff: -0.000177328
+PANELTY COST(AFTER): 17700.8
+After NLOptmz: 16408.4
+After LOptmz: 16408.4
+
+ Begin with iteration: 63
+PANELTY COST(BEFORE): 17700.8
+fmin: 17700.3 diff: 0.000438669
+PANELTY COST(AFTER): 17700.3
+After NLOptmz: 16408
+PANELTY COST(AFTER): 17704.8
+After NLOptmz: 16412.1
+After LOptmz: 16412.1
+
+ Begin with iteration: 61
+PANELTY COST(BEFORE): 17704.8
+fmin: 17704.7 diff: 0.000223516
+PANELTY COST(AFTER): 17704.7
+After NLOptmz: 16411.9
+After LOptmz: 16411.9
+
+ Begin with iteration: 62
+PANELTY COST(BEFORE): 17704.7
+fmin: 17700.8 diff: -0.000177328
+PANELTY COST(AFTER): 17700.8
+After NLOptmz: 16408.4
+After LOptmz: 16408.4
+
+ Begin with iteration: 63
+PANELTY COST(BEFORE): 17700.8
+fmin: 17700.3 diff: 0.000438669
+PANELTY COST(AFTER): 17700.3
+After NLOptmz: 16408
+After LOptmz: 16408
+
+ Begin with iteration: 64
+PANELTY COST(BEFORE): 17700.3
+fmin: 17694.1 diff: -0.000439707
+PANELTY COST(AFTER): 17694.1
+After NLOptmz: 16401.4
+PANELTY COST(AFTER): 17704.8
+After NLOptmz: 16412.1
+After LOptmz: 16412.1
+
+ Begin with iteration: 61
+PANELTY COST(BEFORE): 17704.8
+fmin: 17704.7 diff: 0.000223516
+PANELTY COST(AFTER): 17704.7
+After NLOptmz: 16411.9
+After LOptmz: 16411.9
+
+ Begin with iteration: 62
+PANELTY COST(BEFORE): 17704.7
+fmin: 17700.8 diff: -0.000177328
+PANELTY COST(AFTER): 17700.8
+After NLOptmz: 16408.4
+After LOptmz: 16408.4
+
+ Begin with iteration: 63
+PANELTY COST(BEFORE): 17700.8
+fmin: 17700.3 diff: 0.000438669
+PANELTY COST(AFTER): 17700.3
+After NLOptmz: 16408
+After LOptmz: 16408
+
+ Begin with iteration: 64
+PANELTY COST(BEFORE): 17700.3
+fmin: 17694.1 diff: -0.000439707
+PANELTY COST(AFTER): 17694.1
+After NLOptmz: 16401.4
+After LOptmz: 16401.4
+
+ Begin with iteration: 65
+PANELTY COST(BEFORE): 17694.1
+fmin: 17691.8 diff: -0.000110832
+PANELTY COST(AFTER): 17691.8
+After NLOptmz: 16399.4
+PANELTY COST(AFTER): 17704.8
+After NLOptmz: 16412.1
+After LOptmz: 16412.1
+
+ Begin with iteration: 61
+PANELTY COST(BEFORE): 17704.8
+fmin: 17704.7 diff: 0.000223516
+PANELTY COST(AFTER): 17704.7
+After NLOptmz: 16411.9
+After LOptmz: 16411.9
+
+ Begin with iteration: 62
+PANELTY COST(BEFORE): 17704.7
+fmin: 17700.8 diff: -0.000177328
+PANELTY COST(AFTER): 17700.8
+After NLOptmz: 16408.4
+After LOptmz: 16408.4
+
+ Begin with iteration: 63
+PANELTY COST(BEFORE): 17700.8
+fmin: 17700.3 diff: 0.000438669
+PANELTY COST(AFTER): 17700.3
+After NLOptmz: 16408
+After LOptmz: 16408
+
+ Begin with iteration: 64
+PANELTY COST(BEFORE): 17700.3
+fmin: 17694.1 diff: -0.000439707
+PANELTY COST(AFTER): 17694.1
+After NLOptmz: 16401.4
+After LOptmz: 16401.4
+
+ Begin with iteration: 65
+PANELTY COST(BEFORE): 17694.1
+fmin: 17691.8 diff: -0.000110832
+PANELTY COST(AFTER): 17691.8
+After NLOptmz: 16399.4
+After LOptmz: 16399.4
+
+ Begin with iteration: 66
+PANELTY COST(BEFORE): 17691.8
+fmin: 17690.2 diff: -0.000475599
+PANELTY COST(AFTER): 17690.2
+After NLOptmz: 16397.6
+PANELTY COST(AFTER): 17704.8
+After NLOptmz: 16412.1
+After LOptmz: 16412.1
+
+ Begin with iteration: 61
+PANELTY COST(BEFORE): 17704.8
+fmin: 17704.7 diff: 0.000223516
+PANELTY COST(AFTER): 17704.7
+After NLOptmz: 16411.9
+After LOptmz: 16411.9
+
+ Begin with iteration: 62
+PANELTY COST(BEFORE): 17704.7
+fmin: 17700.8 diff: -0.000177328
+PANELTY COST(AFTER): 17700.8
+After NLOptmz: 16408.4
+After LOptmz: 16408.4
+
+ Begin with iteration: 63
+PANELTY COST(BEFORE): 17700.8
+fmin: 17700.3 diff: 0.000438669
+PANELTY COST(AFTER): 17700.3
+After NLOptmz: 16408
+After LOptmz: 16408
+
+ Begin with iteration: 64
+PANELTY COST(BEFORE): 17700.3
+fmin: 17694.1 diff: -0.000439707
+PANELTY COST(AFTER): 17694.1
+After NLOptmz: 16401.4
+After LOptmz: 16401.4
+
+ Begin with iteration: 65
+PANELTY COST(BEFORE): 17694.1
+fmin: 17691.8 diff: -0.000110832
+PANELTY COST(AFTER): 17691.8
+After NLOptmz: 16399.4
+After LOptmz: 16399.4
+
+ Begin with iteration: 66
+PANELTY COST(BEFORE): 17691.8
+fmin: 17690.2 diff: -0.000475599
+PANELTY COST(AFTER): 17690.2
+After NLOptmz: 16397.6
+After LOptmz: 16397.6
+
+ Begin with iteration: 67
+PANELTY COST(BEFORE): 17690.2
+fmin: 17689.9 diff: -7.99175e-05
+PANELTY COST(AFTER): 17689.9
+After NLOptmz: 16397.1
+PANELTY COST(AFTER): 17704.8
+After NLOptmz: 16412.1
+After LOptmz: 16412.1
+
+ Begin with iteration: 61
+PANELTY COST(BEFORE): 17704.8
+fmin: 17704.7 diff: 0.000223516
+PANELTY COST(AFTER): 17704.7
+After NLOptmz: 16411.9
+After LOptmz: 16411.9
+
+ Begin with iteration: 62
+PANELTY COST(BEFORE): 17704.7
+fmin: 17700.8 diff: -0.000177328
+PANELTY COST(AFTER): 17700.8
+After NLOptmz: 16408.4
+After LOptmz: 16408.4
+
+ Begin with iteration: 63
+PANELTY COST(BEFORE): 17700.8
+fmin: 17700.3 diff: 0.000438669
+PANELTY COST(AFTER): 17700.3
+After NLOptmz: 16408
+After LOptmz: 16408
+
+ Begin with iteration: 64
+PANELTY COST(BEFORE): 17700.3
+fmin: 17694.1 diff: -0.000439707
+PANELTY COST(AFTER): 17694.1
+After NLOptmz: 16401.4
+After LOptmz: 16401.4
+
+ Begin with iteration: 65
+PANELTY COST(BEFORE): 17694.1
+fmin: 17691.8 diff: -0.000110832
+PANELTY COST(AFTER): 17691.8
+After NLOptmz: 16399.4
+After LOptmz: 16399.4
+
+ Begin with iteration: 66
+PANELTY COST(BEFORE): 17691.8
+fmin: 17690.2 diff: -0.000475599
+PANELTY COST(AFTER): 17690.2
+After NLOptmz: 16397.6
+After LOptmz: 16397.6
+
+ Begin with iteration: 67
+PANELTY COST(BEFORE): 17690.2
+fmin: 17689.9 diff: -7.99175e-05
+PANELTY COST(AFTER): 17689.9
+After NLOptmz: 16397.1
+After LOptmz: 16397.1
+
+ Begin with iteration: 68
+PANELTY COST(BEFORE): 17689.9
+fmin: 17689.4 diff: -0.000195442
+PANELTY COST(AFTER): 17689.4
+After NLOptmz: 16396.9
+PANELTY COST(AFTER): 17704.8
+After NLOptmz: 16412.1
+After LOptmz: 16412.1
+
+ Begin with iteration: 61
+PANELTY COST(BEFORE): 17704.8
+fmin: 17704.7 diff: 0.000223516
+PANELTY COST(AFTER): 17704.7
+After NLOptmz: 16411.9
+After LOptmz: 16411.9
+
+ Begin with iteration: 62
+PANELTY COST(BEFORE): 17704.7
+fmin: 17700.8 diff: -0.000177328
+PANELTY COST(AFTER): 17700.8
+After NLOptmz: 16408.4
+After LOptmz: 16408.4
+
+ Begin with iteration: 63
+PANELTY COST(BEFORE): 17700.8
+fmin: 17700.3 diff: 0.000438669
+PANELTY COST(AFTER): 17700.3
+After NLOptmz: 16408
+After LOptmz: 16408
+
+ Begin with iteration: 64
+PANELTY COST(BEFORE): 17700.3
+fmin: 17694.1 diff: -0.000439707
+PANELTY COST(AFTER): 17694.1
+After NLOptmz: 16401.4
+After LOptmz: 16401.4
+
+ Begin with iteration: 65
+PANELTY COST(BEFORE): 17694.1
+fmin: 17691.8 diff: -0.000110832
+PANELTY COST(AFTER): 17691.8
+After NLOptmz: 16399.4
+After LOptmz: 16399.4
+
+ Begin with iteration: 66
+PANELTY COST(BEFORE): 17691.8
+fmin: 17690.2 diff: -0.000475599
+PANELTY COST(AFTER): 17690.2
+After NLOptmz: 16397.6
+After LOptmz: 16397.6
+
+ Begin with iteration: 67
+PANELTY COST(BEFORE): 17690.2
+fmin: 17689.9 diff: -7.99175e-05
+PANELTY COST(AFTER): 17689.9
+After NLOptmz: 16397.1
+After LOptmz: 16397.1
+
+ Begin with iteration: 68
+PANELTY COST(BEFORE): 17689.9
+fmin: 17689.4 diff: -0.000195442
+PANELTY COST(AFTER): 17689.4
+After NLOptmz: 16396.9
+After LOptmz: 16396.9
+
+ Begin with iteration: 69
+PANELTY COST(BEFORE): 17689.4
+fmin: 17687.8 diff: -0.000448882
+PANELTY COST(AFTER): 17687.8
+After NLOptmz: 16394.8
+PANELTY COST(AFTER): 17704.8
+After NLOptmz: 16412.1
+After LOptmz: 16412.1
+
+ Begin with iteration: 61
+PANELTY COST(BEFORE): 17704.8
+fmin: 17704.7 diff: 0.000223516
+PANELTY COST(AFTER): 17704.7
+After NLOptmz: 16411.9
+After LOptmz: 16411.9
+
+ Begin with iteration: 62
+PANELTY COST(BEFORE): 17704.7
+fmin: 17700.8 diff: -0.000177328
+PANELTY COST(AFTER): 17700.8
+After NLOptmz: 16408.4
+After LOptmz: 16408.4
+
+ Begin with iteration: 63
+PANELTY COST(BEFORE): 17700.8
+fmin: 17700.3 diff: 0.000438669
+PANELTY COST(AFTER): 17700.3
+After NLOptmz: 16408
+After LOptmz: 16408
+
+ Begin with iteration: 64
+PANELTY COST(BEFORE): 17700.3
+fmin: 17694.1 diff: -0.000439707
+PANELTY COST(AFTER): 17694.1
+After NLOptmz: 16401.4
+After LOptmz: 16401.4
+
+ Begin with iteration: 65
+PANELTY COST(BEFORE): 17694.1
+fmin: 17691.8 diff: -0.000110832
+PANELTY COST(AFTER): 17691.8
+After NLOptmz: 16399.4
+After LOptmz: 16399.4
+
+ Begin with iteration: 66
+PANELTY COST(BEFORE): 17691.8
+fmin: 17690.2 diff: -0.000475599
+PANELTY COST(AFTER): 17690.2
+After NLOptmz: 16397.6
+After LOptmz: 16397.6
+
+ Begin with iteration: 67
+PANELTY COST(BEFORE): 17690.2
+fmin: 17689.9 diff: -7.99175e-05
+PANELTY COST(AFTER): 17689.9
+After NLOptmz: 16397.1
+After LOptmz: 16397.1
+
+ Begin with iteration: 68
+PANELTY COST(BEFORE): 17689.9
+fmin: 17689.4 diff: -0.000195442
+PANELTY COST(AFTER): 17689.4
+After NLOptmz: 16396.9
+After LOptmz: 16396.9
+
+ Begin with iteration: 69
+PANELTY COST(BEFORE): 17689.4
+fmin: 17687.8 diff: -0.000448882
+PANELTY COST(AFTER): 17687.8
+After NLOptmz: 16394.8
+After LOptmz: 16394.8
+
+ Begin with iteration: 70
+PANELTY COST(BEFORE): 17687.8
+fmin: 17681.5 diff: -0.000246964
+PANELTY COST(AFTER): 17681.5
+After NLOptmz: 16388.7
+PANELTY COST(AFTER): 17704.8
+After NLOptmz: 16412.1
+After LOptmz: 16412.1
+
+ Begin with iteration: 61
+PANELTY COST(BEFORE): 17704.8
+fmin: 17704.7 diff: 0.000223516
+PANELTY COST(AFTER): 17704.7
+After NLOptmz: 16411.9
+After LOptmz: 16411.9
+
+ Begin with iteration: 62
+PANELTY COST(BEFORE): 17704.7
+fmin: 17700.8 diff: -0.000177328
+PANELTY COST(AFTER): 17700.8
+After NLOptmz: 16408.4
+After LOptmz: 16408.4
+
+ Begin with iteration: 63
+PANELTY COST(BEFORE): 17700.8
+fmin: 17700.3 diff: 0.000438669
+PANELTY COST(AFTER): 17700.3
+After NLOptmz: 16408
+After LOptmz: 16408
+
+ Begin with iteration: 64
+PANELTY COST(BEFORE): 17700.3
+fmin: 17694.1 diff: -0.000439707
+PANELTY COST(AFTER): 17694.1
+After NLOptmz: 16401.4
+After LOptmz: 16401.4
+
+ Begin with iteration: 65
+PANELTY COST(BEFORE): 17694.1
+fmin: 17691.8 diff: -0.000110832
+PANELTY COST(AFTER): 17691.8
+After NLOptmz: 16399.4
+After LOptmz: 16399.4
+
+ Begin with iteration: 66
+PANELTY COST(BEFORE): 17691.8
+fmin: 17690.2 diff: -0.000475599
+PANELTY COST(AFTER): 17690.2
+After NLOptmz: 16397.6
+After LOptmz: 16397.6
+
+ Begin with iteration: 67
+PANELTY COST(BEFORE): 17690.2
+fmin: 17689.9 diff: -7.99175e-05
+PANELTY COST(AFTER): 17689.9
+After NLOptmz: 16397.1
+After LOptmz: 16397.1
+
+ Begin with iteration: 68
+PANELTY COST(BEFORE): 17689.9
+fmin: 17689.4 diff: -0.000195442
+PANELTY COST(AFTER): 17689.4
+After NLOptmz: 16396.9
+After LOptmz: 16396.9
+
+ Begin with iteration: 69
+PANELTY COST(BEFORE): 17689.4
+fmin: 17687.8 diff: -0.000448882
+PANELTY COST(AFTER): 17687.8
+After NLOptmz: 16394.8
+After LOptmz: 16394.8
+
+ Begin with iteration: 70
+PANELTY COST(BEFORE): 17687.8
+fmin: 17681.5 diff: -0.000246964
+PANELTY COST(AFTER): 17681.5
+After NLOptmz: 16388.7
+After LOptmz: 16388.7
+
+ Begin with iteration: 71
+PANELTY COST(BEFORE): 17681.5
+WARNING: Maximum iterations: 1502 reached..
+PANELTY COST(AFTER): 17672.5
+After NLOptmz: 16379.9
+PANELTY COST(AFTER): 17672.5
+After NLOptmz: 16379.9
+After LOptmz: 16379.9
+
+ Begin with iteration: 72
+PANELTY COST(BEFORE): 17672.5
+fmin: 17669.6 diff: 0.000301129
+PANELTY COST(AFTER): 17669.6
+After NLOptmz: 16376.8
+PANELTY COST(AFTER): 17672.5
+After NLOptmz: 16379.9
+After LOptmz: 16379.9
+
+ Begin with iteration: 72
+PANELTY COST(BEFORE): 17672.5
+fmin: 17669.6 diff: 0.000301129
+PANELTY COST(AFTER): 17669.6
+After NLOptmz: 16376.8
+After LOptmz: 16376.8
+
+ Begin with iteration: 73
+PANELTY COST(BEFORE): 17669.6
+fmin: 17668.3 diff: 9.09906e-05
+PANELTY COST(AFTER): 17668.3
+After NLOptmz: 16375.7
+PANELTY COST(AFTER): 17672.5
+After NLOptmz: 16379.9
+After LOptmz: 16379.9
+
+ Begin with iteration: 72
+PANELTY COST(BEFORE): 17672.5
+fmin: 17669.6 diff: 0.000301129
+PANELTY COST(AFTER): 17669.6
+After NLOptmz: 16376.8
+After LOptmz: 16376.8
+
+ Begin with iteration: 73
+PANELTY COST(BEFORE): 17669.6
+fmin: 17668.3 diff: 9.09906e-05
+PANELTY COST(AFTER): 17668.3
+After NLOptmz: 16375.7
+After LOptmz: 16375.7
+
+ Begin with iteration: 74
+PANELTY COST(BEFORE): 17668.3
+WARNING: Maximum iterations: 1502 reached..
+PANELTY COST(AFTER): 17659.9
+After NLOptmz: 16367.5
+PANELTY COST(AFTER): 17659.9
+After NLOptmz: 16367.5
+After LOptmz: 16367.5
+
+ Begin with iteration: 75
+PANELTY COST(BEFORE): 17659.9
+fmin: 17656.6 diff: -0.00050276
+PANELTY COST(AFTER): 17656.6
+After NLOptmz: 16363.3
+PANELTY COST(AFTER): 17659.9
+After NLOptmz: 16367.5
+After LOptmz: 16367.5
+
+ Begin with iteration: 75
+PANELTY COST(BEFORE): 17659.9
+fmin: 17656.6 diff: -0.00050276
+PANELTY COST(AFTER): 17656.6
+After NLOptmz: 16363.3
+After LOptmz: 16363.3
+
+ Begin with iteration: 76
+PANELTY COST(BEFORE): 17656.6
+fmin: 17651.1 diff: 0.000214053
+PANELTY COST(AFTER): 17651.1
+After NLOptmz: 16357.9
+PANELTY COST(AFTER): 17659.9
+After NLOptmz: 16367.5
+After LOptmz: 16367.5
+
+ Begin with iteration: 75
+PANELTY COST(BEFORE): 17659.9
+fmin: 17656.6 diff: -0.00050276
+PANELTY COST(AFTER): 17656.6
+After NLOptmz: 16363.3
+After LOptmz: 16363.3
+
+ Begin with iteration: 76
+PANELTY COST(BEFORE): 17656.6
+fmin: 17651.1 diff: 0.000214053
+PANELTY COST(AFTER): 17651.1
+After NLOptmz: 16357.9
+After LOptmz: 16357.9
+
+ Begin with iteration: 77
+PANELTY COST(BEFORE): 17651.1
+fmin: 17643.9 diff: -9.42724e-05
+PANELTY COST(AFTER): 17643.9
+After NLOptmz: 16350.3
+PANELTY COST(AFTER): 17659.9
+After NLOptmz: 16367.5
+After LOptmz: 16367.5
+
+ Begin with iteration: 75
+PANELTY COST(BEFORE): 17659.9
+fmin: 17656.6 diff: -0.00050276
+PANELTY COST(AFTER): 17656.6
+After NLOptmz: 16363.3
+After LOptmz: 16363.3
+
+ Begin with iteration: 76
+PANELTY COST(BEFORE): 17656.6
+fmin: 17651.1 diff: 0.000214053
+PANELTY COST(AFTER): 17651.1
+After NLOptmz: 16357.9
+After LOptmz: 16357.9
+
+ Begin with iteration: 77
+PANELTY COST(BEFORE): 17651.1
+fmin: 17643.9 diff: -9.42724e-05
+PANELTY COST(AFTER): 17643.9
+After NLOptmz: 16350.3
+After LOptmz: 16350.3
+
+ Begin with iteration: 78
+PANELTY COST(BEFORE): 17643.9
+fmin: 17642.2 diff: 6.53468e-05
+PANELTY COST(AFTER): 17642.2
+After NLOptmz: 16349.1
+PANELTY COST(AFTER): 17659.9
+After NLOptmz: 16367.5
+After LOptmz: 16367.5
+
+ Begin with iteration: 75
+PANELTY COST(BEFORE): 17659.9
+fmin: 17656.6 diff: -0.00050276
+PANELTY COST(AFTER): 17656.6
+After NLOptmz: 16363.3
+After LOptmz: 16363.3
+
+ Begin with iteration: 76
+PANELTY COST(BEFORE): 17656.6
+fmin: 17651.1 diff: 0.000214053
+PANELTY COST(AFTER): 17651.1
+After NLOptmz: 16357.9
+After LOptmz: 16357.9
+
+ Begin with iteration: 77
+PANELTY COST(BEFORE): 17651.1
+fmin: 17643.9 diff: -9.42724e-05
+PANELTY COST(AFTER): 17643.9
+After NLOptmz: 16350.3
+After LOptmz: 16350.3
+
+ Begin with iteration: 78
+PANELTY COST(BEFORE): 17643.9
+fmin: 17642.2 diff: 6.53468e-05
+PANELTY COST(AFTER): 17642.2
+After NLOptmz: 16349.1
+After LOptmz: 16349.1
+
+ Begin with iteration: 79
+PANELTY COST(BEFORE): 17642.2
+fmin: 17642.4 diff: -0.000499195
+PANELTY COST(AFTER): 17642.4
+After NLOptmz: 16349.6
+PANELTY COST(AFTER): 17659.9
+After NLOptmz: 16367.5
+After LOptmz: 16367.5
+
+ Begin with iteration: 75
+PANELTY COST(BEFORE): 17659.9
+fmin: 17656.6 diff: -0.00050276
+PANELTY COST(AFTER): 17656.6
+After NLOptmz: 16363.3
+After LOptmz: 16363.3
+
+ Begin with iteration: 76
+PANELTY COST(BEFORE): 17656.6
+fmin: 17651.1 diff: 0.000214053
+PANELTY COST(AFTER): 17651.1
+After NLOptmz: 16357.9
+After LOptmz: 16357.9
+
+ Begin with iteration: 77
+PANELTY COST(BEFORE): 17651.1
+fmin: 17643.9 diff: -9.42724e-05
+PANELTY COST(AFTER): 17643.9
+After NLOptmz: 16350.3
+After LOptmz: 16350.3
+
+ Begin with iteration: 78
+PANELTY COST(BEFORE): 17643.9
+fmin: 17642.2 diff: 6.53468e-05
+PANELTY COST(AFTER): 17642.2
+After NLOptmz: 16349.1
+After LOptmz: 16349.1
+
+ Begin with iteration: 79
+PANELTY COST(BEFORE): 17642.2
+fmin: 17642.4 diff: -0.000499195
+PANELTY COST(AFTER): 17642.4
+After NLOptmz: 16349.6
+After LOptmz: 16349.6
+
+COST(AFTER): 16349.609453
+Total CPU time in all the iterations: -2140.777296
+[58:48.4u 0:02.6s 1520k]
+: quit
+[58:49.0u 0:02.6s 1520k] pgopt done. Have a nice day!

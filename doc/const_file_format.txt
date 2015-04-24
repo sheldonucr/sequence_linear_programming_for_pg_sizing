@@ -1,0 +1,32 @@
+/* parse the constrain file */
+/*
+    Constraint Format in PGOPT system
+
+    We use fixed style. Line begin with '#' are comments.
+    The first word of each line are the key word.
+
+    we have following statements:
+
+    LAYER layer_index unit_res min_width max_current_density
+    CONST var1 RELATION var2/value
+    VAR name resistor_length min_width layer_index
+
+    For CONST type statement. the the left hand side of the expression
+    must be varibles. The numerical value can only appear on the right
+    hand side.
+
+    variables can consist of
+            (1) voltage variable with node in parentheses.
+            No spaces allowed in bewteen.
+            example: CONST v(1) > 4.99
+            (2) branch width variable with branch name in parentheses.
+            No spaces allowed in bewteen.
+            exmaple:
+            CONST w(r2) == w(r14)
+            CONST w(r2) >= 0.9n
+        RELATION supported in branch width are:
+        "==" -- Equal
+        ">" or ">=" -- great or great or equal to. There are same
+        internally.
+*/
+

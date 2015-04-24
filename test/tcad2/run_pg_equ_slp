@@ -1,0 +1,4 @@
+pgopt <<! > $1.equ_out
+source $1
+equ slp
+!

@@ -1,0 +1,12 @@
+*The fisrt line is num_node
+num_node 17
+*the second line is the matrix_size
+matrix_size 18
+
+* Rname, n1, n2, value, width, length, lay_index
+R1 17 1 0.4 20 80 37
+R2 2 6 6.16 0.8 49.28 37
+
+* current
+I1 1 0 1.33579e-05
+

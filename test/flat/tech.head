@@ -1,0 +1,20 @@
+PGName	=		"sh4_02_00_09_pr"
+PGType	=		"power"
+theVoltage =   		5.0
+theVolOffset = 		0.05
+unitLengthName	=	"micron"
+lengthPrecision	=	1000
+unitCurrentName =	"mA"
+currentPrecision =	100000
+unitResistanceName =	"kohm"
+resistancePrecision =	1000000
+/*Layer  name		index	unitResistance	minWidth  maxCurrDensity*/
+Layer	"metal1"	35	0.0001		0.4	  1.7	
+Layer	"via1"		36	0.005		0.32	  0.54
+Layer	"matal2"	37	0.0001		0.4	  1.7
+Layer	"via2"		38	0.005		0.32	  0.54
+Layer	"matal3"	39	0.0001		0.4	  1.7
+Layer	"via3"		40	0.005		0.32	  0.54
+Layer	"matal4"	41	6e-05		0.8	  1.7
+Layer	"via4"		42	0.005		0.32	  0.54
+Layer	"matal5"	43	6e-05		0.8	  1.7

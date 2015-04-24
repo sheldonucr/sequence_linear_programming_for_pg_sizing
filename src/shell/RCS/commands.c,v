@@ -1,0 +1,874 @@
+head	1.3;
+access;
+symbols;
+locks
+	stan:1.3; strict;
+comment	@ * @;
+
+
+1.3
+date	2000.10.10.01.02.00;	author xtan;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2000.06.14.17.07.04;	author xtan;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	99.04.30.17.30.30;	author xtan;	state Exp;
+branches;
+next	;
+
+
+desc
+@simple shell for pgopt
+@
+
+
+1.3
+log
+@Makefile.bak
+@
+text
+@/*
+ * $RCSfile: commands.c,v $
+ * $Revision: 1.2 $
+ * $Date: 2000/06/14 17:07:04 $, (c) Copyright 1999 by X.-D. Sheldon Tan
+ */
+
+/* commands.cc -
+ *
+ * This file contains routines to read in the pgopt script and
+ * process the commands it contains.  The script is read from
+ * standard input.  Each line contains a command name followed
+ * by additional parameters, if necessary.
+ */
+
+#include <stdio.h>
+#include <ctype.h>
+#include "pgShell.h"
+#include "pgCircuit.h"
+#include "pgOptmz.h"
+#include "pgEquCkt.h"
+
+extern double RestrFactor;
+
+/* Imports from other Gopsim modules: */
+
+extern char *RunStats();
+extern char *RunStatsSince();
+extern int Lookup(char[], char *([]));
+
+/* interface function */
+extern int Help(char*);
+extern int QuitCmd(char*);
+extern int Load(char*);
+extern int Source(char*);
+extern int DCAnalysis(char *);
+extern int DCSensAnalysis(char *);
+extern int ConstCmd(char *);
+extern int BuildIntConstCmd(char *);
+extern int OptimizeCmd(char *);
+extern int LPOutCmd(char *);
+extern int OptimizeEquCmd(char *);
+extern int StateCmd(char *);
+extern int ReadLPResultCmd(char *);
+extern int MatchSetCmd(char *);
+extern int EMoptmzCmd(char *);
+extern int ProcessPhyNLCmd(char *);
+extern int SetCmd(char *);
+
+/* application related functions */
+extern void pgDCSensAnalysis();
+extern int pgProcessPhyNetlist(char *);
+
+/* The following two arrays hold the names of the commands, and
+ * the routine to be invoked to process each command.
+ */
+
+char *(cmds[]) = {
+  "help",
+  "dc analysis ",
+  "sensitivity analysis ",
+  "load [file]",
+  "source [file]",
+  "const [file]",
+  "opt {slp, conjugate}",
+  "equ {slp, conjugate}",
+  "lpout [file]",
+  "stat",
+  "process [physical_netlist]",
+  "resf [restricaton_factor]",
+  "quit",
+  NULL};
+
+/* Compiler barfs if command procedures aren't declared here. */
+
+int (*(rtns[]))(char*) = {
+  Help,  
+  DCAnalysis,
+  DCSensAnalysis,
+  Load,
+  Source,
+  ConstCmd,
+  OptimizeCmd,
+  OptimizeEquCmd,
+  LPOutCmd,
+  StateCmd,
+  ProcessPhyNLCmd,
+  SetCmd,
+  QuitCmd,
+  NULL};
+
+int
+CmdDo(char* line)
+{
+  int  index, nargs;
+  char cmd[100], residue[200];
+
+  nargs = sscanf(line, " %99s %[^]", cmd, residue);
+  if (nargs <= 0) return;
+  if (cmd[0] == '!') return;
+  if (cmd[0] == '*') return;
+  if (cmd[0] == '#') return;
+  if (nargs == 1) residue[0] = 0;
+  index = Lookup(cmd, cmds);
+  if (index == -1)
+    printf("Ambiguous command: %s\n", cmd);
+  else if (index == -2)
+    printf("Unknown command: %s\n", cmd);
+  else
+    {
+      (void) fflush(stdout);
+      if (rtns[index] != NULL) (*(rtns[index]))(residue);
+      printf("%s\n", RunStatsSince());
+    }
+}
+
+int
+Command(FILE* f)
+
+     /*---------------------------------------------------------
+ *    Command just reads commands from the script, and
+ *    calls the corresponding routines.
+ *
+ *    Results:    None.
+ *
+ *    Side Effects:
+ *    Whatever the commands do.  This procedure continues
+ *    until it hits end-of-file.
+ *---------------------------------------------------------
+ */
+
+{
+  char line[800], *p;
+  int tty, length;
+
+  tty = isatty(fileno(f));
+  while (TRUE)
+    {
+      if (tty)
+	{
+	  fputs(": ", stdout);
+	  (void) fflush(stdout);
+	}
+      p = line;
+      *p = 0;
+      length = 799;
+      while (TRUE)
+	{
+	  if (fgets(p, length, f) == NULL) return;
+
+	  /* Get rid of the stupid newline character.  If we didn't
+	   * get a whole line, keep reading.
+	   */
+
+	  for ( ; (*p != 0) && (*p != '\n'); p++);
+	  if (*p == '\n')
+	    {
+	      *p = 0;
+	      if (p == line) break;
+	      if (*(p-1) != '\\') break;
+	      else p--;
+	    }
+	  length = 799 - strlen(line);
+	  if (length <= 0) break;
+	}
+      if (line[0] == 0) continue;
+      if (!tty) printf(": %s\n", line);
+      CmdDo(line);
+    }
+}
+
+int
+Help(char *name)
+
+     /*---------------------------------------------------------
+ *    This command routine just prints out the legal commands.
+ *
+ *    Results:    None.
+ *
+ *    Side Effects:
+ *    Valid command names are printed one per line on standard
+ *    output.
+ *---------------------------------------------------------
+ */
+
+{
+  char **p = cmds;
+  printf("Valid commands are:\n");
+  while (*p != NULL)
+    {
+      printf("  %s\n", *p);
+      p++;
+    }
+}
+
+int
+QuitCmd(char*cmd)
+
+     /*---------------------------------------------------------
+ *    This routine just returns from pgopt to the shell.
+ *
+ *    Results:    None -- it never returns.
+ *
+ *    Side Effects:    pgopt exits.
+ *---------------------------------------------------------
+ */
+
+{
+  printf("%s pgopt done. Have a nice day!\n", RunStats());
+  exit(0);
+}
+
+
+int
+Load(char* name)
+
+     /*---------------------------------------------------------
+ *    This command routine merely reads other commands
+ *    from a given file.
+ *
+ *    Results:    None.
+ *
+ *    Side Effects:
+ *    Whatever the commands in the file do.
+ *---------------------------------------------------------
+ */
+
+{
+  FILE *f;
+  char string[100];
+
+  if (name[0] == 0)
+    {
+      printf("No command file name given.\n");
+      return;
+    }
+  sscanf(name, "%s", string);
+  f = fopen(string, "r");
+  if (f == NULL)
+    {
+      printf("Couldn't find file %s.\n", string);
+      return;
+    }
+  Command(f);
+  fclose(f);
+}
+
+
+int
+Source(char* name)
+{
+  FILE *f;
+  char string[128];
+  char line[128], *str;
+
+  if (name[0] == 0)
+    {
+      error_mesg(IO_ERROR,"No spice file name given.\n");
+      return;
+    }
+  theCkt = pgParseCircuit(name);
+  if(theCkt)
+    {
+      str = strchr(name,'.');
+      if(!str)
+	{
+	  sprintf(string,"%s.cs", name);
+	}
+      else
+	{
+	  *str = 0;
+	  sprintf(string,"%s.cs", name);
+	}
+      pgReadConstFile(theCkt,string);
+    }
+}
+
+int
+DCAnalysis( char *str )
+{
+  if(!theCkt)
+    {
+      error_mesg(IO_ERROR,"No input spice file loaded.\n");
+      return;
+    }
+  pgDCAnalysis(theCkt);
+}
+
+int
+DCSensAnalysis( char *str )
+{
+  if(!theCkt)
+    {
+      error_mesg(IO_ERROR,"No input spice file loaded.\n");
+      return;
+    }
+  pgDCSensAnalysis(theCkt);
+}
+
+int
+ConstCmd(char*filename)
+{
+  if(!theCkt)
+    {
+      error_mesg(IO_ERROR,"No input spice file loaded.\n");
+      return;
+    }
+  pgReadConstFile(theCkt,filename );
+}
+
+
+int
+OptimizeCmd(char *str)
+{
+  if(!theCkt)
+    {
+      error_mesg(IO_ERROR,"No input spice file loaded.\n");
+      return;
+    }
+ 
+  if( !strcmp(str,"slp") || !strcmp(str,"SLP"))
+    pgMainLoop(theCkt, optSLP);
+  else if(!strcmp(str,"conjugate") || !strcmp(str,"CONJUGATE"))
+    pgMainLoop(theCkt, optConjugate);
+  else
+    pgMainLoop(theCkt, optConjugate);
+}
+
+int
+OptimizeEquCmd(char *str)
+{
+  if(!theCkt)
+    {
+      error_mesg(IO_ERROR,"No input spice file loaded.\n");
+      return;
+    }
+  pgOptimizeEqnCircuit(theCkt);
+  
+  /*
+  if( !strcmp(str,"slp") || !strcmp(str,"SLP"))
+     pgMainLoop(theCkt, optSLP);
+  else if(!strcmp(str,"conjugate") || !strcmp(str,"CONJUGATE"))
+    pgMainLoop(theCkt, optConjugate);
+  else
+    pgMainLoop(theCkt, optConjugate);
+  */
+}
+
+int
+LPOutCmd(char*filename)
+{
+  FILE *fp;
+  if(!theCkt)
+    {
+      error_mesg(IO_ERROR,"No input spice file loaded.\n");
+      return;
+    }
+  if (filename[0] == 0) 
+    {
+      pgPrintLPData(theCkt, stdout);
+      return;
+    }
+  else
+    {
+      fp = fopen(filename,"w");
+      if(!fp){
+	sprintf(buf,"Can not open %s to write!");
+	error_mesg(IO_ERROR,buf);
+      }
+      pgPrintLPData(theCkt, fp);
+    }
+  fclose(fp);
+}
+
+int
+StateCmd(char *str)
+{
+  if(!theCkt){
+    error_mesg(IO_ERROR,"No input spice file loaded.\n");
+    return;
+  }
+  if( theEquCkt && (!strcmp(str,"equ") || !strcmp(str,"EQU")))
+    pgPrintState(theEquCkt);
+  else
+    pgPrintState(theCkt);
+}
+
+
+int
+ProcessPhyNLCmd(char *fname)
+{
+  pgProcessPhyNetlist( fname );
+}
+
+int
+SetCmd(char *str)
+{
+  RestrFactor = atof(str);
+  printf("Restricaton factor: %g",RestrFactor);
+}
+
+
+
+@
+
+
+1.2
+log
+@IEEE journal version
+@
+text
+@d3 2
+a4 2
+ * $Revision: 1.1 $
+ * $Date: 1999/04/30 17:30:30 $, (c) Copyright 1999 by X.-D. Sheldon Tan
+d20 1
+d41 1
+a50 8
+extern void pgReadConstFile();
+extern void pgBuildIntConst();
+extern void pgMainLoop(OptMode mode);
+extern void pgPrintLPData(FILE *);
+extern void pgPrintState();
+extern void pgReadCurLPResult(char *);
+extern void pgMatchSetOpt();
+extern void pgEMoptmz();
+a63 1
+  "build internal constraints",
+d65 1
+a67 3
+  "rdlp [file]",
+  "matchopt",
+  "emopt",
+a81 1
+  BuildIntConstCmd,
+d83 1
+a85 3
+  ReadLPResultCmd,
+  MatchSetCmd,
+  EMoptmzCmd,
+d252 2
+a253 2
+  char string[100];
+  char line[100];
+d260 15
+a274 1
+  pgParseCircuit(name);
+d280 1
+a280 1
+  if(!theDeviceList)
+d285 1
+a285 1
+  pgDCAnalysis();
+d291 1
+a291 1
+  if(!theDeviceList)
+d296 1
+a296 1
+  pgDCSensAnalysis();
+d302 1
+a302 1
+  if(!theDeviceList)
+d307 1
+a307 1
+  pgReadConstFile( filename );
+d310 1
+d312 1
+a312 1
+BuildIntConstCmd(char*filename)
+d314 1
+a314 1
+  if(!theDeviceList)
+d319 7
+a325 1
+  pgBuildIntConst();
+d329 1
+a329 1
+OptimizeCmd(char *str)
+d331 1
+a331 1
+  if(!theDeviceList)
+d336 3
+a338 1
+ 
+d340 1
+a340 1
+    pgMainLoop(optSLP);
+d342 1
+a342 1
+    pgMainLoop(optConjugate);
+d344 2
+a345 1
+    pgMainLoop(optConjugate);
+d352 1
+a352 1
+  if(!theDeviceList)
+d359 1
+a359 1
+      pgPrintLPData(stdout);
+d369 1
+a369 1
+      pgPrintLPData(fp);
+d375 1
+a375 1
+StateCmd(char*filename)
+d377 1
+a377 1
+  if(!theDeviceList){
+d381 4
+a384 2
+
+  pgPrintState();
+a386 35
+int
+ReadLPResultCmd(char*filename)
+{
+  if(!theDeviceList)
+    {
+      error_mesg(IO_ERROR,"No input spice file loaded.\n");
+      return;
+  }
+
+  pgReadCurLPResult(filename);
+}
+
+int
+MatchSetCmd(char*unused)
+{
+  if(!theDeviceList)
+    {
+      error_mesg(IO_ERROR,"No input spice file loaded.\n");
+      return;
+  }
+
+  pgMatchSetOpt();
+}
+
+int
+EMoptmzCmd(char*unused)
+{
+  if(!theDeviceList)
+    {
+      error_mesg(IO_ERROR,"No input spice file loaded.\n");
+      return;
+  }
+
+  pgEMoptmz();
+}
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d2 3
+a4 3
+ * $RCSfile$
+ * $Revision$
+ * $Date$, (c) Copyright 1999 by X.-D. Sheldon Tan
+d19 1
+d51 1
+a51 1
+extern void pgMainLoop();
+d64 17
+a80 17
+    "help",
+    "dc analysis ",
+    "sensitivity analysis ",
+    "load [file]",
+    "source [file]",
+    "const [file]",
+    "build internal constraints",
+    "optimizing",
+    "lpout [file]",
+    "stat",
+    "rdlp [file]",
+    "matchopt",
+    "emopt",
+    "process physical netlist",
+    "resf [restricaton_factor]",
+    "quit",
+    NULL};
+d85 17
+a101 17
+    Help,  
+    DCAnalysis,
+    DCSensAnalysis,
+    Load,
+    Source,
+    ConstCmd,
+    BuildIntConstCmd,
+    OptimizeCmd,
+    LPOutCmd,
+    StateCmd,
+    ReadLPResultCmd,
+    MatchSetCmd,
+    EMoptmzCmd,
+    ProcessPhyNLCmd,
+    SetCmd,
+    QuitCmd,
+    NULL};
+d105 3
+a107 3
+    {
+    int  index, nargs;
+    char cmd[100], residue[200];
+d109 8
+a116 8
+    nargs = sscanf(line, " %99s %[^]", cmd, residue);
+    if (nargs <= 0) return;
+    if (cmd[0] == '!') return;
+    if (cmd[0] == '*') return;
+    if (cmd[0] == '#') return;
+    if (nargs == 1) residue[0] = 0;
+    index = Lookup(cmd, cmds);
+    if (index == -1)
+d118 1
+a118 1
+    else if (index == -2)
+d120 1
+a120 1
+    else
+d122 3
+a124 3
+    (void) fflush(stdout);
+    if (rtns[index] != NULL) (*(rtns[index]))(residue);
+    printf("%s\n", RunStatsSince());
+d131 1
+a131 1
+/*---------------------------------------------------------
+d144 2
+a145 2
+    char line[800], *p;
+    int tty, length;
+d147 2
+a148 4
+    tty = isatty(fileno(f));
+    while (TRUE)
+    {
+    if (tty)
+d150 30
+a179 28
+        fputs(": ", stdout);
+        (void) fflush(stdout);
+    }
+    p = line;
+    *p = 0;
+    length = 799;
+    while (TRUE)
+    {
+        if (fgets(p, length, f) == NULL) return;
+
+        /* Get rid of the stupid newline character.  If we didn't
+         * get a whole line, keep reading.
+         */
+
+        for ( ; (*p != 0) && (*p != '\n'); p++);
+        if (*p == '\n')
+        {
+        *p = 0;
+        if (p == line) break;
+        if (*(p-1) != '\\') break;
+        else p--;
+        }
+        length = 799 - strlen(line);
+        if (length <= 0) break;
+    }
+    if (line[0] == 0) continue;
+    if (!tty) printf(": %s\n", line);
+    CmdDo(line);
+d186 1
+a186 1
+/*---------------------------------------------------------
+d198 3
+a200 3
+    char **p = cmds;
+    printf("Valid commands are:\n");
+    while (*p != NULL)
+d202 2
+a203 2
+    printf("  %s\n", *p);
+    p++;
+d210 1
+a210 1
+/*---------------------------------------------------------
+d220 2
+a221 2
+    printf("%s pgopt done. Have a nice day!\n", RunStats());
+    exit(0);
+d228 1
+a228 1
+/*---------------------------------------------------------
+d240 2
+a241 2
+    FILE *f;
+    char string[100];
+d243 1
+a243 1
+    if (name[0] == 0)
+d245 2
+a246 2
+    printf("No command file name given.\n");
+    return;
+d248 3
+a250 3
+    sscanf(name, "%s", string);
+    f = fopen(string, "r");
+    if (f == NULL)
+d252 2
+a253 2
+    printf("Couldn't find file %s.\n", string);
+    return;
+d255 2
+a256 2
+    Command(f);
+    fclose(f);
+d263 3
+a265 3
+    FILE *f;
+    char string[100];
+    char line[100];
+d267 1
+a267 1
+    if (name[0] == 0)
+d269 2
+a270 2
+    error_mesg(IO_ERROR,"No spice file name given.\n");
+    return;
+d272 1
+a272 1
+    pgParseCircuit(name);
+d278 4
+a281 3
+    if(!theDeviceList){
+        error_mesg(IO_ERROR,"No input spice file loaded.\n");
+        return;
+d283 1
+a283 1
+    pgDCAnalysis();
+d289 4
+a292 3
+    if(!theDeviceList){
+        error_mesg(IO_ERROR,"No input spice file loaded.\n");
+        return;
+d294 1
+a294 1
+    pgDCSensAnalysis();
+d300 4
+a303 3
+    if(!theDeviceList){
+        error_mesg(IO_ERROR,"No input spice file loaded.\n");
+        return;
+d305 1
+a305 1
+    pgReadConstFile( filename );
+d311 4
+a314 3
+    if(!theDeviceList){
+        error_mesg(IO_ERROR,"No input spice file loaded.\n");
+        return;
+d316 1
+a316 1
+    pgBuildIntConst();
+d320 1
+a320 1
+OptimizeCmd(char*filename)
+d322 4
+a325 3
+    if(!theDeviceList){
+        error_mesg(IO_ERROR,"No input spice file loaded.\n");
+        return;
+d327 7
+a333 1
+    pgMainLoop();
+d339 5
+a343 16
+    FILE *fp;
+    if(!theDeviceList){
+        error_mesg(IO_ERROR,"No input spice file loaded.\n");
+        return;
+    }
+        if (filename[0] == 0) {
+        pgPrintLPData(stdout);
+        return;
+        }
+    else{
+        fp = fopen(filename,"w");
+        if(!fp){
+            sprintf(buf,"Can not open %s to write!");
+            error_mesg(IO_ERROR,buf);
+        }
+        pgPrintLPData(fp);
+d345 15
+a359 1
+    fclose(fp);
+d365 4
+a368 4
+    if(!theDeviceList){
+        error_mesg(IO_ERROR,"No input spice file loaded.\n");
+        return;
+    }
+d370 1
+a370 1
+    pgPrintState();
+d376 5
+a380 4
+    if(!theDeviceList){
+        error_mesg(IO_ERROR,"No input spice file loaded.\n");
+        return;
+    }
+d382 1
+a382 1
+    pgReadCurLPResult(filename);
+d388 5
+a392 4
+    if(!theDeviceList){
+        error_mesg(IO_ERROR,"No input spice file loaded.\n");
+        return;
+    }
+d394 1
+a394 1
+    pgMatchSetOpt();
+d400 5
+a404 4
+    if(!theDeviceList){
+        error_mesg(IO_ERROR,"No input spice file loaded.\n");
+        return;
+    }
+d406 1
+a406 1
+    pgEMoptmz();
+d412 1
+a412 1
+    pgProcessPhyNetlist( fname );
+d418 2
+a419 2
+    RestrFactor = atof(str);
+    printf("Restricaton factor: %g",RestrFactor);
+@

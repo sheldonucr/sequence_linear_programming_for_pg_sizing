@@ -1,0 +1,57 @@
+This directory contains the sources to the Mixed Integer Linear Program solver
+'lp_solve' in gzip-ed tar format:
+
+lp_solve.tar.gz
+
+This is the supported version, which is written in strict ANSI C, meant for
+UNIX and contains porting information for VMS. The most current version is
+2.2.
+
+Complaints about the programs should be sent to m.r.c.m.berkelaar@ele.tue.nl.
+
+---------------------------------------------------------------------------
+This ftp site also has some compiled versions for PC use. They were
+contributed by several people. I have never tried a single one of them, due to
+to a (voluntary) lack of access to PCs, but they seem to work well for many
+people.
+
+
+One version 2.0 for DOS is packed into lpdos20.zip. This version was built
+with the Borland C compiler. It also contains the library with the Procedural
+Interface, but you will need Borland C to be able to use it. It was
+contributed by John Powers (jpowers@ti.com). He will answer your questions
+specifically regarding this DOS port. The necessary memory extender is
+included in the package. The file lp20w95.zip contains a version built by John
+that should work under Windows 95.
+
+A second version 2.0 for DOS or Windows was built with DJGPP, the PC port of
+the GNU C compiler. This version was contributed by Michal Jarski
+(jarski@iis.pw.edu.pl). It can be found in lp2djgpp.zip. The necessary memory
+extender is included in the package.
+
+
+There is a DOS executable + docs + examples based on version 1.5 of lp_solve
+in
+
+lpdos15.zip
+
+Unlike the DOS version of lp_solve 1.4 it does not suffer from memory
+limitations. It might suffer from the floating point division bug in your
+Pentium, though :-). It was contributed by John Powers (jpowers@ti.com). He
+will answer your questions specifically regarding this DOS port.
+
+
+
+A DOS executable + docs + examples based on version 1.4 of lp_solve is stored
+in
+
+lpsol14.zip
+
+This version can only use the standard DOS 640 KB, but is small and does not
+need any memory extenders. If you want to compile for DOS yourself, have a
+look at lpdos14.tar.gz. It contains the (few) patches you need to do it
+yourself. Beware, you need some lex and yacc equivalent as well as a C
+compiler.
+
+The DOS stuff for version 1.4 is not supported by me, but by
+yash@wisdom.weizmann.ac.il (Wool Avishai).

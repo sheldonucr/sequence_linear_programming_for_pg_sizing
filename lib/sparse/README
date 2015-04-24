@@ -1,0 +1,11 @@
+Sparse matrix package - By Ken Kundert
+
+
+How to compile and install:
+
+1.) Set the modifier SPARSELIB in the Makefile, as explained in the
+instructions contained in the Makefile itself.
+
+4.) Type the command
+   %  make 
+

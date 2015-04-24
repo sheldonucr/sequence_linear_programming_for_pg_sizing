@@ -1,0 +1,950 @@
+
+Technology	{
+		name				= "sh4_02_00_09_pr"
+		dielectric			= 3.45e-05
+		unitTimeName			= "ns"
+		timePrecision			= 1000
+		unitLengthName			= "micron"
+		lengthPrecision			= 1000
+		gridResolution			= 5
+		unitVoltageName			= "V"
+		voltagePrecision		= 1000
+		unitCurrentName			= "mA"
+		currentPrecision		= 100000
+		unitPowerName			= "nw"
+		powerPrecision			= 1000
+		unitResistanceName		= "kohm"
+		resistancePrecision		= 1000000
+		unitCapacitanceName		= "pf"
+		capacitancePrecision		= 10000000
+		unitInductanceName		= "nh"
+		inductancePrecision		= 1000
+}
+
+Color		2 {
+		name				= "2"
+		rgbDefined			= 1
+		redIntensity			= 0
+		greenIntensity			= 0
+		blueIntensity			= 190
+}
+
+Color		40 {
+		name				= "40"
+		rgbDefined			= 1
+		redIntensity			= 180
+		greenIntensity			= 175
+		blueIntensity			= 0
+}
+
+Color		42 {
+		name				= "42"
+		rgbDefined			= 1
+		redIntensity			= 180
+		greenIntensity			= 175
+		blueIntensity			= 190
+}
+
+Color		54 {
+		name				= "54"
+		rgbDefined			= 1
+		redIntensity			= 255
+		greenIntensity			= 80
+		blueIntensity			= 190
+}
+
+Stipple		"rectangleX" {
+		width			= 1
+		height			= 1
+		pattern			= (114) 
+}
+
+Tile		"unit" {
+		width				= 0.8
+		height				= 12.8
+}
+
+Layer		"SYMB" {
+		layerNumber			= 1
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"WAKU" {
+		layerNumber			= 2
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "42"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"GENW" {
+		layerNumber			= 3
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"MEM" {
+		layerNumber			= 5
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"BIP" {
+		layerNumber			= 6
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"LRES" {
+		layerNumber			= 7
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"LCAP" {
+		layerNumber			= 8
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"ESD" {
+		layerNumber			= 9
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"NL" {
+		layerNumber			= 10
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"PL" {
+		layerNumber			= 11
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"RTGT" {
+		layerNumber			= 14
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"NISO" {
+		layerNumber			= 15
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"PISO" {
+		layerNumber			= 16
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"PWEL" {
+		layerNumber			= 17
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"NWEL" {
+		layerNumber			= 18
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"NDD" {
+		layerNumber			= 19
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"GATE" {
+		layerNumber			= 23
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"AG" {
+		layerNumber			= 24
+		maskName			= "poly"
+		isDefaultLayer			= 1
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "dot"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0.4
+		minWidth			= 0.4
+		minSpacing			= 0.4
+		maxStackLevel			= 5
+		maxIntraCapDistRatio		= 2
+		unitMinResistance		= 0.012
+		unitNomResistance		= 0.012
+		unitMaxResistance		= 0.012
+		unitMinCapacitance		= 0.0004936
+		unitNomCapacitance		= 0.0004936
+		unitMaxCapacitance		= 0.0004936
+		unitMinChannelCap		= 0.0001612
+		unitNomChannelCap		= 0.0001612
+		unitMaxChannelCap		= 0.0001612
+}
+
+Layer		"SCNT" {
+		layerNumber			= 25
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"FHG" {
+		layerNumber			= 26
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"NM" {
+		layerNumber			= 27
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"PM" {
+		layerNumber			= 28
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"N" {
+		layerNumber			= 30
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"P" {
+		layerNumber			= 31
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"EE" {
+		layerNumber			= 33
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"CONT" {
+		layerNumber			= 34
+		maskName			= "polyCont"
+		isDefaultLayer			= 1
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "blue"
+		lineStyle			= "solid"
+		pattern				= "horizontal"
+		pitch				= 0
+		defaultWidth			= 0.32
+		minWidth			= 0.32
+		minSpacing			= 0.48
+		maxStackLevel			= 5
+		maxIntraCapDistRatio		= 2
+		maxCurrDensity			= 0.54
+}
+
+Layer		"M1" {
+		layerNumber			= 35
+		maskName			= "metal1"
+		isDefaultLayer			= 1
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "2"
+		lineStyle			= "solid"
+		pattern				= "dot"
+		pitch				= 0.8
+		defaultWidth			= 0.4
+		minWidth			= 0.4
+		minSpacing			= 0.4
+		maxStackLevel			= 5
+		maxIntraCapDistRatio		= 2
+		maxCurrDensity			= 1.7
+		unitMinResistance		= 0.0001
+		unitNomResistance		= 0.0001
+		unitMaxResistance		= 0.0001
+		unitMinCapacitance		= 0.0003668
+		unitNomCapacitance		= 0.0003668
+		unitMaxCapacitance		= 0.0003668
+		unitMinChannelCap		= 0.0001197
+		unitNomChannelCap		= 0.0001197
+		unitMaxChannelCap		= 0.0001197
+}
+
+Layer		"V1" {
+		layerNumber			= 36
+		maskName			= "via1"
+		isDefaultLayer			= 1
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "54"
+		lineStyle			= "solid"
+		pattern				= "horizontal"
+		pitch				= 0
+		defaultWidth			= 0.32
+		minWidth			= 0.32
+		minSpacing			= 0.48
+		maxStackLevel			= 5
+		maxIntraCapDistRatio		= 2
+		maxCurrDensity			= 0.54
+}
+
+Layer		"M2" {
+		layerNumber			= 37
+		maskName			= "metal2"
+		isDefaultLayer			= 1
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "54"
+		lineStyle			= "solid"
+		pattern				= "slash"
+		pitch				= 0.8
+		defaultWidth			= 0.4
+		minWidth			= 0.4
+		minSpacing			= 0.4
+		maxStackLevel			= 5
+		maxIntraCapDistRatio		= 2
+		maxCurrDensity			= 1.7
+		unitMinResistance		= 0.0001
+		unitNomResistance		= 0.0001
+		unitMaxResistance		= 0.0001
+		unitMinCapacitance		= 0.0003894
+		unitNomCapacitance		= 0.0003894
+		unitMaxCapacitance		= 0.0003894
+		unitMinChannelCap		= 0.0001271
+		unitNomChannelCap		= 0.0001271
+		unitMaxChannelCap		= 0.0001271
+}
+
+Layer		"V2" {
+		layerNumber			= 38
+		maskName			= "via2"
+		isDefaultLayer			= 1
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "green"
+		lineStyle			= "solid"
+		pattern				= "horizontal"
+		pitch				= 0
+		defaultWidth			= 0.32
+		minWidth			= 0.32
+		minSpacing			= 0.48
+		maxStackLevel			= 5
+		maxIntraCapDistRatio		= 2
+		maxCurrDensity			= 0.54
+}
+
+Layer		"M3" {
+		layerNumber			= 39
+		maskName			= "metal3"
+		isDefaultLayer			= 1
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "green"
+		lineStyle			= "solid"
+		pattern				= "backSlash"
+		pitch				= 0.8
+		defaultWidth			= 0.4
+		minWidth			= 0.4
+		minSpacing			= 0.4
+		maxStackLevel			= 5
+		maxIntraCapDistRatio		= 2
+		maxCurrDensity			= 1.7
+		unitMinResistance		= 0.0001
+		unitNomResistance		= 0.0001
+		unitMaxResistance		= 0.0001
+		unitMinCapacitance		= 0.0003894
+		unitNomCapacitance		= 0.0003894
+		unitMaxCapacitance		= 0.0003894
+		unitMinChannelCap		= 0.0001271
+		unitNomChannelCap		= 0.0001271
+		unitMaxChannelCap		= 0.0001271
+}
+
+Layer		"V3" {
+		layerNumber			= 40
+		maskName			= "via3"
+		isDefaultLayer			= 1
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "red"
+		lineStyle			= "solid"
+		pattern				= "horizontal"
+		pitch				= 0
+		defaultWidth			= 0.32
+		minWidth			= 0.32
+		minSpacing			= 0.48
+		maxStackLevel			= 5
+		maxIntraCapDistRatio		= 2
+		maxCurrDensity			= 0.54
+}
+
+Layer		"M4" {
+		layerNumber			= 41
+		maskName			= "metal4"
+		isDefaultLayer			= 1
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "red"
+		lineStyle			= "solid"
+		pattern				= "wave"
+		pitch				= 1.6
+		defaultWidth			= 0.8
+		minWidth			= 0.8
+		minSpacing			= 0.8
+		maxStackLevel			= 5
+		maxIntraCapDistRatio		= 2
+		maxCurrDensity			= 1.7
+		unitMinResistance		= 6e-05
+		unitNomResistance		= 6e-05
+		unitMaxResistance		= 6e-05
+		unitMinCapacitance		= 0.0002671
+		unitNomCapacitance		= 0.0002671
+		unitMaxCapacitance		= 0.0002671
+		unitMinChannelCap		= 0.0001745
+		unitNomChannelCap		= 0.0001745
+		unitMaxChannelCap		= 0.0001745
+}
+
+Layer		"V4" {
+		layerNumber			= 42
+		maskName			= "via4"
+		isDefaultLayer			= 1
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "yellow"
+		lineStyle			= "solid"
+		pattern				= "horizontal"
+		pitch				= 0
+		defaultWidth			= 0.32
+		minWidth			= 0.32
+		minSpacing			= 0.48
+		maxStackLevel			= 5
+		maxIntraCapDistRatio		= 2
+		maxCurrDensity			= 0.54
+}
+
+Layer		"M5" {
+		layerNumber			= 43
+		maskName			= "metal5"
+		isDefaultLayer			= 1
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "40"
+		lineStyle			= "solid"
+		pattern				= "zigzag"
+		pitch				= 1.6
+		defaultWidth			= 0.8
+		minWidth			= 0.8
+		minSpacing			= 0.8
+		maxStackLevel			= 5
+		maxIntraCapDistRatio		= 2
+		maxCurrDensity			= 1.7
+		unitMinResistance		= 6e-05
+		unitNomResistance		= 6e-05
+		unitMaxResistance		= 6e-05
+		unitMinCapacitance		= 0.0002
+		unitNomCapacitance		= 0.0002
+		unitMaxCapacitance		= 0.0002
+		unitMinChannelCap		= 0.0001307
+		unitNomChannelCap		= 0.0001307
+		unitMaxChannelCap		= 0.0001307
+}
+
+Layer		"SIL" {
+		layerNumber			= 44
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"M" {
+		layerNumber			= 49
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"M1CN" {
+		layerNumber			= 50
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"M2CN" {
+		layerNumber			= 51
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+Layer		"M3CN" {
+		layerNumber			= 52
+		maskName			= ""
+		visible				= 1
+		selectable			= 1
+		blink				= 0
+		color				= "brown"
+		lineStyle			= "solid"
+		pattern				= "blank"
+		pitch				= 0
+		defaultWidth			= 0
+		minWidth			= 0
+		minSpacing			= 0
+}
+
+ContactCode	"MPOLYXO" {
+		contactCodeNumber		= 1
+		cutLayer			= "CONT"
+		lowerLayer			= "AG"
+		upperLayer			= "M1"
+		isDefaultContact		= 1
+		cutWidth			= 0.32
+		cutHeight			= 0.32
+		upperLayerEncWidth		= 0.04
+		upperLayerEncHeight		= 0.04
+		lowerLayerEncWidth		= 0.04
+		lowerLayerEncHeight		= 0.04
+		minCutSpacing			= 0.48
+		unitMinResistance		= 0.005
+		unitNomResistance		= 0.005
+		unitMaxResistance		= 0.005
+}
+
+ContactCode	"M1M2XO" {
+		contactCodeNumber		= 2
+		cutLayer			= "V1"
+		lowerLayer			= "M1"
+		upperLayer			= "M2"
+		isDefaultContact		= 1
+		cutWidth			= 0.32
+		cutHeight			= 0.32
+		upperLayerEncWidth		= 0.04
+		upperLayerEncHeight		= 0.04
+		lowerLayerEncWidth		= 0.04
+		lowerLayerEncHeight		= 0.04
+		minCutSpacing			= 0.48
+		maxNumRowsNonTurning		= 2
+		unitMinResistance		= 0.005
+		unitNomResistance		= 0.005
+		unitMaxResistance		= 0.005
+}
+
+ContactCode	"M2M3XO" {
+		contactCodeNumber		= 3
+		cutLayer			= "V2"
+		lowerLayer			= "M2"
+		upperLayer			= "M3"
+		isDefaultContact		= 1
+		cutWidth			= 0.32
+		cutHeight			= 0.32
+		upperLayerEncWidth		= 0.04
+		upperLayerEncHeight		= 0.04
+		lowerLayerEncWidth		= 0.04
+		lowerLayerEncHeight		= 0.04
+		minCutSpacing			= 0.48
+		maxNumRowsNonTurning		= 2
+		unitMinResistance		= 0.005
+		unitNomResistance		= 0.005
+		unitMaxResistance		= 0.005
+}
+
+ContactCode	"M3M4XO" {
+		contactCodeNumber		= 4
+		cutLayer			= "V3"
+		lowerLayer			= "M3"
+		upperLayer			= "M4"
+		isDefaultContact		= 1
+		cutWidth			= 0.32
+		cutHeight			= 0.32
+		upperLayerEncWidth		= 0.24
+		upperLayerEncHeight		= 0.24
+		lowerLayerEncWidth		= 0.04
+		lowerLayerEncHeight		= 0.04
+		minCutSpacing			= 0.48
+		maxNumRowsNonTurning		= 2
+		unitMinResistance		= 0.005
+		unitNomResistance		= 0.005
+		unitMaxResistance		= 0.005
+}
+
+ContactCode	"M4M5XO" {
+		contactCodeNumber		= 5
+		cutLayer			= "V4"
+		lowerLayer			= "M4"
+		upperLayer			= "M5"
+		isDefaultContact		= 1
+		cutWidth			= 0.32
+		cutHeight			= 0.32
+		upperLayerEncWidth		= 0.24
+		upperLayerEncHeight		= 0.24
+		lowerLayerEncWidth		= 0.24
+		lowerLayerEncHeight		= 0.24
+		minCutSpacing			= 0.48
+		maxNumRowsNonTurning		= 2
+		unitMinResistance		= 0.005
+		unitNomResistance		= 0.005
+		unitMaxResistance		= 0.005
+}
+
+FringeCap	1 {
+		layer1				= "M1"
+		layer2				= "M1"
+		minFringeCap			= 5.25e-05
+		nomFringeCap			= 5.25e-05
+		maxFringeCap			= 5.25e-05
+}
+
+FringeCap	2 {
+		layer1				= "M2"
+		layer2				= "M2"
+		minFringeCap			= 4.95e-05
+		nomFringeCap			= 4.95e-05
+		maxFringeCap			= 4.95e-05
+}
+
+FringeCap	3 {
+		layer1				= "M3"
+		layer2				= "M3"
+		minFringeCap			= 4.95e-05
+		nomFringeCap			= 4.95e-05
+		maxFringeCap			= 4.95e-05
+}
+
+FringeCap	4 {
+		layer1				= "M4"
+		layer2				= "M4"
+		minFringeCap			= 2.35e-05
+		nomFringeCap			= 2.35e-05
+		maxFringeCap			= 2.35e-05
+}
+
+FringeCap	5 {
+		layer1				= "M5"
+		layer2				= "M5"
+		minFringeCap			= 2.68e-05
+		nomFringeCap			= 2.68e-05
+		maxFringeCap			= 2.68e-05
+}
+
+DesignRule	{
+		layer1				= "V2"
+		layer2				= "V1"
+		minSpacing			= 0
+		stackable			= 1
+}
+
+DesignRule	{
+		layer1				= "V3"
+		layer2				= "V2"
+		minSpacing			= 0
+		stackable			= 1
+}
+
+DesignRule	{
+		layer1				= "V4"
+		layer2				= "V3"
+		minSpacing			= 0
+		stackable			= 1
+}
+
+DesignRule	{
+		layer1				= "via1Blockage"
+		layer2				= "V1"
+		minSpacing			= 0
+}
+
+DesignRule	{
+		layer1				= "via2Blockage"
+		layer2				= "V2"
+		minSpacing			= 0
+}
+
+DesignRule	{
+		layer1				= "via3Blockage"
+		layer2				= "V3"
+		minSpacing			= 0
+}
+
+DesignRule	{
+		layer1				= "via4Blockage"
+		layer2				= "V4"
+		minSpacing			= 0
+}
+
+PRRule		{
+		rowSpacingTopTop		= 0
+		rowSpacingTopBot		= 0
+		rowSpacingBotBot		= 0
+		abuttableTopTop			= 1
+		abuttableTopBot			= 0
+		abuttableBotBot			= 1
+}

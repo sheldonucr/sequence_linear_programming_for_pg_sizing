@@ -1,0 +1,108 @@
+PGOPT V1.4 Sheldon X.-D. Tan
+
+PGOPT is a computer program for sizing wire widths of power/ground
+networks of VLSI layouts subject to electromigration constraints and
+design rule constraints.
+
+
+
+USAGE:
+		pgopt {spice_like_netlist.sp}
+
+INPUT/OUTPUT FILES:
+
+		The spice-like netlist has suffix ".sp".  The spice-like
+		netlist file contains the power/ground netlist which is
+		similar to the spice input deck in terms of format.  The
+		difference is that each line containing a resistor also have
+		the width and length and layer index information of the
+		resistive wire segment.  The independent voltage and current
+		sources are same as that in spice.
+
+		In addition to the netlist, there is constraint file with
+		".BS" as the suffix. When ".sp" file is loaded into pgopt, the
+		".cs" will be loaded automatically (pgopt will look for it at
+		current directory).  The ".cs" file has the technology related
+		information and constraints. Each line begins with a key
+		word. Each key word is explained in the following:
+
+		LAYER layer_index, unit_res, min_width, max_current_density
+		For instance: LAYER 37 0.1 0.4 1.7
+
+		CONST constraint
+
+		for instance:
+		CONST v(3) <= 4.0 -- voltage at node 3 should be less than 4.0
+		CONST w(r2) == w(r4) -- widths of r2 and r4 should be identical.
+
+		PGOPT will generate the same spice-like output file for the sized
+		the power/ground network.
+
+SYNOPSIS:
+
+		PGOPT has a simple command shell. When PGOPT is invoked, you
+		will be prompted with semicolon ":". There are a number of
+		commands available for this version. You can type the whole
+		command include the space or portion of the command as long as
+		that portion distinguishes it from other commands.
+
+		help: give a summary of all the available commands and their
+		usages.
+
+		dc analysis: perform the dc analysis on the given P/G network
+		to obtain the initial solution.
+
+		sensitivity analysis: perform the sensitivity analysis for
+		each circuit element for each circuit node voltage by using
+		adjoint method.
+		
+		load [file]: load the command file which is a plain text file
+		consisting of commands available for PGOPT. (like help, dc
+		analysis).
+
+		source [file]: load the spice-like netlist ".sp" file in case
+		the file is not provided in the command line. For convenience,
+		the ".cs" (with the same base name) is also loaded.
+
+		const [file]: load the constraint ".cs" file. Unless the ".sp"
+		and ".cs" use different base names, this command should not be
+		used.
+
+		opt {conjugate(default), slp}: perform the wire sizing
+		optimization.  There are two options for the commands,
+		"conjugate" means using conjugate gradient algorithm, while
+		"slp" means using sequence of linear programming. The default
+		option is conjugate gradient. "opt" command will
+		automatically perform dc analysis, sensitivity analysis (if
+		using conjugate gradient method).  After loading the netlist
+		and constraint file, opt command will take care of all the
+		optimization steps.
+
+		lp_solve [file]: output the file consisting of objective and
+		constraints which are suitable for input of lp_solve, the 
+		linear programming solver.
+
+		output_netlist [file]: write out the sized spice-like output
+		file.
+
+		stat: print out the node voltages and branch currents and
+		width of each wire segment on the stdin. Be careful when a
+		large circuit is loaded.
+
+		process [physical_netlist]: read in a avant! style physical
+		layout netlist. (do not use it).
+
+		resf [restrication_factor]: set up a new the restriction
+		factor (the default value is 0.8). The factor is used in the
+		sequence of linear programming for convergence control.
+
+
+ENVIRONMENT:
+
+		In addition to PGOPT, linear programming solver, lp_solve,
+		should also be available (in the search path) if sequence of
+		linear programming is used.
+
+
+		For questions and comments, please contact Sheldon Tan
+		at stan@ee.ucr.edu

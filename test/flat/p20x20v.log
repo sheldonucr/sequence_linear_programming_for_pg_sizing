@@ -1,0 +1,76 @@
+
+******** PCx version 1.1 (Nov 1997) ************
+
+Problem 'from_lp_fi' terminated with OPTIMAL status
+Iterations=21, Termination Code=0
+
+MPS formulation has 878 rows, 401 columns
+
+PARAMETER SUMMARY
+=================
+
+Maximum number of iterations: 200
+Tolerances: Opt=1.00e-10  PriFeas=1.00e-08 DualFeas=1.00e-08
+Gondzio strategy selected:  Maximum Gondzio corrections = 0
+NO iterative refinement
+Presolving was performed:
+   Before Presolving:  878 rows, 1279 columns
+   After  Presolving:  878 rows, 1278 columns  (1 pass)
+MINIMIZE the objective
+Solution written to output file p20x20v.out
+
+
+FACTORIZATION SUMMARY
+=====================
+
+code used: Ng-Peyton sparse Cholesky library
+Nonzeros in L=3293;  Density of L=0.007404
+
+ITERATION SUMMARY
+=================
+
+ Iter    Primal       Dual      (PriInf  DualInf)  log(mu)   Merit
+  0   8.3944e+06   2.6927e+06  (9.8e-01 5.5e-08)     7.74    2.2e+01
+  1  -1.4967e+08  -5.1944e+08  (4.4e-01 2.7e-08)     7.42    1.2e+01
+  2   4.7913e+07  -7.6637e+08  (2.0e-01 1.8e-08)     7.18    9.1e+00
+  3   4.5950e+06  -6.6767e+08  (4.2e-02 4.4e-09)     6.56    3.8e+00
+  4   6.5184e+06  -1.7622e+08  (3.5e-03 1.2e-10)     5.48    6.5e-01
+  5   6.8163e+06  -3.6356e+07  (7.8e-05 6.8e-12)     4.57    1.4e-01
+  6   6.5074e+06  -2.1287e+06  (3.3e-13 1.3e-12)     3.85    2.9e-02
+  7   6.5063e+06   3.1581e+06  (3.0e-12 6.7e-22)     3.42    1.1e-02
+  8   5.9811e+06   5.2930e+06  (4.1e-10 3.2e-22)     2.73    2.2e-03
+  9   5.8933e+06   5.6846e+06  (3.7e-10 5.5e-23)     2.21    6.8e-04
+ 10   5.8858e+06   5.7518e+06  (1.3e-10 4.8e-23)     2.02    4.4e-04
+ 11   5.8788e+06   5.8248e+06  (2.1e-10 1.1e-23)     1.63    1.8e-04
+ 12   5.8708e+06   5.8579e+06  (3.0e-10 4.2e-24)     1.00    4.2e-05
+ 13   5.8702e+06   5.8661e+06  (4.9e-10 1.7e-24)     0.50    1.3e-05
+ 14   5.8700e+06   5.8682e+06  (2.5e-10 5.1e-24)     0.13    5.6e-06
+ 15   5.8698e+06   5.8689e+06  (2.1e-10 2.6e-24)    -0.17    2.8e-06
+ 16   5.8697e+06   5.8694e+06  (1.2e-10 1.0e-24)    -0.55    1.2e-06
+ 17   5.8697e+06   5.8695e+06  (9.5e-11 2.5e-24)    -0.90    5.2e-07
+ 18   5.8696e+06   5.8696e+06  (1.2e-10 2.5e-24)    -1.28    2.2e-07
+ 19   5.8696e+06   5.8696e+06  (1.4e-10 3.3e-25)    -1.93    5.3e-08
+ 20   5.8696e+06   5.8696e+06  (1.4e-10 2.7e-24)    -2.95    5.1e-09
+ 21   5.8696e+06   5.8696e+06  (5.9e-11 1.1e-24)    -4.89    9.0e-10
+
+ 21 iterations
+
+Terminated with status OPTIMAL (code 0)
+
+Primal Objective = -1.61172796e+06
+Dual   Objective = -1.61172815e+06
+
+Complementarity          =  1.66e-02
+Relative Complementarity =  2.83e-09
+
+Relative Infeasibilities:
+Primal = 6.139e-13,    Dual   = 0.000e+00.
+
+TIME SUMMARY
+============
+
+Time to read input file: 0.14 sec
+Time to presolve       : 0.04 sec
+
+Time to solve          : 0.66 sec
+

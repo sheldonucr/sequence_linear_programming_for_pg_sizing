@@ -1,0 +1,4 @@
+pgopt $1.sp <<!
+const $1.cs
+opt conjugate
+!

@@ -1,0 +1,7 @@
+run_pg_equ_slp p10x1000_10.sp
+run_pg_equ_slp p10x1000_100.sp
+run_pg_equ_slp p10x1000_20.sp
+run_pg_equ_slp p10x1000_200.sp
+run_pg_equ_slp p10x1000_5.sp
+run_pg_equ_slp p10x1000_50.sp
+run_pg_equ_slp p10x100_10.sp

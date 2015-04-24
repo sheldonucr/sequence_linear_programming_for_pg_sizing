@@ -1,0 +1,4752 @@
+%!PS-Adobe-3.0
+%%BoundingBox: 24 24 571 818
+%%Title: enscript output
+%%For: Xiangdong Tan
+%%Creator: GNU enscript 1.5.0
+%%CreationDate: Mon Jun 29 15:37:16 1998
+%%Orientation: Landscape
+%%Pages: (atend)
+%%DocumentMedia: A4 595 842 0 () ()
+%%DocumentNeededResources: (atend)
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset Enscript-Prolog 1.5 0
+%
+% Procedures.
+%
+
+/_S {	% save current state
+  /_s save def
+} def
+/_R {	% restore from saved state
+  _s restore
+} def
+
+/S {	% showpage protecting gstate
+  gsave
+  showpage
+  grestore
+} bind def
+
+/MF {	% fontname newfontname -> -	make a new encoded font
+  /newfontname exch def
+  /fontname exch def
+
+  /fontdict fontname findfont def
+  /newfont fontdict maxlength dict def
+
+  fontdict {
+    exch 
+    dup /FID eq {
+      % skip FID pair
+      pop pop
+    } {
+      % copy to the new font dictionary
+      exch newfont 3 1 roll put
+    } ifelse
+  } forall
+  
+  newfont /FontName newfontname put
+
+  % insert only valid encoding vectors
+  encoding_vector length 256 eq {
+    newfont /Encoding encoding_vector put
+  } if
+  
+  newfontname newfont definefont pop
+} def
+
+/M {moveto} bind def
+/s {show} bind def
+
+/Box {	% x y w h -> -			define box path
+  /d_h exch def /d_w exch def /d_y exch def /d_x exch def
+  d_x d_y  moveto 
+  d_w 0 rlineto 
+  0 d_h rlineto 
+  d_w neg 0 rlineto 
+  closepath
+} def
+
+% Highlight bars.
+/highlight_bars {	% nlines lineheight output_y_margin gray -> -
+  gsave
+    setgray
+    /ymarg exch def
+    /lineheight exch def
+    /nlines exch def
+
+    % This 2 is just a magic number to sync highlight lines to text.
+    0 d_header_y ymarg sub 2 sub translate
+    
+    /cw d_output_w cols div def
+    /nrows d_output_h ymarg 2 mul sub lineheight div cvi def
+
+    % for each column
+    0 1 cols 1 sub {
+      cw mul /xp exch def
+
+      % for each rows
+      0 1 nrows 1 sub {
+        /rn exch def 
+        rn lineheight mul neg /yp exch def
+        rn nlines idiv 2 mod 0 eq {
+	  % Draw highlight bar.  4 is just a magic indentation.
+	  xp 4 add yp cw 8 sub lineheight neg Box fill	  
+	} if
+      } for
+    } for
+    
+  grestore
+} def
+
+% Line highlight bar.
+/line_highlight {	% x y width height gray -> -
+  gsave
+    /gray exch def
+    Box gray setgray fill
+  grestore
+} def
+
+% Column separator lines.
+/column_lines {
+  gsave
+    .1 setlinewidth
+    0 d_footer_h translate
+    /cw d_output_w cols div def
+    1 1 cols 1 sub {
+      cw mul 0 moveto
+      0 d_output_h rlineto stroke
+    } for
+  grestore
+} def
+
+% Column borders.
+/column_borders {
+  gsave
+    .1 setlinewidth
+    0 d_footer_h moveto 
+    0 d_output_h rlineto
+    d_output_w 0 rlineto
+    0 d_output_h neg rlineto
+    closepath stroke
+  grestore
+} def
+
+% Do the actual underlay drawing
+/draw_underlay {
+  ul_style 0 eq {
+    ul_str true charpath stroke
+  } { 
+    ul_str show
+  } ifelse
+} def
+
+% Underlay
+/underlay {	% - -> -
+  gsave
+    0 d_page_h translate
+    d_page_h neg d_page_w atan rotate
+
+    ul_gray setgray
+    ul_font setfont
+    /dw d_page_h dup mul d_page_w dup mul add sqrt def
+    ul_str stringwidth pop dw exch sub 2 div ul_h_ptsize -2 div moveto 
+    draw_underlay
+  grestore
+} def
+
+/user_underlay {	% - -> -
+  gsave
+    ul_x ul_y translate
+    ul_angle rotate
+    ul_gray setgray
+    ul_font setfont 
+    0 0 ul_h_ptsize 2 div sub moveto 
+    draw_underlay
+  grestore
+} def
+
+% Page prefeed
+/page_prefeed {		% bool -> -
+  statusdict /prefeed known {
+    statusdict exch /prefeed exch put
+  } {
+    pop
+  } ifelse
+} def
+
+% EPSF import.
+
+/BeginEPSF {
+  /b4_Inc_state save def    		% Save state for cleanup
+  /dict_count countdictstack def	% Count objects on dict stack
+  /op_count count 1 sub def		% Count objects on operand stack 
+  userdict begin
+  /showpage { } def
+  0 setgray 0 setlinecap
+  1 setlinewidth 0 setlinejoin
+  10 setmiterlimit [ ] 0 setdash newpath
+  /languagelevel where {
+    pop languagelevel
+    1 ne {
+      false setstrokeadjust false setoverprint 
+    } if
+  } if
+} bind def
+
+/EndEPSF {
+  count op_count sub { pos } repeat	% Clean up stacks
+  countdictstack dict_count sub { end } repeat
+  b4_Inc_state restore
+} bind def
+
+% Check PostScript language level.
+/languagelevel where {
+  pop /gs_languagelevel languagelevel def
+} {
+  /gs_languagelevel 1 def
+} ifelse
+%%EndResource
+%%BeginResource: procset Enscript-Encoding-latin1 1.5 0
+/encoding_vector [
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/space        	/exclam       	/quotedbl     	/numbersign   	
+/dollar       	/percent      	/ampersand    	/quoteright   	
+/parenleft    	/parenright   	/asterisk     	/plus         	
+/comma        	/hyphen       	/period       	/slash        	
+/zero         	/one          	/two          	/three        	
+/four         	/five         	/six          	/seven        	
+/eight        	/nine         	/colon        	/semicolon    	
+/less         	/equal        	/greater      	/question     	
+/at           	/A            	/B            	/C            	
+/D            	/E            	/F            	/G            	
+/H            	/I            	/J            	/K            	
+/L            	/M            	/N            	/O            	
+/P            	/Q            	/R            	/S            	
+/T            	/U            	/V            	/W            	
+/X            	/Y            	/Z            	/bracketleft  	
+/backslash    	/bracketright 	/asciicircum  	/underscore   	
+/quoteleft    	/a            	/b            	/c            	
+/d            	/e            	/f            	/g            	
+/h            	/i            	/j            	/k            	
+/l            	/m            	/n            	/o            	
+/p            	/q            	/r            	/s            	
+/t            	/u            	/v            	/w            	
+/x            	/y            	/z            	/braceleft    	
+/bar          	/braceright   	/tilde        	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/space        	/exclamdown   	/cent         	/sterling     	
+/currency     	/yen          	/brokenbar    	/section      	
+/dieresis     	/copyright    	/ordfeminine  	/guillemotleft	
+/logicalnot   	/hyphen       	/registered   	/macron       	
+/degree       	/plusminus    	/twosuperior  	/threesuperior	
+/acute        	/mu           	/paragraph    	/bullet       	
+/cedilla      	/dotlessi     	/ordmasculine 	/guillemotright	
+/onequarter   	/onehalf      	/threequarters	/questiondown 	
+/Agrave       	/Aacute       	/Acircumflex  	/Atilde       	
+/Adieresis    	/Aring        	/AE           	/Ccedilla     	
+/Egrave       	/Eacute       	/Ecircumflex  	/Edieresis    	
+/Igrave       	/Iacute       	/Icircumflex  	/Idieresis    	
+/Eth          	/Ntilde       	/Ograve       	/Oacute       	
+/Ocircumflex  	/Otilde       	/Odieresis    	/multiply     	
+/Oslash       	/Ugrave       	/Uacute       	/Ucircumflex  	
+/Udieresis    	/Yacute       	/Thorn        	/germandbls   	
+/agrave       	/aacute       	/acircumflex  	/atilde       	
+/adieresis    	/aring        	/ae           	/ccedilla     	
+/egrave       	/eacute       	/ecircumflex  	/edieresis    	
+/igrave       	/iacute       	/icircumflex  	/idieresis    	
+/eth          	/ntilde       	/ograve       	/oacute       	
+/ocircumflex  	/otilde       	/odieresis    	/divide       	
+/oslash       	/ugrave       	/uacute       	/ucircumflex  	
+/udieresis    	/yacute       	/thorn        	/ydieresis    	
+] def
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%%IncludeResource: font Courier-Bold
+%%IncludeResource: font Courier
+/user_header_p false def
+/HFpt_w 10 def
+/HFpt_h 10 def
+/Courier-Bold /HF-gs-font MF
+/HF /HF-gs-font findfont [HFpt_w 0 0 HFpt_h 0 0] makefont def
+/Courier /F-gs-font MF
+/F-gs-font findfont [7 0 0 7 0 0] makefont setfont
+/#copies 1 def
+%%BeginResource: procset Enscript-Header-enscript 1.5 0
+%%IncludeResource: font Times-Bold
+%%IncludeResource: font Times-Roman
+
+% Fonts.
+/Times-Bold /HeaderFont-Bold MF
+/HeaderDateF /HeaderFont-Bold findfont 12 scalefont def
+
+/Times-Roman /HeaderFont-Times MF
+/HeaderHDRF /HeaderFont-Times findfont 14 scalefont def
+
+/HeaderPageNumF /Helvetica-Bold findfont 28.8 scalefont def
+
+/do_header {	% print enscript header
+  gsave
+    d_header_x d_header_y translate
+
+    % light bar
+    0 0 d_header_w d_header_h 2 div Box
+    .95 setgray fill
+
+    % filename
+    0 setgray 
+    HeaderHDRF setfont
+    d_header_w fname stringwidth pop sub 2 div d_header_h 8 div moveto
+    fname show
+
+    % user supplied header string.
+    user_header_p {
+      d_header_w user_header_str stringwidth pop sub 2 div 
+      d_header_h 8 div 5 mul moveto user_header_str show
+    } if
+
+    % dark gray boxes
+    /dbw d_header_h 2 mul def	% dark box width
+    /dbc .7 def			% dark box color
+
+    % left dark box.
+    0 0 dbw d_header_h Box
+    dbc setgray fill
+
+    0 setgray 
+    HeaderDateF setfont
+    moddatestr dup stringwidth pop dbw exch sub 2 div 
+    d_header_h 2 div 2 add moveto show
+    modtimestr dup stringwidth pop dbw exch sub 2 div 
+    d_header_h 5 div moveto show
+
+    % right dark box
+    d_header_w dbw sub 0 dbw d_header_h Box
+    dbc setgray fill
+
+    HeaderPageNumF setfont
+    1 setgray
+    pagenumstr dup
+    stringwidth pop dbw exch sub 2 div d_header_w dbw sub add
+    d_header_h .2 mul moveto show
+
+  grestore
+} def
+%%EndResource
+/d_page_w 794 def
+/d_page_h 547 def
+/d_header_x 0 def
+/d_header_y 511 def
+/d_header_w 794 def
+/d_header_h 36 def
+/d_footer_x 0 def
+/d_footer_y 0 def
+/d_footer_w 794 def
+/d_footer_h 0 def
+/d_output_w 794 def
+/d_output_h 511 def
+/cols 2 def
+%%EndSetup
+%%Page: (1) 1
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 1 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (1) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 501 M
+(/*************************************************************************/) s
+5 493 M
+(/**                                                                     **/) s
+5 485 M
+(/**    Documentation for lp_solve                                       **/) s
+5 477 M
+(/**                                                                     **/) s
+5 469 M
+(/**    \(C\) Hartmut Schwab       Hartmut.Schwab@IWR.Uni-Heidelberg.De    **/) s
+5 461 M
+(/**                                                                     **/) s
+5 453 M
+(/**                                                                     **/) s
+5 445 M
+(/*************************************************************************/) s
+5 405 M
+(This documentation is Copyright 1996 by Hartmut Schwab. It may be freely) s
+5 397 M
+(redistributed in its entirety provided that this copyright notice and the) s
+5 389 M
+(disclaimer is not removed. It may not be sold for profit or incorporated in) s
+5 381 M
+(commercial documents without the written permission of the copyright holder.) s
+5 373 M
+(Permission is expressly granted for this document to be made available for) s
+5 365 M
+(file transfer from installations offering unrestricted anonymous file) s
+5 357 M
+(transfer on the Internet. Its intent is to promote widespread usage.) s
+5 341 M
+(     Notice  must  be  given  of  the  location  of  the) s
+5 333 M
+(     availability of the  unmodified  current  source  code) s
+5 325 M
+(     of lp_solve) s
+5 317 M
+(     e.g.,) s
+5 309 M
+(             ftp://ftp.es.ele.tue.nl/pub/lp_solve) s
+5 277 M
+(While all information in this documentation is believed to be correct at the) s
+5 269 M
+(time of writing, it is provided "as is" with no warranty implied.) s
+5 237 M
+(In compiling this information, I have drawn on my own knowledge of the) s
+5 229 M
+(field. This file has been read by Michel Berkelaar, the author of lp_solve but) s
+5 221 M
+(nevertheless the errors in this document came into it by me. I give my) s
+5 213 M
+(thanks to all those who have offered advice and support. ) s
+5 197 M
+(Suggestions, corrections, topics you'd like to see covered, and additional) s
+5 189 M
+(material, are all solicited. Send email to ) s
+5 173 M
+(            Hartmut.Schwab@IWR.Uni-Heidelberg.De) s
+5 141 M
+(The newest version of this document is available at the same location than) s
+5 133 M
+(lp_solve.  ) s
+5 101 M
+(Version: @\(#\) lp_solve.doc 1.18@\(#\), Creation date: 97/02/11.) s
+5 37 M
+(/***************************************************************/) s
+5 29 M
+(/**                                                           **/) s
+5 21 M
+(/**                                                           **/) s
+5 13 M
+(/**             Preface                                       **/) s
+5 5 M
+(/**                                                           **/) s
+402 501 M
+(/**                                                           **/) s
+402 493 M
+(/***************************************************************/) s
+402 477 M
+(This documentation would not exist, if Michel Berkelaar had not written the) s
+402 469 M
+(program lp_solve. Thanks to him, we have a version of the simplex algorithm,) s
+402 461 M
+(where the source code is available, which uses sparse matrix computations) s
+402 453 M
+(and which everybody can include into his or her own applications. More and) s
+402 445 M
+(more users in the Operations Research community are using lp_solve.) s
+402 429 M
+(His program is finding more and more users in the OR community. The growing) s
+402 421 M
+(interest is easily proven by the still growing number of questions regarding) s
+402 413 M
+(lp_solve in the News. Questions where to find a source code for the simplex) s
+402 405 M
+(algorithm are usually answered with a hint to lp_solve.) s
+402 389 M
+(It is also important to mention Jeroen Dirks who added a subroutine library) s
+402 381 M
+(to lp_solve. His work makes it easier to include lp_solve in own) s
+402 373 M
+(applications.) s
+402 357 M
+(Until now, no documentation about the construction of the program had been) s
+402 349 M
+(available. This file wants to close this gap. It wants to provide the reader) s
+402 341 M
+(with some information about the internal structure of the program and add) s
+402 333 M
+(some documentation to lp_solve.) s
+402 309 M
+(How is this document organised?) s
+402 293 M
+(You will find a table of contents in the next section. Section) s
+402 285 M
+("Introduction" describes the intention of this document. You also will find) s
+402 277 M
+(some information, what has been included into this document and what has) s
+402 269 M
+(been excluded from it. The later one is the more important one. This document) s
+402 261 M
+(does not contain every information and it doesn't want to contain every) s
+402 253 M
+(information.) s
+402 237 M
+(A very important section is "Datastructures used internally by lp_solve".) s
+402 229 M
+(You can guess, what you will find there. If you want to do some extensions,) s
+402 221 M
+(if you detect some errors you probably have to look there to understand the) s
+402 213 M
+(way lp_solve organises all the information internally.) s
+402 197 M
+(The following sections contain a short description of the functions, but) s
+402 189 M
+(only the MAIN IDEAS are written down. These sections are organised in the) s
+402 181 M
+(same way as the source files. Each source file has its own section.) s
+402 165 M
+(For easier understanding the structure of the program, I also included the) s
+402 157 M
+("Function calling tree". It gives an idea how the different functions work) s
+402 149 M
+(together.) s
+402 133 M
+(If you want to get more information, which is not covered in this document,) s
+402 125 M
+(probably the hints you find in the References will be a good starting point.) s
+402 85 M
+(This file has been prepared carefully. Nevertheless it probably will contain) s
+402 77 M
+(errors. The author is in no way responsible for any damage caused by using) s
+402 69 M
+(this file.) s
+402 37 M
+(This document describes version 2.0 of lp_solve. However now major changes) s
+402 29 M
+(are expected to occur in the next time. Therefore this document should be) s
+402 21 M
+(valid also for newer versions of lp_solve.) s
+402 13 M
+( ) s
+_R
+S
+%%Page: (2) 2
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 2 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (2) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 485 M
+(/***************************************************************/) s
+5 477 M
+(/**                                                           **/) s
+5 469 M
+(/**                                                           **/) s
+5 461 M
+(/**             Contents                                      **/) s
+5 453 M
+(/**                                                           **/) s
+5 445 M
+(/**                                                           **/) s
+5 437 M
+(/***************************************************************/) s
+5 413 M
+(Contents:) s
+5 405 M
+(=========) s
+5 389 M
+(- Copyright and distribution) s
+5 373 M
+(- Preface) s
+5 357 M
+(- Contents) s
+5 341 M
+(- Introduction) s
+5 325 M
+(- Datastructures used internally by lp_solve) s
+5 309 M
+(- Short description of the functions, the MAIN IDEAS are written down.) s
+5 293 M
+(- Function calling tree) s
+5 277 M
+(- References) s
+5 237 M
+(/***************************************************************/) s
+5 229 M
+(/**                                                           **/) s
+5 221 M
+(/**                                                           **/) s
+5 213 M
+(/**             Introduction                                  **/) s
+5 205 M
+(/**                                                           **/) s
+5 197 M
+(/**                                                           **/) s
+5 189 M
+(/***************************************************************/) s
+5 165 M
+(Purpose:) s
+5 157 M
+(========) s
+5 141 M
+(   This documentation should help the readers to get a better ) s
+5 133 M
+(   understanding of the source code of lp_solve and its main ideas,) s
+5 125 M
+(   to be able to make changes in the code and to locate errors in the code,) s
+5 117 M
+(   if there appear any.) s
+5 109 M
+(   It should also give the chance to make improvements to the code) s
+5 101 M
+(   i.e. other product form or different Branch and Bound strategy.) s
+5 69 M
+(This documentation does NOT describe the simplex algorithm. You can find a) s
+5 61 M
+(description of the simplex algorithm in every book about linear programming.) s
+5 53 M
+(If you are interested to find a description which is more adapted to the) s
+5 45 M
+(sparse form of the simplex, check the literature given in the references.) s
+5 29 M
+(Some keywords, which describe the implementation of lp_solve:) s
+5 13 M
+(- selecting pivot variable with largest reduced costs.) s
+5 5 M
+(  No devex or steepest edge.) s
+402 493 M
+(- inverting the basis matrix is done in pure product form. No LU) s
+402 485 M
+(  decomposition.) s
+402 469 M
+(- Branch and Bound implemented as recursive function, this means pure ) s
+402 461 M
+(  Depth First. There are two strategies for selecting a branching variable.) s
+402 453 M
+(  Branching on the first non integer variable, branching on a random) s
+402 445 M
+(  selected variable.) s
+402 421 M
+(The result is a relatively small and easy to grasp code.) s
+402 413 M
+(On the other side it can run into numerical problems. More expenditure) s
+402 405 M
+(has to be done to make the code numerical stable and fast on large) s
+402 397 M
+(problems. Perhaps somebody wants to add some parts to improve the program.) s
+402 389 M
+(However this always should be done in a modular way.) s
+402 269 M
+(/***************************************************************/) s
+402 261 M
+(/**                                                           **/) s
+402 253 M
+(/**                                                           **/) s
+402 245 M
+(/**             DATASTRUCTURES                                **/) s
+402 237 M
+(/**                                                           **/) s
+402 229 M
+(/**                                                           **/) s
+402 221 M
+(/***************************************************************/) s
+402 197 M
+(This section describes the most important data structures of ) s
+402 189 M
+(the program. For arrays I tried to give the size of the array) s
+402 181 M
+(and give an idea of the contents of miscellaneous fields, if there ) s
+402 173 M
+(are different parts in the array.) s
+402 165 M
+(The first part of this section should give the main idea, how a) s
+402 157 M
+(linear programming problem is transferred into the internal data) s
+402 149 M
+(structures.) s
+402 141 M
+(Then a more detailed description of the separate arrays follows.) s
+402 109 M
+(How is the following linear program transferred to the internal data?) s
+402 93 M
+(max   c'x) s
+402 85 M
+(s.t.  A x <= b) s
+402 77 M
+(      lower <= x <= upper) s
+402 37 M
+(All data is placed into arrays which can be accessed via pointers in the) s
+402 29 M
+(structure lprec. There you can find information to the matrix, information,) s
+402 21 M
+(how to interpret the data and the inverted matrix \(Eta file\).) s
+_R
+S
+%%Page: (3) 3
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 3 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (3) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 501 M
+(===================================) s
+5 485 M
+(Something about numbering rows and columns:) s
+5 469 M
+(The program is written in C, however indices for the data normally start) s
+5 461 M
+(with 1!) s
+5 445 M
+(Columns are numbered from 1 to columns.) s
+5 437 M
+(Rows are numbered from 1 to rows.) s
+5 429 M
+(row[0] is objective row.) s
+5 405 M
+(Maximisation or minimisation is only a change of sign in objective row.) s
+5 397 M
+(This change is marked in ch_sign[0] and in lp->maximise.) s
+5 373 M
+(===================================) s
+5 349 M
+(Internally to lp_solve there exist only EQUALITIES or LESSEQUAL rows.) s
+5 341 M
+(GREATEREQUAL rows are multiplied with -1 and the information, that ) s
+5 333 M
+(this is done is written in the array ch_sign.) s
+5 309 M
+(How to access the right hand side?) s
+5 301 M
+(Read lp->orig_rhs.) s
+5 277 M
+(How to access the bounds?) s
+5 269 M
+(Read lp->orig_lowbo and lp->orig_upbo) s
+5 245 M
+(How to know the sense of a constraint?) s
+5 237 M
+(It can be accessed via the information on the bounds of a row.  Internally) s
+5 229 M
+(there exist only Less-equal and Equal rows.  Upper bound == 0 means row is) s
+5 221 M
+(equal row. Everything else means:  It is a Less-Equal row. To distinguish) s
+5 213 M
+(between Less-Equal rows and Greater-Equal rows of the original problem you) s
+5 205 M
+(have to check ch_sign.) s
+5 157 M
+(How to access information of the original problem, which is not ) s
+5 149 M
+(mentioned above?) s
+5 141 M
+(A good source to find this information is the routine "write_LP" which writes) s
+5 133 M
+(out the whole original problem. It therefore has to access all the original) s
+5 125 M
+(data. You can check this routine to get the requested information?) s
+5 93 M
+(===================================) s
+5 77 M
+(typedef struct _lprec) s
+5 69 M
+({) s
+5 61 M
+(  nstring   lp_name;            /* the name of the lp */) s
+5 45 M
+(  short     active;             /*TRUE if the globals point to this structure*/) s
+5 37 M
+(  short     verbose;            /* ## Verbose flag */) s
+5 29 M
+(  short     print_duals;        /* ## PrintDuals flag for PrintSolution */) s
+5 21 M
+(  short     print_sol;          /* ## used in lp_solve */) s
+5 13 M
+(  short     debug;              /* ## Print B&B information */) s
+5 5 M
+(  short     print_at_invert;    /* ## Print information at every reinversion */) s
+402 501 M
+(  short     trace;              /* ## Print information on pivot selection */) s
+402 493 M
+(  short     anti_degen;         /* ## Do perturbations */) s
+402 477 M
+(  int       rows;               /* Nr of constraint rows in the problem */) s
+402 469 M
+(  int       rows_alloc;         /* The allocated memory for Rows sized data */) s
+402 461 M
+(  int       columns;            /* The number of columns \(= variables\) */) s
+402 453 M
+(  int       columns_alloc;  ) s
+402 445 M
+(  int       sum;                /* The size of the variables + the slacks */) s
+402 437 M
+(  int       sum_alloc;) s
+402 421 M
+(  short     names_used;         /* Flag to indicate if names for rows and) s
+402 413 M
+(                                   columns are used */) s
+402 349 M
+(  nstring   *row_name;          /* rows_alloc+1 */) s
+402 333 M
+( +-------------------+-------------------+-------------------+) s
+402 325 M
+( |  Objective_name\(?\)|  Row_name[1]      |  UNUSED           |) s
+402 317 M
+( +-------------------+-------------------+-------------------+) s
+402 309 M
+( \\________  ________/          ^                              ^) s
+402 301 M
+(          \\/                   |                              |) s
+402 293 M
+(     25 Bytes                 rows                     rows_alloc+1) s
+402 269 M
+(  Each field has a length of NAMELEN = 25 Byte; in total it has rows_alloc+1) s
+402 261 M
+(  entries. The first entry seems to be unused.) s
+402 229 M
+(  nstring   *col_name;          /* columns_alloc+1 */) s
+402 205 M
+( +-------------------+-------------------+-------------------+) s
+402 197 M
+( |  ***************  |  Col_name[1]      |  UNUSED           |) s
+402 189 M
+( +-------------------+-------------------+-------------------+) s
+402 181 M
+( \\________  ________/          ^                              ^) s
+402 173 M
+(          \\/                   |                              |) s
+402 165 M
+(     25 Bytes               columns                 columns_alloc+1) s
+402 149 M
+(  Similar to row_name:) s
+402 141 M
+(  Each field has a length of NAMELEN = 25 Byte; in total it has columns_alloc+1) s
+402 133 M
+(  entries. The first entry seems to be unused.) s
+402 109 M
+( /* Row[0] of the sparse matrix is the objective function */) s
+402 93 M
+(  int       non_zeros;          /* The number of elements in the sparse matrix*/) s
+402 85 M
+(  int       mat_alloc;          /* The allocated size for matrix sized ) s
+402 77 M
+(                                   structures */) s
+402 69 M
+(  matrec    *mat;               /* mat_alloc :The sparse matrix */) s
+402 61 M
+(  int       *col_end;           /* columns_alloc+1 :Cend[i] is the index of the) s
+402 53 M
+(                                   first element after column i.) s
+402 45 M
+(                                   column[i] is stored in elements ) s
+402 37 M
+(                                   col_end[i-1] to col_end[i]-1 */) s
+402 29 M
+(  int       *col_no;            /* mat_alloc :From Row 1 on, col_no contains the) s
+402 21 M
+(                                   column nr. of the) s
+402 13 M
+(                                   nonzero elements, row by row */) s
+402 5 M
+(  short     row_end_valid;      /* true if row_end & col_no are valid */) s
+_R
+S
+%%Page: (4) 4
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 4 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (4) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 501 M
+(  int       *row_end;           /* rows_alloc+1 :row_end[i] is the index of the ) s
+5 493 M
+(                                   first element in Colno after row i */) s
+5 485 M
+(  REAL      *orig_rh;           /* rows_alloc+1 :The RHS after scaling & sign ) s
+5 477 M
+(                                  changing, but before `Bound transformation' */) s
+5 469 M
+(  REAL      *rh;                /* rows_alloc+1 :As orig_rh, but after Bound ) s
+5 461 M
+(                                   transformation */) s
+5 453 M
+(  REAL      *rhs;               /* rows_alloc+1 :The RHS of the current simplex         ) s
+5 445 M
+(                                   tableau */) s
+5 437 M
+(  short     *must_be_int;       /* sum_alloc+1 :TRUE if variable must be ) s
+5 429 M
+(                                   Integer */) s
+5 421 M
+(  REAL      *orig_upbo;         /* sum_alloc+1 :Bound before transformations */) s
+5 413 M
+(  REAL      *orig_lowbo;        /*  "       "                   */) s
+5 405 M
+(  REAL      *upbo;              /*  "       "  :Upper bound after transformation ) s
+5 397 M
+(                                   & B&B work*/) s
+5 389 M
+(  REAL      *lowbo;             /*  "       "  :Lower bound after transformation) s
+5 381 M
+(                                   & B&B work */) s
+5 365 M
+(  short     basis_valid;        /* TRUE if the basis is still valid */) s
+5 357 M
+(  int       *bas;               /* rows_alloc+1 :The basis column list */) s
+5 349 M
+(  short     *basis;             /* sum_alloc+1 : basis[i] is TRUE if the column) s
+5 341 M
+(                                   is in the basis */) s
+5 333 M
+(  short     *lower;             /*  "       "  :TRUE if the variable is at its ) s
+5 325 M
+(                                   lower bound \(or in the basis\), it is FALSE) s
+5 317 M
+(                                   if the variable is at its upper bound */) s
+5 293 M
+( The following ) s
+5 277 M
+(      max c'x) s
+5 253 M
+(      s.t.  A*x <= b) s
+5 245 M
+(            l <= x <= u) s
+5 229 M
+(symbolically:) s
+5 213 M
+(    +-----------------------------+) s
+5 205 M
+(    |             c               |) s
+5 197 M
+(    +-----------------------------+) s
+5 181 M
+(    +-----------------------------+    +-+) s
+5 173 M
+(    |                             |    | |) s
+5 165 M
+(    |             A               | <= |b|) s
+5 157 M
+(    |                             |    | |) s
+5 149 M
+(    |                             |    | |) s
+5 141 M
+(    +-----------------------------+    +-+) s
+5 117 M
+(     +-----------------------------+) s
+5 109 M
+(     |          upper Bound        |) s
+5 101 M
+(     +-----------------------------+) s
+5 85 M
+(     +-----------------------------+) s
+5 77 M
+(     |          lower Bound        |) s
+5 69 M
+(     +-----------------------------+) s
+5 37 M
+(is transformed to) s
+5 5 M
+(     +-----------------------------+    +-+      +-+      +-+  \\) s
+402 501 M
+(     |             c               |    | |      | |      | |   |    := row[0]) s
+402 493 M
+(     +-----------------------------+    +-+      +-+      +-+   |) s
+402 485 M
+(     |                             |    | |      | |      | |   \\  rows_alloc+1) s
+402 477 M
+(     |             A               | <= | |      | |      | |   /) s
+402 469 M
+(     |                             |    | |      | |      | |   |) s
+402 461 M
+(     |                             |    | |      | |      | |   |) s
+402 453 M
+(     +-----------------------------+    +-+      +-+      +-+  /) s
+402 445 M
+(                                       orig_rh    rh      rhs) s
+402 437 M
+(                                     scaled +    =orig_rh current rhs) s
+402 429 M
+(                                     signchange  + Bound  dh. Basis values\(?\)) s
+402 421 M
+(                                                 transform) s
+402 397 M
+(sum_alloc = rows_alloc + columns_alloc;) s
+402 389 M
+(Be careful: There is a difference between "rows" and "rows_alloc". We) s
+402 381 M
+(allocate "rows_alloc" elements, but use only "rows" elements. This means,) s
+402 373 M
+(the space between "rows" and "rows_alloc" is empty/not used.) s
+402 357 M
+(The same is true for "columns" and "columns_alloc".) s
+402 349 M
+(The pair for matrix is called "non_zeros" and "mat_alloc".) s
+402 317 M
+( rows) s
+402 309 M
+(    |) s
+402 301 M
+(  rows_alloc+1                 sum_alloc+1. Index [0] seems to be unused.) s
+402 293 M
+(    | |                             | ) s
+402 285 M
+(slack v                             v) s
+402 277 M
+(+----+-----------------------------+) s
+402 269 M
+(|    |          must_be_int        |) s
+402 261 M
+(+----+-----------------------------+) s
+402 245 M
+(slack) s
+402 237 M
+(+----+-----------------------------+) s
+402 229 M
+(|    |          orig_upbo          | before Bound transform) s
+402 221 M
+(+----+-----------------------------+) s
+402 205 M
+(slack) s
+402 197 M
+(+----+-----------------------------+) s
+402 189 M
+(|    |          orig_lowbo         | before Bound transform) s
+402 181 M
+(+----+-----------------------------+) s
+402 165 M
+(slack) s
+402 157 M
+(+----+-----------------------------+) s
+402 149 M
+(|    |               upbo          | after Bound transform and in B+B) s
+402 141 M
+(+----+-----------------------------+) s
+402 125 M
+(slack) s
+402 117 M
+(+----+-----------------------------+) s
+402 109 M
+(|    |              lowbo          | after Bound transform and in B+B) s
+402 101 M
+(+----+-----------------------------+) s
+402 77 M
+(slack) s
+402 69 M
+(+----+-----------------------------+) s
+402 61 M
+(|    |          Basis              |  TRUE, if column is in Basis.) s
+402 53 M
+(+----+-----------------------------+  FALSE otherwise.) s
+402 37 M
+(slack) s
+402 29 M
+(+----+-----------------------------+) s
+402 21 M
+(|    |          lower              |  TRUE, if column is in Basis or) s
+402 13 M
+(+----+-----------------------------+  nonbasic and at lower bound.) s
+402 5 M
+( ^                                    FALSE otherwise.) s
+_R
+S
+%%Page: (5) 5
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 5 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (5) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 501 M
+( |) s
+5 493 M
+( 0) s
+5 469 M
+(     +-+) s
+5 461 M
+(     | |) s
+5 453 M
+(     +-+) s
+5 445 M
+(     | |) s
+5 437 M
+(     | |   indices of columns which are in Basis.) s
+5 429 M
+(     | |) s
+5 421 M
+(     | |) s
+5 413 M
+(     +-+) s
+5 405 M
+(     bas) s
+5 381 M
+(The matrix is stored in sparse form in the usual way.) s
+5 357 M
+(  int       non_zeros;          /* The number of elements in the sparse matrix*/) s
+5 349 M
+(  int       mat_alloc;          /* The allocated size for matrix sized ) s
+5 341 M
+(                                   structures */) s
+5 333 M
+(  matrec    *mat;               /* mat_alloc :The sparse matrix */) s
+5 325 M
+(  int       *col_end;           /* columns_alloc+1 :Cend[i] is the index of the) s
+5 317 M
+(                                   first element after column i.) s
+5 309 M
+(                                   column[i] is stored in elements ) s
+5 301 M
+(                                   col_end[i-1] to col_end[i]-1 */) s
+5 293 M
+(  int       *col_no;            /* mat_alloc :From Row 1 on, col_no contains the) s
+5 285 M
+(                                   column nr. of the) s
+5 277 M
+(                                   nonzero elements, row by row */) s
+5 269 M
+(  short     row_end_valid;      /* true if row_end & col_no are valid */) s
+5 261 M
+(  int       *row_end;           /* rows_alloc+1 :row_end[i] is the index of the ) s
+5 253 M
+(                                   first element in Colno after row i */) s
+5 237 M
+(  +-----+-----+-----+-----+-----+-----+-----+) s
+5 229 M
+(  |  1  |  3  |  7  |  1  | *** | *** | *** |        \(row_nr\)) s
+5 221 M
+(  +-----+-----+-----+-----+-----+-----+-----+   mat) s
+5 213 M
+(  | 2.5 | 4.7 | 1.0 | 2.0 | *** | *** | *** |        \(value\)) s
+5 205 M
+(  +-----+-----+-----+-----+-----+-----+-----+) s
+5 197 M
+(                             ^               ^) s
+5 189 M
+(                             |               |) s
+5 181 M
+(                          non_zeros         mat_alloc) s
+5 165 M
+(Entry Zero is valid.) s
+5 125 M
+(  +-----+-----+-----+-----+) s
+5 117 M
+(  | *** |  3  |  4  |     |    col_end  \(in fact beginning of next column\)) s
+5 109 M
+(  +-----+-----+-----+-----+) s
+5 101 M
+(                 ^         ^) s
+5 93 M
+(                 |         |) s
+5 85 M
+(             columns   columns_alloc+1) s
+5 69 M
+(Entry Zero is NOT valid.\(?\)) s
+5 37 M
+(  +-----+-----+-----+-----+-----+-----+-----+) s
+5 29 M
+(  |  1  |  2  |  5  |  1  | *** | *** | *** |  col_no: Which columns appear in) s
+5 21 M
+(  +-----+-----+-----+-----+-----+-----+-----+          row[i]. Row[i] starts at) s
+5 13 M
+(                             ^               ^         row_end[i-1] and ends at) s
+5 5 M
+(                             |               |         row_end[i] - 1.) s
+402 501 M
+(                          non_zeros         mat_alloc) s
+402 485 M
+(ATTENTION: Documentation in header file seems to be wrong!!!) s
+402 477 M
+(col_no[0] is not used! row[i] starts in row_end[i-1]+1 and ends in row_end[i].) s
+402 469 M
+(In array there are used \(non_zero - number of coefficients in objective row +1\)) s
+402 461 M
+(elements used.) s
+402 445 M
+(Col_no is used in invert. \(And nowhere else, but set in Isvalid\)) s
+402 429 M
+(     +-+) s
+402 421 M
+(     | |) s
+402 413 M
+(     +-+) s
+402 405 M
+(     | |) s
+402 397 M
+(     | |  How many coefficients are in rows 1 to i. Equivalent:) s
+402 389 M
+(     | |  row_end[i] is the index of the first element in col_no after row i.) s
+402 381 M
+(     | |) s
+402 373 M
+(     +-+) s
+402 365 M
+(     row_end) s
+402 333 M
+(How is sense of the constraints/rows coded?) s
+402 317 M
+(Look at slack variable of the row. If the orig_upbo[i] < infinite \(this) s
+402 309 M
+(should be: orig_upbo[i] == 0\) then we have an equality row.  This comparison) s
+402 301 M
+(can be found in write_MPS\(\), where all Rows with upper bound == infinity are) s
+402 293 M
+("L" or "G" rows. All other rows are "E" rows. See also write_LP\(\).) s
+402 277 M
+(In the other cases, that means orig_upbo[[i] == infinite, we have to look) s
+402 269 M
+(at ch_sign[i]. If ch_sign[i] == TRUE, we have a greater equal row, if) s
+402 261 M
+(ch_sign == FALSE, we have a less equal row.) s
+402 245 M
+(=================================) s
+402 221 M
+(  short     eta_valid;          /* TRUE if current Eta structures are valid */) s
+402 213 M
+(  int       eta_alloc;          /* The allocated memory for Eta */) s
+402 205 M
+(  int       eta_size;           /* The number of Eta columns */) s
+402 197 M
+(  int       num_inv;            /* The number of real pivots */) s
+402 189 M
+(  int       max_num_inv;        /* ## The number of real pivots between ) s
+402 181 M
+(                                   reinvertions */ ) s
+402 173 M
+(  REAL      *eta_value;         /* eta_alloc :The Structure containing the) s
+402 165 M
+(                                   values of Eta */) s
+402 157 M
+(  int       *eta_row_nr;         /*  "     "  :The Structure containing the Row) s
+402 149 M
+(                                   indexes of Eta */) s
+402 141 M
+(  int       *eta_col_end;       /* rows_alloc + MaxNumInv : eta_col_end[i] is) s
+402 133 M
+(                                   the start index of the next Eta column */) s
+402 117 M
+(     +-------+----------------------------+) s
+402 109 M
+(     |       |    eta_col_end             |   Startindex of next Eta column) s
+402 101 M
+(     +-------+----------------------------+) s
+402 93 M
+(     rows_alloc     max_num_inv       ^) s
+402 85 M
+(  this is needed    we can have      eta_size) s
+402 77 M
+(  for first         maximal so many) s
+402 69 M
+(  invert            inverts, i.e. etamatrices.) s
+402 61 M
+(                    until next inversion.) s
+402 37 M
+(     +---+---+---+---+---+---+---+---+---+---+---+---+---+) s
+402 29 M
+(     |   |   |   |   |   |   |   |   |   |   |   |   |   | eta_value) s
+402 21 M
+(     +---+---+---+---+---+---+---+---+---+---+---+---+---+) s
+402 5 M
+(     +---+---+---+---+---+---+---+---+---+---+---+---+---+) s
+_R
+S
+%%Page: (6) 6
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 6 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (6) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 501 M
+(     |   |   |   |   |   |   |   |   |   |   |   |   |   | eta_row_nr) s
+5 493 M
+(     +---+---+---+---+---+---+---+---+---+---+---+---+---+) s
+5 485 M
+(                                                          ^) s
+5 477 M
+(                                                          |) s
+5 469 M
+(                                                      eta_alloc) s
+5 445 M
+(Normal way of sparse matrix representation. But how to built one Eta) s
+5 437 M
+(Matrix? I do not know, in which column to put eta-column.) s
+5 421 M
+(Guess:) s
+5 413 M
+(This is one eta_matrix. Last entry contains index of the column and value) s
+5 405 M
+(on the diagonal.) s
+5 397 M
+(     +---+---+---+---+---+) s
+5 389 M
+(     |1.3|.5 |.8 |.7 |2.5|   eta_value) s
+5 381 M
+(     +---+---+---+---+---+) s
+5 365 M
+(     +---+---+---+---+---+) s
+5 357 M
+(     | 1 | 3 | 7 | 8 | 6 |   eta_row_nr) s
+5 349 M
+(     +---+---+---+---+---+) s
+5 325 M
+(The matrix in dense form would be:) s
+5 309 M
+(    +---+---+---+---+---+---+---+---+) s
+5 301 M
+(    | 1 |   |   |   |   |1.3|   |   |) s
+5 293 M
+(    +---+---+---+---+---+---+---+---+) s
+5 285 M
+(    |   | 1 |   |   |   |   |   |   |) s
+5 277 M
+(    +---+---+---+---+---+---+---+---+) s
+5 269 M
+(    |   |   | 1 |   |   |.5 |   |   |) s
+5 261 M
+(    +---+---+---+---+---+---+---+---+) s
+5 253 M
+(    |   |   |   | 1 |   |   |   |   |) s
+5 245 M
+(    +---+---+---+---+---+---+---+---+) s
+5 237 M
+(    |   |   |   |   | 1 |   |   |   |) s
+5 229 M
+(    +---+---+---+---+---+---+---+---+) s
+5 221 M
+(    |   |   |   |   |   |2.5|   |   |) s
+5 213 M
+(    +---+---+---+---+---+---+---+---+) s
+5 205 M
+(    |   |   |   |   |   |.8 | 1 |   |) s
+5 197 M
+(    +---+---+---+---+---+---+---+---+) s
+5 189 M
+(    |   |   |   |   |   |.7 |   | 1 |) s
+5 181 M
+(    +---+---+---+---+---+---+---+---+) s
+5 173 M
+(                          ^) s
+5 165 M
+(                          |) s
+5 157 M
+(                     column 6) s
+5 101 M
+(  short     bb_rule;            /* what rule for selecting B&B variables */) s
+5 85 M
+(  short     break_at_int;       /* TRUE if stop at first integer better than) s
+5 77 M
+(                                   break_value */) s
+5 69 M
+(  REAL      break_value;        ) s
+5 53 M
+(  REAL      obj_bound;          /* ## Objective function bound for speedup of ) s
+5 45 M
+(                                   B&B */) s
+5 37 M
+(  int       iter;               /* The number of iterations in the simplex) s
+5 29 M
+(                                   solver \(LP\) */) s
+5 21 M
+(  int       total_iter;         /* The total number of iterations \(B&B\) \(ILP\)*/ ) s
+5 13 M
+(  int       max_level;          /* The Deepest B&B level of the last solution */) s
+5 5 M
+(  int       total_nodes;        /* total number of nodes processed in b&b */) s
+402 437 M
+(  REAL      *solution;          /* sum_alloc+1 :The Solution of the last LP, ) s
+402 429 M
+(                                   0 = The Optimal Value, ) s
+402 421 M
+(                                   1..rows The Slacks, ) s
+402 413 M
+(                                   rows+1..sum The Variables */) s
+402 405 M
+(  REAL      *best_solution;     /*  "       "  :The Best 'Integer' Solution */) s
+402 397 M
+(  REAL      *duals;             /* rows_alloc+1 :The dual variables of the) s
+402 389 M
+(                                   last LP */) s
+402 365 M
+(                              sum_alloc+1. Index [0] is optimal solution value. ) s
+402 357 M
+(                                    | ) s
+402 349 M
+(slack                               v) s
+402 341 M
+(+----+-----------------------------+) s
+402 333 M
+(|    |          solution           |) s
+402 325 M
+(+----+-----------------------------+) s
+402 317 M
+( ^  ^                             ^) s
+402 309 M
+( |  |                             |) s
+402 301 M
+( |  rows                         sum=rows+columns) s
+402 293 M
+(Optimal) s
+402 285 M
+(value) s
+402 277 M
+(= Index 0) s
+402 253 M
+(slack ) s
+402 245 M
+(+----+-----------------------------+) s
+402 237 M
+(|    |          best_solution      | Best integer solution so far.) s
+402 229 M
+(+----+-----------------------------+) s
+402 213 M
+(     +-+) s
+402 205 M
+(     | |) s
+402 197 M
+(     +-+) s
+402 189 M
+(     | |) s
+402 181 M
+(     | |  dual variables) s
+402 173 M
+(     | |) s
+402 165 M
+(     | |) s
+402 157 M
+(     +-+) s
+402 149 M
+(     duals) s
+402 93 M
+(  ) s
+402 85 M
+(  short     maximise;           /* TRUE if the goal is to maximise the ) s
+402 77 M
+(                                   objective function */) s
+402 69 M
+(  short     floor_first;        /* TRUE if B&B does floor bound first */) s
+402 61 M
+(  short     *ch_sign;           /* rows_alloc+1 :TRUE if the Row in the matrix) s
+402 53 M
+(                                   has changed sign ) s
+402 45 M
+(                                   \(a`x > b, x>=0\) is translated to ) s
+402 37 M
+(                                   s + -a`x = -b with x>=0, s>=0\) */ ) s
+_R
+S
+%%Page: (7) 7
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 7 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (7) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 501 M
+(     +-+) s
+5 493 M
+(     | |) s
+5 485 M
+(     +-+) s
+5 477 M
+(     | |) s
+5 469 M
+(     | | TRUE or FALSE) s
+5 461 M
+(     | |) s
+5 453 M
+(     | |) s
+5 445 M
+(     +-+) s
+5 437 M
+(     ch_sign    \(compare sense of a row described above\)) s
+5 421 M
+(  short     scaling_used;       /* TRUE if scaling is used */) s
+5 413 M
+(  short     columns_scaled;     /* TRUE is the columns are scaled too, Only use) s
+5 405 M
+(                                   if all variables are non-integer */) s
+5 397 M
+(  REAL      *scale;             /* sum_alloc+1 :0..Rows the scaling of the Rows,) s
+5 389 M
+(                                   Rows+1..Sum the scaling of the columns */) s
+5 357 M
+(                                sum_alloc+1) s
+5 349 M
+(                                    |) s
+5 341 M
+(rows            columns             v) s
+5 333 M
+(+----+-----------------------------+) s
+5 325 M
+(|    |                             | scale: Scaling factors for rows and columns) s
+5 317 M
+(+----+-----------------------------+) s
+5 309 M
+( ^  ^                             ^) s
+5 301 M
+( |  |                             |) s
+5 293 M
+( 0 rows                         sum=rows+columns) s
+5 245 M
+(  int       nr_lagrange;        /* Nr. of Langrangian relaxation constraints */) s
+5 237 M
+(  REAL      **lag_row;          /* NumLagrange, columns+1:Pointer to pointer of ) s
+5 229 M
+(                                   rows */) s
+5 221 M
+(  REAL      *lag_rhs;           /* NumLagrange :Pointer to pointer of Rhs */) s
+5 213 M
+(  REAL      *lambda;            /* NumLagrange :Lambda Values */) s
+5 205 M
+(  short     *lag_con_type;      /* NumLagrange :TRUE if constraint type EQ */) s
+5 197 M
+(  REAL      lag_bound;          /* the lagrangian lower bound */) s
+5 181 M
+(  short     valid;              /* Has this lp passed the 'test' */) s
+5 173 M
+(  REAL      infinite;           /* ## numerical stuff */) s
+5 165 M
+(  REAL      epsilon;            /* ## */) s
+5 157 M
+(  REAL      epsb;               /* ## */) s
+5 149 M
+(  REAL      epsd;               /* ## */) s
+5 141 M
+(  REAL      epsel;              /* ## */) s
+5 133 M
+(} lprec;) s
+5 53 M
+(The HASH structure:) s
+5 45 M
+(===================) s
+5 29 M
+( Hash_tab) s
+5 21 M
+(   +---+) s
+5 13 M
+(   |   |       hashelem) s
+5 5 M
+(   +---+      +---------+) s
+402 501 M
+(   | -------->| colname |) s
+402 493 M
+(   +---+      +---------+) s
+402 485 M
+(   |   |      | -------------------------------------------> next) s
+402 477 M
+(   +---+      +---------+                          column) s
+402 469 M
+(   |   |      | -------------------------------> +---------+) s
+402 461 M
+(   +---+      +---------+      bound             |  row    |) s
+402 453 M
+(   |   |      | ------------>+------------+      +---------+) s
+402 445 M
+(   +---+      +---------+    |  upbound   |      |  value  |) s
+402 437 M
+(   |   |      |must_be_i|    +------------+      +---------+) s
+402 429 M
+(   +---+      +---------+    |  lobound   |      |  -------------> next) s
+402 421 M
+(   |   |                     +------------+      +---------+) s
+402 413 M
+(   +---+) s
+402 405 M
+(   |   |) s
+402 397 M
+(   +---+) s
+402 349 M
+(typedef struct _hashelem) s
+402 341 M
+({) s
+402 333 M
+(  nstring          colname;) s
+402 325 M
+(  struct _hashelem *next;) s
+402 317 M
+(  struct _column   *col;) s
+402 309 M
+(  struct _bound    *bnd;) s
+402 301 M
+(  int              must_be_int;) s
+402 293 M
+(} hashelem;) s
+402 269 M
+(typedef struct _column) s
+402 261 M
+({) s
+402 253 M
+(  int            row;) s
+402 245 M
+(  float          value;) s
+402 237 M
+(  struct _column *next ;) s
+402 229 M
+(} column;) s
+402 213 M
+(typedef struct _bound) s
+402 205 M
+({) s
+402 197 M
+(  REAL          upbo;) s
+402 189 M
+(  REAL          lowbo;) s
+402 181 M
+(} bound;) s
+402 173 M
+( ) s
+402 133 M
+(   First_rside) s
+402 117 M
+(   +--------+         +--------+      ) s
+402 109 M
+(   | value  |         | value  |      ) s
+402 101 M
+(   +--------+         +--------+      ) s
+402 93 M
+(   | ------------->   | -------------> ) s
+402 85 M
+(   +--------+         +--------+      ) s
+402 77 M
+(   | relat  |         | relat  |      ) s
+402 69 M
+(   +--------+         +--------+      ) s
+402 53 M
+(typedef struct _rside /* contains relational operator and rhs value */) s
+402 45 M
+({) s
+402 37 M
+(  REAL          value;) s
+402 29 M
+(  struct _rside *next;) s
+402 21 M
+(  short         relat;) s
+402 13 M
+(} rside;) s
+_R
+S
+%%Page: (8) 8
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 8 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (8) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 485 M
+( ) s
+5 469 M
+(   First_constraint_name) s
+5 453 M
+(   +--------+         +--------+      ) s
+5 445 M
+(   | name   |         | name   |      ) s
+5 437 M
+(   +--------+         +--------+      ) s
+5 429 M
+(   | row    |         | row    |      ) s
+5 421 M
+(   +--------+         +--------+      ) s
+5 413 M
+(   | ------------->   | -------------> ) s
+5 405 M
+(   +--------+         +--------+      ) s
+5 381 M
+(typedef struct _constraint_name) s
+5 373 M
+({) s
+5 365 M
+(  char                    name[NAMELEN];) s
+5 357 M
+(  int                     row;) s
+5 349 M
+(  struct _constraint_name *next;) s
+5 341 M
+(} constraint_name;) s
+5 293 M
+( ) s
+5 285 M
+(typedef struct _tmp_store_struct) s
+5 277 M
+({) s
+5 269 M
+(  nstring name;) s
+5 261 M
+(  int     row;) s
+5 253 M
+(  REAL    value;) s
+5 245 M
+(  REAL    rhs_value;) s
+5 237 M
+(  short   relat;) s
+5 229 M
+(} tmp_store_struct;) s
+5 221 M
+( ) s
+5 157 M
+(/***************************************************************/) s
+5 149 M
+(/**                                                           **/) s
+5 141 M
+(/**                                                           **/) s
+5 133 M
+(/**             Routines in file "solve.c"                    **/) s
+5 125 M
+(/**                                                           **/) s
+5 117 M
+(/**                                                           **/) s
+5 109 M
+(/***************************************************************/) s
+5 61 M
+(This file contains the routines which are important to use the ) s
+5 53 M
+(SIMPLEX algorithm. For example you find routines to do basis) s
+5 45 M
+(exchange, to select new pivot element etc. in this file.) s
+5 21 M
+(set_globals\(\)   Copy/initialize the global variables for a special LP.) s
+5 5 M
+(ftran \(int start,) s
+402 501 M
+(       int end,) s
+402 493 M
+(       REAL *pcol\)         /* The column which will be used in ftran */) s
+402 485 M
+(        /* multiply the column with all matrices in etafile */) s
+402 469 M
+(        for every matrix between start and end) s
+402 461 M
+(                calculate End of the matrix) s
+402 453 M
+(                r = number of column in Eta matrix) s
+402 445 M
+(                theta = pcol[r]) s
+402 437 M
+(                for one matrix) s
+402 429 M
+(                        multiply pcol with the matrix \(?\)) s
+402 421 M
+(                update pcol[r]) s
+402 413 M
+(        round values in pcol) s
+402 397 M
+(btran \(REAL *row\)) s
+402 389 M
+(        For all Eta matrices, Starting with the highest number) s
+402 381 M
+(                k = number of column in Eta-matrix) s
+402 373 M
+(                for one matrix) s
+402 365 M
+(                        do multiplication) s
+402 357 M
+(                round result) s
+402 349 M
+(                set row[Eta_row_nr[k]] = result) s
+402 325 M
+(Isvalid \(lprec *lp\)) s
+402 317 M
+(                Calculate the structures row_end[] and ) s
+402 309 M
+(                col_no[].) s
+402 301 M
+(                internally two arrays are used:) s
+402 293 M
+(                row_nr[], which contains the number of coefficients) s
+402 285 M
+(                in row[i] and num[], which is a working array and) s
+402 277 M
+(                contains the already used part of col_no in row[i].) s
+402 269 M
+(                The array col_no is written at several positions) s
+402 261 M
+(                at the same time. So it could look like) s
+402 245 M
+(                +------------------------------------+) s
+402 237 M
+(                |**         ****         *     **    |) s
+402 229 M
+(                +------------------------------------+) s
+402 213 M
+(                The second part of the routine uses two arrays) s
+402 205 M
+(                rownum[] and colnum[]. It tests, if there are some) s
+402 197 M
+(                empty columns in the matrix and prints a) s
+402 189 M
+(                Warning message in this case.) s
+402 173 M
+(                In detail:) s
+402 165 M
+(                if \(!lp->row_end_valid\)) s
+402 157 M
+(                   malloc space for arrays num and rownum.) s
+402 149 M
+(                   initialise with zero) s
+402 141 M
+(                   count in rownum[i] how many coefficients are in row i) s
+402 133 M
+(                   set row_end \(ATTENTION: documentation of row_end) s
+402 125 M
+(                                seems to be wrong. row_end points to LAST) s
+402 117 M
+(                      coefficient in row. But this is never used??\)) s
+402 109 M
+(                      col_no[0] is not used!!!) s
+402 101 M
+(                   loop through all the columns,) s
+402 93 M
+(                      forget row[0] = objective row) s
+402 85 M
+(                      write column index in array col_no.) s
+402 77 M
+(                   free num, rownum) s
+402 69 M
+(                   row_end_valid = TRUE) s
+402 61 M
+(                if \(!lp->valid\)    ) s
+402 53 M
+(                   Calloc rownum, colnum.) s
+402 45 M
+(                   for all columns) s
+402 37 M
+(                      colnum[i]++, for every coefficient in column.) s
+402 21 M
+(                   if colnum[i] = 0, print warning.) s
+_R
+S
+%%Page: (9) 9
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 9 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (9) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 501 M
+(resize_eta\(\)            simple REALLOC) s
+5 461 M
+(condensecol\(int row_nr, REAL *pcol\)) s
+5 453 M
+(        if necessary:) s
+5 445 M
+(                resize_eta\(\)) s
+5 437 M
+(        For all rows) s
+5 429 M
+(                if i <> row_nr && pcol[i] <> 0) s
+5 421 M
+(                        Eta_row_nr = i) s
+5 413 M
+(                        Eta_value  = pcol[i]) s
+5 405 M
+(                        elnr++) s
+5 389 M
+(        /* Last Action: write element for diagonal */) s
+5 381 M
+(        Eta_row_nr = row_nr) s
+5 373 M
+(        Eta_value = pcol[row_nr]) s
+5 357 M
+(        update Eta_col_end) s
+5 333 M
+(addetacol\(\)) s
+5 325 M
+(        Determine Begin and End of last Eta matrix.) s
+5 317 M
+(        calculate theta = 1/ Eta_value[Diagonal element]) s
+5 309 M
+(        multiply all coefficients in last matrix with -theta) s
+5 301 M
+(        JustInverted = FALSE) s
+5 261 M
+(setpivcol\(short lower, int varin, REAL *pcol\)) s
+5 253 M
+(/* Main idea: take one column from original matrix and call ftran */) s
+5 237 M
+(        /* init */) s
+5 229 M
+(                ...) s
+5 221 M
+(                pcol[i] = 0  for all i) s
+5 205 M
+(        If variable   /* This means not surplus/slack variable */) s
+5 197 M
+(                copy column coefficients into pcol[]) s
+5 189 M
+(                Actualise pcol[0] -= Extrad*f) s
+5 181 M
+(        else          /* surplus/slack variable */) s
+5 173 M
+(                /* This column is column from identity matrix */) s
+5 165 M
+(                pcol[varin] = 1 or -1) s
+5 149 M
+(        ftran\(1, Etasize, pcol\)) s
+5 117 M
+(minoriteration\(colnr, row_nr\)) s
+5 109 M
+(        set varin) s
+5 101 M
+(        elnr = wk = Eta_col_end[Eta_size]  /* next free element */) s
+5 93 M
+(        Eta_size++) s
+5 85 M
+(        /* Eta_size = number of matrices in Eta file */) s
+5 77 M
+(        /* Eta_col_end = End of one matrix           */) s
+5 61 M
+(        Do something if Extrad <> 0          /* I do not know what to do ) s
+5 53 M
+(                                                and what is Extrad  */) s
+5 45 M
+(        For all coefficients in column) s
+5 37 M
+(                set row_nr) s
+5 29 M
+(                If Objective_row and Extrad) s
+5 21 M
+(                        Eta_value[Eta_col_end[Eta_size -1]] += Mat[j].value) s
+5 13 M
+(                else if k <> row_nr) s
+5 5 M
+(                        Eta_row_nr[elnr] = k) s
+402 501 M
+(                        Eta_value[elnr] = Mat[j].value) s
+402 493 M
+(                        elnr++) s
+402 485 M
+(                else) s
+402 477 M
+(                        piv = Mat[j].value) s
+402 461 M
+(        /* Last action: Write element on diagonal */) s
+402 453 M
+(        insert row_nr and 1/piv) s
+402 445 M
+(        ) s
+402 437 M
+(        theta = rhs[row_nr] / piv) s
+402 429 M
+(        Rhs[row_nr] = theta) s
+402 413 M
+(        For all coefficients of last eta matrix without diagonal element) s
+402 405 M
+(                Rhs[Eta_row_nr[i]] -= theta*Eta_value[i]) s
+402 389 M
+(        /* set administration data for Basis */) s
+402 381 M
+(        varout =) s
+402 373 M
+(        Bas[row_nr] = varin) s
+402 365 M
+(        Basis[varout] = FALSE) s
+402 357 M
+(        Basis[varin] = TRUE) s
+402 341 M
+(        For all coefficients of last eta matrix without diagonal element) s
+402 333 M
+(                Eta_value[i] /= -piv) s
+402 317 M
+(        /* update Eta_col_end */) s
+402 309 M
+(        Eta_col_end[Eta_size] = elnr) s
+402 277 M
+(rhsmincol\(REAL theta, int row_nr, int varin\)) s
+402 269 M
+(        Error test) s
+402 261 M
+(        Find for last matrix in etafile the begin and end) s
+402 253 M
+(        for all coefficients in last eta matrix without diagonal coefficient) s
+402 245 M
+(                calculate rhs[eta_row_nr] -= theta * etavalue[i]) s
+402 237 M
+(        rhs[row_nr] = theta) s
+402 221 M
+(        varout = bas[row_nr]) s
+402 213 M
+(        Bas[row_nr] = varin) s
+402 205 M
+(        Basis[varout] = FALSE) s
+402 197 M
+(        Basis[varin]  = TRUE) s
+402 165 M
+(invert\(\)) s
+402 157 M
+(        allocate) s
+402 141 M
+(        +---+---+---+---+---+---+) s
+402 133 M
+(        | 0 |   |   |   |   |   | rownum) s
+402 125 M
+(        +---+---+---+---+---+---+) s
+402 117 M
+(                                 ^) s
+402 109 M
+(                                 |) s
+402 101 M
+(                               Rows+1) s
+402 85 M
+(        +---+---+---+---+---+---+) s
+402 77 M
+(        |   |   |   |   |   |   | col) s
+402 69 M
+(        +---+---+---+---+---+---+) s
+402 53 M
+(        +---+---+---+---+---+---+) s
+402 45 M
+(        |   |   |   |   |   |   | row) s
+402 37 M
+(        +---+---+---+---+---+---+) s
+402 21 M
+(        +---+---+---+---+---+---+) s
+402 13 M
+(        |   |   |   |   |   |   | pcol               REAL pivot column??) s
+402 5 M
+(        +---+---+---+---+---+---+) s
+_R
+S
+%%Page: (10) 10
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 10 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (10) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 493 M
+(        +---+---+---+---+---+---+) s
+5 485 M
+(        |TRU|   |   |   |   |   | frow               short) s
+5 477 M
+(        +---+---+---+---+---+---+) s
+5 461 M
+(        +---+---+---+---+---+---+---+---+) s
+5 453 M
+(        |FAL|   |   |   |   |   |   |   | fcol       short) s
+5 445 M
+(        +---+---+---+---+---+---+---+---+) s
+5 437 M
+(                                         ^) s
+5 429 M
+(                                         |) s
+5 421 M
+(                                      columns+1) s
+5 405 M
+(        +---+---+---+---+---+---+---+---+) s
+5 397 M
+(        | 0 |   |   |   |   |   |   |   | colnum   /* count number of ) s
+5 389 M
+(        +---+---+---+---+---+---+---+---+             Coefficients which ) s
+5 381 M
+(                                                      appear in basis matrix */) s
+5 365 M
+(        change frow and fcol depending on Bas[i]) s
+5 357 M
+(                frow = FALSE if Bas[i] <= Rows) s
+5 349 M
+(                fcol = TRUE  if Bas[i] >  Rows) s
+5 325 M
+(        set) s
+5 317 M
+(                Bas[i] = i   for all i) s
+5 309 M
+(                Basis[i] = TRUE   for all slack variables) s
+5 301 M
+(                           FALSE  for all other variables) s
+5 293 M
+(                Rhs[i] = Rh[i]   for all i    /* initialise original Rhs */) s
+5 285 M
+( ) s
+5 277 M
+(        Correct Rhs for all Variables on upper bound) s
+5 269 M
+(        Correct Rhs for all slack variables on upper bound \(if necessary\)) s
+5 253 M
+(        Etasize =0) s
+5 245 M
+(        v = 0) s
+5 237 M
+(        row_nr = 0) s
+5 229 M
+(        Num_inv = 0) s
+5 221 M
+(        numit = 0) s
+5 205 M
+(        Look for rows with only one Coefficient  \(while\)) s
+5 197 M
+(                if found) s
+5 189 M
+(                look for column of coefficient) s
+5 181 M
+(                set     fcol[colnr - 1] = FALSE  /* This col is no longer) s
+5 173 M
+(                                                    in Basis */) s
+5 165 M
+(                        colnum[colnr] = 0) s
+5 157 M
+(                correct rownum counter) s
+5 149 M
+(                set frow[row_num] = FALSE    /* This row is no longer) s
+5 141 M
+(                                                in Basis */) s
+5 133 M
+(                minoriteration\(colnr, row_nr\)) s
+5 117 M
+(        Look for columns with only one Coefficient  \(while\)) s
+5 109 M
+(                if found) s
+5 93 M
+(                set frow[row_num] = FALSE    /* This row is no longer) s
+5 85 M
+(                                                in Basis */) s
+5 77 M
+(                rownum[] = 0) s
+5 69 M
+(                update column[]) s
+5 61 M
+(                numit++                /* counter how many iterations to do */) s
+5 53 M
+(                                       /* at end                            */) s
+5 45 M
+(                col[numit] = colnr     /* replaces minoriteration. But this */) s
+5 37 M
+(                                       /* is done later and we need arrays  */) s
+5 29 M
+(                row[numit] = row_nr    /* col and row therefore             */) s
+5 13 M
+(        /* real invertation */) s
+5 5 M
+(        for all columns   \(From beginning to end \)) s
+402 501 M
+(                if fcol) s
+402 493 M
+(                        set fcol[] = FALSE) s
+402 485 M
+(                        setpivcol \( Lower[Rows + j] , Rows + j, pcol\)) s
+402 477 M
+(                        Loop through all the rows to find coefficient with) s
+402 469 M
+(                                frow[row_nr] && pcol[row_nr]) s
+402 461 M
+(                        /* Interpretation:) s
+402 453 M
+(                           Look for first coefficient in \(partly inverted\)) s
+402 445 M
+(                           Basis matrix which is nonzero and use it for pivot.*/) s
+402 429 M
+(                        /* comparison for pcol is dangerous, but ok after) s
+402 421 M
+(                           rounding */) s
+402 405 M
+(                        Error conditions) s
+402 389 M
+(                        /* Now we know pivot element */) s
+402 373 M
+(                        frow[row_nr] = FALSE) s
+402 365 M
+(                        condensecol \(row_nr, pcol\)) s
+402 357 M
+(                        rhsmincol \(theta, row_nr, Rows + j\)) s
+402 349 M
+(                        addetacol\(\)) s
+402 333 M
+(        For all stored actions   /* compare numit */) s
+402 325 M
+(                set colnr / varin) s
+402 317 M
+(                    row_nr) s
+402 309 M
+(                init pcol with 0) s
+402 301 M
+(                set pcol[]) s
+402 293 M
+(                actualize pcol[0]) s
+402 285 M
+(                condensecol\(row_nr, pcol\)) s
+402 277 M
+(                rhsmincol\(theta, row_nr, varin\)) s
+402 269 M
+(                addetacol\(\)) s
+402 253 M
+(        Round Rhs) s
+402 245 M
+(        print info) s
+402 237 M
+(        Justinverted = TRUE) s
+402 229 M
+(        Doinvert = FALSE) s
+402 213 M
+(        free\(\)) s
+402 181 M
+(colprim\(int *colnr,) s
+402 173 M
+(          short minit,) s
+402 165 M
+(          REAL* drow\)) s
+402 157 M
+(        /* Each, colprimal - rowprimal and rowdual - coldual form a couple */) s
+402 149 M
+(        btran\( 1,0,0,0,0,0,...\)) s
+402 141 M
+(        update result depending on variables at upper bound) s
+402 125 M
+(        look for variable with negative reduced costs) s
+402 109 M
+(        ========================) s
+402 101 M
+(        More detailed:) s
+402 85 M
+(        init *colnr = 0) s
+402 77 M
+(             dpiv = set to a small negative number.) s
+402 69 M
+(        if  NOT minit) s
+402 61 M
+(                drow = 1,0,0,0,0......) s
+402 53 M
+(                btran\(drow\)) s
+402 45 M
+(                For variables at upper bound we have to calculate the) s
+402 37 M
+(                reduced cost differently:) s
+402 29 M
+(                multiply each coefficient in column with reduced cost of row=  ) s
+402 21 M
+(                slackvariable and sum. This is new reduced cost.) s
+402 13 M
+(                round reduced costs "drow") s
+402 5 M
+(        Look for variable which has upper bound Greater than Zero, which) s
+_R
+S
+%%Page: (11) 11
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 11 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (11) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 501 M
+(        is nonbasic.) s
+5 493 M
+(                Perhaps correct sign of reduced costs of variables) s
+5 485 M
+(                at upper bound.) s
+5 477 M
+(                take variable with most negative reduced costs.) s
+5 469 M
+(                save reduced costs in dpiv and) s
+5 461 M
+(                col_nr in *col_nr) s
+5 453 M
+(        print trace info) s
+5 445 M
+(        if *col_nr == 0) s
+5 437 M
+(                set some variables, that indicate that we are optimal.) s
+5 429 M
+(        return True, if *col_nr > 0) s
+5 397 M
+(rowprim\(int colnr,) s
+5 389 M
+(        int * row_nr,) s
+5 381 M
+(        REAL * theta,) s
+5 373 M
+(        REAL * pcol\)            /* contains current column from var conr */) s
+5 357 M
+(        /* search for good candidate in a column for pivot */) s
+5 349 M
+(        First look for big entries) s
+5 341 M
+(        Second \( this means first failed \) look also for smaller entries) s
+5 333 M
+(        Warning numerical instability) s
+5 317 M
+(        Determine UNBOUNDED) s
+5 309 M
+(        Perhaps shift variable to its upper bound) s
+5 293 M
+(        Aim: determin valid pivot element) s
+5 277 M
+(        print some info) s
+5 261 M
+(        Return true, if we had been successful finding a pivot element.) s
+5 245 M
+(        ========================) s
+5 237 M
+(        More detailed:) s
+5 221 M
+(        init *row_nr = 0) s
+5 213 M
+(             *theta = infinity) s
+5 205 M
+(        loop through all the rows) s
+5 197 M
+(                qout = maximal steplength = *thetha) s
+5 189 M
+(                *row_nr = number of that row.) s
+5 181 M
+(                /* At first look only for Steps which are not calculated with) s
+5 173 M
+(                   very small divisors. If no such steps found, take also) s
+5 165 M
+(                   small divisors in consideration */) s
+5 157 M
+(        Perhaps we found numerical problems. Print warning in this case) s
+5 141 M
+(        If we did not find a limiting row, we are perhaps unbounded.) s
+5 133 M
+(        \(upperbound on that variable = infinity\)) s
+5 125 M
+(        The case that we have an upper bound is treated separately) s
+5 109 M
+(        print some trace info) s
+5 93 M
+(        return \(*row_nr > 0\)) s
+5 61 M
+(rowdual\(int *row_nr\) ) s
+5 53 M
+(        look for infeasibilities) s
+5 37 M
+(        init *row_nr = 0) s
+5 29 M
+(             minrhs = a little bit negative) s
+5 13 M
+(        loop through all the rows) s
+5 5 M
+(                if we find a variable which is not zero, but has to be) s
+402 501 M
+(                then we break this loop. *row_nr = i) s
+402 485 M
+(                calculate distance between rhs[i] and upperbound[i]) s
+402 477 M
+(                take smaller one) s
+402 461 M
+(                |-------|----------------|) s
+402 453 M
+(                0      rhs[i]          upperbound[i]) s
+402 445 M
+(                       =g) s
+402 421 M
+(                minrhs is smallest g) s
+402 413 M
+(                *row_nr is corresponding rownumber.) s
+402 397 M
+(        print some trace info) s
+402 389 M
+(        return \(*row_nr > 0\)) s
+402 365 M
+(coldual\(int row_nr,) s
+402 357 M
+(        int *colnr,) s
+402 349 M
+(        short minit,) s
+402 341 M
+(        REAL *prow,) s
+402 333 M
+(        REAL *drow\)) s
+402 325 M
+(        looks also for a candidate for pivot.) s
+402 285 M
+(iteration \(int row_nr,) s
+402 277 M
+(           int varin,) s
+402 269 M
+(           REAL *theta,) s
+402 261 M
+(           REAL up,) s
+402 253 M
+(           short *minit,) s
+402 245 M
+(           short *low,) s
+402 237 M
+(           short primal,) s
+402 229 M
+(           REAL *pcol\)) s
+402 213 M
+(                execute one iteration) s
+402 173 M
+(solvelp\(\)) s
+402 165 M
+(                First check if right hand side is positive everywhere) s
+402 157 M
+(                and smaller than possible upper bound of this row.) s
+402 149 M
+(                In this case we start with a feasible basis.) s
+402 117 M
+(                ATTENTION:) s
+402 109 M
+(                If we want to use solvelp\(\) directly, skipping) s
+402 101 M
+(                solve\(\) and milpsolve\(\) we have to be very careful.) s
+402 93 M
+(                e.g. solve\(\) sets the global variables!!!) s
+402 77 M
+(is_int\(REAL value\)) s
+402 69 M
+(                simple routine, checks, if a REAL value is integer.) s
+402 53 M
+(construct_solution\(REAL *sol\)) s
+402 45 M
+(                The routine does exactly, what its name says.) s
+402 37 M
+(                There are two parts, with and without scaling.) s
+402 13 M
+(                First set all variables to their lower bounds.) s
+402 5 M
+(                Then set all basis variables to their true values, i.e.) s
+_R
+S
+%%Page: (12) 12
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 12 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (12) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 501 M
+(                the right hand side is added to the lower bound.) s
+5 493 M
+(                \(The reason is that all variables have been transformed) s
+5 485 M
+(                to have lower bound zero\) ## Autor fragen!!) s
+5 477 M
+(                Finally set the non basic variables, which are not at ) s
+5 469 M
+(                their lower bound to their upper bound.) s
+5 461 M
+(                Calculate values of the slack variables of a row.) s
+5 429 M
+(calculate_duals\(\)) s
+5 421 M
+(                In fact calculate the reduced costs of the slack variables) s
+5 413 M
+(                and correct values.) s
+5 381 M
+(milpsolve\(REAL   *upbo,) s
+5 373 M
+(          REAL   *lowbo,) s
+5 365 M
+(          short  *sbasis,) s
+5 357 M
+(          short  *slower,) s
+5 349 M
+(          int    *sbas\)) s
+5 341 M
+(                        First of all: copy the arrays upbo and lowbo) s
+5 333 M
+(                        to the pointers of Upbo and Lowbo. \(Memory) s
+5 325 M
+(                        is allocated for these arrays. Pointers point) s
+5 317 M
+(                        to lp->upbo and lp->lowbo\)) s
+5 309 M
+(                        \(size of memory is updated, if new columns are ) s
+5 301 M
+(                        added.\)) s
+5 293 M
+(                        These arrays came from solve\(\) as ORIGINAL) s
+5 285 M
+(                        bounds. Therefore no shifting of transformed bounds ) s
+5 277 M
+(                        necessary in lpkit.c if solve\(\) is called.) s
+5 261 M
+(                        if \(LP->anti_degen\)) s
+5 253 M
+(                           disturb lower and upper bound a little bit.) s
+5 245 M
+(                        if \(!LP->eta_valid\)) s
+5 237 M
+(                           shift lower bounds to zero. This means:) s
+5 229 M
+(                           Orig_lowbo   ... unchanged) s
+5 221 M
+(                           Orig_upbo    ... unchanged) s
+5 213 M
+(                           lowbo        ... unchanged \(implicit in code = 0\)) s
+5 205 M
+(                           upbo         ... mainly upbo_old - lowbo.) s
+5 189 M
+(                        solvelp\(\)) s
+5 173 M
+(                        if \(LP->anti_degen\)) s
+5 165 M
+(                           restore upbo, lowbo, Orig_rh and solve again.) s
+5 149 M
+(                        if \(OPTIMAL solution of LP\)) s
+5 141 M
+(                           check, if we can cutoff branch with LP value.) s
+5 133 M
+(                           look for noninteger variable \(look for first ) s
+5 125 M
+(                           or look random\)) s
+5 117 M
+(                           if \(noninteger variables\)) s
+5 109 M
+(                              setup two new problems.) s
+5 101 M
+(                              Malloc new memory) s
+5 93 M
+(                              memcpy the data) s
+5 85 M
+(                              solve problems recursively \(Floor_first/ceiling_irst\)) s
+5 77 M
+(                              set return values) s
+5 69 M
+(                           else) s
+5 61 M
+(                              /* all required values are int */) s
+5 53 M
+(                              check, if better solution found.) s
+5 45 M
+(                              /* Yes */) s
+5 37 M
+(                              memcpy data) s
+5 29 M
+(                              perhaps break B+B) s
+5 5 M
+(                        Recursive Function. Pure depth first search. ) s
+402 501 M
+(                        No easily accessible nodelist, because of depth) s
+402 493 M
+(                        first search. \(Also less active nodes\)) s
+402 485 M
+(                        Branching on first noninteger variablen or) s
+402 477 M
+(                        on a randomly selected variable.) s
+402 469 M
+(                        Avoid inverting if possible.) s
+402 437 M
+(solve\(lprec *lp\)) s
+402 429 M
+(                        init BEST-Solution, init perhaps basis, call milpsolve) s
+402 397 M
+(lag_solve\(lprec *lp, REAL start_bound, int num_iter, short verbose\)) s
+402 389 M
+(                Lagrangean solver.) s
+402 333 M
+(/***************************************************************/) s
+402 325 M
+(/**                                                           **/) s
+402 317 M
+(/**                                                           **/) s
+402 309 M
+(/**             Routines in file "debug.c"                    **/) s
+402 301 M
+(/**                                                           **/) s
+402 293 M
+(/**                                                           **/) s
+402 285 M
+(/***************************************************************/) s
+402 261 M
+(static void print_indent\(void\)) s
+402 253 M
+(void debug_print_solution\(\)) s
+402 245 M
+(void debug_print_bounds\(REAL *upbo, REAL *lowbo\)) s
+402 237 M
+(void debug_print\(char *format, ...\)) s
+402 213 M
+(===================================================) s
+402 197 M
+(static void print_indent\(void\)) s
+402 189 M
+(   Used for printing the branch and bound tree. For every node the depth) s
+402 181 M
+(   in the tree is shown with some ASCII graphic.) s
+402 165 M
+(void debug_print_solution\(\)) s
+402 157 M
+(   For all columns) s
+402 149 M
+(      print_indent\(\)) s
+402 141 M
+(      print the variable name \(true or artificial\) and its value.) s
+402 125 M
+(void debug_print_bounds\(REAL *upbo, REAL *lowbo\)) s
+402 117 M
+(   For all columns) s
+402 109 M
+(      Print the lower bounds if they are different from zero with true or) s
+402 101 M
+(      artificial name.) s
+402 93 M
+(      Print the upper bounds if they are different from infinity with true or) s
+402 85 M
+(      artificial name.) s
+402 69 M
+(void debug_print\(char *format, ...\)) s
+402 29 M
+(/***************************************************************/) s
+402 21 M
+(/**                                                           **/) s
+402 13 M
+(/**                                                           **/) s
+402 5 M
+(/**             Routines in file "lp_solve.c"                 **/) s
+_R
+S
+%%Page: (13) 13
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 13 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (13) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 501 M
+(/**                                                           **/) s
+5 493 M
+(/**                                                           **/) s
+5 485 M
+(/***************************************************************/) s
+5 461 M
+(void print_help\(char *argv[]\)) s
+5 453 M
+(   Print usage message. If the program is called with option "-h" the usage) s
+5 445 M
+(   message is printed. The usage message gives the options which can be) s
+5 437 M
+(   given when calling the program.) s
+5 421 M
+(int main\(int argc, char *argv[]\)) s
+5 413 M
+(   Initialise some data. Read all the options and make use of them.) s
+5 405 M
+(   \(Options have to be given separately, non existing options are just ignored.\)) s
+5 389 M
+(   Read MPS file or lp_file from stdin.) s
+5 373 M
+(   Perhaps print out some information about LP and do some manipulations on) s
+5 365 M
+(   LP \(i.e. scaling\).) s
+5 349 M
+(   call solve\(lp\)) s
+5 333 M
+(   Check return status:) s
+5 325 M
+(   If \(OPTIMAL\)) s
+5 317 M
+(      Print out solution and some statistics.) s
+5 309 M
+(   else print solution status.) s
+5 269 M
+(/***************************************************************/) s
+5 261 M
+(/**                                                           **/) s
+5 253 M
+(/**                                                           **/) s
+5 245 M
+(/**             Routines in file "lpkit.c"                    **/) s
+5 237 M
+(/**                                                           **/) s
+5 229 M
+(/**                                                           **/) s
+5 221 M
+(/***************************************************************/) s
+5 205 M
+(The main purpose of this file is to give several "manipulation" routines to) s
+5 197 M
+(the user. The user should be able to read information from the current) s
+5 189 M
+(problem. But he/she should also be able to change information in the) s
+5 181 M
+(problem. So for example, it is possible to add new constraints to the) s
+5 173 M
+(problem, to change the bounds of the variables etc.) s
+5 141 M
+(void error\(char *format, ...\)) s
+5 133 M
+(lprec *make_lp\(int rows, int columns\)) s
+5 125 M
+(void delete_lp\(lprec *lp\)) s
+5 117 M
+(lprec *copy_lp\(lprec *lp\)) s
+5 109 M
+(void inc_mat_space\(lprec *lp, int maxextra\)) s
+5 101 M
+(void inc_row_space\(lprec *lp\)) s
+5 93 M
+(void inc_col_space\(lprec *lp\)) s
+5 85 M
+(void set_mat\(lprec *lp, int Row, int Column, REAL Value\)) s
+5 77 M
+(void set_obj_fn\(lprec *lp, REAL *row\)) s
+5 69 M
+(void str_set_obj_fn\(lprec *lp, char *row\)) s
+5 61 M
+(void add_constraint\(lprec *lp, REAL *row, short constr_type, REAL rh\)) s
+5 53 M
+(void str_add_constraint\(lprec *lp,) s
+5 45 M
+(                        char *row_string,) s
+5 37 M
+(                        short constr_type,) s
+5 29 M
+(                        REAL rh\)) s
+5 21 M
+(void del_constraint\(lprec *lp, int del_row\)) s
+5 13 M
+(void add_lag_con\(lprec *lp, REAL *row, short con_type, REAL rhs\)) s
+5 5 M
+(void str_add_lag_con\(lprec *lp, char *row, short con_type, REAL rhs\)) s
+402 501 M
+(void add_column\(lprec *lp, REAL *column\)) s
+402 493 M
+(void str_add_column\(lprec *lp, char *col_string\)) s
+402 485 M
+(void del_column\(lprec *lp, int column\)) s
+402 477 M
+(void set_upbo\(lprec *lp, int column, REAL value\)) s
+402 469 M
+(void set_lowbo\(lprec *lp, int column, REAL value\)) s
+402 461 M
+(void set_int\(lprec *lp, int column, short must_be_int\)) s
+402 453 M
+(void set_rh\(lprec *lp, int row, REAL value\)) s
+402 445 M
+(void set_rh_vec\(lprec *lp, REAL *rh\)) s
+402 437 M
+(void str_set_rh_vec\(lprec *lp, char *rh_string\)) s
+402 429 M
+(void set_maxim\(lprec *lp\)) s
+402 421 M
+(void set_minim\(lprec *lp\)) s
+402 413 M
+(void set_constr_type\(lprec *lp, int row, short con_type\)) s
+402 405 M
+(REAL mat_elm\(lprec *lp, int row, int column\)) s
+402 397 M
+(void get_row\(lprec *lp, int row_nr, REAL *row\)) s
+402 389 M
+(void get_column\(lprec *lp, int col_nr, REAL *column\)) s
+402 381 M
+(void get_reduced_costs\(lprec *lp, REAL *rc\)) s
+402 373 M
+(short is_feasible\(lprec *lp, REAL *values\)) s
+402 365 M
+(short column_in_lp\(lprec *lp, REAL *testcolumn\)) s
+402 357 M
+(void print_lp\(lprec *lp\)) s
+402 349 M
+(void set_row_name\(lprec *lp, int row, nstring new_name\)) s
+402 341 M
+(void set_col_name\(lprec *lp, int column, nstring new_name\)) s
+402 333 M
+(static REAL minmax_to_scale\(REAL min, REAL max\)) s
+402 325 M
+(void unscale_columns\(lprec *lp\)) s
+402 317 M
+(void unscale\(lprec *lp\)) s
+402 309 M
+(void auto_scale\(lprec *lp\)) s
+402 301 M
+(void reset_basis\(lprec *lp\)) s
+402 293 M
+(void print_solution\(lprec *lp\)) s
+402 285 M
+(void write_LP\(lprec *lp, FILE *output\)) s
+402 277 M
+(void write_MPS\(lprec *lp, FILE *output\)) s
+402 269 M
+(void print_duals\(lprec *lp\)) s
+402 261 M
+(void print_scales\(lprec *lp\)) s
+402 237 M
+(What is done in the routines:) s
+402 229 M
+(=============================) s
+402 213 M
+(void error\(char *format, ...\)) s
+402 205 M
+(lprec *make_lp\(int rows, int columns\)) s
+402 189 M
+(   Construct a new LP. Set all variables to some default values.) s
+402 181 M
+(   The LP has "rows" rows and "columns" columns. The matrix contains) s
+402 173 M
+(   no values, but space for one value. All arrays which depend on) s
+402 165 M
+(   "rows" and "columns" are malloced.) s
+402 149 M
+(   The problem contains only continuous variables.) s
+402 141 M
+(   Upper bounds are infinity, lower bounds are zero.) s
+402 133 M
+(   The basis is true, all rows are in basis. All columns are nonbasic.) s
+402 125 M
+(   The eta-file is valid. Solution, best_solution and duals are Zero.) s
+402 117 M
+(   And some other default values.) s
+402 85 M
+(void delete_lp\(lprec *lp\)) s
+402 69 M
+(    Delete ALL the malloced arrays. At last free the structure.) s
+402 45 M
+(lprec *copy_lp\(lprec *lp\)) s
+402 29 M
+(   Copy first the structure of the lp, this means especially, that all) s
+402 21 M
+(   the constant values are copied.) s
+402 13 M
+(   Copy all the arrays of the lp and set the pointers to the new arrays.) s
+402 5 M
+(   Mainly use MALLOCCOPY for this, this means: malloc space and copy data.) s
+_R
+S
+%%Page: (14) 14
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 14 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (14) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 485 M
+(void inc_mat_space\(lprec *lp, int maxextra\)) s
+5 469 M
+(   Test if realloc necessary. If yes, realloc arrays "mat" and "col_no".) s
+5 461 M
+(   If Lp is active, set some global variables which could be changed by) s
+5 453 M
+(   realloc.) s
+5 429 M
+(void inc_row_space\(lprec *lp\)) s
+5 413 M
+(   Test, if increment necessary.) s
+5 405 M
+(   This routine increments the space for rows with 10 additional rows.) s
+5 397 M
+(   Therefore one condition for correct work of this routine is that ) s
+5 389 M
+(   it is never necessary to increase the) s
+5 381 M
+(   number of additionally rows in one step with more than 10!) s
+5 373 M
+(   Several arrays are realloced. ) s
+5 365 M
+(   At last, if LP is active, set some global variables new, because they could) s
+5 357 M
+(   have changed.) s
+5 349 M
+(   ) s
+5 333 M
+(void inc_col_space\(lprec *lp\)) s
+5 317 M
+(   similar to routine increment row space. The problems are also the same.) s
+5 309 M
+(   Several Arrays are realloced, but no shift of values.) s
+5 269 M
+(void set_mat\(lprec *lp, int Row, int Column, REAL Value\)) s
+5 253 M
+(   set one element in matrix.) s
+5 245 M
+(   Test, if row and column are in range. Scale value.) s
+5 237 M
+(   If colnum is in basis and row not objective row set Basis_valid = FALSE) s
+5 229 M
+(   Always set eta_valid = FALSE \(is this necessary?\)) s
+5 213 M
+(   Search in column for entry with correct rownumber.) s
+5 205 M
+(   If row found scale value again but with other expression than first time.) s
+5 197 M
+(   Perhaps change sign) s
+5 189 M
+(   ) s
+5 181 M
+(   If row not found:) s
+5 173 M
+(    Increment mat_space for one additional element.) s
+5 165 M
+(    Shift matrix and update col_end.) s
+5 157 M
+(    Set new element "row" and scale value perhaps \(same problem as above\)) s
+5 149 M
+(    Rowend is not valid any longer) s
+5 141 M
+(    update number of nonzeros and copy this value if lp is active) s
+5 109 M
+(void set_obj_fn\(lprec *lp, REAL *row\)) s
+5 93 M
+(   call in one loop for dense row the function set_mat\(\).) s
+5 85 M
+(   No test is done, if we want to include Elements with value "0".) s
+5 77 M
+(   These values are included into the matrix!) s
+5 45 M
+(void str_set_obj_fn\(lprec *lp, char *row\)) s
+5 29 M
+(   reserve space for one row) s
+5 21 M
+(   try with "strtod\(\)" to change all the strings to real values) s
+5 13 M
+(   call set_obj_fn\(\)) s
+5 5 M
+(   free space) s
+402 477 M
+(void add_constraint\(lprec *lp, REAL *row, short constr_type, REAL rh\)) s
+402 461 M
+(   first reserve space for integers for length of one row.) s
+402 453 M
+(   Mark all the positions, which contain nonzeros and update non_zeros) s
+402 445 M
+(   malloc space for a complete new matrix) s
+402 437 M
+(   increment matrix space by null??) s
+402 429 M
+(   rows++) s
+402 421 M
+(   sum++) s
+402 413 M
+(   increment row space) s
+402 405 M
+(   if scaling) s
+402 397 M
+(      shift the values ) s
+402 389 M
+(      and set scaling value for new row to 1) s
+402 381 M
+(   if names used) s
+402 373 M
+(      invent new name for row) s
+402 365 M
+(   if columns are scaled) s
+402 357 M
+(      scale coefficients) s
+402 349 M
+(   calculate change_sign) s
+402 341 M
+(   copy every column from old matrix to new matrix. Perhaps add new entry for) s
+402 333 M
+(   new row.) s
+402 325 M
+(   Update col_end) s
+402 317 M
+(   copy new matrix back to old matrix.) s
+402 309 M
+(   free the allocated arrays) s
+402 301 M
+(   ) s
+402 293 M
+(   shift orig_upper_bounds) s
+402 285 M
+(         orig_lower_bounds) s
+402 277 M
+(         basis) s
+402 269 M
+(         lower) s
+402 261 M
+(         must_be_int) s
+402 245 M
+(   update Basis info) s
+402 237 M
+(   set bounds for slack variables) s
+402 221 M
+(   change_sign for rhs, but comparison is made with sense of constraint. ) s
+402 213 M
+(   ) s
+402 205 M
+(   rows_end_valid = false) s
+402 197 M
+(   put slackvariable for this row into basis) s
+402 189 M
+(   if lp == active, set globals) s
+402 181 M
+(   eta_file = non_valid.) s
+402 173 M
+( ) s
+402 149 M
+(void str_add_constraint\(lprec *lp,) s
+402 141 M
+(                        char *row_string,) s
+402 133 M
+(                        short constr_type,) s
+402 125 M
+(                        REAL rh\)) s
+402 109 M
+(   This routine is similar to the routine str_set_obj_fn. The same idea,) s
+402 101 M
+(   but call add_constraint.) s
+402 61 M
+(void del_constraint\(lprec *lp, int del_row\)) s
+402 45 M
+(   First check, if rownumber exists.) s
+402 37 M
+(   For all columns) s
+402 29 M
+(      For every coefficient in column) s
+402 21 M
+(         if it is not rownumber,) s
+402 13 M
+(         then shift elements to smaller nonzero index and perhaps correct row index.) s
+402 5 M
+(         else  delete) s
+_R
+S
+%%Page: (15) 15
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 15 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (15) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 501 M
+(         update col_end) s
+5 493 M
+(   shift values for orig_rhs, ch_sign, bas, row_name down by one.) s
+5 485 M
+(   Update values in bas) s
+5 477 M
+(   shift values for lower, basis, orig_upbo, orig_lowbo, must_be_int, scaling down) s
+5 469 M
+(      by one.) s
+5 461 M
+(   update rows and sum) s
+5 453 M
+(   set row_end_valid = FALSE) s
+5 445 M
+(   if lp = active, set globals.) s
+5 437 M
+(   eta_valid = FALSE) s
+5 429 M
+(   basis_valid = FALSE) s
+5 397 M
+(void add_lag_con\(lprec *lp, REAL *row, short con_type, REAL rhs\)) s
+5 381 M
+(   Calloc/Realloc space for lag_row, lag_rhs, lambda, lag_con_type) s
+5 373 M
+(   Fill arrays.) s
+5 357 M
+(void str_add_lag_con\(lprec *lp, char *row, short con_type, REAL rhs\)) s
+5 341 M
+(   Same idea as always. Reserve space for array, strtod values into this array,) s
+5 333 M
+(   call add_lag_con and free array.) s
+5 301 M
+(void add_column\(lprec *lp, REAL *column\)) s
+5 285 M
+(   update columns and sums,) s
+5 277 M
+(   increment space for columns and matrix ) s
+5 269 M
+(   if scaling used) s
+5 261 M
+(      set scaling factor for column to "1" and scale all values with row[scaling].) s
+5 253 M
+(   for all elements in \(dense\) column) s
+5 245 M
+(      if value is not zero) s
+5 237 M
+(         write it in matrix.) s
+5 229 M
+(   update col_end) s
+5 221 M
+(          orig_lowbo) s
+5 213 M
+(          orig_upbo) s
+5 205 M
+(          lower) s
+5 197 M
+(          basis) s
+5 189 M
+(          must_be_int) s
+5 181 M
+(          invent perhaps name for column) s
+5 173 M
+(   row_end_valid = FALSE) s
+5 165 M
+(   if lp = active) s
+5 157 M
+(      set sum, columns, non_zeros) s
+5 133 M
+(void str_add_column\(lprec *lp, char *col_string\)) s
+5 117 M
+(   Same idea as always. Reserve space for array, strtod values into this array,) s
+5 109 M
+(   call add_column and free array.) s
+5 77 M
+(void del_column\(lprec *lp, int column\)) s
+5 61 M
+(   check, if column is in range) s
+5 53 M
+(   if column in Basis set basis_valid to FALSE) s
+5 45 M
+(      else update bas) s
+5 37 M
+(   shift names_used,) s
+5 29 M
+(         must_be_int) s
+5 21 M
+(         orig_upbo) s
+5 13 M
+(         orig_lowbo) s
+5 5 M
+(         upbo) s
+402 501 M
+(         lowbo) s
+402 493 M
+(         basis) s
+402 485 M
+(         lower) s
+402 477 M
+(         scaling) s
+402 469 M
+(   update lagrangean stuff) s
+402 461 M
+(   copy elements in matrix down.) s
+402 453 M
+(   update col_end) s
+402 445 M
+(   update non_zeros) s
+402 437 M
+(   row_end_valid = FALSE) s
+402 429 M
+(   eta_valid = FALSE) s
+402 421 M
+(   update sum) s
+402 413 M
+(          column) s
+402 405 M
+(   if lp = active) s
+402 397 M
+(      set_globals\(\)) s
+402 365 M
+(void set_upbo\(lprec *lp, int column, REAL value\)) s
+402 349 M
+(   Test if column number in range) s
+402 341 M
+(   scale value) s
+402 333 M
+(   Test, if new value is feasible \(greater than lower bound\)) s
+402 325 M
+(   eta_valid = FALSE) s
+402 317 M
+(   set orig_upbo) s
+402 301 M
+(void set_lowbo\(lprec *lp, int column, REAL value\)) s
+402 285 M
+(   Test if column number in range) s
+402 277 M
+(   scale value) s
+402 269 M
+(   Test, if new value is feasible \(smaller than upper bound\)) s
+402 261 M
+(   eta_valid = FALSE) s
+402 253 M
+(   set orig_lowbo) s
+402 237 M
+(void set_int\(lprec *lp, int column, short must_be_int\)) s
+402 221 M
+(   Test if column number in range) s
+402 213 M
+(   set must_be_int) s
+402 205 M
+(   If variable must be integer, unscale column) s
+402 181 M
+(void set_rh\(lprec *lp, int row, REAL value\)) s
+402 165 M
+(   Test, if row_number is in range) s
+402 157 M
+(   Test, if row_number for objective row should be set, WARNING) s
+402 149 M
+(   scale value and change sign.) s
+402 141 M
+(   eta_valid = FALSE) s
+402 117 M
+(void set_rh_vec\(lprec *lp, REAL *rh\)) s
+402 101 M
+(   For all rows) s
+402 93 M
+(      scale and change sign) s
+402 85 M
+(      set orig_rh) s
+402 77 M
+(   eta_valid = FALSE) s
+402 53 M
+(void str_set_rh_vec\(lprec *lp, char *rh_string\)) s
+402 37 M
+(   Same idea as always. Reserve space for array, strtod values into this array,) s
+402 29 M
+(   call set_rh_vec and free array.) s
+402 5 M
+(void set_maxim\(lprec *lp\)) s
+_R
+S
+%%Page: (16) 16
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 16 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (16) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 493 M
+(   if maxim == FALSE) s
+5 485 M
+(      multiply all Values in row[0] with -1) s
+5 477 M
+(      eta_valid = FALSE) s
+5 469 M
+(   set maximise = TRUE) s
+5 461 M
+(       ch_sign[0] = TRUE) s
+5 453 M
+(   if LP = active, set Maximise = TRUE) s
+5 429 M
+(void set_minim\(lprec *lp\)) s
+5 413 M
+(   if maxim == TRUE) s
+5 405 M
+(      multiply all Values in row[0] with -1) s
+5 397 M
+(      eta_valid = FALSE) s
+5 389 M
+(   set maximise = FALSE) s
+5 381 M
+(       ch_sign[0] = FALSE) s
+5 373 M
+(   if LP = active, set Maximise = FALSE) s
+5 341 M
+(void set_constr_type\(lprec *lp, int row, short con_type\)) s
+5 325 M
+(   Test, if row_number is in range) s
+5 317 M
+(   if type == EQUAL) s
+5 309 M
+(      set upper bound on slackvariable to zero) s
+5 301 M
+(      basis_valid == FALSE) s
+5 293 M
+(      if change_sign[row]) s
+5 285 M
+(         multiply all coefficients with -1) s
+5 277 M
+(         eta_valid = FALSE) s
+5 269 M
+(         change_sign = FALSE) s
+5 261 M
+(         change sign of orig_rh) s
+5 253 M
+(   if type == LESSEQUAL) s
+5 245 M
+(      set upper bound on slackvariable to infinity) s
+5 237 M
+(      basis_valid == FALSE) s
+5 229 M
+(      if change_sign[row]) s
+5 221 M
+(         multiply all coefficients with -1) s
+5 213 M
+(         eta_valid = FALSE) s
+5 205 M
+(         change_sign = FALSE) s
+5 197 M
+(         change sign of orig_rh) s
+5 189 M
+(   if type == GREATEREQUAL) s
+5 181 M
+(      set upper bound on slackvariable to infinity) s
+5 173 M
+(      basis_valid == FALSE) s
+5 165 M
+(      if NOT change_sign[row]) s
+5 157 M
+(         multiply all coefficients with -1) s
+5 149 M
+(         eta_valid = FALSE) s
+5 141 M
+(         change_sign = TRUE) s
+5 133 M
+(         change sign of orig_rh) s
+5 125 M
+(   else) s
+5 117 M
+(      error wrong constraint type) s
+5 109 M
+(   ) s
+5 85 M
+(REAL mat_elm\(lprec *lp, int row, int column\)) s
+5 77 M
+(   /* get value of matrix element in row and column */) s
+5 53 M
+(   Test, if row_number is in range) s
+5 45 M
+(   Test, if col_number is in range) s
+5 37 M
+(   value = 0) s
+5 29 M
+(   loop through column) s
+5 21 M
+(   if value found) s
+5 13 M
+(      unscale and change_sign) s
+5 5 M
+(   return value) s
+402 485 M
+(void get_row\(lprec *lp, int row_nr, REAL *row\)) s
+402 477 M
+(   /* this is dense form */) s
+402 461 M
+(   Test, if row_number is in range) s
+402 453 M
+(   for all columns) s
+402 445 M
+(      initialise value with 0) s
+402 437 M
+(      for all entries in column) s
+402 429 M
+(         if row found, write value) s
+402 421 M
+(      unscale value) s
+402 413 M
+(   if change_sign) s
+402 405 M
+(      multiply with -1) s
+402 397 M
+(   ) s
+402 373 M
+(void get_column\(lprec *lp, int col_nr, REAL *column\)) s
+402 357 M
+(   Test, if column is in range.) s
+402 349 M
+(   /* column is dense*/ ) s
+402 341 M
+(   initialise columnarray with 0) s
+402 333 M
+(   for all elements in this colum, copy to dense array) s
+402 325 M
+(   unscale and change sign) s
+402 301 M
+(void get_reduced_costs\(lprec *lp, REAL *rc\)) s
+402 285 M
+(   Basis has to be valid) s
+402 277 M
+(   set_globals) s
+402 269 M
+(   if eta_valid = FALSE) s
+402 261 M
+(      invert) s
+402 253 M
+(   initialise array with 0) s
+402 245 M
+(   set rc[0] = 1) s
+402 237 M
+(   btran\(rc\)) s
+402 229 M
+(   For all columns) s
+402 221 M
+(      if variable not in basis AND upper bound > 0) s
+402 213 M
+(         rc[column] = SUM \(over all elements in Column\) mat.value * rc[row]) s
+402 205 M
+(   round all values) s
+402 197 M
+(   ) s
+402 181 M
+(short is_feasible\(lprec *lp, REAL *values\)) s
+402 165 M
+(   Unscale values and look, if they are between orig_lower and orig_upper bounds) s
+402 157 M
+(   allocate space for a new rhs) s
+402 149 M
+(   With this values calculate rhs) s
+402 141 M
+(   check if rhs is lessequal than orig rhs for LE rows and equal to orig_rhs) s
+402 133 M
+(      for EQ rows.) s
+402 125 M
+(   ) s
+402 109 M
+(   short column_in_lp\(lprec *lp, REAL *testcolumn\)) s
+402 93 M
+(   for all columns) s
+402 85 M
+(      for all elements in column) s
+402 77 M
+(         unscale value and change_sign) s
+402 69 M
+(         check if difference smaller than epsilon) s
+402 61 M
+(   return TRUE or FALSE) s
+402 21 M
+(void print_lp\(lprec *lp\)) s
+402 5 M
+(   print rowwise in readable form.) s
+_R
+S
+%%Page: (17) 17
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 17 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (17) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 485 M
+(void set_row_name\(lprec *lp, int row, nstring new_name\)) s
+5 469 M
+(   Perhaps allocate memory for names and initialise with default names) s
+5 461 M
+(   strcpy rowname) s
+5 437 M
+(void set_col_name\(lprec *lp, int column, nstring new_name\)) s
+5 421 M
+(   Perhaps allocate memory for names and initialise with default names) s
+5 413 M
+(   strcpy colname) s
+5 381 M
+(static REAL minmax_to_scale\(REAL min, REAL max\)) s
+5 365 M
+(   calculate scaling factor depending on min and max) s
+5 341 M
+(void unscale_columns\(lprec *lp\)) s
+5 325 M
+(   for all columns) s
+5 317 M
+(      for all coefficients in column) s
+5 309 M
+(         unscale \(columnscaling\)) s
+5 301 M
+(   for all columns) s
+5 293 M
+(      unscale bounds) s
+5 285 M
+(   set scaling vector to 1) s
+5 277 M
+(   columns_scaled = FALSE) s
+5 269 M
+(   eta_valid = FALSE) s
+5 237 M
+(void unscale\(lprec *lp\)) s
+5 221 M
+(   Work only if scaling used) s
+5 213 M
+(   for all columns) s
+5 205 M
+(      for all coefficients in column) s
+5 197 M
+(         unscale \(columnscaling\)) s
+5 189 M
+(   for all columns) s
+5 181 M
+(      unscale bounds) s
+5 173 M
+(   for all columns) s
+5 165 M
+(      for all coefficients in column) s
+5 157 M
+(         unscale \(rowscaling\)) s
+5 149 M
+(   for all rows) s
+5 141 M
+(      unscale orig_rhs) s
+5 133 M
+(   free scale) s
+5 125 M
+(   scaling_used = FALSE) s
+5 117 M
+(   eta_valid = FALSE) s
+5 77 M
+(void auto_scale\(lprec *lp\)) s
+5 61 M
+(   find row maximum and row minimum. Use these values to scale problem.) s
+5 45 M
+(void reset_basis\(lprec *lp\)) s
+5 29 M
+(   basis_valid=FALSE) s
+5 5 M
+(void print_solution\(lprec *lp\)) s
+402 493 M
+(   Print solution to stdout) s
+402 485 M
+(   Print all variables) s
+402 477 M
+(   In some cases) s
+402 469 M
+(      Print slack variables ???) s
+402 461 M
+(      Print duals) s
+402 429 M
+(void write_LP\(lprec *lp, FILE *output\)) s
+402 413 M
+(   print LP rowwise in readable form.) s
+402 405 M
+(   ) s
+402 389 M
+(void write_MPS\(lprec *lp, FILE *output\)) s
+402 373 M
+(   The routine write_MPS seems to do no unscaling. However it uses internally) s
+402 365 M
+(   the routine get_column\(\) which does unscaling!) s
+402 333 M
+(void print_duals\(lprec *lp\)) s
+402 317 M
+(Print all duals) s
+402 293 M
+(void print_scales\(lprec *lp\)) s
+402 277 M
+(   Print all row scales) s
+402 269 M
+(   print all column scales.) s
+402 181 M
+(/***************************************************************/) s
+402 173 M
+(/**                                                           **/) s
+402 165 M
+(/**                                                           **/) s
+402 157 M
+(/**             Routines in file "read.c"                     **/) s
+402 149 M
+(/**                                                           **/) s
+402 141 M
+(/**                                                           **/) s
+402 133 M
+(/***************************************************************/) s
+402 101 M
+(void yyerror\(char *string\)) s
+402 93 M
+(void check_decl\(char *str\)) s
+402 85 M
+(static int hashval\(const char *string\)) s
+402 77 M
+(static hashelem *gethash\(char *variable\)) s
+402 69 M
+(void add_int_var\(char *name\)) s
+402 61 M
+(void init_read\(void\)) s
+402 53 M
+(static column *getrow\(column *p,) s
+402 45 M
+(                      int row\)) s
+402 37 M
+(static bound *create_bound_rec\(void\)) s
+402 29 M
+(void null_tmp_store\(void\)) s
+402 21 M
+(static void store\(char *variable,) s
+402 13 M
+(                  int row,) s
+402 5 M
+(                  REAL value\)) s
+_R
+S
+%%Page: (18) 18
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 18 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (18) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 493 M
+(void store_re_op\(void\)) s
+5 485 M
+(void rhs_store\(REAL value\)) s
+5 477 M
+(void var_store\(char *var, int row, REAL value\)) s
+5 469 M
+(void store_bounds\(void\)) s
+5 461 M
+(void add_constraint_name\(char *name, int row\)) s
+5 453 M
+(void readinput\(lprec *lp\)) s
+5 445 M
+(lprec *read_lp_file\(FILE *input, short verbose, nstring lp_name\)) s
+5 421 M
+(===================================================) s
+5 405 M
+(To understand the idea of this file you should also read carefully the ) s
+5 397 M
+(comments directly at the beginning of this file! ) s
+5 365 M
+(void yyerror\(char *string\)) s
+5 357 M
+(   Output error string and line number) s
+5 341 M
+(void check_decl\(char *str\)) s
+5 333 M
+(   We expect string "int". If this is not the case give error message.) s
+5 317 M
+(static int hashval\(const char *string\)) s
+5 309 M
+(   Calculate an integer hash value. \(Modulo HASHSIZE\).) s
+5 293 M
+(static hashelem *gethash\(char *variable\)) s
+5 285 M
+(   Returns a pointer to hashelement with name = variable.) s
+5 277 M
+(   If this hashelement does not exist, gethash\(\) returns a NULL pointer.) s
+5 261 M
+(void add_int_var\(char *name\)) s
+5 253 M
+(   Check if name exists. \(if not, error message.\)) s
+5 245 M
+(   Check if it is the first time this variable was declared to be integer.) s
+5 237 M
+(   Set flag for this variable to be integer.) s
+5 221 M
+(void init_read\(void\)) s
+5 213 M
+(   Init hashtable and globals.) s
+5 197 M
+(static column *getrow\(column *p,) s
+5 189 M
+(                      int row\)) s
+5 181 M
+(   search in column-list \(p is pointer to first element of column-list\)) s
+5 173 M
+(   for column->row = row.) s
+5 165 M
+(   getrow\(\) returns a pointer to this column structure.) s
+5 157 M
+(   If not found a NULL-pointer is returned) s
+5 149 M
+(   Follows one chain of pointers until correct element is found.) s
+5 133 M
+(static bound *create_bound_rec\(void\)) s
+5 125 M
+(   Creates a bound record.) s
+5 117 M
+(   Calloc space.) s
+5 109 M
+(   Set lowbo = 0 and upbo = Infinite) s
+5 101 M
+(   Return pointer to this structure.) s
+5 85 M
+(void null_tmp_store\(void\)) s
+5 77 M
+(   clears the tmp_store variable after all information has been copied) s
+5 61 M
+(static void store\(char *variable,) s
+5 53 M
+(                  int row,) s
+5 45 M
+(                  REAL value\)) s
+5 37 M
+(   Store a value of the \(sparse\) matrix in data structure.) s
+5 29 M
+(   If Value == 0, display warning.) s
+5 21 M
+(   Three cases have to be distinguished:) s
+5 13 M
+(   First: Variable does not exist) s
+5 5 M
+(          Calloc space for info about variable) s
+402 501 M
+(          update number of variables) s
+402 493 M
+(          insert this element first into hashtable) s
+402 485 M
+(          Calloc space for value) s
+402 477 M
+(          insert rownumber and value into structure) s
+402 469 M
+(   Second: Variable exists and has no value in that row yet) s
+402 461 M
+(          Calloc space for value) s
+402 453 M
+(          Insert rownumber and value into structure and insert into pointer) s
+402 445 M
+(          chain.) s
+402 437 M
+(   Third: Variable exists and has already a value in that row.) s
+402 429 M
+(          add value to old value.) s
+402 413 M
+(void store_re_op\(void\)) s
+402 405 M
+(   switch yytext[0]) s
+402 397 M
+(   case =) s
+402 389 M
+(   case >) s
+402 381 M
+(   case <) s
+402 373 M
+(   default   error exit) s
+402 341 M
+(void rhs_store\(REAL value\)) s
+402 333 M
+(   Store RHS value in the rightside structure.) s
+402 325 M
+(   Two cases are distinguished: Constraints with several variables have a right) s
+402 317 M
+(   hand side, Constraints with only one variable are no constraints but bounds.) s
+402 301 M
+(void var_store\(char *var, int row, REAL value\)) s
+402 293 M
+(   Store all data in the right place.) s
+402 285 M
+(   Distinguish between bound and constraint.) s
+402 269 M
+(   error exit, if variable name is too long.) s
+402 261 M
+(   update Lin_term_count carefully, because it could be a bound.) s
+402 253 M
+(   If it is possible that constraint is only a bound, store its values in) s
+402 245 M
+(   temporary space.) s
+402 237 M
+(   If it is sure that it is NOT a bound, store values from temporary space) s
+402 229 M
+(   first. Init temporary space with zero for further use.) s
+402 221 M
+(   Store the values for the last read variable.) s
+402 205 M
+(void store_bounds\(void\)) s
+402 197 M
+(   The constraint was in fact a Bound. We store it now. The information for) s
+402 189 M
+(   the variable can be found in temporary space.) s
+402 173 M
+(   If value == 0: error exit.) s
+402 157 M
+(   Check, if we know this variable already.) s
+402 149 M
+(   If new variable found) s
+402 141 M
+(      Calloc space) s
+402 133 M
+(      update number of variables) s
+402 125 M
+(      init space) s
+402 117 M
+(      insert space into hashtable) s
+402 109 M
+(   else) s
+402 101 M
+(      Check if space for bounds exists already and if not, create.) s
+402 85 M
+(   change perhaps direction of inequality, if negative coefficient in front of ) s
+402 77 M
+(   variable.) s
+402 61 M
+(   Check, if bound is feasible. If not: error exit.) s
+402 53 M
+(   Perhaps display warning, if upper bound is negative.) s
+402 45 M
+(   Insert bound into structure, but check if there exists already stronger) s
+402 37 M
+(   bound. In this case display warning.) s
+402 21 M
+(   Check, if upperbound AND lower bound contradict each other. error exit.) s
+402 5 M
+(   clear temporary space.) s
+_R
+S
+%%Page: (19) 19
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 19 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (19) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 493 M
+(void add_constraint_name\(char *name, int row\)) s
+5 485 M
+(   Store constraint name in structure. The first name has to be handled) s
+5 477 M
+(   differently.) s
+5 461 M
+(void readinput\(lprec *lp\)) s
+5 453 M
+(   Transport the data from the  intermediate structure to the sparse matrix) s
+5 445 M
+(   and free the intermediate structure. The routine tries not to waste memory) s
+5 437 M
+(   and frees every data which is copied to the other structure.) s
+5 421 M
+(   Copy all the given row names.) s
+5 413 M
+(   For all Rows descending:) s
+5 405 M
+(      store relational operator) s
+5 397 M
+(      store rhs) s
+5 389 M
+(      free memory) s
+5 381 M
+(   For all equal rows change upper bound to zero.) s
+5 365 M
+(   If some rows do not have names, generate a name.) s
+5 349 M
+(   Read Hash structure   /* variables loose their original number */) s
+5 341 M
+(      initialise col_end of the variable.) s
+5 333 M
+(      Set must_be_int and the bounds of the variable.) s
+5 325 M
+(      copy name of variable.) s
+5 317 M
+(      put matrix values in sparse matrix.   /* No special sorting in a column */) s
+5 309 M
+(         copy row index, value) s
+5 301 M
+(         update number of nonzeros) s
+5 293 M
+(         free space) s
+5 285 M
+(   initialise col_end for last variable.) s
+5 269 M
+(   if verbose) s
+5 261 M
+(      print some statistic information) s
+5 253 M
+(      print basically MPS file.) s
+5 237 M
+(lprec *read_lp_file\(FILE *input, short verbose, nstring lp_name\)) s
+5 229 M
+(   init some data) s
+5 221 M
+(   call the parser yyparse\(\)) s
+5 205 M
+(   Calloc new lp structure and initialise lots of data \(sizes of arrays etc.\)) s
+5 197 M
+(   Calloc arrays and insert into structure.) s
+5 181 M
+(   Call readinput to get the information into the lp structure.) s
+5 165 M
+(   check maximise) s
+5 157 M
+(   set constraint type) s
+5 141 M
+(   return pointer to lp.) s
+5 101 M
+(/***************************************************************/) s
+5 93 M
+(/**                                                           **/) s
+5 85 M
+(/**                                                           **/) s
+5 77 M
+(/**             Routines in file "readmps.c"                  **/) s
+5 69 M
+(/**                                                           **/) s
+5 61 M
+(/**                                                           **/) s
+5 53 M
+(/***************************************************************/) s
+5 13 M
+(int scan_line\(char* line, char *field1, char *field2, char *field3,) s
+5 5 M
+(              double *field4, char *field5, double *field6\)) s
+402 501 M
+(void addmpscolumn\(void\)) s
+402 493 M
+(static int find_row\(char *field\)) s
+402 485 M
+(static int find_var\(char *field\)) s
+402 477 M
+(lprec *read_mps\(FILE *input, short verbose\)) s
+402 461 M
+(===================================) s
+402 445 M
+(This file reads in a MPS file. It describes MPS format in a comment at the) s
+402 437 M
+(beginning.) s
+402 421 M
+(int scan_line\(char* line, char *field1, char *field2, char *field3,) s
+402 413 M
+(              double *field4, char *field5, double *field6\)) s
+402 405 M
+(   input a MPS file line in "line", output the fields or 0/empty string in) s
+402 397 M
+(   field?.) s
+402 389 M
+(   Return value is number of read fields.) s
+402 381 M
+(   For every field the following is done:) s
+402 373 M
+(      - first check, if this field exists in inputstring) s
+402 365 M
+(      - second copy this part of input "line" to a buffer) s
+402 357 M
+(      - third use sscanf to read this field into "field?") s
+402 349 M
+(      - update number of items.) s
+402 333 M
+(void addmpscolumn\(void\)) s
+402 325 M
+(   This routine uses the global variable "Last_column" which is calloced and) s
+402 317 M
+(   filled in read_mps.) s
+402 309 M
+(   - add_column) s
+402 301 M
+(   - set_col_name) s
+402 293 M
+(   - set_int) s
+402 285 M
+(   Reset Last_column to all entries = 0.) s
+402 269 M
+(static int find_row\(char *field\)) s
+402 261 M
+(   Given a name of a row in "field" return the index number of the row. ) s
+402 253 M
+(   This is done by cycling one time through the entries of the rows.) s
+402 245 M
+(   \(If name not found, there is considered the case "Unconstrained_rows_found".) s
+402 237 M
+(    This means we found N-rows, which are ignored. Perhaps we are just looking) s
+402 229 M
+(    for the name of an N-row which we ignored. Therefore we will not find its) s
+402 221 M
+(    index.\)) s
+402 213 M
+(   Exit from program if name does not exist.) s
+402 197 M
+(static int find_var\(char *field\)) s
+402 189 M
+(   The routine is very similar to "find_row".) s
+402 181 M
+(   Given name of a variable return the index or exit program if name does not) s
+402 173 M
+(   exist.) s
+402 165 M
+(   It is done by cycling one time through all column names.) s
+402 149 M
+(lprec *read_mps\(FILE *input, short verbose\)) s
+402 141 M
+(   This is the longest routine in this file. It does all the work for reading) s
+402 133 M
+(   in a MPS file. It contains lot of if\(Debug\) statements to print out ) s
+402 125 M
+(   debugging information. ) s
+402 101 M
+(   Initialise an empty LP.) s
+402 93 M
+(   Initialise various data.) s
+402 85 M
+(   Start while loop to read one line after the other from the MPS file.) s
+402 77 M
+(      First skip comments) s
+402 69 M
+(      Check first character in line to determin if it is "special" line.) s
+402 61 M
+(         NAME) s
+402 53 M
+(            read problem name) s
+402 45 M
+(         ROWS) s
+402 37 M
+(            Set variable "section" to corresponding value.) s
+402 29 M
+(         COLUMNS) s
+402 21 M
+(            Set variable "section" to corresponding value.) s
+402 13 M
+(         RHS) s
+402 5 M
+(            addmpscolumn\(\)) s
+_R
+S
+%%Page: (20) 20
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 20 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (20) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 501 M
+(            Set variable "section" to corresponding value.) s
+5 493 M
+(         BOUNDS) s
+5 485 M
+(            Set variable "section" to corresponding value.) s
+5 477 M
+(         RANGES) s
+5 469 M
+(            Set variable "section" to corresponding value.) s
+5 461 M
+(         ENDATA) s
+5 453 M
+(            Do nothing.) s
+5 445 M
+(         Error exit, if unknown Keyword.) s
+5 437 M
+(      else \(normal line\)) s
+5 429 M
+(         scan_line\(\)) s
+5 421 M
+(         switch to the correct section to use the fields.) s
+5 413 M
+(         NAME: error) s
+5 405 M
+(         ROWS: N-row: take first one as objective row, i.e. row[0].) s
+5 397 M
+(                      Forget further N-rows. Set some Variables to  suppress) s
+5 389 M
+(                      further error messages.) s
+5 381 M
+(               L-row: str_add_constraint) s
+5 373 M
+(                      set_row_name) s
+5 365 M
+(               G-row: str_add_constraint) s
+5 357 M
+(                      set_row_name) s
+5 349 M
+(               E-row: str_add_constraint) s
+5 341 M
+(                      set_row_name) s
+5 333 M
+(               else: error exit) s
+5 325 M
+(         COLUMNS:) s
+5 317 M
+(               The line should have 4 or 6 fields!) s
+5 309 M
+(               If line has 5 fields, it could be a MARKER row!) s
+5 301 M
+(               If we receive a new column name, i.e. the name is different from) s
+5 293 M
+(               Last_col_name AND Column_ready, we addmpscolumn\(\) and also its) s
+5 285 M
+(               name. Set Column_ready to TRUE.) s
+5 277 M
+(               else) s
+5 269 M
+(               copy field2 to Last_col_name) s
+5 261 M
+(               Insert field 4 and perhaps field 6 into the correct position) s
+5 253 M
+(               of array Last_column.) s
+5 245 M
+(               If line has 5 fields:) s
+5 237 M
+(               Check for 'MARKER' Keyword. Addmpscolumn\(\).) s
+5 229 M
+(               Check for 'INTORG' or 'INTEND'.) s
+5 221 M
+(               Update variable "Int_section" depending on result.) s
+5 213 M
+(               Ignore unknown markers. \(Do not exit\)) s
+5 205 M
+(               If not 4, 5 or 6 fields: error exit.) s
+5 197 M
+(         RHS:) s
+5 189 M
+(               The line should have 4 or 6 fields!) s
+5 181 M
+(               If not, error exit.) s
+5 173 M
+(               Insert field4 and field6 into the correct position using set_rh.) s
+5 165 M
+(         BOUNDS:) s
+5 157 M
+(               No check for the number of fields in the line is done.) s
+5 149 M
+(               The following Types are handled:) s
+5 141 M
+(               UP: set upper bound) s
+5 133 M
+(               LO: set lower bound) s
+5 125 M
+(               FX: set upper bound) s
+5 117 M
+(                   set lower bound) s
+5 109 M
+(               PL: do nothing) s
+5 101 M
+(               BV: set upper bound = 1) s
+5 93 M
+(                   set integer = TRUE) s
+5 85 M
+(               FR: split into two variables.) s
+5 77 M
+(                   get_column, multiply with -1, add_column. Generate meaningful) s
+5 69 M
+(                   name for column, add name. Nothing is done with current) s
+5 61 M
+(                   lower and upper bounds.) s
+5 53 M
+(               MI: change to positive variable by multiplying variable with -1.) s
+5 45 M
+(                   i.e. get_column, del_column, multiply with -1, add_column,) s
+5 37 M
+(                   generate column name, add name.) s
+5 29 M
+(               else: error exit. Unsupported Type.) s
+5 21 M
+(         RANGES:) s
+5 13 M
+(               The line should have 4 or 6 fields!) s
+5 5 M
+(               Error exit, if number of fields is wrong.) s
+402 501 M
+(               Set bounds on row, i.e. writing the values directly into the) s
+402 493 M
+(               array orig_upbo[].) s
+402 485 M
+(   return Pointer to LP.) s
+402 453 M
+(/***************************************************************/) s
+402 445 M
+(/**                                                           **/) s
+402 437 M
+(/**                                                           **/) s
+402 429 M
+(/**             File "lex.l"                                  **/) s
+402 421 M
+(/**                                                           **/) s
+402 413 M
+(/**                                                           **/) s
+402 405 M
+(/***************************************************************/) s
+402 389 M
+(Of course lex.l is the descriptive file for lex. To understand it, you need) s
+402 381 M
+(some knowledge about lex. In this part you only find the different tokens) s
+402 373 M
+(that are described in lex.l and in some cases you also find a description) s
+402 365 M
+(how lex works on an input file in a correct language.) s
+402 349 M
+(The input file can contain Comments "/* ... */" which are just ignored.) s
+402 341 M
+(White space \(WS\), i.e. Blanks, Tabulators and New line are also ignored from ) s
+402 333 M
+(the input file.) s
+402 317 M
+(COMMA:        ",") s
+402 309 M
+(MINIMIZE:     "min" or "MIN" or "Min" or ...) s
+402 301 M
+(MAXIMIZE:     "max" or ............) s
+402 293 M
+(CONS:         a constant number. Its value is returned in global variable "f".) s
+402 285 M
+(SIGN:         basically "+" or "-". Variable "Sign" == TRUE, if "-".) s
+402 277 M
+(VAR:          variable. Its name is returned in global variable "Last_var".) s
+402 269 M
+(              Basically variable names start with a letter and than can contain) s
+402 261 M
+(              letters, digits, brackets and special characters.) s
+402 253 M
+(COLON:        ":") s
+402 245 M
+(AR_M_OP:      "*") s
+402 237 M
+(RE_OP:        "=", "<=" or ">=") s
+402 229 M
+(END_C:        ";") s
+402 213 M
+(It also detects errors in input file.) s
+402 181 M
+(/***************************************************************/) s
+402 173 M
+(/**                                                           **/) s
+402 165 M
+(/**                                                           **/) s
+402 157 M
+(/**             File "lp.y"                                   **/) s
+402 149 M
+(/**                                                           **/) s
+402 141 M
+(/**                                                           **/) s
+402 133 M
+(/***************************************************************/) s
+402 117 M
+(Similar remarks are valid for lp.y than for lex.l. This is the descriptive) s
+402 109 M
+(file for yacc. Therefore you need some knowledge about yacc to understand) s
+402 101 M
+(it. It works closely together with lex. You will find a rough description) s
+402 93 M
+(of the recognised language.) s
+402 77 M
+(An input file consists of ) s
+402 69 M
+(- an objective_function) s
+402 61 M
+(- constraints) s
+402 53 M
+(- int_declarations) s
+402 37 M
+(Constraints can be a single constraint or several constraints.) s
+402 21 M
+(In front of a constraint there can be a name separated by a colon.) s
+402 5 M
+(Basically a constraint consists of ) s
+_R
+S
+%%Page: (21) 21
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 21 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (21) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 501 M
+(- x_lineair_sum) s
+5 493 M
+(- RE_OP  an Relational Operator) s
+5 485 M
+(- x_lineair_sum) s
+5 477 M
+(- ";") s
+5 453 M
+(int_declarations can be empty. They can consist of several int_declaration's.) s
+5 445 M
+(Each int_declaration consists of ) s
+5 437 M
+(- an int_declarator) s
+5 429 M
+(- vars, i.e. several variables, which can be comma separated.) s
+5 421 M
+(- and finally ";") s
+5 405 M
+(Each x_lineair_sum consists of several x_lineair_term's with SIGN.) s
+5 397 M
+(Each x_lineair_term is a constant or a lineair_term.) s
+5 389 M
+(A lineair_term is a variable or a constant followed by a variable or) s
+5 381 M
+(a constant "*" variable.) s
+5 365 M
+(The objective function starts with "max" or "min" followed by a lineair_sum and) s
+5 357 M
+(ends with ";".) s
+5 349 M
+(A lineair_sum consists of lineair_term's with signs.) s
+5 333 M
+(You will not find a more detailed description of the language. Best is to) s
+5 325 M
+(look into an example to get an idea of the format.) s
+5 277 M
+(/***************************************************************/) s
+5 269 M
+(/**                                                           **/) s
+5 261 M
+(/**                                                           **/) s
+5 253 M
+(/**             Function calling tree                         **/) s
+5 245 M
+(/**                                                           **/) s
+5 237 M
+(/**                                                           **/) s
+5 229 M
+(/***************************************************************/) s
+5 213 M
+(The following lines have been produced using cflow. They give ) s
+5 205 M
+(an overview of the calling structure of lp_solve. Refer to ) s
+5 197 M
+(the cflow manual, if you have difficulties, to understand the output.) s
+5 173 M
+(The functions are arranged in levels. All the functions a single routine) s
+5 165 M
+(calls are intended one level more.) s
+5 149 M
+(The line numbers refer to version 2.0 of lp_solve.) s
+5 133 M
+(SOLVE.C) s
+5 109 M
+(1       lag_solve: int\(\), <solve.c 1516>) s
+5 101 M
+(2               malloc: <>) s
+5 93 M
+(3               exit: <>) s
+5 85 M
+(4               fprintf: <>) s
+5 77 M
+(5               calloc: <>) s
+5 69 M
+(6               memcpy: <>) s
+5 61 M
+(7               get_row: <>) s
+5 53 M
+(8               set_mat: <>) s
+5 45 M
+(9               print_lp: <>) s
+5 37 M
+(10              solve: int\(\), <solve.c 1462>) s
+5 29 M
+(11                      set_globals: void\(\), <solve.c 16>) s
+5 21 M
+(12                      Isvalid: short\(\), <solve.c 105>) s
+5 13 M
+(13                              malloc: 2) s
+5 5 M
+(14                              exit: 3) s
+402 501 M
+(15                              fprintf: 4) s
+402 493 M
+(16                              free: <>) s
+402 485 M
+(17                              calloc: 5) s
+402 477 M
+(18                      milpsolve: int\(\), <solve.c 1158>) s
+402 469 M
+(19                              debug_print: <>) s
+402 461 M
+(20                              memcpy: 6) s
+402 453 M
+(21                              rand: <>) s
+402 445 M
+(22                              invert: void\(\), <solve.c 320>) s
+402 437 M
+(23                                      fprintf: 4) s
+402 429 M
+(24                                      calloc: 5) s
+402 421 M
+(25                                      exit: 3) s
+402 413 M
+(26                                      minoriteration: void\(\), <solve.c 244>) s
+402 405 M
+(27                                      setpivcol: void\(\), <solve.c 215>) s
+402 397 M
+(28                                              ftran: void\(\), <solve.c 66>) s
+402 389 M
+(29                                      error: <>) s
+402 381 M
+(30                                      condensecol: void\(\), <solve.c 174>) s
+402 373 M
+(31                                              resize_eta: void\(\), <solve.c 162>) s
+402 365 M
+(32                                                      realloc: <>) s
+402 357 M
+(33                                                      exit: 3) s
+402 349 M
+(34                                                      fprintf: 4) s
+402 341 M
+(35                                      rhsmincol: void\(\), <solve.c 292>) s
+402 333 M
+(36                                              fprintf: 4) s
+402 325 M
+(37                                              exit: 3) s
+402 317 M
+(38                                      addetacol: void\(\), <solve.c 197>) s
+402 309 M
+(39                                      free: 16) s
+402 301 M
+(40                              solvelp: int\(\), <solve.c 893>) s
+402 293 M
+(41                                      calloc: 5) s
+402 285 M
+(42                                      exit: 3) s
+402 277 M
+(43                                      fprintf: 4) s
+402 269 M
+(44                                      colprim: short\(\), <solve.c 502>) s
+402 261 M
+(45                                              btran: void\(\), <solve.c 87>) s
+402 253 M
+(46                                              fprintf: 4) s
+402 245 M
+(47                                      setpivcol: 27) s
+402 237 M
+(48                                      rowprim: short\(\), <solve.c 564>) s
+402 229 M
+(49                                              fprintf: 4) s
+402 221 M
+(50                                      condensecol: 30) s
+402 213 M
+(51                                      rowdual: short\(\), <solve.c 655>) s
+402 205 M
+(52                                              fprintf: 4) s
+402 197 M
+(53                                      coldual: short\(\), <solve.c 712>) s
+402 189 M
+(54                                              fprintf: 4) s
+402 181 M
+(55                                      iteration: void\(\), <solve.c 815>) s
+402 173 M
+(56                                              addetacol: 38) s
+402 165 M
+(57                                              fprintf: 4) s
+402 157 M
+(58                                      invert: 22) s
+402 149 M
+(59                                      free: 16) s
+402 141 M
+(60                              fprintf: 4) s
+402 133 M
+(61                              construct_solution: void\(\), <solve.c 1057>) s
+402 125 M
+(62                                      memset: <>) s
+402 117 M
+(63                              debug_print_solution: <>) s
+402 109 M
+(64                              is_int: short\(\), <solve.c 1044>) s
+402 101 M
+(65                                      floor: <>) s
+402 93 M
+(66                              malloc: 2) s
+402 85 M
+(67                              exit: 3) s
+402 77 M
+(68                              debug_print_bounds: <>) s
+402 69 M
+(69                              ceil: <>) s
+402 61 M
+(70                              milpsolve: 18) s
+402 53 M
+(71                              free: 16) s
+402 45 M
+(72                              calculate_duals: void\(\), <solve.c 1129>) s
+402 37 M
+(73                                      btran: 45) s
+402 29 M
+(74                              print_solution: <>) s
+402 21 M
+(75              print_solution: 74) s
+402 13 M
+(76              free: 16) s
+_R
+S
+%%Page: (22) 22
+%%BeginPageSetup
+_S
+90 rotate
+24 -571 translate
+/pagenum 22 def
+/fname (HARTMUT_DOCUMENTATION) def
+/fdir () def
+/ftail (HARTMUT_DOCUMENTATION) def
+% User defined strings:
+/pagenumstr (22) def
+/moddatestr (03/17/97) def
+/modtimestr (05:20:45) def
+%%EndPageSetup
+column_lines
+do_header
+5 485 M
+(READMPS.C) s
+5 461 M
+(1       read_mps: struct*\(\), <readmps.c 227>) s
+5 453 M
+(2               make_lp: <>) s
+5 445 M
+(3               strcpy: <>) s
+5 437 M
+(4               fgets: <>) s
+5 429 M
+(5               fprintf: <>) s
+5 421 M
+(6               sscanf: <>) s
+5 413 M
+(7               strcmp: <>) s
+5 405 M
+(8               calloc: <>) s
+5 397 M
+(9               exit: <>) s
+5 389 M
+(10              addmpscolumn: void\(\), <readmps.c 170>) s
+5 381 M
+(11                      add_column: <>) s
+5 373 M
+(12                      set_col_name: <>) s
+5 365 M
+(13                      set_int: <>) s
+5 357 M
+(14              scan_line: int\(\), <readmps.c 101>) s
+5 349 M
+(15                      strlen: <>) s
+5 341 M
+(16                      strncpy: <>) s
+5 333 M
+(17                      sscanf: 6) s
+5 325 M
+(18              set_row_name: <>) s
+5 317 M
+(19              str_add_constraint: <>) s
+5 309 M
+(20              find_row: int\(\), <readmps.c 188>) s
+5 301 M
+(21                      strcmp: 7) s
+5 293 M
+(22                      fprintf: 5) s
+5 285 M
+(23                      exit: 9) s
+5 277 M
+(24              set_rh: <>) s
+5 269 M
+(25              find_var: int\(\), <readmps.c 210>) s
+5 261 M
+(26                      strcmp: 7) s
+5 253 M
+(27                      fprintf: 5) s
+5 245 M
+(28                      exit: 9) s
+5 237 M
+(29              set_upbo: <>) s
+5 229 M
+(30              set_lowbo: <>) s
+5 221 M
+(31              set_int: 13) s
+5 213 M
+(32              get_column: <>) s
+5 205 M
+(33              add_column: 11) s
+5 197 M
+(34              strcat: <>) s
+5 189 M
+(35              set_col_name: 12) s
+5 181 M
+(36              del_column: <>) s
+5 157 M
+(DEBUG.C) s
+5 133 M
+(1       debug_print_solution: void\(\), <debug.c 21>) s
+5 125 M
+(2               print_indent: void\(\), <debug.c 7>) s
+5 117 M
+(3                       fprintf: <>) s
+5 109 M
+(4               fprintf: 3) s
+5 101 M
+(5       debug_print_bounds: void\(\), <debug.c 41>) s
+5 93 M
+(6               print_indent: 2) s
+5 85 M
+(7               fprintf: 3) s
+5 77 M
+(8       debug_print: void\(\), <debug.c 72>) s
+5 69 M
+(9               print_indent: 2) s
+5 61 M
+(10              vfprintf: <>) s
+5 53 M
+(11              fputc: <>) s
+402 485 M
+(/***************************************************************/) s
+402 477 M
+(/**                                                           **/) s
+402 469 M
+(/**                                                           **/) s
+402 461 M
+(/**             References                                    **/) s
+402 453 M
+(/**                                                           **/) s
+402 445 M
+(/**                                                           **/) s
+402 437 M
+(/***************************************************************/) s
+402 389 M
+(Literatur:) s
+402 381 M
+(           John Lawrence Nazareth,) s
+402 373 M
+(                     Computer Solution of Linear Programs,) s
+402 365 M
+(                     Oxford University Press 1987) s
+402 357 M
+(           ) s
+402 349 M
+(           Orchard-Hays, W.) s
+402 341 M
+(                     Advanced linear-programming computing techniques,) s
+402 333 M
+(                     McGraw-Hill, 1968) s
+402 317 M
+(           Chvatal, V.) s
+402 309 M
+(                     Linear Programming, ) s
+402 301 M
+(                     W.H. Freeman and Company, ) s
+402 293 M
+(                     New York and San Francisco 1983.) s
+402 277 M
+(           Nemhauser, G.L. and Wolsey, Laurence A.,) s
+402 269 M
+(                     Integer and Combinatorial Optimization,) s
+402 261 M
+(                     John Wiley & Sons, Inc. 1988) s
+_R
+S
+%%Trailer
+%%Pages: 22
+%%DocumentNeededResources: font Times-Roman Courier-Bold Courier 
+%%+ font Times-Bold 
+%%EOF

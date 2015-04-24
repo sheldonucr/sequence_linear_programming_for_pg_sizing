@@ -1,0 +1,7 @@
+gen_pr_sim <<end 
+$1
+$1
+1
+p$1x$1_l.sp
+2.5
+end

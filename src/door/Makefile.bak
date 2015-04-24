@@ -1,0 +1,189 @@
+#/*
+# * $RCSfile: Makefile,v $
+# * $Revision: 1.3 $
+# * $Date: 2000/10/10 01:02:50 $, (c) Copyright 1999 by X.-D. Sheldon, Tan
+# */
+
+CFLAGS	      = -g -I../inc  -I../spinc
+
+DEST	      = .
+
+CC	      = gcc
+
+HDRS	      =
+
+INSTALL	      = install
+
+LD	      = ld
+
+LDFLAGS	      = -r
+
+LIBS	      =
+
+MAKEFILE      = Makefile
+
+OBJS	      = lex.o \
+		yacc.o \
+		pgWriteSpice.o \
+		pgWriteConst.o \
+		pgParseNetlist.o
+		
+
+PRINT	      = pr
+
+SRCS       = lex.l \
+		yacc.y \
+		pgWriteSpice.c \
+		pgWriteConst.c \
+		pgParseNetlist.c
+
+
+SHELL	      = /bin/sh
+
+PROGRAM	      = door.o
+	
+all:		$(PROGRAM)
+
+$(PROGRAM):     $(OBJS) 
+		@echo "Linking $(PROGRAM) ..."
+		@$(LD) $(LDFLAGS) $(OBJS) -o $(PROGRAM)
+		@echo "done"
+
+clean:;		@rm -f $(OBJS) core
+
+clobber:;	@rm -f $(OBJS) $(PROGRAM) core tags
+
+depend:;	@makedepend $(CFLAGS) -- $(SRCS)
+
+echo:;		@echo $(HDRS) $(SRCS)
+
+index:;		@ctags -wx $(HDRS) $(SRCS)
+
+install:	$(PROGRAM)
+		@echo Installing $(PROGRAM) in $(DEST)
+		@-strip $(PROGRAM)
+		@if [ $(DEST) != . ]; then \
+		(rm -f $(DEST)/$(PROGRAM); $(INSTALL) -f $(DEST) $(PROGRAM)); fi
+
+print:;		@$(PRINT) $(HDRS) $(SRCS)
+
+tags:           $(HDRS) $(SRCS); @ctags $(HDRS) $(SRCS)
+
+update:		$(DEST)/$(PROGRAM)
+
+###
+# DO NOT DELETE THIS LINE -- make depend depends on it.
+
+lex.o: /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h
+lex.o: /usr/include/gnu/stubs.h
+lex.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+lex.o: /usr/include/bits/types.h /usr/include/libio.h
+lex.o: /usr/include/_G_config.h /usr/include/wchar.h
+lex.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+lex.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+lex.o: /usr/include/bits/stdio_lim.h /usr/include/ctype.h
+lex.o: /usr/include/endian.h /usr/include/bits/endian.h ../inc/pgDoor.h
+lex.o: ../inc/pgCircuit.h ../inc/pgCommon.h ../inc/pgStddefs.h
+lex.o: /usr/include/time.h /usr/include/bits/time.h ../inc/pgUnixstd.h
+lex.o: /usr/include/string.h /usr/include/stdlib.h /usr/include/unistd.h
+lex.o: /usr/include/bits/posix_opt.h /usr/include/bits/confname.h
+lex.o: /usr/include/errno.h /usr/include/bits/errno.h
+lex.o: /usr/include/linux/errno.h /usr/include/asm/errno.h
+lex.o: /usr/include/assert.h ../inc/pgUtility.h ../inc/pgMessage.h
+lex.o: ../spinc/spmatrix.h ../spinc/spconfig.h /usr/include/values.h
+lex.o: /usr/include/limits.h
+lex.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+lex.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/float.h
+lex.o: ../spinc/sperror.h ../spinc/iferrmsg.h ../spinc/strext.h yacc.h
+yacc.o: /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h
+yacc.o: /usr/include/gnu/stubs.h
+yacc.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+yacc.o: /usr/include/bits/types.h /usr/include/libio.h
+yacc.o: /usr/include/_G_config.h /usr/include/wchar.h
+yacc.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+yacc.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+yacc.o: /usr/include/bits/stdio_lim.h ../inc/pgDoor.h ../inc/pgCircuit.h
+yacc.o: ../inc/pgCommon.h ../inc/pgStddefs.h /usr/include/time.h
+yacc.o: /usr/include/bits/time.h ../inc/pgUnixstd.h /usr/include/string.h
+yacc.o: /usr/include/ctype.h /usr/include/endian.h /usr/include/bits/endian.h
+yacc.o: /usr/include/stdlib.h /usr/include/unistd.h
+yacc.o: /usr/include/bits/posix_opt.h /usr/include/bits/confname.h
+yacc.o: /usr/include/errno.h /usr/include/bits/errno.h
+yacc.o: /usr/include/linux/errno.h /usr/include/asm/errno.h
+yacc.o: /usr/include/assert.h ../inc/pgUtility.h ../inc/pgMessage.h
+yacc.o: ../spinc/spmatrix.h ../spinc/spconfig.h /usr/include/values.h
+yacc.o: /usr/include/limits.h
+yacc.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+yacc.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/float.h
+yacc.o: ../spinc/sperror.h ../spinc/iferrmsg.h ../spinc/strext.h
+pgWriteSpice.o: ../inc/pgCommon.h ../inc/pgStddefs.h /usr/include/time.h
+pgWriteSpice.o: /usr/include/features.h /usr/include/sys/cdefs.h
+pgWriteSpice.o: /usr/include/gnu/stubs.h
+pgWriteSpice.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+pgWriteSpice.o: /usr/include/bits/time.h /usr/include/bits/types.h
+pgWriteSpice.o: ../inc/pgUnixstd.h /usr/include/stdio.h /usr/include/libio.h
+pgWriteSpice.o: /usr/include/_G_config.h /usr/include/wchar.h
+pgWriteSpice.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+pgWriteSpice.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+pgWriteSpice.o: /usr/include/bits/stdio_lim.h /usr/include/string.h
+pgWriteSpice.o: /usr/include/ctype.h /usr/include/endian.h
+pgWriteSpice.o: /usr/include/bits/endian.h /usr/include/stdlib.h
+pgWriteSpice.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+pgWriteSpice.o: /usr/include/bits/confname.h /usr/include/errno.h
+pgWriteSpice.o: /usr/include/bits/errno.h /usr/include/linux/errno.h
+pgWriteSpice.o: /usr/include/asm/errno.h /usr/include/assert.h
+pgWriteSpice.o: ../inc/pgUtility.h ../inc/pgMessage.h ../inc/pgDoor.h
+pgWriteSpice.o: ../inc/pgCircuit.h ../spinc/spmatrix.h ../spinc/spconfig.h
+pgWriteSpice.o: /usr/include/values.h /usr/include/limits.h
+pgWriteSpice.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+pgWriteSpice.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/float.h
+pgWriteSpice.o: ../spinc/sperror.h ../spinc/iferrmsg.h ../spinc/strext.h
+pgWriteSpice.o: /usr/include/math.h /usr/include/bits/huge_val.h
+pgWriteSpice.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+pgWriteConst.o: ../inc/pgCommon.h ../inc/pgStddefs.h /usr/include/time.h
+pgWriteConst.o: /usr/include/features.h /usr/include/sys/cdefs.h
+pgWriteConst.o: /usr/include/gnu/stubs.h
+pgWriteConst.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+pgWriteConst.o: /usr/include/bits/time.h /usr/include/bits/types.h
+pgWriteConst.o: ../inc/pgUnixstd.h /usr/include/stdio.h /usr/include/libio.h
+pgWriteConst.o: /usr/include/_G_config.h /usr/include/wchar.h
+pgWriteConst.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+pgWriteConst.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+pgWriteConst.o: /usr/include/bits/stdio_lim.h /usr/include/string.h
+pgWriteConst.o: /usr/include/ctype.h /usr/include/endian.h
+pgWriteConst.o: /usr/include/bits/endian.h /usr/include/stdlib.h
+pgWriteConst.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+pgWriteConst.o: /usr/include/bits/confname.h /usr/include/errno.h
+pgWriteConst.o: /usr/include/bits/errno.h /usr/include/linux/errno.h
+pgWriteConst.o: /usr/include/asm/errno.h /usr/include/assert.h
+pgWriteConst.o: ../inc/pgUtility.h ../inc/pgMessage.h ../inc/pgDoor.h
+pgWriteConst.o: ../inc/pgCircuit.h ../spinc/spmatrix.h ../spinc/spconfig.h
+pgWriteConst.o: /usr/include/values.h /usr/include/limits.h
+pgWriteConst.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+pgWriteConst.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/float.h
+pgWriteConst.o: ../spinc/sperror.h ../spinc/iferrmsg.h ../spinc/strext.h
+pgWriteConst.o: /usr/include/math.h /usr/include/bits/huge_val.h
+pgWriteConst.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+pgParseNetlist.o: ../inc/pgCommon.h ../inc/pgStddefs.h /usr/include/time.h
+pgParseNetlist.o: /usr/include/features.h /usr/include/sys/cdefs.h
+pgParseNetlist.o: /usr/include/gnu/stubs.h
+pgParseNetlist.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+pgParseNetlist.o: /usr/include/bits/time.h /usr/include/bits/types.h
+pgParseNetlist.o: ../inc/pgUnixstd.h /usr/include/stdio.h
+pgParseNetlist.o: /usr/include/libio.h /usr/include/_G_config.h
+pgParseNetlist.o: /usr/include/wchar.h /usr/include/bits/wchar.h
+pgParseNetlist.o: /usr/include/gconv.h
+pgParseNetlist.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+pgParseNetlist.o: /usr/include/bits/stdio_lim.h /usr/include/string.h
+pgParseNetlist.o: /usr/include/ctype.h /usr/include/endian.h
+pgParseNetlist.o: /usr/include/bits/endian.h /usr/include/stdlib.h
+pgParseNetlist.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+pgParseNetlist.o: /usr/include/bits/confname.h /usr/include/errno.h
+pgParseNetlist.o: /usr/include/bits/errno.h /usr/include/linux/errno.h
+pgParseNetlist.o: /usr/include/asm/errno.h /usr/include/assert.h
+pgParseNetlist.o: ../inc/pgUtility.h ../inc/pgMessage.h ../inc/pgDoor.h
+pgParseNetlist.o: ../inc/pgCircuit.h ../spinc/spmatrix.h ../spinc/spconfig.h
+pgParseNetlist.o: /usr/include/values.h /usr/include/limits.h
+pgParseNetlist.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+pgParseNetlist.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/float.h
+pgParseNetlist.o: ../spinc/sperror.h ../spinc/iferrmsg.h ../spinc/strext.h

@@ -1,0 +1,68 @@
+
+PGOPT --- A Power/Ground Optimizer for Liability.
+Version 1.0, 1998
+Copyright (c) 1998 Avant!, Inc.
+Type 'h' for help.
+
+: source p3x500.sp
+
+--------------------
+#branches: 3006.
+#resistors: 1505.
+#nodes: 1501.
+matrix size: 1502.
+--------------------
+[0:00.5u 0:00.1s 448k]
+: const p3x500.cs
+[0:00.1u 0:00.0s 536k]
+: op
+dangling node: 0 eliminated
+External size of the matrix: 1502
+Internal size of the matrix: 1502
+
+COST(BEFORE): 22388.678400
+Initialization time: 0.150000
+
+ Begin with iteration: 1
+
+COST(BEFORE): 22388.678400
+Initialization time: 0.150000
+
+ Begin with iteration: 1
+After NLOptmz: 11488.4
+
+COST(BEFORE): 22388.678400
+Initialization time: 0.150000
+
+ Begin with iteration: 1
+After NLOptmz: 11488.4
+After LOptmz: 11488.4
+
+ Begin with iteration: 2
+
+COST(BEFORE): 22388.678400
+Initialization time: 0.150000
+
+ Begin with iteration: 1
+After NLOptmz: 11488.4
+After LOptmz: 11488.4
+
+ Begin with iteration: 2
+After NLOptmz: 11700.2
+
+COST(BEFORE): 22388.678400
+Initialization time: 0.150000
+
+ Begin with iteration: 1
+After NLOptmz: 11488.4
+After LOptmz: 11488.4
+
+ Begin with iteration: 2
+After NLOptmz: 11700.2
+After LOptmz: 11700.2
+
+COST(AFTER): 11700.230710
+Total CPU time in all the iterations: 37.590000
+[0:02.7u 0:00.2s 1440k]
+: quit
+[0:03.2u 0:00.3s 1440k] pgopt done. Have a nice day!
